@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParsissData version="1">
+       <TransFuncIntensity type="TransFuncIntensity">
+  <Keys>
+  			<key type="TransFuncMappingKey">
+                <intensity value="50" />
+                <split value="false" />
+                <colorL r="138" g="74" b="0" a="0" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="100" />
+                <split value="false" />
+                <colorL r="138" g="74" b="10" a="0.1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="157" />
+                <split value="false" />
+                <colorL r="154" g="103" b="41" a="0.48" />
+            </key>
+            <key type="TransFuncMappingKey">
+                <intensity value="291" />
+                <split value="false" />
+                <colorL r="188" g="162" b="104" a="0.63" />
+            </key>
+            <key type="TransFuncMappingKey">
+                <intensity value="389" />
+                <split value="false" />
+                <colorL r="228" g="227" b="221" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="1197" />
+                <split value="false" />
+                <colorL r="255" g="255" b="255" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="3000" />
+                <split value="false" />
+                <colorL r="255" g="255" b="255" a="1" />
+            </key>
+        </Keys>
+        <lower value="0.00000001" />
+        <upper value="1" />
+        <domain x="-1305.48010254" y="6999.60693359" />
+    </TransFuncIntensity>
+</ParsissData>

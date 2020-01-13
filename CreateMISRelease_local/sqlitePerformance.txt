@@ -1,0 +1,6450 @@
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 31
+Packages : 31
+Correlation : 94
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 265
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 32
+Correlation : 93
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 31
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 157
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 31
+Packages : 16
+Correlation : 94
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 171
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 94
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 31
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 31
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 110
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 32
+Packages : 15
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 94
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 32
+Packages : 15
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 2109
+Test : 16
+Total Time : 2203
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 2156
+Test : 16
+Total Time : 2172
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 1406
+Test : 31
+Total Time : 1453
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 1828
+Test : 16
+Total Time : 1859
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 1390
+Test : 32
+Total Time : 1406
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 1078
+Test : 32
+Total Time : 1125
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 1047
+Test : 31
+Total Time : 1062
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 1219
+Test : 31
+Total Time : 1234
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 1062
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 1062
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 1172
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 1187
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 265
+Images : 78
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 374
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 3282
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 3282
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 141
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 172
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 1140
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 1171
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 1047
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 1062
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 31
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 32
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 16
+Segments : 0
+Test : 15
+Total Time : 48
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 16
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 16
+Segments : 0
+Test : 15
+Total Time : 48
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 46
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 16
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 46
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 531
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 578
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 781
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 843
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 1265
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1265
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 16
+Segments : 0
+Test : 15
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 46
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 484
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 484
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 484
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 484
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 453
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 485
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 1625
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1703
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 31
+Packages : 47
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 32
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 31
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 31
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 32
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 719
+Images : 31
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 797
+Sqlite version
+SolutionPatientDataAdapter : 235
+Images : 32
+Packages : 0
+Correlation : 47
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 329
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 46
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 46
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 63
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 16
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 63
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 63
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 0
+Packages : 0
+Correlation : 78
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 155
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 484
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 516
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 31
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 31
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 93
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 31
+Packages : 16
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 124
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 31
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 32
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 422
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 422
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 187
+Images : 719
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 922
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 46
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 16
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 984
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 1015
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 609
+Images : 78
+Packages : 0
+Correlation : 453
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1140
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 16
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 16
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 95
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 156
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 62
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 15
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 31
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 47
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 1313
+Packages : 0
+Correlation : 46
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 1375
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 2078
+Packages : 16
+Correlation : 46
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 2187
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 15
+Packages : 0
+Correlation : 62
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 124
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 93
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 47
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 188
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 3469
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 3500
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 2375
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 2407
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 32
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 47
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 31
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 78
+Test : 32
+Total Time : 297
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 188
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 16
+Packages : 15
+Correlation : 110
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 219
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 47
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 93
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 109
+Images : 31
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 234
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 46
+Images : 0
+Packages : 16
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 62
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 78
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 93
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 78
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 78
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 15
+Packages : 16
+Correlation : 109
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 250
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 78
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 94
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 0
+Packages : 15
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 187
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 15
+Packages : 16
+Correlation : 156
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 281
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 110
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 109
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 594
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 610
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 750
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 750
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 46
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 531
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 609
+Sqlite version
+SolutionPatientDataAdapter : 110
+Images : 468
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 578
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 110
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 109
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 125
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 468
+Test : 16
+Total Time : 547
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 15
+Volumes : 0
+Segments : 422
+Test : 16
+Total Time : 484
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 16
+Volumes : 0
+Segments : 437
+Test : 16
+Total Time : 484
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 500
+Test : 16
+Total Time : 547
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 437
+Test : 16
+Total Time : 469
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 422
+Test : 16
+Total Time : 453
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 453
+Test : 31
+Total Time : 469
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 1094
+Test : 16
+Total Time : 1125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 406
+Test : 16
+Total Time : 453
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 421
+Test : 32
+Total Time : 468
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 719
+Test : 15
+Total Time : 766
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 31
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 593
+Test : 32
+Total Time : 656
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 453
+Test : 16
+Total Time : 500
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 1234
+Packages : 0
+Correlation : 16
+Plans : 15
+Volumes : 0
+Segments : 422
+Test : 32
+Total Time : 1687
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 1297
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 438
+Test : 31
+Total Time : 1828
+Sqlite version
+SolutionPatientDataAdapter : 140
+Images : 63
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 453
+Test : 16
+Total Time : 687
+Sqlite version
+SolutionPatientDataAdapter : 312
+Images : 32
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 1328
+Test : 31
+Total Time : 1719
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 16
+Volumes : 0
+Segments : 3140
+Test : 32
+Total Time : 3203
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 1797
+Test : 15
+Total Time : 1860
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 203
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 234
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 47
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 31
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 155
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 125
+Images : 31
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 188
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 16
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 78
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 63
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 31
+Packages : 16
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 16
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 31
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 31
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 109
+Images : 62
+Packages : 0
+Correlation : 32
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 297
+Images : 47
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 391
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 15
+Packages : 47
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 16
+Correlation : 15
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 437
+Test : 31
+Total Time : 563
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 31
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 781
+Test : 16
+Total Time : 906
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 516
+Test : 15
+Total Time : 594
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 63
+Packages : 16
+Correlation : 46
+Plans : 16
+Volumes : 0
+Segments : 516
+Test : 31
+Total Time : 751
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 1515
+Test : 16
+Total Time : 1593
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 15
+Packages : 16
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 422
+Test : 15
+Total Time : 641
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 547
+Test : 31
+Total Time : 625
+Sqlite version
+SolutionPatientDataAdapter : 313
+Images : 94
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 437
+Test : 16
+Total Time : 907
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 16
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 421
+Test : 16
+Total Time : 500
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 46
+Plans : 0
+Volumes : 0
+Segments : 516
+Test : 16
+Total Time : 594
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 46
+Plans : 0
+Volumes : 0
+Segments : 985
+Test : 31
+Total Time : 1063
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 46
+Plans : 16
+Volumes : 0
+Segments : 578
+Test : 31
+Total Time : 656
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 16
+Correlation : 31
+Plans : 16
+Volumes : 0
+Segments : 672
+Test : 31
+Total Time : 766
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 15
+Packages : 16
+Correlation : 47
+Plans : 16
+Volumes : 0
+Segments : 468
+Test : 32
+Total Time : 640
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 62
+Plans : 0
+Volumes : 0
+Segments : 422
+Test : 16
+Total Time : 516
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 32
+Plans : 15
+Volumes : 0
+Segments : 735
+Test : 31
+Total Time : 813
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 47
+Plans : 15
+Volumes : 0
+Segments : 391
+Test : 31
+Total Time : 484
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 422
+Test : 15
+Total Time : 500
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 46
+Plans : 0
+Volumes : 0
+Segments : 532
+Test : 15
+Total Time : 610
+Sqlite version
+SolutionPatientDataAdapter : 172
+Images : 3047
+Packages : 16
+Correlation : 0
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 3250
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 2594
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 2656
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 62
+Packages : 0
+Correlation : 63
+Plans : 0
+Volumes : 0
+Segments : 484
+Test : 16
+Total Time : 671
+Sqlite version
+SolutionPatientDataAdapter : 204
+Images : 125
+Packages : 15
+Correlation : 94
+Plans : 0
+Volumes : 0
+Segments : 610
+Test : 31
+Total Time : 1048
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 1140
+Packages : 0
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 1234
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 1703
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1703
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 16
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 172
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 235
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 78
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 32
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 94
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 1062
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 1062
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 2016
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 2047
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 78
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 500
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 515
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 1109
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1141
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 343
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 375
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 78
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 406
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 453
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 46
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 188
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 62
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 15
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 484
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 500
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 109
+Images : 375
+Packages : 31
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 531
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 63
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 344
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 407
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 157
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 235
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 625
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 719
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 32
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 3610
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 3688
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 2671
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 2719
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 2750
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 2812
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 31
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 15
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 1219
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1281
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 2781
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 2812
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 141
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 250
+Sqlite version
+SolutionPatientDataAdapter : 109
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 46
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 1484
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 1515
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 3218
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 3250
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 140
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 218
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 953
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 969
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 63
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 313
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 313
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 63
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 126
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 15
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 46
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 31
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 79
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 187
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 32
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 173
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 16
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 79
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 188
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 297
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 313
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 0
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 31
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 15
+Segments : 0
+Test : 16
+Total Time : 77
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 0
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 78
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 31
+Test : 16
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 16
+Packages : 31
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 94
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 47
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 16
+Packages : 15
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 125
+Images : 31
+Packages : 16
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 203
+Sqlite version
+SolutionPatientDataAdapter : 125
+Images : 15
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 172
+Sqlite version
+SolutionPatientDataAdapter : 78
+Images : 31
+Packages : 16
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 141
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 46
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 47
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 110
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 31
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 109
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 31
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 46
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 46
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 47
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 63
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 0
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 141
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 156
+Sqlite version
+SolutionPatientDataAdapter : 156
+Images : 15
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 187
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 32
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 47
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 31
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 77
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 63
+Sqlite version
+SolutionPatientDataAdapter : 31
+Images : 16
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 16
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 0
+Packages : 0
+Correlation : 15
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 32
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 47
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 62
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 62
+Images : 0
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 93
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 94
+Images : 31
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 125
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 16
+Sqlite version
+SolutionPatientDataAdapter : 79
+Images : 1296
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 1375
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 0
+Images : 15
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 15
+Sqlite version
+SolutionPatientDataAdapter : 93
+Images : 16
+Packages : 0
+Correlation : 31
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 140
+Sqlite version
+SolutionPatientDataAdapter : 15
+Images : 0
+Packages : 0
+Correlation : 16
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 15
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 0
+Packages : 15
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 31
+Sqlite version
+SolutionPatientDataAdapter : 16
+Images : 16
+Packages : 0
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 31
+Total Time : 32
+Sqlite version
+SolutionPatientDataAdapter : 47
+Images : 15
+Packages : 16
+Correlation : 0
+Plans : 0
+Volumes : 0
+Segments : 0
+Test : 16
+Total Time : 78

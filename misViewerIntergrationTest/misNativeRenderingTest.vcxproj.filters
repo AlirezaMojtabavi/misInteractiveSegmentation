@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="glsl">
+      <UniqueIdentifier>{8e98b08b-1f91-428a-a7ea-e2cefe8e95a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsl\Image">
+      <UniqueIdentifier>{53d65455-dfa0-48b8-b72c-e49d24d66bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsl\Volume">
+      <UniqueIdentifier>{34c325f3-f3b7-4f98-8980-b28faca65172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsl\Volume\modules">
+      <UniqueIdentifier>{d4df7607-4cd2-49d5-860d-bad5aa7baa9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misSegmentationWithBrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\misNativeWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misReleaseTextureTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTextureQualityTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTransformTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misFpsVolumeTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misDicomPerformanceTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misCompositeMapperTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVoreenRepTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVolumeRenderingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSetFloatSlice01Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misLandmarkTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\mis3dRepresentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSimpleTextureCheckingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misPolydataTextureCheckingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misPolydataTfTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTransferFunctionTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVoreenTest2withddelay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVolumeCroppingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTestMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misToolAxesTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misStandardVolumeTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misDeformSliceRepTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misShiftScaleVolumeRepTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSinglePlaneMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\misImageSlicerAbstract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\misSeedCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVoreenSimpleTranformVolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misFrustumTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misLineWidgetTest3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misScrewGenerationTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVideoMapperTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageContainedPloyDattest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misNavigatorActorTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerWidgetIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerSimpleIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerPanTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTestOnrenderWindowWithTWorenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misCropImageWithROI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mis3DlandMarkAddingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misPolarisFrustumIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSimpleVolumeRendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSimplePackageViewerTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misColoredImageRenderingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSplineIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSurfaceGenerationTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerFuse2Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misVirtualTipToolRepTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSimple3DViewerTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misCorrectionBoxWidgetTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misChangeThresholdVolumeTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSimpleImageContourViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misOverlayActorIntgTest\misOverlayIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misOverlayIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSkinBoneCompositeTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misMRICOlormapRenderingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\header\misNew3DlandmarkAddingTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misDentalVolumeRenderingColormap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PackageDentalVolumeRenderingIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestVtkVolumeRendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleParametricFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misPlanNavigationVisualizerIngtTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misROIWigetTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misRemoveActorTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misExternalayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\header\SimpleStickerActorViewerTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misTorusToolRepTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misImageViewerLandMarkVisibilityTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screw3DCompundIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screw2DViewerIntgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misSegmentationWithBrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="simple-GLUT-log.html" />
+    <None Include="Buildlog.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="texture.raw">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Brush.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="misViewerIntergrationTest.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParsissData version="1">
+    <TransFuncIntensity type="TransFuncIntensity">
+		<Keys>
+            <key type="TransFuncMappingKey">
+                <intensity value="-900" />
+                <split value="false" />
+                <colorL r="255" g="250" b="220" a="0" />
+            </key>
+            <key type="TransFuncMappingKey">
+                <intensity value="-800" />
+                <split value="false" />
+                <colorL r="255" g="250" b="220" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="-400" />
+                <split value="false" />
+                <colorL r="255" g="250" b="220" a="1" />
+            </key>
+            <key type="TransFuncMappingKey">
+                <intensity value="250" />
+                <split value="false" />
+                <colorL r="255" g="250" b="220" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="500" />
+                <split value="false" />
+                <colorL r="255" g="230" b="225" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="501" />
+                <split value="false" />
+                <colorL r="255" g="219" b="225" a="1" />
+            </key>
+            <key type="TransFuncMappingKey">
+                <intensity value="1000" />
+                <split value="false" />
+                <colorL r="255" g="219" b="225" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="3000" />
+                <split value="false" />
+                <colorL r="211" g="168" b="255" a="1" />
+            </key>
+			<key type="TransFuncMappingKey">
+                <intensity value="5000" />
+                <split value="false" />
+                <colorL r="173" g="225" b="220" a="1" />
+            </key>
+						<key type="TransFuncMappingKey">
+                <intensity value="10000" />
+                <split value="false" />
+                <colorL r="173" g="225" b="220" a="1" />
+            </key>
+        </Keys>
+        <lower value="0.00000001" />
+        <upper value="1" />
+        <domain x="-1305.48010254" y="6999.60693359" />
+    </TransFuncIntensity>
+</ParsissData>

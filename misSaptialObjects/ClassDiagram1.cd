@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="misImageSlicerMapper" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WRNABAR5BJhUEDQTPQAMglAEgAAdAAEAHBEEEWQQFAw=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misImageSlicerMapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misCornerProperties" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YBAgoEAIAAhCBCRCoIRACALHB0AIEAFAsCAhRxCQ4Cg=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misCornerProperties.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misFollowerFixedArea" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAABBAAAIiAAAQICCAAAAAACAAAEEBAgARAgAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misFollowerFixedArea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misGeoActor" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAABAAAAAAACAAAAAAAAAABABAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGeoActor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misManModelActor" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAACAAAAAACAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misManModelActor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderForDistanceBasedOnSTL" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AQBQAAgAAAIAQCAgAAAACAAAAiAAAgAAAgAIACABAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderForDistanceBasedOnSTL.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misStickerModelActor" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAABBAQAAiYAgCICCAAAAIAAIAAEABAkAQABAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misStickerModelActor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuider" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAASAAABBAAAAiBAAAICKARAAIAAAgAEMJAgARgAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderBase" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACgAgBAEABAiAAASICIAAAAAAAAgAAEIAgAQAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderForAngle" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QIAWAEIAAAAAACAAAAIACQAAAAAAAgBAIBAQAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderForAngle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderForDistance" Collapsed="true">
+    <Position X="4.25" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAQAACAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderForDistance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misPlaneWidget" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misPlaneWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misPlaneDefinitionsStruct" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABACACIEAAICAAAAAAAAIAQQQAAAAAAACEAGIA4A=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misPlaneDefinitionsStruct.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misQuadMapperBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAACAAPQEAACAIIAClGQAEAAECAIAAAAI=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misQuadMapperBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misSegmentedObjectTransferFunction" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAARAABAAAQAAAAAAAAAACAAAAEAAAAAAACAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misSegmentedObjectTransferFunction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misTorus" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAAAAAAAAAgAAAAAgAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misTorus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misVideoMapper" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAICAiAQAQAAABAAABIAAAABEAAAAQAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misVideoMapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misViewDependentActor" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACCAAFBAAAAiQAAAISCAABAAAAAAAEEBAgARABAAA=</HashCode>
+      <FileName>misViewDependentActor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="misVideoStruct" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misVideoStruct.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="misVideoTextureProperties" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAACABABAogAIAAAACAAAgAIAAAgJIAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misVideoStruct.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="ImageContainedTransferFuncs" Collapsed="true">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misImageSlicerMapper.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PointType" Collapsed="true">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misQuadMapperBase.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="NavigatorGuiderPlace" Collapsed="true">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuider.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

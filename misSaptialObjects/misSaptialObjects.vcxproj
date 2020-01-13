@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF032416-1BF4-4627-837A-0D21862F64C4}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>misSaptialObjects</RootNamespace>
+    <ProjectName>misActorsAndMappers</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\ApplicationBusinessRules;..\Header\BusinessEntities;..\header\adapters;..\Header\ExtLibWrappers;../header;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <BrowseInformation>false</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\ApplicationBusinessRules;..\Header\BusinessEntities;..\header\adapters;..\Header\ExtLibWrappers;../header;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <BrowseInformation>true</BrowseInformation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\ApplicationBusinessRules;..\Header\BusinessEntities;..\header\adapters;..\Header\ExtLibWrappers;../header;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\ApplicationBusinessRules;..\Header\BusinessEntities;..\header\adapters;..\Header\ExtLibWrappers;../header;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\CreateMISRelease\glsl\eep_simple.frag" />
+    <None Include="..\CreateMISRelease\glsl\eep_simple.vert" />
+    <None Include="..\CreateMISRelease\glsl\panoramic.frag" />
+    <None Include="..\CreateMISRelease\glsl\panoramic.vert" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\ICornerProperties.h" />
+    <ClInclude Include="..\Header\IImageSlicerMapper.h" />
+    <ClInclude Include="..\Header\IShaderHeaderGenerator2D.h" />
+    <ClInclude Include="..\Header\misPlanNavigationVisualizer.h" />
+    <ClInclude Include="..\header\misCamera.h" />
+    <ClInclude Include="..\header\misCameraMacher.h" />
+    <ClInclude Include="..\Header\misCoaxialToriCollection.h" />
+    <ClInclude Include="..\Header\misImageSlicerMapper.h" />
+    <ClInclude Include="..\Header\misCornerProperties.h" />
+    <ClInclude Include="..\Header\misFollowerFixedArea.h" />
+    <ClInclude Include="..\Header\misGeoActor.h" />
+    <ClInclude Include="..\Header\misManModelActor.h" />
+    <ClInclude Include="..\Header\mis2DToolActor.h" />
+    <ClInclude Include="..\Header\misPanoramicMapper.h" />
+    <ClInclude Include="..\Header\misPlanMapper.h" />
+    <ClInclude Include="..\Header\misQuadGeometry.h" />
+    <ClInclude Include="..\Header\misShaderHeaderGeneratorforImageViewer.h" />
+    <ClInclude Include="..\Header\misStickerModelActor.h" />
+    <ClInclude Include="..\Header\misPlaneWidget.h" />
+    <ClInclude Include="..\Header\misPlaneDefinitionsStruct.h" />
+    <ClInclude Include="..\Header\misQuadMapperBase.h" />
+    <ClInclude Include="..\Header\misSegmentedObjectTransferFunction.h" />
+    <ClInclude Include="..\Header\misTorus.h" />
+    <ClInclude Include="..\Header\misVideoMapper.h" />
+    <ClInclude Include="..\Header\misVideoStruct.h" />
+    <ClInclude Include="..\Header\Mock2DRepresentation.h" />
+    <ClInclude Include="..\Header\MockCornerProperties.h" />
+    <ClInclude Include="..\Header\MockImageSlicerMapper.h" />
+    <ClInclude Include="misViewDependentActor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="misPlanNavigationVisualizer.cpp" />
+    <ClCompile Include="misCamera.cpp" />
+    <ClCompile Include="misCameraMacher.cpp" />
+    <ClCompile Include="misCoaxialToriCollection.cpp" />
+    <ClCompile Include="misImageSlicerMapper.cpp" />
+    <ClCompile Include="misCornerProperties.cpp" />
+    <ClCompile Include="misFollowerFixedArea.cpp" />
+    <ClCompile Include="misGeoActor.cpp" />
+    <ClCompile Include="misImageActor.cpp" />
+    <ClCompile Include="misManModelActor.cpp" />
+    <ClCompile Include="mis2DToolActor.cpp" />
+    <ClCompile Include="misPanoramicMapper.cpp" />
+    <ClCompile Include="misPlanMapper.cpp" />
+    <ClCompile Include="misQuadGeometry.cpp" />
+    <ClCompile Include="misShaderHeaderGeneratorForImageViewer.cpp" />
+    <ClCompile Include="misStickerModelActor.cpp" />
+    <ClCompile Include="misPlaneWidget.cpp" />
+    <ClCompile Include="misQuadMapperBase.cpp" />
+    <ClCompile Include="misSegmentedObjectTransferFunction.cpp" />
+    <ClCompile Include="misToolActor.cpp" />
+    <ClCompile Include="misTorus.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

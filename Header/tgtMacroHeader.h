@@ -1,0 +1,3 @@
+#ifndef TGTLIBMISDLLEXPORT
+#define TGTLIBMISDLLEXPORT
+#endif

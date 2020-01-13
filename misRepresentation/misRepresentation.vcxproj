@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F57356E7-5077-4AF7-B64E-426F2567E58C}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>misRepresentation</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header/igstk;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(SolutionDir)\Header\ExtLibWrappers</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header/igstk;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Header\ExtLibWrappers;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header/igstk;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header/igstk;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Representations.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\ApplicationBusinessRules\IVirtualTipBuilder.h" />
+    <ClInclude Include="..\Header\BusinessEntities\ILandmarkColor.h" />
+    <ClInclude Include="..\Header\BusinessEntities\LandmarkColor.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\BiopsyVirtualTipBuilder.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\GeneralVirtualTipBuilder.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\misExtensionVirtualTipBuilder.h" />
+    <ClInclude Include="..\Header\ILandMarkLabel.h" />
+    <ClInclude Include="..\Header\ILandmarkPointerRepresentation.h" />
+    <ClInclude Include="..\Header\IRepresentation.h" />
+    <ClInclude Include="..\Header\IVisibiltyHolder.h" />
+    <ClInclude Include="..\Header\IVolumeRepresentation.h" />
+    <ClInclude Include="..\header\misGenericToolShape.h" />
+    <ClInclude Include="..\Header\misImagePlaneInformationStrct.h" />
+    <ClInclude Include="..\header\misToolRepresentationExtension.h" />
+    <ClInclude Include="..\header\misToolRepresentationNonVirtual.h" />
+    <ClInclude Include="..\Header\misVisibiltyHolder.h" />
+    <ClInclude Include="..\Header\MockRepresentation.h" />
+    <ClInclude Include="..\Header\MockToolRepresentation.h" />
+    <ClInclude Include="..\header\ICoordinateSystemRenderer.h" />
+    <ClInclude Include="..\Header\IToolRepresentation.h" />
+    <ClInclude Include="..\header\IToolShapeBuilder.h" />
+    <ClInclude Include="..\Header\misAnnoatationGroupRep.h" />
+    <ClInclude Include="..\Header\misAnnotationRepresentation.h" />
+    <ClInclude Include="..\Header\misDepthIndicatorRepresentation.h" />
+    <ClInclude Include="..\Header\misDistanceRepresentation2D.h" />
+    <ClInclude Include="..\Header\misFrustumRepresentation.h" />
+    <ClInclude Include="..\Header\misPlanarRepresentation.h" />
+    <ClInclude Include="..\Header\misGpuVideoRepresentation.h" />
+    <ClInclude Include="..\Header\misLandMarkLabel.h" />
+    <ClInclude Include="..\Header\misLandmarkPointerRepresentation.h" />
+    <ClInclude Include="..\Header\misManModelrepresentation.h" />
+    <ClInclude Include="..\Header\misNavigationGuideObject.h" />
+    <ClInclude Include="..\Header\misNavigationState.h" />
+    <ClInclude Include="..\Header\misOrientationNavigationGuideObject.h" />
+    <ClInclude Include="..\Header\misPanoramicRepresentation.h" />
+    <ClInclude Include="..\Header\misPanoramicToolCoordSysRenderer.h" />
+    <ClInclude Include="..\Header\IPartialVolumeBaseRepresentation.h" />
+    <ClInclude Include="..\Header\misPlanAxisNavigationGuideObject.h" />
+    <ClInclude Include="..\Header\misPlanDepthNavigationGuideObject.h" />
+    <ClInclude Include="..\Header\misPlannedScrewSpatialObject.h" />
+    <ClInclude Include="..\Header\misPlanStartNavigationGuideObject.h" />
+    <ClInclude Include="..\Header\misPointLandMark.h" />
+    <ClInclude Include="..\Header\misRepresentation.h" />
+    <ClInclude Include="..\Header\misSeedRepresentation.h" />
+    <ClInclude Include="..\Header\misSpatialObject.h" />
+    <ClInclude Include="..\Header\misSpherePointLandmark.h" />
+    <ClInclude Include="..\Header\misStrct3DLayer.h" />
+    <ClInclude Include="..\Header\misSurfaceRepresentation.h" />
+    <ClInclude Include="..\Header\misTextRepresentation.h" />
+    <ClInclude Include="..\header\misToolCoordinateSystemRenderer.h" />
+    <ClInclude Include="..\Header\misToolRepresentation.h" />
+    <ClInclude Include="..\header\misToolShapeBuilder.h" />
+    <ClInclude Include="..\Header\misTrackingToolSpatialObject.h" />
+    <ClInclude Include="..\Header\misVoreenRepresentation.h" />
+    <ClInclude Include="..\header\misRepresentationContainer.h" />
+    <ClInclude Include="..\Header\MockToolShapeBuilder.h" />
+    <ClInclude Include="..\Header\MockVisibiltyHolder.h" />
+    <ClInclude Include="..\header\TargetingAnnotation.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BiopsyVirtualTipBuilder.cpp" />
+    <ClCompile Include="CameraPositionCalculatorFactory.cpp" />
+    <ClCompile Include="CameraPositionCalculatorSpine.cpp" />
+    <ClCompile Include="GeneralVirtualTipBuilder.cpp" />
+    <ClCompile Include="LandmarkColor.cpp" />
+    <ClCompile Include="misAnnoatationGroupRep.cpp" />
+    <ClCompile Include="misAnnotationRepresentation.cpp" />
+    <ClCompile Include="misDepthIndicatorRepresentation.cpp" />
+    <ClCompile Include="misDistanceRepresentation2D.cpp" />
+    <ClCompile Include="misExtensionVirtualTipBuilder.cpp" />
+    <ClCompile Include="misFrustumRepresentation.cpp" />
+    <ClCompile Include="misGenericToolShape.cpp" />
+    <ClCompile Include="misPanoramicRepresentation.cpp" />
+    <ClCompile Include="misPlanarRepresentation.cpp" />
+    <ClCompile Include="misImagePlaneInformationStrct.cpp" />
+    <ClCompile Include="misLandMarkLabel.cpp" />
+    <ClCompile Include="misLandmarkPointerRepresentation.cpp" />
+    <ClCompile Include="misManModelrepresentation.cpp" />
+    <ClCompile Include="misNavigationGuideObject.cpp" />
+    <ClCompile Include="misNavigationState.cpp" />
+    <ClCompile Include="misOrientationNavigationGuideObject.cpp" />
+    <ClCompile Include="misPanoramicToolCoordSysRenderer.cpp" />
+    <ClCompile Include="misPlanAxisNavigationGuideObject.cpp" />
+    <ClCompile Include="misPlanDepthNavigationGuideObject.cpp" />
+    <ClCompile Include="misPlannedScrewSpatialObject.cpp" />
+    <ClCompile Include="misPlanStartNavigationGuideObject.cpp" />
+    <ClCompile Include="misPointLandMark.cpp" />
+    <ClCompile Include="misRepresentation.cpp" />
+    <ClCompile Include="misRepresentationContainer.cpp" />
+    <ClCompile Include="misSeedRepresentation.cpp" />
+    <ClCompile Include="misSpatialObject.cpp" />
+    <ClCompile Include="misSpherePointLandmark.cpp" />
+    <ClCompile Include="misSurfaceRepresentation.cpp" />
+    <ClCompile Include="misTextRepresentation.cpp" />
+    <ClCompile Include="misToolCoordinateSystemRenderer.cpp" />
+    <ClCompile Include="misToolRepresentation.cpp" />
+    <ClCompile Include="misToolRepresentationExtension.cpp" />
+    <ClCompile Include="misToolShapeBuilder.cpp" />
+    <ClCompile Include="misToriBasedOrientationNavigationGuideObject.cpp" />
+    <ClCompile Include="misTrackingToolSpatialObject.cpp" />
+    <ClCompile Include="misVisibiltyHolder.cpp" />
+    <ClCompile Include="misVoreenRepresentation.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TargetingAnnotation.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

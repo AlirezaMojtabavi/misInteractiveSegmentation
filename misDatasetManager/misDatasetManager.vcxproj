@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7478955-40ED-4982-B807-09BB25E5493A}</ProjectGuid>
+    <RootNamespace>misDatasetManager</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Alikhani\solution\misSolution_2010\misSoloution\NavigationMediaViewer\bin\x86\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../Header/ExtLibWrappers;..\Header\;$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(GDCM2_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BrowseInformation>false</BrowseInformation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl />
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../header;$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../Header/ExtLibWrappers;..\Header\;$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(GDCM2_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl />
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../header;$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ColorMapBoneCT.cpp" />
+    <ClCompile Include="CTAllViewingColormap.cpp" />
+    <ClCompile Include="ctSinusViewingColorMap.cpp" />
+    <ClCompile Include="CTSkinFilledColorMap.cpp" />
+    <ClCompile Include="CTSkinTransparentColorMap.cpp" />
+    <ClCompile Include="DentalVolumeColormaps.cpp" />
+    <ClCompile Include="ImagePriorty.cpp" />
+    <ClCompile Include="misAnimalVolumeColormaps.cpp" />
+    <ClCompile Include="misColormapGeneratorFactory.cpp" />
+    <ClCompile Include="misCompeleteImageContainedPolydataDependensiesStrct.cpp" />
+    <ClCompile Include="misCompeleteImageDependensies.cpp" />
+    <ClCompile Include="misCompeletePlanDataDependensiesStrct.cpp" />
+    <ClCompile Include="misCompeletePolyDataDependensiesStrct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misConfirmedImageCounter.cpp" />
+    <ClCompile Include="misCreateCorrelatedPackageList.cpp" />
+    <ClCompile Include="misImageVisibiltyMapGenerator.cpp" />
+    <ClCompile Include="misPackageViewingExtractor.cpp" />
+    <ClCompile Include="misPackageVolumeUpdater.cpp" />
+    <ClCompile Include="misViewableElement.cpp" />
+    <ClCompile Include="misVolumeDataDependensies.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misCompositeDataPackage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misDataSetManager.cpp" />
+    <ClCompile Include="misDataSetManagerUtilities.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misDataSetsUtility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misImageContainedPolyDataStructs.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misImageUtilities.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misMRICOloredColorMap.cpp" />
+    <ClCompile Include="misNavigationPackageFinder.cpp" />
+    <ClCompile Include="misPackageViewingItemsStrct.cpp" />
+    <ClCompile Include="misRegistrationResult.cpp" />
+    <ClCompile Include="misSimpleDataPackage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misLandMarkBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misPlanData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misPolyData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misStandardMatrix.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misTFIAddressMapper.cpp" />
+    <ClCompile Include="misVertebraScrewPlanData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misVolumeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="misVolumeRenderingColorMaps.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ModalityToViewingtypeConverter.cpp" />
+    <ClCompile Include="MRAllViewingColorMap.cpp" />
+    <ClCompile Include="mrSinusViewingColorMap.cpp" />
+    <ClCompile Include="MRSkinFilledColorMap.cpp" />
+    <ClCompile Include="MRSkinTransparentColorMap.cpp" />
+    <ClCompile Include="PackagePlanRelFactory.cpp" />
+    <ClCompile Include="PackagePlanRelRepo.cpp" />
+    <ClCompile Include="PackageRepo.cpp" />
+    <ClCompile Include="PackageViewingExtractorFactory.cpp" />
+    <ClCompile Include="PlanFactory.cpp" />
+    <ClCompile Include="PlanRepo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VectorRotator.cpp" />
+    <ClCompile Include="VolumeFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\Adapters\PackagePlanRelRepo.h" />
+    <ClInclude Include="..\Header\Adapters\PackageRepo.h" />
+    <ClInclude Include="..\Header\Adapters\PlanRepo.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\MockPackagePlanRelFactory.h" />
+    <ClInclude Include="..\Header\BusinessEntities\MockPackagePlanRelRepo.h" />
+    <ClInclude Include="..\Header\BusinessEntities\MockPackageRepo.h" />
+    <ClInclude Include="..\Header\BusinessEntities\MockPlanRepo.h" />
+    <ClInclude Include="..\Header\ColorMapBoneCT.h" />
+    <ClInclude Include="..\header\ctSinusViewingColorMap.h" />
+    <ClInclude Include="..\Header\CTSkinFilledColorMap.h" />
+    <ClInclude Include="..\Header\CTSkinTransparentColorMap.h" />
+    <ClInclude Include="..\Header\DentalVolumeColormaps.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\PackagePlanRelFactory.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\PlanFactory.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\VectorRotator.h" />
+    <ClInclude Include="..\Header\IColorMapGenerator.h" />
+    <ClInclude Include="..\Header\ICompeleteImageContainedPolydataDependensiesStrct.h" />
+    <ClInclude Include="..\Header\IConfirmedImageCounter.h" />
+    <ClInclude Include="..\Header\ICreateCorrelatedPackageList.h" />
+    <ClInclude Include="..\Header\IDatasetManager.h" />
+    <ClInclude Include="..\Header\IImageContained.h" />
+    <ClInclude Include="..\header\ImagePriorty.h" />
+    <ClInclude Include="..\Header\IMRIColoredColorMap.h" />
+    <ClInclude Include="..\Header\INavigationPackageFinder.h" />
+    <ClInclude Include="..\Header\IPackageViewingExtractor.h" />
+    <ClInclude Include="..\Header\IPackageViewingExtractorFactory.h" />
+    <ClInclude Include="..\Header\IPackageVolumeUpdater.h" />
+    <ClInclude Include="..\Header\ISimpleDataPackage.h" />
+    <ClInclude Include="..\Header\IVolumeData.h" />
+    <ClInclude Include="..\Header\IVolumeFactory.h" />
+    <ClInclude Include="..\header\IVolumeRenderingColorMaps.h" />
+    <ClInclude Include="..\header\misAnimalVolumeColormaps.h" />
+    <ClInclude Include="..\header\misConfirmedImageCounter.h" />
+    <ClInclude Include="..\header\misCreateCorrelatedPackageList.h" />
+    <ClInclude Include="..\Header\misDataSetManager.h" />
+    <ClInclude Include="..\header\misImageVisibiltyMapGenerator.h" />
+    <ClInclude Include="..\header\misMRICOloredColorMap.h" />
+    <ClInclude Include="..\Header\misPackageViewingExtractor.h" />
+    <ClInclude Include="..\header\misPackageVolumeUpdater.h" />
+    <ClInclude Include="..\Header\misSimpleDataPackage.h" />
+    <ClInclude Include="..\Header\misCompeleteImageContainedPolydataDependensiesStrct.h" />
+    <ClInclude Include="..\Header\misCompeletePlanDataDependensiesStrct.h" />
+    <ClInclude Include="..\header\misCompeletePolyDataDependensiesStrct.h" />
+    <ClInclude Include="..\Header\misTest\MockPackageViewingExtractor.h" />
+    <ClInclude Include="..\Header\misTest\MockPackageViewingExtractorFactory.h" />
+    <ClInclude Include="..\header\misViewableElement.h" />
+    <ClInclude Include="..\header\misVolumeDataDependensies.h" />
+    <ClInclude Include="..\header\misCompositeDataPackage.h" />
+    <ClInclude Include="..\header\misDatasetMacroes.h" />
+    <ClInclude Include="..\header\misDataSetManagerUtilities.h" />
+    <ClInclude Include="..\header\misDataSetsUtility.h" />
+    <ClInclude Include="..\Header\misImageContainedPolyDataStructs.h" />
+    <ClInclude Include="..\Header\misImageUtilities.h" />
+    <ClInclude Include="..\Header\misPackageEnums.h" />
+    <ClInclude Include="..\Header\misPackageViewingItemsStrct.h" />
+    <ClInclude Include="..\Header\misPlanData.h" />
+    <ClInclude Include="..\Header\misImageCallback.h" />
+    <ClInclude Include="..\Header\misImageContained.h" />
+    <ClInclude Include="..\header\misLandMarkBase.h" />
+    <ClInclude Include="..\header\misLogger.h" />
+    <ClInclude Include="..\header\misMacros.h" />
+    <ClInclude Include="..\Header\misMaskImageData.h" />
+    <ClInclude Include="..\header\misPolyData.h" />
+    <ClInclude Include="..\header\misPrimaeryNeededHeader.h" />
+    <ClInclude Include="..\header\misSeconderyNeededHeader.h" />
+    <ClInclude Include="..\Header\misStandardMatrix.h" />
+    <ClInclude Include="..\header\misSTRCT.h" />
+    <ClInclude Include="..\Header\misStrctColorData.h" />
+    <ClInclude Include="..\header\misStrctDataSetManager.h" />
+    <ClInclude Include="..\header\misStrctDataSets.h" />
+    <ClInclude Include="..\header\misStrctVolumeData.h" />
+    <ClInclude Include="..\Header\misStructSolution.h" />
+    <ClInclude Include="..\header\misTableRangeSelector.h" />
+    <ClInclude Include="..\Header\misTFIAddressMapper.h" />
+    <ClInclude Include="..\header\misTransparentSkinColormaps.h" />
+    <ClInclude Include="..\Header\misTripleColorStrct.h" />
+    <ClInclude Include="..\Header\misVertebraScrewPlanData.h" />
+    <ClInclude Include="..\Header\misVolumeData.h" />
+    <ClInclude Include="..\Header\misVolumeRenderingColorMaps.h" />
+    <ClInclude Include="..\Header\MockConfirmedImageCounter.h" />
+    <ClInclude Include="..\Header\MockImage.h" />
+    <ClInclude Include="..\Header\MockSimpleDataPackage.h" />
+    <ClInclude Include="..\Header\MockTFIAddressMapper.h" />
+    <ClInclude Include="..\header\ModalityToViewingtypeConverter.h" />
+    <ClInclude Include="..\header\mrSinusViewingColorMap.h" />
+    <ClInclude Include="..\Header\PackageListViewingType.h" />
+    <ClInclude Include="..\Header\PackageViewingExtractorFactory.h" />
+    <ClInclude Include="..\header\VolumeFactory.h" />
+    <ClInclude Include="CTAllViewingColormap.h" />
+    <ClInclude Include="MRAllViewingColorMap.h" />
+    <ClInclude Include="MRSkinFilledColorMap.h" />
+    <ClInclude Include="MRSkinTransparentColorMap.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

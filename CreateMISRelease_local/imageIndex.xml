@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ParsissData version="1">
+    <misImageIndexData>
+        <PatientName value="Patient 1:ABASI   GELALE(1,F )" />
+        <StudyDescription value="Study 1:NAV (6,20120501)" />
+        <SerieDescription value="Serie 2:0.625mm (CT,382,No-Acquisition Date)" />
+        <patientindex value="0" />
+        <studyindex value="0" />
+        <serieindex value="1" />
+        <imageindex value="-1" />
+    </misImageIndexData>
+</ParsissData>

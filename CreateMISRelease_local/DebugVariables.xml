@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<debugData>
+<variables>
+  <HeadRestNeighborNumber>
+   6
+  </HeadRestNeighborNumber>
+
+  <LandmarkLableOffset>
+    0.9
+  </LandmarkLableOffset>
+  <cameraDistance>
+    -50
+  </cameraDistance>
+  <xDistance>
+    -50
+  </xDistance>
+  <yDistance>
+    200
+  </yDistance>
+  <zDistance>
+    -50
+  </zDistance>
+  <labelDistance>
+    40
+  </labelDistance>
+  <lndViewDistance>
+    250
+  </lndViewDistance>
+  <mrThresold>0.04</mrThresold>
+  <TestImageInReg>
+   0.0
+  </TestImageInReg>
+  <TestSurfaceWithI>
+   0
+  </TestSurfaceWithI>
+
+  <TestLoadCapturedPointFromFile>
+    0.0
+  </TestLoadCapturedPointFromFile>
+  <LoadIsoDataFromFile>
+    0.0
+  </LoadIsoDataFromFile>
+  <navigationTest>
+    0.0
+  </navigationTest>
+  <memReleasedByImage>
+    20
+  </memReleasedByImage>
+  <exportTooldata>1.0</exportTooldata>
+  <AddIso>
+    0.0
+  </AddIso>
+  <FixedAlpha>
+    70.
+  </FixedAlpha>
+  <MovingAlpha>
+    255.0
+  </MovingAlpha>
+  <UseVtkVolumeRendering>
+   0.0
+  </UseVtkVolumeRendering>
+  <attachCameraToTool>
+    0.0
+  </attachCameraToTool>
+  <displayVTKWarning>
+    0.0
+  </displayVTKWarning>
+  <voreenRendering>
+    0
+  </voreenRendering>
+  <comPort>
+    6
+  </comPort>
+  <showToolAcAxes>
+  0.0
+  </showToolAcAxes>
+  <exportTooldata>
+    1.0
+  </exportTooldata>
+  <Capture>
+    0.0
+  </Capture>
+<fillValue>
+  6000.0
+</fillValue>
+  <videoAddressTempSet>
+    0.0
+  </videoAddressTempSet>
+  <ShowCaptureConsole>
+    0.0
+  </ShowCaptureConsole>
+  <Test>
+    1.0
+  </Test>
+  <SaveIsoSurface>
+    1.0
+  </SaveIsoSurface>
+
+  <MatrixDimension>3</MatrixDimension>
+</variables>
+  <strings>
+    <workspace1>
+      1VolumeDicom.vws
+    </workspace1>
+    <workspace2>
+      2Volumes.vws
+    </workspace2>
+  </strings>
+
+  <!--use part number value of xmls as value of these 3 fields-->
+  <targetTool>Tool2</targetTool>
+
+  <RefrenceTool>Reference</RefrenceTool>
+ 
+  <RobotEndEffector>Tool1</RobotEndEffector>
+  <!--<TrackerTool>Tool1</TrackerTool>-->
+  
+  
+  
+  <!--<targetTool>long3New</targetTool>
+
+    <RefrenceTool>NewRef</RefrenceTool>
+
+    <TrackerTool>short3N2</TrackerTool>-->
+
+
+  <RobotPointFile>D:/ROBOT_TEST/data.txt</RobotPointFile>
+  <RobotPointResultFile>D:/ROBOT_TEST/dataRESULT.txt</RobotPointResultFile>
+
+
+
+</debugData>

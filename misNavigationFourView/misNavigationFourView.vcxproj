@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7214FFD2-D773-475B-9DB7-8BAC2C28F694}</ProjectGuid>
+    <RootNamespace>misNavigationFourView</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\tgtLib\tgt;$(SolutionDir)\\tgtLib;$(VTK_PATH);$(ITK_PATH);../header;../header/interactionStyleHeader;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\base\processors\image;$(SolutionDir)\voreen-src-2.6.1-win64\ext\tgt\glut;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\geometry;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\base\processors\proxygeometry;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\volume;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\dicom;$(SolutionDir)\voreen-src-2.6.1-win64\include;$(SolutionDir)\voreen-src-2.6.1-win64\ext\;$(SolutionDir)\voreen-src-2.6.1-win64\ext\glew\include\GL;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\preprocessor;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\glsl;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\generator;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\annotations;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\cmdparser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\properties\link;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\properties;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\processors;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\ports;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\plotting\parser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\plotting;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\network;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io\serialization\meta;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io\serialization;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\interaction;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\animation\interpolation;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\animation;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\volume\bricking;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\transfunc;$(SolutionDir)\voreen-src-2.6.1-win64\ext\tgt\event;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Header\ExtLibWrappers;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header;../header/voreen;$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <BrowseInformation>false</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Header\ExtLibWrappers;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header;../header/voreen;$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BiopsyToolRepresentationDecider.cpp" />
+    <ClCompile Include="ImageBoundingMerger.cpp" />
+    <ClCompile Include="mis2DImageRenderingAdapter.cpp" />
+    <ClCompile Include="mis3DImageRenderer.cpp" />
+    <ClCompile Include="mis3DPackageTransformUpdater.cpp" />
+    <ClCompile Include="misBiopsyNavigationLayout.cpp" />
+    <ClCompile Include="misCMFNavigationLayout.cpp" />
+    <ClCompile Include="misDefaultVolumeRenderer.cpp" />
+    <ClCompile Include="misDirectionStringConevrtor.cpp" />
+    <ClCompile Include="misDistributionMap.cpp" />
+    <ClCompile Include="misENTBraineNavigationLayoutFactory.cpp" />
+    <ClCompile Include="misGroupViewer.cpp" />
+    <ClCompile Include="misGroupViewerFactory.cpp" />
+    <ClCompile Include="misGroupViewerSettingFinder.cpp" />
+    <ClCompile Include="misGroupViewerSetting.cpp" />
+    <ClCompile Include="misImagePositionUpdater.cpp" />
+    <ClCompile Include="misN4VStateVarible.cpp" />
+    <ClCompile Include="misPackage2DDataRenderingAdapter.cpp" />
+    <ClCompile Include="mis2DPackageTransformUpdater.cpp" />
+    <ClCompile Include="misPackage3DDataRenderingAdapter.cpp" />
+    <ClCompile Include="misPackageDataRenderingAdapter.cpp" />
+    <ClCompile Include="misRepresentationFactory.cpp" />
+    <ClCompile Include="misSpineNavigationLayout.cpp" />
+    <ClCompile Include="misTrackerImageSynchronizer.cpp" />
+    <ClCompile Include="misUpdateViewPortToOblique.cpp" />
+    <ClCompile Include="misUpdateViewPortToStandard.cpp" />
+    <ClCompile Include="misViewElementGroup.cpp" />
+    <ClCompile Include="misViewerFactory.cpp" />
+    <ClCompile Include="misViewingWindowElement.cpp" />
+    <ClCompile Include="misVolumeCropping.cpp" />
+    <ClCompile Include="misVolumeRenderingStrategy.cpp" />
+    <ClCompile Include="misWidgetColorReader.cpp" />
+    <ClCompile Include="misWidgetConfigure.cpp" />
+    <ClCompile Include="RangeMapper.cpp" />
+    <ClCompile Include="ScrewPlanView.cpp" />
+    <ClCompile Include="ShowImagesAdapter2D.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ToolRepresentationDecider.cpp" />
+    <ClCompile Include="UpdatePlaneVisibilitiy.cpp" />
+    <ClCompile Include="VolumeViewerInitilizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\Adapters\IGroupViewerFactory.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\IImageBoundingMerger.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\ImageBoundingMerger.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\ImageBoundingProperty.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\IRangeMapper.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\RangeMapper.h" />
+    <ClInclude Include="..\Header\I2DImageRenderingAdapter.h" />
+    <ClInclude Include="..\Header\I3DImageRenderer.h" />
+    <ClInclude Include="..\Header\ICompeleteImageDependencies.h" />
+    <ClInclude Include="..\Header\IDefaultVolumeRenderer.h" />
+    <ClInclude Include="..\Header\IGroupViewerSettingFinder.h" />
+    <ClInclude Include="..\Header\IImageToTextureMap.h" />
+    <ClInclude Include="..\Header\IOblqueView.h" />
+    <ClInclude Include="..\Header\IPackage2DDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\IPackage3DDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\IPackageViewerAbstract.h" />
+    <ClInclude Include="..\Header\IRepresentationFactory.h" />
+    <ClInclude Include="..\Header\IShowImagesAdapter2D.h" />
+    <ClInclude Include="..\Header\IUpdateViewPortToOblique.h" />
+    <ClInclude Include="..\Header\IUpdateViewPortToStandard.h" />
+    <ClInclude Include="..\Header\IViewerFactory.h" />
+    <ClInclude Include="..\Header\IVolumeDataDependency.h" />
+    <ClInclude Include="..\Header\IGroupViewerSetting.h" />
+    <ClInclude Include="..\Header\IImagePositionUpdater.h" />
+    <ClInclude Include="..\Header\IPackageTransformUpdater.h" />
+    <ClInclude Include="..\Header\IPackageDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\IViewerRepository.h" />
+    <ClInclude Include="..\Header\IVolumeSlicerEvents.h" />
+    <ClInclude Include="..\Header\IVolumeViewerInitilizer.h" />
+    <ClInclude Include="..\Header\IWidgetConfigure.h" />
+    <ClInclude Include="..\header\mis2DImageRenderingAdapter.h" />
+    <ClInclude Include="..\header\mis3DImageRenderer.h" />
+    <ClInclude Include="..\Header\mis3DPackageTransformUpdater.h" />
+    <ClInclude Include="..\header\misBiopsyNavigationLayout.h" />
+    <ClInclude Include="..\Header\misCMFNavigationLayout.h" />
+    <ClInclude Include="..\Header\misDataBoundstr.h" />
+    <ClInclude Include="..\header\misDefaultVolumeRenderer.h" />
+    <ClInclude Include="..\header\misDirectionStringConevrtor.h" />
+    <ClInclude Include="..\Header\misDistributionEvent.h" />
+    <ClInclude Include="..\Header\misDistributionMap.h" />
+    <ClInclude Include="..\Header\misENTBraineNavigationLayoutFactory.h" />
+    <ClInclude Include="..\Header\misGroupViewer.h" />
+    <ClInclude Include="..\header\misGroupViewerFactory.h" />
+    <ClInclude Include="..\Header\misGroupViewerSettingFinder.h" />
+    <ClInclude Include="..\Header\misGroupViewerSetting.h" />
+    <ClInclude Include="..\header\misImagePositionUpdater.h" />
+    <ClInclude Include="..\Header\misN4VStateVariable.h" />
+    <ClInclude Include="..\header\misPackage2DDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\misPackagePanoramicDataRenderingAdapter.h" />
+    <ClInclude Include="..\header\mis2DPackageTransformUpdater.h" />
+    <ClInclude Include="..\Header\misPackage3DDataRenderingAdapter.h" />
+    <ClInclude Include="..\header\misPackageDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\misPlaneContrast.h" />
+    <ClInclude Include="..\Header\misDistributionStruct.h" />
+    <ClInclude Include="..\header\misRepresentationFactory.h" />
+    <ClInclude Include="..\Header\misSurgeryDirectionViewerType.h" />
+    <ClInclude Include="..\Header\misSurgeryType.h" />
+    <ClInclude Include="..\Header\misTest\MockPackage3DDataRenderingAdapter.h" />
+    <ClInclude Include="..\header\misTrackerImageSynchronizer.h" />
+    <ClInclude Include="..\header\misUpdateViewPortToOblique.h" />
+    <ClInclude Include="..\Header\misUpdateViewPortToStandard.h" />
+    <ClInclude Include="..\header\misViewElementGroup.h" />
+    <ClInclude Include="..\Header\misViewerFactory.h" />
+    <ClInclude Include="..\header\misVolumeRenderingStrategy.h" />
+    <ClInclude Include="..\header\misWidgetColorReader.h" />
+    <ClInclude Include="..\header\misWidgetConfigure.h" />
+    <ClInclude Include="..\Header\Mock2DImageRenderingAdapter.h" />
+    <ClInclude Include="..\Header\MockCompeleteImageDependencies.h" />
+    <ClInclude Include="..\Header\MockGroupViewerSetting.h" />
+    <ClInclude Include="..\Header\MockGroupViewerSettingFinder.h" />
+    <ClInclude Include="..\Header\MockImageToTextureMap.h" />
+    <ClInclude Include="..\Header\MockPackageDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\MockPackageViewer.h" />
+    <ClInclude Include="..\Header\MockViewerRepository.h" />
+    <ClInclude Include="..\Header\MockVolumeDataDependensies.h" />
+    <ClInclude Include="..\header\ShowImagesAdapter2D.h" />
+    <ClInclude Include="..\header\UpdatePlaneVisibilitiy.h" />
+    <ClInclude Include="..\Header\VolumeViewerInitilizer.h" />
+    <ClInclude Include="IVolumeRenderingStrategy.h" />
+    <ClInclude Include="misSpineNavigationLayout.h" />
+    <ClInclude Include="misViewingWindowElement.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76865111-47AA-4A7E-8A6E-780ABED7C8E3}</ProjectGuid>
+    <RootNamespace>misNativeRenderingTest</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>misViewerIntergrationTest</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</PreBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Header/BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;../Header/Adapters;../header/voreen;$(GDCM_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(DCMTK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(TINYXML2_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;UNICODE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <BrowseInformation>true</BrowseInformation>
+      <LanguageStandard>
+      </LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(VTK_LIBS_DBG);$(ITK_LIBS_DBG);$(DCMTK_LIBS_DBG);$(GLEW_LIBS_DBG);$(SYSTEM_LIBS_DBG);$(TINYXML2_LIBS_DBG);$(GDCM_LIBS_DBG);$(GDCM2_LIBS_DBG);$(GRAPHIC_LIBS_DBG);$(LIBZIP_LIBS_DBG);$(CRYPTO_LIBS_DBG);misIO.lib;BasicDataTypes.lib;misGeneralUtilities.lib;CoreSystemServices.lib;misBasicUtilities.lib;misProjectSettingLib.lib;misCommon.lib;misDcmtkWrapper.lib;misImageConvertor.lib;misMTCu.lib;misSerializationLib.lib;misTinyXmlLib.lib;tgtLib.lib;misPreID.lib;misStrCommands.lib;misLibrary.lib;misMathLibrary.lib;tgtlib.lib;voreen_core.lib;misAppVal.lib;Ry4S_X64.lib;misIOIntrgrationTest.lib;misIntegrationTestTools.lib;misGuiEvents.lib;DataAccess.lib;misImageContainedPolyDatas.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(VTK_LIB_DIR_DBG);$(ITK_LIB_DIR_DBG);$(DCMTK_LIB_DIR_DBG);$(GLEW_LIB_DIR_DBG);$(MISEXT_LIB_DIR_DBG);$(BOOST_LIB_DIR_DBG);$(GRAPHIC_LIB_DIR_DBG);$(TINYXML2_LIB_DIR_DBG);$(GDCM_LIB_DIR_DBG);$(GDCM2_LIB_DIR_DBG);$(LIBZIP_LIB_DIR_DBG);$(CRYPTO_LIB_DIR_DBG);$(R4S_LIB_DIR_DBG);E:\misSoloution\LIB</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../Header/BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;../Header/Adapters;../header/voreen;$(GDCM_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(DCMTK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(TINYXML2_INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalDependencies>$(VTK_LIBS_RLS);$(ITK_LIBS_RLS);$(DCMTK_LIBS_RLS);$(GLEW_LIBS_RLS);$(MISEXT_LIBS_RLS);$(SYSTEM_LIBS_RLS);$(TINYXML2_LIBS_RLS);$(GDCM_LIBS_RLS);$(GDCM2_LIBS_RLS);$(GRAPHIC_LIBS_RLS);$(CRYPTO_LIBS_RLS);Ry4S_X64.lib;voreen_core.lib;misLibrary.lib;misMathLibrary.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VTK_LIB_DIR_RLS);$(ITK_LIB_DIR_RLS);$(DCMTK_LIB_DIR_RLS);$(GLEW_LIB_DIR_RLS);$(MISEXT_LIB_DIR_RLS);$(BOOST_LIB_DIR_RLS);$(GRAPHIC_LIB_DIR_RLS);$(TINYXML2_LIB_DIR_RLS);$(GDCM_LIB_DIR_RLS);$(GDCM2_LIB_DIR_RLS);$(CRYPTO_LIB_DIR_RLS);$(R4S_LIB_DIR_RLS)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="misSegmentationWithBrush.cpp" />
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\mis3dRepresentation.h" />
+    <ClInclude Include="..\Header\misImageSlicerAbstract.h" />
+    <ClInclude Include="..\header\misNew3DlandmarkAddingTest.h" />
+    <ClInclude Include="..\Header\misSeedCallback.h" />
+    <ClInclude Include="..\header\SimpleStickerActorViewerTest.h" />
+    <ClInclude Include="..\misOverlayActorIntgTest\misOverlayIntgTest.h" />
+    <ClInclude Include="misExternalayer.h" />
+    <ClInclude Include="misImageViewerLandMarkVisibilityTest.h" />
+    <ClInclude Include="misPlanNavigationVisualizerIngtTest.h" />
+    <ClInclude Include="misRemoveActorTest.h" />
+    <ClInclude Include="misROIWigetTest.h" />
+    <ClInclude Include="misSegmentationWithBrush.h" />
+    <ClInclude Include="misTorusToolRepTest.h" />
+    <ClInclude Include="PackageDentalVolumeRenderingIntgTest.h" />
+    <ClInclude Include="mis3DlandMarkAddingTest.h" />
+    <ClInclude Include="misChangeThresholdVolumeTest.h" />
+    <ClInclude Include="misColoredImageRenderingTest.h" />
+    <ClInclude Include="misCompositeMapperTest.h" />
+    <ClInclude Include="misCorrectionBoxWidgetTest.h" />
+    <ClInclude Include="misCropImageWithROI.h" />
+    <ClInclude Include="misDeformSliceRepTest.h" />
+    <ClInclude Include="misDentalVolumeRenderingColormap.h" />
+    <ClInclude Include="misDicomPerformanceTest.h" />
+    <ClInclude Include="misFpsVolumeTest.h" />
+    <ClInclude Include="misFrustumTest.h" />
+    <ClInclude Include="misImageContainedPloyDattest.h" />
+    <ClInclude Include="misImageViewerFuse2Image.h" />
+    <ClInclude Include="misImageViewerPanTest.h" />
+    <ClInclude Include="misImageViewerTest.h" />
+    <ClInclude Include="misImageViewerWidgetIntgTest.h" />
+    <ClInclude Include="misLandmarkTest.h" />
+    <ClInclude Include="misLineWidgetTest3d.h" />
+    <ClInclude Include="..\Header\misNativeWindow.h" />
+    <ClInclude Include="misMRICOlormapRenderingTest.h" />
+    <ClInclude Include="misNavigatorActorTest.h" />
+    <ClInclude Include="misOverlayIntgTest.h" />
+    <ClInclude Include="misPolarisFrustumIntgTest.h" />
+    <ClInclude Include="misPolydataTextureCheckingTest.h" />
+    <ClInclude Include="misPolydataTfTest.h" />
+    <ClInclude Include="misReleaseTextureTest.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Screw2DViewerIntgTest.h" />
+    <ClInclude Include="Screw3DCompundIntgTest.h" />
+    <ClInclude Include="misScrewGenerationTest.h" />
+    <ClInclude Include="misSetFloatSlice01Test.h" />
+    <ClInclude Include="misShiftScaleVolumeRepTest.h" />
+    <ClInclude Include="misSimple3DViewerTest.h" />
+    <ClInclude Include="misSimpleImageContourViewer.h" />
+    <ClInclude Include="misSimpleTextureCheckingTest.h" />
+    <ClInclude Include="misSimpleVolumeRendering.h" />
+    <ClInclude Include="misSimplePackageViewerTest.h" />
+    <ClInclude Include="misSinglePlaneMapper.h" />
+    <ClInclude Include="misImageViewerSimpleIntgTest.h" />
+    <ClInclude Include="misSkinBoneCompositeTest.h" />
+    <ClInclude Include="misSplineIntgTest.h" />
+    <ClInclude Include="misStandardVolumeTest.h" />
+    <ClInclude Include="misSurfaceGenerationTest.h" />
+    <ClInclude Include="misTestMapper.h" />
+    <ClInclude Include="misTestOnrenderWindowWithTWorenderer.h" />
+    <ClInclude Include="misTextureQualityTest.h" />
+    <ClInclude Include="misToolAxesTest.h" />
+    <ClInclude Include="misTransferFunctionTest.h" />
+    <ClInclude Include="misTransformTexture.h" />
+    <ClInclude Include="misVideoMapperTest.h" />
+    <ClInclude Include="misVirtualTipToolRepTest.h" />
+    <ClInclude Include="misVolumeCroppingTest.h" />
+    <ClInclude Include="misVolumeRenderingTest.h" />
+    <ClInclude Include="misVoreenRepTest.h" />
+    <ClInclude Include="misVoreenSimpleTranformVolume.h" />
+    <ClInclude Include="misVoreenTest2withddelay.h" />
+    <ClInclude Include="SampleParametricFunction.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestVtkVolumeRendering.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Brush.cur" />
+    <None Include="Buildlog.glsl" />
+    <None Include="cursor2.cur" />
+    <None Include="simple-GLUT-log.html" />
+    <None Include="ReadMe.txt" />
+    <None Include="texture.raw" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneralBusinessRules\GeneralBusinessRules.vcxproj">
+      <Project>{3067594f-7201-4631-871f-d2917f02ebd2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misDatasetManager\misDatasetManager.vcxproj">
+      <Project>{b7478955-40ed-4982-b807-09bb25e5493a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misGUIModel\misGUIModel.vcxproj">
+      <Project>{3b20bdba-7fbe-4026-adf4-23b4b08d2c95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misNavigationFourView\misNavigationFourView.vcxproj">
+      <Project>{7214ffd2-d773-475b-9db7-8bac2c28f694}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misRendering\misRendering.vcxproj">
+      <Project>{25130ded-0705-45b3-80d4-39284783976f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misRepresentation\misRepresentation.vcxproj">
+      <Project>{f57356e7-5077-4af7-b64e-426f2567e58c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misSaptialObjects\misSaptialObjects.vcxproj">
+      <Project>{af032416-1bf4-4627-837a-0d21862f64c4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misSegmentationLib\misSegmentationLib.vcxproj">
+      <Project>{da9238af-b5fd-4bfb-a02e-9d2e163e158e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misTexture\misTexture.vcxproj">
+      <Project>{51f36fb4-b713-4408-8ffb-f8af39e6a445}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misViewer\misViewer.vcxproj">
+      <Project>{c7ee4f90-3967-45b2-8812-74e366dc99e3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misVisualization\misVisualization.vcxproj">
+      <Project>{63eacfb0-42c9-4caa-a87e-17bd6e492d4c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\misVoreenMappers\misVoreenMappers.vcxproj">
+      <Project>{9eaa9d12-9c0c-4395-8bca-bfc9ecc56eb9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\misWidget\misWidget.vcxproj">
+      <Project>{3ddb422b-a723-4752-9418-bcf45286f33a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="misViewerIntergrationTest.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

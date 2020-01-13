@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <BOOST_INCLUDE_DIR>C:\Program Files\Boost\include\boost-1_68;C:\Program Files\Boost\include</BOOST_INCLUDE_DIR>
+    <BOOST_LIB_DIR_DBG>C:\Program Files\Boost\lib</BOOST_LIB_DIR_DBG>
+    <BOOST_LIB_DIR_RLS>C:\Program Files\Boost\lib</BOOST_LIB_DIR_RLS>
+    <BOOST_LIBS_DBG>libboost_program_options-vc141-mt-gd-x64-1_68.lib;libboost_unit_test_framework-vc141-mt-gd-x64-1_68.lib</BOOST_LIBS_DBG>
+    <BOOST_LIBS_RLS>libboost_program_options-vc141-mt-x64-1_68.lib;libboost_unit_test_framework-vc141-mt-x64-1_68.lib</BOOST_LIBS_RLS>
+    <DCMTK_INCLUDE_DIR>C:\Program Files\DCMTK\include</DCMTK_INCLUDE_DIR>
+    <DCMTK_LIB_DIR_DBG>C:\Program Files\DCMTK\lib.Debug</DCMTK_LIB_DIR_DBG>
+    <DCMTK_LIB_DIR_RLS>C:\Program Files\DCMTK\lib.Release</DCMTK_LIB_DIR_RLS>
+    <DCMTK_LIBS_DBG>charls.lib;dcmjpls.lib;dcmpstat.lib;oflog.lib;dcmjpeg.lib;dcmdata.lib;dcmnet.lib;ofstd.lib;ijg8.lib;ijg12.lib;ijg16.lib;libi2d.lib;dcmwlm.lib;dcmtls.lib;dcmsr.lib;dcmqrdb.lib;dcmimgle.lib;dcmimage.lib;dcmdsig.lib;</DCMTK_LIBS_DBG>
+    <DCMTK_LIBS_RLS>charls.lib;dcmjpls.lib;dcmpstat.lib;oflog.lib;dcmjpeg.lib;dcmdata.lib;dcmnet.lib;ofstd.lib;ijg8.lib;ijg12.lib;ijg16.lib;libi2d.lib;dcmwlm.lib;dcmtls.lib;dcmsr.lib;dcmqrdb.lib;dcmimgle.lib;dcmimage.lib;dcmdsig.lib;</DCMTK_LIBS_RLS>
+    <GDCM_INCLUDE_DIR>C:\Program Files\GDCM\include\gdcm-1.2</GDCM_INCLUDE_DIR>
+    <GDCM_LIB_DIR_DBG>C:\Program Files\GDCM\lib.Debug</GDCM_LIB_DIR_DBG>
+    <GDCM_LIB_DIR_RLS>C:\Program Files\GDCM\lib.Release</GDCM_LIB_DIR_RLS>
+    <GDCM_LIBS_DBG>gdcm.lib;gdcmjpeg12.lib;gdcmjpeg16.lib;gdcmjpeg8.lib;gdcmopenjpeg.lib</GDCM_LIBS_DBG>
+    <GDCM_LIBS_RLS>gdcm.lib;gdcmjpeg12.lib;gdcmjpeg16.lib;gdcmjpeg8.lib;gdcmopenjpeg.lib</GDCM_LIBS_RLS>
+    <GDCM2_INCLUDE_DIR>C:\Program Files\GDCM-2.8.8\include\gdcm-2.8</GDCM2_INCLUDE_DIR>
+    <GDCM2_LIB_DIR_DBG>C:\Program Files\GDCM-2.8.8\lib.Debug</GDCM2_LIB_DIR_DBG>
+    <GDCM2_LIB_DIR_RLS>C:\Program Files\GDCM-2.8.8\lib.Release</GDCM2_LIB_DIR_RLS>
+    <GDCM2_LIBS_DBG>gdcmcharls.lib;gdcmCommon.lib;gdcmDICT.lib;gdcmDSED.lib;gdcmexpat.lib;gdcmgetopt.lib;gdcmIOD.lib;gdcmjpeg12.lib;gdcmjpeg16.lib;gdcmjpeg8.lib;gdcmMEXD.lib;gdcmMSFF.lib;gdcmopenjp2.lib;gdcmzlib.lib;socketxx.lib</GDCM2_LIBS_DBG>
+    <GDCM2_LIBS_RLS>gdcmcharls.lib;gdcmCommon.lib;gdcmDICT.lib;gdcmDSED.lib;gdcmexpat.lib;gdcmgetopt.lib;gdcmIOD.lib;gdcmjpeg12.lib;gdcmjpeg16.lib;gdcmjpeg8.lib;gdcmMEXD.lib;gdcmMSFF.lib;gdcmopenjp2.lib;gdcmzlib.lib;socketxx.lib</GDCM2_LIBS_RLS>
+    <GLEW_INCLUDE_DIR>C:\Program Files\glew\include</GLEW_INCLUDE_DIR>
+    <GLEW_LIB_DIR_DBG>C:\Program Files\glew\lib.Debug</GLEW_LIB_DIR_DBG>
+    <GLEW_LIB_DIR_RLS>C:\Program Files\glew\lib.Release</GLEW_LIB_DIR_RLS>
+    <GLEW_LIBS_DBG>libglew32d.lib</GLEW_LIBS_DBG>
+    <GLEW_LIBS_RLS>libglew32.lib</GLEW_LIBS_RLS>
+    <ITK_INCLUDE_DIR>C:\Program Files\ITK\include\ITK-4.13</ITK_INCLUDE_DIR>
+    <ITK_LIB_DIR_DBG>C:\Program Files\ITK\lib.Debug</ITK_LIB_DIR_DBG>
+    <ITK_LIB_DIR_RLS>C:\Program Files\ITK\lib.Release</ITK_LIB_DIR_RLS>
+    <ITK_LIBS_DBG>ITKBiasCorrection-4.13.lib;ITKBioCell-4.13.lib;ITKCommon-4.13.lib;ITKDeprecated-4.13.lib;ITKDICOMParser-4.13.lib;itkdouble-conversion-4.13.lib;ITKEXPAT-4.13.lib;ITKFEM-4.13.lib;ITKgiftiio-4.13.lib;ITKIOBioRad-4.13.lib;ITKIOBMP-4.13.lib;ITKIOCSV-4.13.lib;ITKIOGE-4.13.lib;ITKIOGIPL-4.13.lib;ITKIOHDF5-4.13.lib;ITKIOImageBase-4.13.lib;ITKIOIPL-4.13.lib;ITKIOJPEG-4.13.lib;ITKIOLSM-4.13.lib;ITKIOMesh-4.13.lib;ITKIOMeta-4.13.lib;ITKIOMRC-4.13.lib;ITKIONIFTI-4.13.lib;ITKIONRRD-4.13.lib;ITKIOPNG-4.13.lib;ITKIOSiemens-4.13.lib;ITKIOSpatialObjects-4.13.lib;ITKIOStimulate-4.13.lib;ITKIOTIFF-4.13.lib;ITKIOTransformBase-4.13.lib;ITKIOTransformHDF5-4.13.lib;ITKIOTransformInsightLegacy-4.13.lib;ITKIOTransformMatlab-4.13.lib;ITKIOVTK-4.13.lib;ITKIOXML-4.13.lib;itkjpeg-4.13.lib;ITKKLMRegionGrowing-4.13.lib;ITKLabelMap-4.13.lib;ITKMesh-4.13.lib;ITKMetaIO-4.13.lib;itknetlib-4.13.lib;itkNetlibSlatec-4.13.lib;ITKniftiio-4.13.lib;ITKNrrdIO-4.13.lib;ITKOptimizers-4.13.lib;ITKOptimizersv4-4.13.lib;ITKPath-4.13.lib;itkpng-4.13.lib;ITKPolynomials-4.13.lib;ITKQuadEdgeMesh-4.13.lib;ITKSpatialObjects-4.13.lib;ITKStatistics-4.13.lib;itksys-4.13.lib;itktestlib-4.13.lib;itktiff-4.13.lib;ITKTransform-4.13.lib;ITKTransformFactory-4.13.lib;itkv3p_netlib-4.13.lib;itkvcl-4.13.lib;ITKVideoCore-4.13.lib;ITKVideoIO-4.13.lib;itkvnl-4.13.lib;ITKVNLInstantiation-4.13.lib;itkvnl_algo-4.13.lib;ITKVTK-4.13.lib;ITKVtkGlue-4.13.lib;ITKWatersheds-4.13.lib;itkzlib-4.13.lib;ITKznz-4.13.lib</ITK_LIBS_DBG>
+    <ITK_LIBS_RLS>ITKBiasCorrection-4.13.lib;ITKBioCell-4.13.lib;ITKCommon-4.13.lib;ITKDeprecated-4.13.lib;ITKDICOMParser-4.13.lib;itkdouble-conversion-4.13.lib;ITKEXPAT-4.13.lib;ITKFEM-4.13.lib;ITKgiftiio-4.13.lib;ITKIOBioRad-4.13.lib;ITKIOBMP-4.13.lib;ITKIOCSV-4.13.lib;ITKIOGE-4.13.lib;ITKIOGIPL-4.13.lib;ITKIOHDF5-4.13.lib;ITKIOImageBase-4.13.lib;ITKIOIPL-4.13.lib;ITKIOJPEG-4.13.lib;ITKIOLSM-4.13.lib;ITKIOMesh-4.13.lib;ITKIOMeta-4.13.lib;ITKIOMRC-4.13.lib;ITKIONIFTI-4.13.lib;ITKIONRRD-4.13.lib;ITKIOPNG-4.13.lib;ITKIOSiemens-4.13.lib;ITKIOSpatialObjects-4.13.lib;ITKIOStimulate-4.13.lib;ITKIOTIFF-4.13.lib;ITKIOTransformBase-4.13.lib;ITKIOTransformHDF5-4.13.lib;ITKIOTransformInsightLegacy-4.13.lib;ITKIOTransformMatlab-4.13.lib;ITKIOVTK-4.13.lib;ITKIOXML-4.13.lib;itkjpeg-4.13.lib;ITKKLMRegionGrowing-4.13.lib;ITKLabelMap-4.13.lib;ITKMesh-4.13.lib;ITKMetaIO-4.13.lib;itknetlib-4.13.lib;itkNetlibSlatec-4.13.lib;ITKniftiio-4.13.lib;ITKNrrdIO-4.13.lib;ITKOptimizers-4.13.lib;ITKOptimizersv4-4.13.lib;ITKPath-4.13.lib;itkpng-4.13.lib;ITKPolynomials-4.13.lib;ITKQuadEdgeMesh-4.13.lib;ITKSpatialObjects-4.13.lib;ITKStatistics-4.13.lib;itksys-4.13.lib;itktestlib-4.13.lib;itktiff-4.13.lib;ITKTransform-4.13.lib;ITKTransformFactory-4.13.lib;itkv3p_netlib-4.13.lib;itkvcl-4.13.lib;ITKVideoCore-4.13.lib;ITKVideoIO-4.13.lib;itkvnl-4.13.lib;ITKVNLInstantiation-4.13.lib;itkvnl_algo-4.13.lib;ITKVTK-4.13.lib;ITKVtkGlue-4.13.lib;ITKWatersheds-4.13.lib;itkzlib-4.13.lib;ITKznz-4.13.lib</ITK_LIBS_RLS>
+    <ITK_GDCM_LIBS_DBG>itkgdcmcharls-4.13.lib;itkgdcmCommon-4.13.lib;itkgdcmDICT-4.13.lib;itkgdcmDSED-4.13.lib;itkgdcmIOD-4.13.lib;itkgdcmjpeg12-4.13.lib;itkgdcmjpeg16-4.13.lib;itkgdcmjpeg8-4.13.lib;itkgdcmMEXD-4.13.lib;itkgdcmMSFF-4.13.lib;itkgdcmopenjp2-4.13.lib;itkgdcmsocketxx-4.13.lib;ITKIOGDCM-4.13.lib</ITK_GDCM_LIBS_DBG>
+    <ITK_GDCM_LIBS_RLS>itkgdcmcharls-4.13.lib;itkgdcmCommon-4.13.lib;itkgdcmDICT-4.13.lib;itkgdcmDSED-4.13.lib;itkgdcmIOD-4.13.lib;itkgdcmjpeg12-4.13.lib;itkgdcmjpeg16-4.13.lib;itkgdcmjpeg8-4.13.lib;itkgdcmMEXD-4.13.lib;itkgdcmMSFF-4.13.lib;itkgdcmopenjp2-4.13.lib;itkgdcmsocketxx-4.13.lib;ITKIOGDCM-4.13.lib</ITK_GDCM_LIBS_RLS>
+    <MISEXT_INCLUDE_DIR>$(SolutionDir)header\misTest;$(SolutionDir)header\Pacs;$(SolutionDir)header\voreen;$(SolutionDir)header\ProjectConfig;$(SolutionDir)header\common;$(SolutionDir)header\tgt;$(SolutionDir)header\IO;$(SolutionDir)header\MTC;$(SolutionDir)header\License</MISEXT_INCLUDE_DIR>
+    <MISEXT_LIB_DIR_DBG>$(OutDir)</MISEXT_LIB_DIR_DBG>
+    <MISEXT_LIB_DIR_RLS>$(OutDir)</MISEXT_LIB_DIR_RLS>
+    <MISEXT_LIBS_DBG>misPacs.lib;misIO.lib;BasicDataTypes.lib;misGeneralUtilities.lib;CoreSystemServices.lib;misBasicUtilities.lib;misProjectSettingLib.lib;misCommon.lib;misDcmtkWrapper.lib;misImageConvertor.lib;misMTCu.lib;misPacsCore.lib;misSerializationLib.lib;misTinyXmlLib.lib;tgtLib.lib;MisAppVal.lib;misPreID.lib;misStrCommands.lib;</MISEXT_LIBS_DBG>
+    <MISEXT_LIBS_RLS>misPacs.lib;misIO.lib;BasicDataTypes.lib;misGeneralUtilities.lib;CoreSystemServices.lib;misBasicUtilities.lib;misProjectSettingLib.lib;misCommon.lib;misDcmtkWrapper.lib;misImageConvertor.lib;misMTCu.lib;misPacsCore.lib;misSerializationLib.lib;misTinyXmlLib.lib;tgtLib.lib;MisAppVal.lib;misPreID.lib;misStrCommands.lib;</MISEXT_LIBS_RLS>
+    <TINYXML2_INCLUDE_DIR>C:\Program Files\tinyxml2\include</TINYXML2_INCLUDE_DIR>
+    <TINYXML2_LIB_DIR_DBG>C:\Program Files\tinyxml2\lib.Debug</TINYXML2_LIB_DIR_DBG>
+    <TINYXML2_LIB_DIR_RLS>C:\Program Files\tinyxml2\lib.Release</TINYXML2_LIB_DIR_RLS>
+    <TINYXML2_LIBS_DBG>tinyxml2.lib</TINYXML2_LIBS_DBG>
+    <TINYXML2_LIBS_RLS>tinyxml2.lib</TINYXML2_LIBS_RLS>
+    <VTK_INCLUDE_DIR>C:\Program Files\VTK\include\vtk-8.1</VTK_INCLUDE_DIR>
+    <VTK_LIB_DIR_DBG>C:\Program Files\VTK\lib.Debug</VTK_LIB_DIR_DBG>
+    <VTK_LIB_DIR_RLS>C:\Program Files\VTK\lib.Release</VTK_LIB_DIR_RLS>
+    <VTK_LIBS_DBG>vtkalglib-8.1.lib;vtkChartsCore-8.1.lib;vtkCommonColor-8.1.lib;vtkCommonComputationalGeometry-8.1.lib;vtkCommonCore-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonSystem-8.1.lib;vtkCommonTransforms-8.1.lib;vtkDICOM-8.1.lib;vtkDomainsChemistry-8.1.lib;vtkexoIIc-8.1.lib;vtkexpat-8.1.lib;vtkFiltersAMR-8.1.lib;vtkFiltersCore-8.1.lib;vtkFiltersExtraction-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkFiltersGeneric-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkFiltersHybrid-8.1.lib;vtkFiltersHyperTree-8.1.lib;vtkFiltersImaging-8.1.lib;vtkFiltersModeling-8.1.lib;vtkFiltersParallel-8.1.lib;vtkFiltersParallelImaging-8.1.lib;vtkFiltersProgrammable-8.1.lib;vtkFiltersSelection-8.1.lib;vtkFiltersSMP-8.1.lib;vtkFiltersSources-8.1.lib;vtkFiltersStatistics-8.1.lib;vtkFiltersTexture-8.1.lib;vtkFiltersVerdict-8.1.lib;vtkfreetype-8.1.lib;vtkGeovisCore-8.1.lib;vtkgl2ps-8.1.lib;vtkhdf5-8.1.lib;vtkhdf5_hl-8.1.lib;vtkImagingColor-8.1.lib;vtkImagingCore-8.1.lib;vtkImagingFourier-8.1.lib;vtkImagingGeneral-8.1.lib;vtkImagingHybrid-8.1.lib;vtkImagingMath-8.1.lib;vtkImagingMorphological-8.1.lib;vtkImagingSources-8.1.lib;vtkImagingStatistics-8.1.lib;vtkImagingStencil-8.1.lib;vtkInfovisCore-8.1.lib;vtkInfovisLayout-8.1.lib;vtkInteractionImage-8.1.lib;vtkInteractionStyle-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkIOAMR-8.1.lib;vtkIOCore-8.1.lib;vtkIOEnSight-8.1.lib;vtkIOExodus-8.1.lib;vtkIOExport-8.1.lib;vtkIOGeometry-8.1.lib;vtkIOImage-8.1.lib;vtkIOImport-8.1.lib;vtkIOInfovis-8.1.lib;vtkIOLegacy-8.1.lib;vtkIOLSDyna-8.1.lib;vtkIOMINC-8.1.lib;vtkIOMovie-8.1.lib;vtkIONetCDF-8.1.lib;vtkIOParallel-8.1.lib;vtkIOParallelXML-8.1.lib;vtkIOPLY-8.1.lib;vtkIOSQL-8.1.lib;vtkIOVideo-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkjpeg-8.1.lib;vtkjsoncpp-8.1.lib;vtklibxml2-8.1.lib;vtkmetaio-8.1.lib;vtkoggtheora-8.1.lib;vtkParallelCore-8.1.lib;vtkpng-8.1.lib;vtkproj4-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkRenderingContext2D-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkRenderingGL2PS-8.1.lib;vtkRenderingImage-8.1.lib;vtkRenderingLabel-8.1.lib;vtkRenderingLIC-8.1.lib;vtkRenderingLOD-8.1.lib;vtkRenderingOpenGL-8.1.lib;vtkRenderingVolume-8.1.lib;vtkRenderingVolumeOpenGL-8.1.lib;vtksqlite-8.1.lib;vtksys-8.1.lib;vtktiff-8.1.lib;vtkverdict-8.1.lib;vtkViewsContext2D-8.1.lib;vtkViewsCore-8.1.lib;vtkViewsInfovis-8.1.lib;vtkzlib-8.1.lib</VTK_LIBS_DBG>
+    <VTK_LIBS_RLS>vtkalglib-8.1.lib;vtkChartsCore-8.1.lib;vtkCommonColor-8.1.lib;vtkCommonComputationalGeometry-8.1.lib;vtkCommonCore-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonSystem-8.1.lib;vtkCommonTransforms-8.1.lib;vtkDICOM-8.1.lib;vtkDomainsChemistry-8.1.lib;vtkexoIIc-8.1.lib;vtkexpat-8.1.lib;vtkFiltersAMR-8.1.lib;vtkFiltersCore-8.1.lib;vtkFiltersExtraction-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkFiltersGeneric-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkFiltersHybrid-8.1.lib;vtkFiltersHyperTree-8.1.lib;vtkFiltersImaging-8.1.lib;vtkFiltersModeling-8.1.lib;vtkFiltersParallel-8.1.lib;vtkFiltersParallelImaging-8.1.lib;vtkFiltersProgrammable-8.1.lib;vtkFiltersSelection-8.1.lib;vtkFiltersSMP-8.1.lib;vtkFiltersSources-8.1.lib;vtkFiltersStatistics-8.1.lib;vtkFiltersTexture-8.1.lib;vtkFiltersVerdict-8.1.lib;vtkfreetype-8.1.lib;vtkGeovisCore-8.1.lib;vtkgl2ps-8.1.lib;vtkhdf5-8.1.lib;vtkhdf5_hl-8.1.lib;vtkImagingColor-8.1.lib;vtkImagingCore-8.1.lib;vtkImagingFourier-8.1.lib;vtkImagingGeneral-8.1.lib;vtkImagingHybrid-8.1.lib;vtkImagingMath-8.1.lib;vtkImagingMorphological-8.1.lib;vtkImagingSources-8.1.lib;vtkImagingStatistics-8.1.lib;vtkImagingStencil-8.1.lib;vtkInfovisCore-8.1.lib;vtkInfovisLayout-8.1.lib;vtkInteractionImage-8.1.lib;vtkInteractionStyle-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkIOAMR-8.1.lib;vtkIOCore-8.1.lib;vtkIOEnSight-8.1.lib;vtkIOExodus-8.1.lib;vtkIOExport-8.1.lib;vtkIOGeometry-8.1.lib;vtkIOImage-8.1.lib;vtkIOImport-8.1.lib;vtkIOInfovis-8.1.lib;vtkIOLegacy-8.1.lib;vtkIOLSDyna-8.1.lib;vtkIOMINC-8.1.lib;vtkIOMovie-8.1.lib;vtkIONetCDF-8.1.lib;vtkIOParallel-8.1.lib;vtkIOParallelXML-8.1.lib;vtkIOPLY-8.1.lib;vtkIOSQL-8.1.lib;vtkIOVideo-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkjpeg-8.1.lib;vtkjsoncpp-8.1.lib;vtklibxml2-8.1.lib;vtkmetaio-8.1.lib;vtkoggtheora-8.1.lib;vtkParallelCore-8.1.lib;vtkpng-8.1.lib;vtkproj4-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkRenderingContext2D-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkRenderingGL2PS-8.1.lib;vtkRenderingImage-8.1.lib;vtkRenderingLabel-8.1.lib;vtkRenderingLIC-8.1.lib;vtkRenderingLOD-8.1.lib;vtkRenderingOpenGL-8.1.lib;vtkRenderingVolume-8.1.lib;vtkRenderingVolumeOpenGL-8.1.lib;vtksqlite-8.1.lib;vtksys-8.1.lib;vtktiff-8.1.lib;vtkverdict-8.1.lib;vtkViewsContext2D-8.1.lib;vtkViewsCore-8.1.lib;vtkViewsInfovis-8.1.lib;vtkzlib-8.1.lib</VTK_LIBS_RLS>
+    <DIRECT_SHOW_SAMPLES_INCLUDE_DIR>C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\common;C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses</DIRECT_SHOW_SAMPLES_INCLUDE_DIR>
+    <DIRECT_SHOW_SAMPLES_LIB_DIR_DBG>C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\x64\Debug</DIRECT_SHOW_SAMPLES_LIB_DIR_DBG>
+    <DIRECT_SHOW_SAMPLES_LIB_DIR_RLS>C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\x64\Release</DIRECT_SHOW_SAMPLES_LIB_DIR_RLS>
+    <DIRECT_SHOW_SAMPLES_LIBS_DBG>strmbasd.lib</DIRECT_SHOW_SAMPLES_LIBS_DBG>
+    <DIRECT_SHOW_SAMPLES_LIBS_RLS>strmbase.lib</DIRECT_SHOW_SAMPLES_LIBS_RLS>
+    <GRAPHIC_LIB_DIR_DBG>C:\Program Files\Graphic Libs\lib.Debug</GRAPHIC_LIB_DIR_DBG>
+    <GRAPHIC_LIB_DIR_RLS>C:\Program Files\Graphic Libs\lib.Release</GRAPHIC_LIB_DIR_RLS>
+    <GRAPHIC_LIBS_DBG>DevIL.lib;freeglut.lib;GLAUX.LIB;glut32.lib;glut64.lib;ILU.lib;ILUT.lib;shrUtils32D.lib</GRAPHIC_LIBS_DBG>
+    <GRAPHIC_LIBS_RLS>DevIL.lib;freeglut.lib;GLAUX.LIB;glut32.lib;glut64.lib;ILU.lib;ILUT.lib;shrUtils32D.lib</GRAPHIC_LIBS_RLS>
+    <PACSDEP_INCLUDE_DIR>C:\Program Files\PACSDep\include</PACSDEP_INCLUDE_DIR>
+    <PACSDEP_LIB_DIR_DBG>C:\Program Files\PACSDep\lib.Debug</PACSDEP_LIB_DIR_DBG>
+    <PACSDEP_LIB_DIR_RLS>C:\Program Files\PACSDep\lib.Release</PACSDEP_LIB_DIR_RLS>
+    <PACSDEP_LIBS_DBG>cairo.lib;libcurl_imp.lib;libeay32.lib;ssleay32.lib</PACSDEP_LIBS_DBG>
+    <PACSDEP_LIBS_RLS>cairo.lib;libcurl_imp.lib;libeay32.lib;ssleay32.lib</PACSDEP_LIBS_RLS>
+    <MICRONTRACKER_INCLUDE_DIR>C:\Program Files\ClaroNav\MicronTracker\Dist64</MICRONTRACKER_INCLUDE_DIR>
+    <MICRONTRACKER_LIB_DIR_DBG>C:\Program Files\ClaroNav\MicronTracker\Dist64</MICRONTRACKER_LIB_DIR_DBG>
+    <MICRONTRACKER_LIB_DIR_RLS>C:\Program Files\ClaroNav\MicronTracker\Dist64</MICRONTRACKER_LIB_DIR_RLS>
+    <MICRONTRACKER_LIBS_DBG>MTC.lib</MICRONTRACKER_LIBS_DBG>
+    <MICRONTRACKER_LIBS_RLS>MTC.lib</MICRONTRACKER_LIBS_RLS>
+    <ASCN_INCLUDE_DIR>C:\Program Files\ASCN\include</ASCN_INCLUDE_DIR>
+    <ASCN_LIB_DIR_DBG>C:\Program Files\ASCN\lib.Debug</ASCN_LIB_DIR_DBG>
+    <ASCN_LIB_DIR_RLS>C:\Program Files\ASCN\lib.Release</ASCN_LIB_DIR_RLS>
+    <ASCN_LIBS_DBG>ATC3DG.lib;ATC3DG64.lib</ASCN_LIBS_DBG>
+    <ASCN_LIBS_RLS>ATC3DG.lib;ATC3DG64.lib</ASCN_LIBS_RLS>
+    <PWXWIDGET_INCLUDE_DIR>C:\Program Files\PWXWidget\include</PWXWIDGET_INCLUDE_DIR>
+    <PWXWIDGET_LIB_DIR_DBG>C:\Program Files\PWXWidget\lib.Debug</PWXWIDGET_LIB_DIR_DBG>
+    <PWXWIDGET_LIB_DIR_RLS>C:\Program Files\PWXWidget\lib.Release</PWXWIDGET_LIB_DIR_RLS>
+    <PWXWIDGET_LIBS_DBG>wxbase28d_xml.lib;wxbase28ud.lib;wxbase28ud_net.lib;wxbase28ud_odbc.lib;wxbase28ud_xml.lib;wxexpatd.lib;wxjpegd.lib;wxmsw28d_xrc.lib;wxmsw28ud_adv.lib;wxmsw28ud_aui.lib;wxmsw28ud_core.lib;wxmsw28ud_dbgrid.lib;wxmsw28ud_gl.lib;wxmsw28ud_html.lib;wxmsw28ud_media.lib;wxmsw28ud_qa.lib;wxmsw28ud_richtext.lib;wxmsw28ud_xrc.lib;wxpngd.lib;wxregexud.lib;wxtiffd.lib;wxzlibd.lib</PWXWIDGET_LIBS_DBG>
+    <PWXWIDGET_LIBS_RLS>wxbase28u.lib;wxbase28u_net.lib;wxbase28u_odbc.lib;wxbase28u_xml.lib;wxexpat.lib;wxjpeg.lib;wxmsw28u_adv.lib;wxmsw28u_aui.lib;wxmsw28u_core.lib;wxmsw28u_dbgrid.lib;wxmsw28u_gl.lib;wxmsw28u_html.lib;wxmsw28u_media.lib;wxmsw28u_qa.lib;wxmsw28u_richtext.lib;wxmsw28u_xrc.lib;wxpng.lib;wxregexu.lib;wxtiff.lib;wxzlib.lib</PWXWIDGET_LIBS_RLS>
+    <SQLITE_INCLUDE_DIR>C:\Program Files\Sqlite3\include</SQLITE_INCLUDE_DIR>
+    <SQLITE_LIB_DIR_DBG>C:\Program Files\Sqlite3\lib.Debug</SQLITE_LIB_DIR_DBG>
+    <SQLITE_LIB_DIR_RLS>C:\Program Files\Sqlite3\lib.Release</SQLITE_LIB_DIR_RLS>
+    <SQLITE_LIBS_DBG>sqlite3.lib</SQLITE_LIBS_DBG>
+    <SQLITE_LIBS_RLS>sqlite3.lib</SQLITE_LIBS_RLS>
+    <LIBZIP_INCLUDE_DIR>C:\Program Files\libzip\include</LIBZIP_INCLUDE_DIR>
+    <PROTEST_INCLUDE_DIR>C:\Program Files\ProTest</PROTEST_INCLUDE_DIR>
+    <LIBZIP_INCLUDE_DIR_DBG>C:\Program Files\libzip\lib.Debug\libzip\include</LIBZIP_INCLUDE_DIR_DBG>
+    <LIBZIP_INCLUDE_DIR_RLS>C:\Program Files\libzip\lib.Release\libzip\include</LIBZIP_INCLUDE_DIR_RLS>
+    <LIBZIP_LIB_DIR_DBG>C:\Program Files\libzip\lib.Debug</LIBZIP_LIB_DIR_DBG>
+    <LIBZIP_LIB_DIR_RLS>C:\Program Files\libzip\lib.Release</LIBZIP_LIB_DIR_RLS>
+    <LIBZIP_LIBS_DBG>zip.lib</LIBZIP_LIBS_DBG>
+    <LIBZIP_LIBS_RLS>zip.lib</LIBZIP_LIBS_RLS>
+    <SYSTEM_LIBS_DBG>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;Rpcrt4.lib;ole32.lib;oleaut32.lib;comdlg32.lib;advapi32.lib;comctl32.lib;vfw32.lib;uuid.lib;Netapi32.lib;VERSION.LIB;gdiplus.lib;setupapi.lib;wsock32.lib;d3d9.lib;snmpapi.lib;glu32.lib;Wbemuuid.lib;Psapi.lib;opengl32.lib;Ws2_32.lib;Crypt32.lib;legacy_stdio_definitions.lib</SYSTEM_LIBS_DBG>
+    <SYSTEM_LIBS_RLS>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;Rpcrt4.lib;ole32.lib;oleaut32.lib;comdlg32.lib;advapi32.lib;comctl32.lib;vfw32.lib;uuid.lib;Netapi32.lib;VERSION.LIB;gdiplus.lib;setupapi.lib;wsock32.lib;d3d9.lib;snmpapi.lib;glu32.lib;Wbemuuid.lib;Psapi.lib;opengl32.lib;Ws2_32.lib;Crypt32.lib;legacy_stdio_definitions.lib</SYSTEM_LIBS_RLS>
+    <PACSGDCM_LIBS_DBG>C:\Program Files\GDCM\lib.Debug\gdcmjpeg8.lib;C:\Program Files\GDCM\lib.Debug\gdcmjpeg12.lib;C:\Program Files\GDCM\lib.Debug\gdcmjpeg16.lib;C:\Program Files\GDCM\lib.Debug\gdcm.lib;C:\Program Files\GDCM\lib.Debug\gdcmopenjpeg.lib</PACSGDCM_LIBS_DBG>
+    <PACSGDCM_LIBS_RLS>C:\Program Files\GDCM\lib.Release\gdcmjpeg8.lib;C:\Program Files\GDCM\lib.Release\gdcmjpeg12.lib;C:\Program Files\GDCM\lib.Release\gdcmjpeg16.lib;C:\Program Files\GDCM\lib.Release\gdcm.lib;C:\Program Files\GDCM\lib.Release\gdcmopenjpeg.lib</PACSGDCM_LIBS_RLS>
+    <R4S_INCLUDE_DIR>C:\Program Files\R4S\include</R4S_INCLUDE_DIR>
+    <R4S_LIB_DIR_DBG>C:\Program Files\R4S\lib.Debug</R4S_LIB_DIR_DBG>
+    <R4S_LIB_DIR_RLS>C:\Program Files\R4S\lib.Release</R4S_LIB_DIR_RLS>
+    <R4S_LIBS_DBG>Ry4S_X64.lib</R4S_LIBS_DBG>
+    <R4S_LIBS_RLS>Ry4S_X64.lib</R4S_LIBS_RLS>
+    <CRYPTO_INCLUDE_DIR>C:\Program Files\Crypto\include</CRYPTO_INCLUDE_DIR>
+    <CRYPTO_LIB_DIR_DBG>C:\Program Files\Crypto\lib.Debug</CRYPTO_LIB_DIR_DBG>
+    <CRYPTO_LIB_DIR_RLS>C:\Program Files\Crypto\lib.Release</CRYPTO_LIB_DIR_RLS>
+    <CRYPTO_LIBS_DBG>cryptlib.lib</CRYPTO_LIBS_DBG>
+    <CRYPTO_LIBS_RLS>cryptlib.lib</CRYPTO_LIBS_RLS>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="BOOST_INCLUDE_DIR">
+      <Value>$(BOOST_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_LIB_DIR_DBG">
+      <Value>$(BOOST_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_LIB_DIR_RLS">
+      <Value>$(BOOST_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_LIBS_DBG">
+      <Value>$(BOOST_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_LIBS_RLS">
+      <Value>$(BOOST_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DCMTK_INCLUDE_DIR">
+      <Value>$(DCMTK_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DCMTK_LIB_DIR_DBG">
+      <Value>$(DCMTK_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DCMTK_LIB_DIR_RLS">
+      <Value>$(DCMTK_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DCMTK_LIBS_DBG">
+      <Value>$(DCMTK_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DCMTK_LIBS_RLS">
+      <Value>$(DCMTK_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM_INCLUDE_DIR">
+      <Value>$(GDCM_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM_LIB_DIR_DBG">
+      <Value>$(GDCM_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM_LIB_DIR_RLS">
+      <Value>$(GDCM_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM_LIBS_DBG">
+      <Value>$(GDCM_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM_LIBS_RLS">
+      <Value>$(GDCM_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM2_INCLUDE_DIR">
+      <Value>$(GDCM2_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM2_LIB_DIR_DBG">
+      <Value>$(GDCM2_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM2_LIB_DIR_RLS">
+      <Value>$(GDCM2_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM2_LIBS_DBG">
+      <Value>$(GDCM2_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GDCM2_LIBS_RLS">
+      <Value>$(GDCM2_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GLEW_INCLUDE_DIR">
+      <Value>$(GLEW_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GLEW_LIB_DIR_DBG">
+      <Value>$(GLEW_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GLEW_LIB_DIR_RLS">
+      <Value>$(GLEW_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GLEW_LIBS_DBG">
+      <Value>$(GLEW_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GLEW_LIBS_RLS">
+      <Value>$(GLEW_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_INCLUDE_DIR">
+      <Value>$(ITK_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_LIB_DIR_DBG">
+      <Value>$(ITK_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_LIB_DIR_RLS">
+      <Value>$(ITK_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_LIBS_DBG">
+      <Value>$(ITK_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_LIBS_RLS">
+      <Value>$(ITK_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MISEXT_INCLUDE_DIR">
+      <Value>$(MISEXT_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MISEXT_LIB_DIR_DBG">
+      <Value>$(MISEXT_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MISEXT_LIB_DIR_RLS">
+      <Value>$(MISEXT_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MISEXT_LIBS_DBG">
+      <Value>$(MISEXT_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MISEXT_LIBS_RLS">
+      <Value>$(MISEXT_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TINYXML2_INCLUDE_DIR">
+      <Value>$(TINYXML2_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TINYXML2_LIB_DIR_DBG">
+      <Value>$(TINYXML2_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TINYXML2_LIB_DIR_RLS">
+      <Value>$(TINYXML2_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TINYXML2_LIBS_DBG">
+      <Value>$(TINYXML2_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TINYXML2_LIBS_RLS">
+      <Value>$(TINYXML2_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_GDCM_LIBS_DBG">
+      <Value>$(ITK_GDCM_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ITK_GDCM_LIBS_RLS">
+      <Value>$(ITK_GDCM_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VTK_INCLUDE_DIR">
+      <Value>$(VTK_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VTK_LIB_DIR_DBG">
+      <Value>$(VTK_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VTK_LIB_DIR_RLS">
+      <Value>$(VTK_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VTK_LIBS_DBG">
+      <Value>$(VTK_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VTK_LIBS_RLS">
+      <Value>$(VTK_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DIRECT_SHOW_SAMPLES_INCLUDE_DIR">
+      <Value>$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DIRECT_SHOW_SAMPLES_LIB_DIR_DBG">
+      <Value>$(DIRECT_SHOW_SAMPLES_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DIRECT_SHOW_SAMPLES_LIB_DIR_RLS">
+      <Value>$(DIRECT_SHOW_SAMPLES_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DIRECT_SHOW_SAMPLES_LIBS_DBG">
+      <Value>$(DIRECT_SHOW_SAMPLES_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DIRECT_SHOW_SAMPLES_LIBS_RLS">
+      <Value>$(DIRECT_SHOW_SAMPLES_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GRAPHIC_LIB_DIR_DBG">
+      <Value>$(GRAPHIC_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GRAPHIC_LIB_DIR_RLS">
+      <Value>$(GRAPHIC_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GRAPHIC_LIBS_DBG">
+      <Value>$(GRAPHIC_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GRAPHIC_LIBS_RLS">
+      <Value>$(GRAPHIC_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSDEP_INCLUDE_DIR">
+      <Value>$(PACSDEP_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSDEP_LIB_DIR_DBG">
+      <Value>$(PACSDEP_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSDEP_LIB_DIR_RLS">
+      <Value>$(PACSDEP_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSDEP_LIBS_DBG">
+      <Value>$(PACSDEP_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSDEP_LIBS_RLS">
+      <Value>$(PACSDEP_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ASCN_INCLUDE_DIR">
+      <Value>$(ASCN_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ASCN_LIB_DIR_DBG">
+      <Value>$(ASCN_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ASCN_LIB_DIR_RLS">
+      <Value>$(ASCN_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ASCN_LIBS_DBG">
+      <Value>$(ASCN_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ASCN_LIBS_RLS">
+      <Value>$(ASCN_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PWXWIDGET_INCLUDE_DIR">
+      <Value>$(PWXWIDGET_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PWXWIDGET_LIB_DIR_DBG">
+      <Value>$(PWXWIDGET_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PWXWIDGET_LIB_DIR_RLS">
+      <Value>$(PWXWIDGET_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PWXWIDGET_LIBS_DBG">
+      <Value>$(PWXWIDGET_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PWXWIDGET_LIBS_RLS">
+      <Value>$(PWXWIDGET_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SYSTEM_LIBS_DBG">
+      <Value>$(SYSTEM_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SYSTEM_LIBS_RLS">
+      <Value>$(SYSTEM_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSGDCM_LIBS_DBG">
+      <Value>$(PACSGDCM_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACSGDCM_LIBS_RLS">
+      <Value>$(PACSGDCM_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE_INCLUDE_DIR">
+      <Value>$(SQLITE_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE_LIB_DIR_DBG">
+      <Value>$(SQLITE_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE_LIB_DIR_RLS">
+      <Value>$(SQLITE_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE_LIBS_DBG">
+      <Value>$(SQLITE_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE_LIBS_RLS">
+      <Value>$(SQLITE_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MICRONTRACKER_INCLUDE_DIR">
+      <Value>$(MICRONTRACKER_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MICRONTRACKER_LIB_DIR_DBG">
+      <Value>$(MICRONTRACKER_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MICRONTRACKER_LIB_DIR_RLS">
+      <Value>$(MICRONTRACKER_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MICRONTRACKER_LIBS_DBG">
+      <Value>$(MICRONTRACKER_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MICRONTRACKER_LIBS_RLS">
+      <Value>$(MICRONTRACKER_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_INCLUDE_DIR">
+      <Value>$(LIBZIP_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_INCLUDE_DIR_DBG">
+      <Value>$(LIBZIP_INCLUDE_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_INCLUDE_DIR_RLS">
+      <Value>$(LIBZIP_INCLUDE_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_LIB_DIR_DBG">
+      <Value>$(LIBZIP_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_LIB_DIR_RLS">
+      <Value>$(LIBZIP_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_LIBS_DBG">
+      <Value>$(LIBZIP_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBZIP_LIBS_RLS">
+      <Value>$(LIBZIP_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PROTEST_INCLUDE_DIR">
+      <Value>$(PROTEST_INCLUDE_DIR)</Value>
+    </BuildMacro>
+     <BuildMacro Include="R4S_INCLUDE_DIR">
+      <Value>$(R4S_INCLUDE_DIR)</Value>
+    </BuildMacro>
+     <BuildMacro Include="R4S_LIB_DIR_DBG">
+      <Value>$(R4S_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+     <BuildMacro Include="R4S_LIB_DIR_RLS">
+      <Value>$(R4S_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+     <BuildMacro Include="R4S_LIBS_DBG">
+      <Value>$(R4S_LIBS_DBG)</Value>
+    </BuildMacro>
+     <BuildMacro Include="R4S_LIBS_RLS">
+      <Value>$(R4S_LIBS_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CRYPTO_INCLUDE_DIR">
+      <Value>$(CRYPTO_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CRYPTO_LIB_DIR_DBG">
+      <Value>$(CRYPTO_LIB_DIR_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CRYPTO_LIB_DIR_RLS">
+      <Value>$(CRYPTO_LIB_DIR_RLS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CRYPTO_LIBS_DBG">
+      <Value>$(CRYPTO_LIBS_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CRYPTO_LIBS_RLS">
+      <Value>$(CRYPTO_LIBS_RLS)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

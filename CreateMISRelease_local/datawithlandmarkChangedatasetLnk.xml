@@ -1,0 +1,599 @@
+<?xml version="1.0" ?>
+<ParsissData version="1">
+  <EventOrderList>
+      <item>
+        <type value="UpdateAutomaticCaptureLandmarkSettingEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkRegistrationSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="UpdateAutomaticCaptureLandmarkSettingEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="surfaceRegistrationSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="ReadNewSolutionEvent" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="main" />
+          <Payload value="3c02f148-813f-4ce5-94f0-d001d3a9c940" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misViwingSliceChangeEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misViwingSliceChangeEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misPackageListEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misDataSelectionPackageDataSelectedEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+          <Payload value="532495bd-07d1-4386-a410-2ac5844e9555" />
+        </element>
+      </item>
+      <item>
+        <type value="misSetNormalizedVolumeThresholdEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSetNormalizedVolumeThresholdEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misRequestVolumeTypeInRegistration" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misTakeSnapShotEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="main" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="ReadNewSolutionEvent" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="main" />
+          <Payload value="de690a92-c652-4ffd-83ca-4ee8a5f21794" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misViwingSliceChangeEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misViwingSliceChangeEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misPackageListEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misDataSelectionPackageDataSelectedEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+          <Payload value="3fcd43c5-6bcd-4b51-ad9b-dc248fc36387" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSliderEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misTakeSnapShotEvent" />
+        <element>
+          <Tabname value="registrationTab" />
+          <SubtabName value="landMarkSelectionSubTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="main" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misSubTabSelectionChange" />
+        <element>
+          <Tabname value="homeTab" />
+          <SubtabName value="homeTab" />
+        </element>
+      </item>
+      <item>
+        <type value="misTerminatedEvent" />
+        <element>
+          <Tabname value="" />
+          <SubtabName value="main" />
+        </element>
+      </item>
+  </EventOrderList>
+</ParsissData>
+
+ 

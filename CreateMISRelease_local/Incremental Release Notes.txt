@@ -1,0 +1,235 @@
+@version $Id: release-notes.txt 2018-05-28 04:15:00
+
+
+MIS-4.2.3-a176-1811 Sprint 89
+NEW FEATURES:
+	-Installing Build requiremnt automaticall with MSI installation package
+	-Add voice command control to landamrk registration
+	-Support creating custom layout with some ew predefined layouts
+	-Create a startup page for selecting application type(Biopsy, Spine, ENT)
+	-Creating entry or target of biopsy if not existed
+	-Adding right and left button for adjusting pilot man model to biopsy ui
+	-Adjustable plan target radius in navigation tab
+	-Loading Spine sepcific tools automatically
+	-Implementing new screw plans(Displaying projection of plan in images)
+	-Implemnting cuuting 3d model by plan direction in spine
+	-Editing package names evevrwhere in application
+	-Adding right and left button for adjusting pilot man model to spine ui
+	-Micron refrence and P-Tool new design
+
+BUG FIXES:
+	-Exitting from application after working more than 10h
+	-Incorrect caption of 5th lnadmark
+	-inteaction problem with ROI image 
+
+---------------------------------------------------------------------
+Release 4.2.3 Sprint78
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- The appearance of the accept mark was more beautiful.  
+- Using a tracking tool with two stray markers in biopsy navigation.
+- Design a protocol for importing fMRI.
+- Manually adjusting  up view in biopsy navigation.
+- Tracking must be activated after capturing all landmarks.
+- Adding projection and cross section of plan to image viewer.
+- Biopsy target region radius should be adjustable in navigation tab.
+- Editing tool data properties with misConfigure.exe.
+- Plan entry point should be modifiable in navigation tab by tracker position.
+- Pilot scale should be automaticaly adjusted.
+- Virtual tip must be extended or reduced automaticaly in biopsy navigation.
+- Create a button for each layout in navigation.
+
+CHANGES:
+
+
+BUG FIXES:
+- In the freeze mode, the message of tool invisibility should not be displayed.
+- Layout's margins are not correct.
+- Plan representation in navigation are thin and plan handles are displayed.
+- After importing a solution, 3D volumes of segmented packages are not displayed in create 3D model tab.
+- Biopsy plan after selecting both points, modify points does not remain.
+- zoom reset problems.
+- When resetting surface registration the captured points message remains visible.
+- The deleted plans in biopsy remain until leaving tab.
+- the image can not return to visible state after becoming invisible by visible/invisible button.
+- when back-forward to navigation the zoom changes.
+- The surface registration error doesn't display.
+- The color of active landmark is incorrect.
+- Landmark handles and lines transparency are not changed.
+- When there are 2 registered solution switch from one to another cause  to freezing navigation.
+- Pilot depth Indicator problems.
+- Create default saving folder(Mis new) if not exists.
+- Pilot not freez when UI freezes
+- It would be rational the surface registration reset is called when the landmark selection reset is called. However, it is not meanwhile.
+- Label of landmarks is not displayed in all of 2D views.
+- Second counter of record problems.
+- Eventhough the reset button of landmark registration tab is clicked, the surface registration tab has not been reset.
+- Reset surface registration does not work correctly.
+- After selecting new package in correlation the previous volumes remains for seconds.
+
+
+---------------------------------------------------------------------
+Release 3.14.1   Sprint64
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Video, dicom and snapshot files is added to export file.
+- Enable/disable functionality of virtual tip in layouts added.
+- Persist segmentaion result to sqliteDb.
+- Modify tool smoothing filter to start filtering when tool is fixed.
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Reset surface registration does not work correctly.
+- When tab changes background changes.
+- Data Uploading tab is the only enabled tab when loading an unregistered patient from DataBase.
+- In navigation the 3d widget doesn't move.
+- Delete all bugs are fixed.
+- Freeze button doesn't work in layout.
+- ROI box in segmentation does not work correctly for 2d viewers.
+
+
+---------------------------------------------------------------------
+Release 3.12.1-rc4   Wednesday, Mehr 12, 1396
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Adding voice command for landamrk registration.
+- Add biopsy pilot with a 3D model and updating view with keyboard.
+- Activating tracking tool after first regsitration.
+- Each surgeon is able to select his custom layout for navigation.
+- Exporting database.
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Resolving crash on exit.
+- Rsolving set image visibilty bug.
+- Resolve virtual torous bug.
+- Dispalying surface registration error.
+	 
+
+---------------------------------------------------------------------
+Release 3.12.1-rc4   Wednesday, Mehr 12, 1396
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Improving performance in saving to database.
+- Making the Registration tab font bold 
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Resolving the problem of displaying a blue light in background when changing tabs.
+- Resolving the problem of displaying landmark representation after resetting 
+	surface registration.
+
+
+---------------------------------------------------------------------
+Release 3.12.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Landmark registration font size and highlighted error have been changed.
+- In landmark registration subsequence in the previous version after 4th point if the total error 
+	increased, the captured point would has been selected for correction – it has been changed into 
+	always the maximum error point be selected.
+- Smoothing the tool position when the tool is almost fixed.
+- Saving/loading patient information without the neccessity of installing SQL server.
+- Automatic connecting tracker after disconnecting for polaris.
+- Correction point of captured landmark must be all red (label, point and line).
+- Dynamic layout for navigation via xml file(selecting oblique or standard, updating by virtual tip or
+	tool tip, number of view in each direction, 3d , video).
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Resolve some problems related to PACS.
+- The bug entitled "If the calibration window was opend while the reference or registration tool is 
+	invisible, the invisibility window would has not been closed till the calibration window be closed,
+	has been resolved.
+
+
+---------------------------------------------------------------------
+Release 3.6.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Automatic detection of MRI modality (t1 , t2) and setting MRI volume threshold.
+- Disabling calibration availability when it is needed.
+- Default automatic contrast adjusting for MRI.
+- Supporting ATI graphics card.
+- Improving spine surgery volume colormaps.
+- Automatic selection of the first image in data checking.
+- Automatic freezing images when activating measurement button.
+- Automatic selection of the first image in image fusion tab.
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Correcting result messages of the calibration window.
+- Resolving the issue of resetting zoom after selecting package.
+- Resolving the bugs in screw planning.
+- Resolving the bugs related to Fly zone.
+- Resolving the issue of oblique mode in navigation.
+- Resolving the issue of video aspect ratio in navigation.
+- Resolving the issue of measurement button in navigation.
+- Resolving the bugs related to PACS.
+- Resolving the bugs related to freeze mode.
+
+
+---------------------------------------------------------------------
+Release 3.1.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Loading DTI and FMRI colored image.
+- Displaying warning message when tracker is disconnected.
+- Adding a profile for each surgeon.
+- Selecting navigation widget width by surgeon.
+- Saving volume threshold selected for skin and bone to database.
+- Adding changing sagittal image direction in neurosurgery.
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Resolve image fusion bugs.
+- Initialization of ascension tracker.
+
+
+---------------------------------------------------------------------
+Release 3.0.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+- Adding graded virtual tip.
+- Automatic selection of first image in Landmark Selection.
+- Synchronizing volume rendering and auto pilot in screw navigation.
+- Adding MicroNav tool.
+- Adding MRI volume rendering  color map.
+
+
+CHANGES:
+
+
+BUG FIXES:
+- Resolving blank image bug after selecting image in image correlation.
+- Correcting virtual tip bug in spine.
+- Correction frequently change packages bug (different position for tool and widget).
+- Resolving changing widget postion when changing data checking threshold.
+- Resolving incorrect annotation after changing mode from oblique to standard.
+- Resolving white window bug when display video in navigation and navigation is full screen

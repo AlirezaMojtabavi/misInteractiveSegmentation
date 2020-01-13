@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7EE4F90-3967-45B2-8812-74E366DC99E3}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>misViewer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\Adapters;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/Zm300 </AdditionalOptions>
+      <BrowseInformation>false</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>
+      </LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Header\Adapters;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/Zm300 </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\Adapters\IDentalViewVector.h" />
+    <ClInclude Include="..\Header\Adapters\IMathUtilsWrapper.h" />
+    <ClInclude Include="..\Header\Adapters\IPlanNavigationVisualizer.h" />
+    <ClInclude Include="..\Header\Adapters\ISquareQuadCreator.h" />
+    <ClInclude Include="..\Header\Adapters\MockDentalViewVector.h" />
+    <ClInclude Include="..\Header\Adapters\MockMathUtilsWrapper.h" />
+    <ClInclude Include="..\Header\Adapters\MockSquareQuadCreator.h" />
+    <ClInclude Include="..\Header\Adapters\SquareQuadCreator.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\AdaptiveZoomCalculator.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\CameraPositionCalculator.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\DentalViewVector.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\ICameraPositionCalculator.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\PlanTransformUpdater.h" />
+    <ClInclude Include="..\Header\ApplicationBusinessRules\ViewVectors.h" />
+    <ClInclude Include="..\header\BackToPanMode.h" />
+    <ClInclude Include="..\Header\BrushImageGeneration.h" />
+    <ClInclude Include="..\Header\BusinessEntities\IVectorRotator.h" />
+    <ClInclude Include="..\Header\BusinessEntities\vertex.h" />
+    <ClInclude Include="..\Header\CameraPositionCalculatorFactory.h" />
+    <ClInclude Include="..\Header\CameraPositionCalculatorSpine.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\DentalImageSliceViewSettings.h" />
+    <ClInclude Include="..\Header\ExtLibWrappers\VectorRotator.h" />
+    <ClInclude Include="..\header\FakeBarycentricInterpolation.h" />
+    <ClInclude Include="..\Header\FakeMap2D.h" />
+    <ClInclude Include="..\Header\IBackToPanMode.h" />
+    <ClInclude Include="..\Header\IMedicalCameraDirection.h" />
+    <ClInclude Include="..\Header\IScrew3DViewer.h" />
+    <ClInclude Include="..\Header\IScrewViewer.h" />
+    <ClInclude Include="..\Header\IUpdatePlaneVisibilitiy.h" />
+    <ClInclude Include="..\Header\IVolumeRenderer.h" />
+    <ClInclude Include="..\Header\IVolumeSlicer.h" />
+    <ClInclude Include="..\Header\IVolume3DRenderer.h" />
+    <ClInclude Include="..\Header\I3DViewer.h" />
+    <ClInclude Include="..\Header\ICursorService.h" />
+    <ClInclude Include="..\Header\IImageSliceViewSettings.h" />
+    <ClInclude Include="..\Header\IImageViwer.h" />
+    <ClInclude Include="..\Header\IInitializeScrewWidget.h" />
+    <ClInclude Include="..\Header\ILandamrkListCategorizer.h" />
+    <ClInclude Include="..\Header\ILandmarkLablePositionCalculator.h" />
+    <ClInclude Include="..\header\ILandmarkVisibilty.h" />
+    <ClInclude Include="..\Header\IMap2D.h" />
+    <ClInclude Include="..\Header\IMedicalImageViewer.h" />
+    <ClInclude Include="..\Header\IOpenGLContextSharing.h" />
+    <ClInclude Include="..\Header\IPanoramicCoordinatesConverter.h" />
+    <ClInclude Include="..\Header\IParametricSpline.h" />
+    <ClInclude Include="..\Header\IPlaneVisibilityUpdater.h" />
+    <ClInclude Include="..\Header\IPlanSourceFactory.h" />
+    <ClInclude Include="..\Header\IScrewCompound.h" />
+    <ClInclude Include="..\Header\ITextureGenerator.h" />
+    <ClInclude Include="..\Header\IPanoramicTransformConverter.h" />
+    <ClInclude Include="..\Header\IBarycentricInterpolation.h" />
+    <ClInclude Include="..\Header\IToolRepresentationDecider.h" />
+    <ClInclude Include="..\Header\IUpdateLandmarkCameraView.h" />
+    <ClInclude Include="..\Header\IVolumeRayCaster.h" />
+    <ClInclude Include="..\Header\LandmarkDataAndType.h" />
+    <ClInclude Include="..\Header\LandmarkLablePositionCalculatorFactory.h" />
+    <ClInclude Include="..\Header\LandmarkLablePositionCalculatorSpine.h" />
+    <ClInclude Include="..\header\LandmarkVisibilty.h" />
+    <ClInclude Include="..\Header\MedicalCameraDirection.h" />
+    <ClInclude Include="..\Header\MedicalCameraDirectionFactory.h" />
+    <ClInclude Include="..\Header\MedicalCameraDirectionSpine.h" />
+    <ClInclude Include="..\header\mis2DROIActivation.h" />
+    <ClInclude Include="..\Header\misChangeZoomPercentageCore.h" />
+    <ClInclude Include="..\header\misVolumeRendererContainer.h" />
+    <ClInclude Include="..\Header\mis3DViewer.h" />
+    <ClInclude Include="..\Header\misAutoMeasurment.h" />
+    <ClInclude Include="..\header\misBarycentricInterpolation.h" />
+    <ClInclude Include="..\Header\misCameraAutomaticZoomController.h" />
+    <ClInclude Include="..\Header\misCameraInteraction.h" />
+    <ClInclude Include="..\Header\misCursorService.h" />
+    <ClInclude Include="..\Header\misDistributionStruct.h" />
+    <ClInclude Include="..\Header\misImageCallback.h" />
+    <ClInclude Include="..\header\misVolumeRenderer.h" />
+    <ClInclude Include="..\Header\misVolumeSlicer.h" />
+    <ClInclude Include="..\header\misImageViewerAnnotations.h" />
+    <ClInclude Include="..\header\misImageViewerContainer.h" />
+    <ClInclude Include="..\Header\misImageViewerObserver.h" />
+    <ClInclude Include="..\Header\LandmarkLablePositionCalculator.h" />
+    <ClInclude Include="..\Header\misInitializeScrewWidget.h" />
+    <ClInclude Include="..\Header\misLandamrkListCategorizer.h" />
+    <ClInclude Include="..\header\misLandmarkVisualizer.h" />
+    <ClInclude Include="..\Header\misMap2D.h" />
+    <ClInclude Include="..\Header\misMeasurment.h" />
+    <ClInclude Include="..\header\mis3DVolumeRenderer.h" />
+    <ClInclude Include="..\Header\misOpenGLContextSharing.h" />
+    <ClInclude Include="..\Header\misPanoramicCoordinatesConverter.h" />
+    <ClInclude Include="..\Header\misPanoramicTextureGenerator.h" />
+    <ClInclude Include="..\Header\misPanoramicTransformConverter.h" />
+    <ClInclude Include="..\header\misPanoramicViewerContainer.h" />
+    <ClInclude Include="..\Header\misParametricSpline.h" />
+    <ClInclude Include="..\Header\misPlaneAndBoxConfiguration.h" />
+    <ClInclude Include="..\Header\misPlanSourceFactory.h" />
+    <ClInclude Include="..\Header\misRenderer.h" />
+    <ClInclude Include="..\Header\misScrewCompound.h" />
+    <ClInclude Include="..\Header\misScrewWidgetData.h" />
+    <ClInclude Include="..\Header\misImageSliceViewSettings.h" />
+    <ClInclude Include="..\header\misSeedBoundingCalculator.h" />
+    <ClInclude Include="..\Header\misStageBase.h" />
+    <ClInclude Include="..\header\misUpdateLandmarkCameraView.h" />
+    <ClInclude Include="..\header\misVolumeData3DViewer.h" />
+    <ClInclude Include="..\header\misVoreenVolumeRenderingViewer.h" />
+    <ClInclude Include="..\header\misWindowsLayout.h" />
+    <ClInclude Include="..\Header\misZoomFinder.h" />
+    <ClInclude Include="..\Header\Mock3Dviewer.h" />
+    <ClInclude Include="..\Header\MockCursorService.h" />
+    <ClInclude Include="..\Header\MockImageSliceViewSettings.h" />
+    <ClInclude Include="..\Header\MockLandmarkAccessoryPositions.h" />
+    <ClInclude Include="..\Header\MockOpenGLContextSharing.h" />
+    <ClInclude Include="..\Header\MockPanoramicCoordinatesConverter.h" />
+    <ClInclude Include="..\Header\MockPanoramicTransformConverter.h" />
+    <ClInclude Include="..\Header\MockParametricSpline.h" />
+    <ClInclude Include="..\Header\MockRepresentationFactory.h" />
+    <ClInclude Include="..\header\PointSelectAction.h" />
+    <ClInclude Include="..\Header\Screw2DViewer.h" />
+    <ClInclude Include="..\Header\Screw3DViewer.h" />
+    <ClInclude Include="..\header\ScrewViewer.h" />
+    <ClInclude Include="..\Header\ScrewViewerFactory.h" />
+    <ClInclude Include="ConvertMousexyToWorldCoordinate.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\IPanoramicViewer.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="..\Header\Mock3DLandmarkViewer.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="AdaptiveZoomCalculator.cpp" />
+    <ClCompile Include="BackToPanMode.cpp" />
+    <ClCompile Include="BrushImageGeneration.cpp" />
+    <ClCompile Include="CameraPositionCalculator.cpp" />
+    <ClCompile Include="ConvertMousexyToWorldCoordinate.cpp" />
+    <ClCompile Include="DentalImageSliceViewSettings.cpp" />
+    <ClCompile Include="DentalViewVector.cpp" />
+    <ClCompile Include="LandmarkLablePositionCalculatorFactory.cpp" />
+    <ClCompile Include="LandmarkLablePositionCalculatorSpine.cpp" />
+    <ClCompile Include="LandmarkVisibilty.cpp" />
+    <ClCompile Include="MedicalCameraDirection.cpp" />
+    <ClCompile Include="MedicalCameraDirectionFactory.cpp" />
+    <ClCompile Include="MedicalCameraDirectionSpine.cpp" />
+    <ClCompile Include="mis2DROIActivation.cpp" />
+    <ClCompile Include="misVolumeRendererContainer.cpp" />
+    <ClCompile Include="mis3DViewer.cpp" />
+    <ClCompile Include="misAutoMeasurment.cpp" />
+    <ClCompile Include="misBoneSkineVolume.cpp" />
+    <ClCompile Include="misCameraAutomaticZoomController.cpp" />
+    <ClCompile Include="misCameraInteraction.cpp" />
+    <ClCompile Include="misCursorService.cpp" />
+    <ClCompile Include="misDistributionStruct.cpp" />
+    <ClCompile Include="misImageCallback.cpp" />
+    <ClCompile Include="misVolumeRenderer.cpp" />
+    <ClCompile Include="misVolumeSlicer.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ShowIncludes>
+    </ClCompile>
+    <ClCompile Include="misImageViewerAnnotations.cpp" />
+    <ClCompile Include="misImageViewerContainer.cpp" />
+    <ClCompile Include="misImageViewerObserver.cpp" />
+    <ClCompile Include="LandmarkLablePositionCalculator.cpp" />
+    <ClCompile Include="misInitializeScrewWidget.cpp" />
+    <ClCompile Include="misLandamrkListCategorizer.cpp" />
+    <ClCompile Include="misLandmarkVisualizer.cpp" />
+    <ClCompile Include="misMeasurment.cpp" />
+    <ClCompile Include="mis3DVolumeRenderer.cpp" />
+    <ClCompile Include="misOpenGlContextSharing.cpp" />
+    <ClCompile Include="misPanoramicCoordinatesConverter.cpp" />
+    <ClCompile Include="misPanoramicTextureGenerator.cpp" />
+    <ClCompile Include="misPanoramicTransformConverter.cpp" />
+    <ClCompile Include="misParametricSpline.cpp" />
+    <ClCompile Include="misPlaneAndBoxConfiguration.cpp" />
+    <ClCompile Include="misPlanSourceFactory.cpp" />
+    <ClCompile Include="misRenderer.cpp" />
+    <ClCompile Include="misScrewCompound.cpp" />
+    <ClCompile Include="misImageSliceViewSettings.cpp" />
+    <ClCompile Include="misSeedBoundingCalculator.cpp" />
+    <ClCompile Include="misUpdateLandmarkCameraView.cpp" />
+    <ClCompile Include="misVolumeThresholdSetting.cpp" />
+    <ClCompile Include="misStageBase.cpp" />
+    <ClCompile Include="misVoreenVolumeRenderingViewer.cpp" />
+    <ClCompile Include="misZoomFinder.cpp" />
+    <ClCompile Include="PlanTransformUpdater.cpp" />
+    <ClCompile Include="PointSelectAction.cpp" />
+    <ClCompile Include="Screw2DViewer.cpp" />
+    <ClCompile Include="Screw3DViewer.cpp" />
+    <ClCompile Include="ScrewViewer.cpp" />
+    <ClCompile Include="ScrewViewerFactory.cpp" />
+    <ClCompile Include="SquareQuadCreator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\ParCASTParams.user.props" />
+</Project>

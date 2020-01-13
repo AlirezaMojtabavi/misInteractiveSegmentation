@@ -1,0 +1,6548 @@
+# Turkish translation for ginkgocadx
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the ginkgocadx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ginkgocadx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-08 12:44+0100\n"
+"PO-Revision-Date: 2013-10-08 12:44+0100\n"
+"Last-Translator: Carlos Barrales Ruiz <carlos.barrales@metaemotion.com>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;_Std\n"
+"X-Poedit-Basepath: .\n"
+"X-Launchpad-Export-Date: 2011-09-02 12:40+0000\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: ..\\..\n"
+
+#: ..\../api/autoptr.cpp:6
+msgid "Attempted to dereference null pointer"
+msgstr ""
+
+#: ..\../api/iexception.cpp:52
+msgid "Exception in component"
+msgstr ""
+
+#: ..\../api/initwx.cpp:387 ..\../api/initwx.cpp:388 ..\../api/initwx.cpp:389
+#: ..\../api/initwx.cpp:390 ..\../api/initwx.cpp:391 ..\../api/initwx.cpp:392
+#: ..\../api/initwx.cpp:393 ..\../api/initwx.cpp:394
+#, fuzzy
+msgid "Ginkgo CADx restrictions"
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../api/initwx.cpp:387
+msgid "Open only one tab for each study"
+msgstr ""
+
+#: ..\../api/initwx.cpp:388
+msgid "Anonymous mode (history is cleaned)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:389
+msgid "Max number of tabs opened"
+msgstr ""
+
+#: ..\../api/initwx.cpp:390
+msgid "Max seconds of Ginkgo CADx application inactivity"
+msgstr ""
+
+#: ..\../api/initwx.cpp:391
+msgid "Close automatically Ginkgo CADx after dicomize"
+msgstr ""
+
+#: ..\../api/initwx.cpp:392
+#, fuzzy
+msgid "Export images"
+msgstr "Hata mesajı"
+
+#: ..\../api/initwx.cpp:393
+msgid "Acquire DICOM files"
+msgstr ""
+
+#: ..\../api/initwx.cpp:394
+msgid "Import files to DICOM format"
+msgstr ""
+
+#: ..\../api/initwx.cpp:396 ..\../api/initwx.cpp:398
+msgid "Online manual"
+msgstr ""
+
+#: ..\../api/initwx.cpp:396 ..\../api/initwx.cpp:398
+msgid "URL of manual"
+msgstr ""
+
+#: ..\../api/initwx.cpp:396
+msgid "doc\\manual_ginkgo_cadx_pro_en.pdf"
+msgstr ""
+
+#: ..\../api/initwx.cpp:400
+msgid "Online support"
+msgstr ""
+
+#: ..\../api/initwx.cpp:400
+msgid "URL of online support"
+msgstr ""
+
+#: ..\../api/initwx.cpp:400
+#, fuzzy
+msgid "http://ginkgo-cadx.com/"
+msgstr "http://ginkgo-cadx.com/en/services"
+
+#: ..\../api/initwx.cpp:401 ..\../api/initwx.cpp:402
+msgid "Program Updates"
+msgstr ""
+
+#: ..\../api/initwx.cpp:401
+msgid "Warn about newest Ginkgo CADx updates"
+msgstr ""
+
+#: ..\../api/initwx.cpp:402
+msgid "Update period (days)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:403
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:219
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1141
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1851
+msgid "Security"
+msgstr ""
+
+#: ..\../api/initwx.cpp:403
+msgid "Setup Security"
+msgstr ""
+
+#: ..\../api/initwx.cpp:404
+msgid "Show on startup"
+msgstr ""
+
+#: ..\../api/initwx.cpp:404
+msgid "Show on startup default value"
+msgstr ""
+
+#: ..\../api/initwx.cpp:407 ..\../api/initwx.cpp:408
+#: ..\../main/gui/history3/historypanel3.cpp:665
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1436
+msgid "Tools"
+msgstr ""
+
+#: ..\../api/initwx.cpp:407
+msgid "Settings menu"
+msgstr ""
+
+#: ..\../api/initwx.cpp:408
+msgid "License menu"
+msgstr ""
+
+#: ..\../api/initwx.cpp:409 ..\../api/initwx.cpp:410 ..\../api/initwx.cpp:411
+#: ..\../api/initwx.cpp:412 ..\../api/initwx.cpp:413 ..\../api/initwx.cpp:414
+#: ..\../api/initwx.cpp:415
+msgid "PACS Limits"
+msgstr ""
+
+#: ..\../api/initwx.cpp:409
+msgid "Upload images to a PACS server"
+msgstr ""
+
+#: ..\../api/initwx.cpp:410
+msgid "Acquire images from PACS"
+msgstr ""
+
+#: ..\../api/initwx.cpp:411
+msgid "Enable remote PACS configuration"
+msgstr ""
+
+#: ..\../api/initwx.cpp:412
+msgid "Enable TLS configuration"
+msgstr ""
+
+#: ..\../api/initwx.cpp:413
+msgid "Restrict search over selected patient"
+msgstr ""
+
+#: ..\../api/initwx.cpp:414
+msgid "Restrict study retrieval by maximum size (KB)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:415
+msgid "Force lossless when upload"
+msgstr ""
+
+#: ..\../api/initwx.cpp:416 ..\../api/initwx.cpp:417 ..\../api/initwx.cpp:418
+#: ..\../api/initwx.cpp:419
+msgid "Import"
+msgstr ""
+
+#: ..\../api/initwx.cpp:416
+msgid "Set compression, 0 implies no compression (0..14)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:417
+msgid ""
+"Recompression codec (0=JPEG Baseline(default), 1=JPEG Progressive, 2=JPEG "
+"Lossless)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:418
+msgid "Don't change image codec (if possible)"
+msgstr ""
+
+#: ..\../api/initwx.cpp:419
+msgid "Skip demographic step if it's possible"
+msgstr ""
+
+#: ..\../api/initwx.cpp:421
+msgid "HL7 Service"
+msgstr ""
+
+#: ..\../api/initwx.cpp:421
+msgid "Automatically start HL7 Sender service"
+msgstr ""
+
+#: ..\../api/initwx.cpp:422 ..\../api/initwx.cpp:423 ..\../api/initwx.cpp:424
+msgid "XML dicomization"
+msgstr ""
+
+#: ..\../api/initwx.cpp:422
+msgid "Send Hl7 message when importing"
+msgstr ""
+
+#: ..\../api/initwx.cpp:423
+msgid "Send study to PACS when importing"
+msgstr ""
+
+#: ..\../api/initwx.cpp:424
+#, fuzzy
+msgid "Default ORU template"
+msgstr "Varsayılan değer"
+
+#: ..\../api/initwx.cpp:430
+#, c-format
+msgid "Download %s images"
+msgstr ""
+
+#: ..\../api/initwx.cpp:431 ..\../api/initwx.cpp:435
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:21
+msgid "PACS"
+msgstr ""
+
+#: ..\../api/initwx.cpp:434
+msgid "Download all modalities"
+msgstr ""
+
+#: ..\../api/initwx.cpp:437
+msgid "OpenGL"
+msgstr ""
+
+#: ..\../api/initwx.cpp:437
+msgid "Enable shaders"
+msgstr ""
+
+#: ..\../api/initwx.cpp:440
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:23
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:116
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:372
+msgid "Ginkgo Cloud"
+msgstr ""
+
+#: ..\../api/initwx.cpp:440
+#, fuzzy
+msgid "Download from Ginkgo Cloud"
+msgstr "İndirilenler"
+
+#: ..\../api/initwx.cpp:504
+msgid "Initializing environment ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:515
+msgid "Tools loading base ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:517
+msgid "Starting tools..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:521
+msgid "Loading plugins ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:535
+#, fuzzy
+msgid "Unable to start GinkgoCADx:\n"
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../api/initwx.cpp:535 ..\../api/initwx.cpp:570
+msgid "error"
+msgstr ""
+
+#: ..\../api/initwx.cpp:539
+msgid "Loading resources ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:542
+msgid "Starting services..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:550
+msgid "Configuring environment ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:570
+msgid "Failed to set permissions:\n"
+msgstr ""
+
+#: ..\../api/initwx.cpp:583
+#, fuzzy
+msgid "Updating ..."
+msgstr "Düzenle ..."
+
+#: ..\../api/initwx.cpp:587
+msgid "Interpreting parameters ..."
+msgstr ""
+
+#: ..\../api/initwx.cpp:636
+msgid "Error unregistering tools: "
+msgstr ""
+
+#: ..\../api/initwx.cpp:712
+msgid "Starting"
+msgstr ""
+
+#: ..\../api/ivista.cpp:36 ..\../commands/comandocarga.cpp:73
+msgid "Loading..."
+msgstr ""
+
+#: ..\../api/iwidgets.cpp:255
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:122
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:138
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:140
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:389
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:52
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:693
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:414
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2117
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2194
+#: ..\../main/gui/import/pasosimportacionbase.cpp:137
+msgid "Name"
+msgstr ""
+
+#: ..\../api/iwidgets.cpp:272
+msgid "Area"
+msgstr ""
+
+#: ..\../api/iwidgets.cpp:289
+msgid "Perimeter"
+msgstr ""
+
+#: ..\../api/iwidgets.cpp:303
+msgid "Travel (I)"
+msgstr ""
+
+#: ..\../api/iwidgets.cpp:313
+msgid "Travel (M)"
+msgstr ""
+
+#: ..\../api/widgetserializable.cpp:60
+msgid "Creation Date"
+msgstr "Oluşturulma Tarihi"
+
+#: ..\../api/widgetserializable.cpp:65
+msgid "Modification Date"
+msgstr ""
+
+#: ..\../api/widgetserializable.cpp:68
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:27
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:59
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:190
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:147
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:40
+msgid "Physician"
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:80
+#: ..\../api/dicom/idicomconformance.cpp:84
+#: ..\../api/dicom/idicomconformance.cpp:143
+#: ..\../api/dicom/idicomconformance.cpp:152
+#: ..\../api/dicom/idicomconformance.cpp:214
+#: ..\../api/dicom/idicomconformance.cpp:220
+msgid "GIL/DICOM/Conformance"
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:80
+#: ..\../api/dicom/idicomconformance.cpp:84
+msgid "Unable to add supported transfer syntax "
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:80
+#: ..\../api/dicom/idicomconformance.cpp:84
+msgid " to SOP Class "
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:80
+msgid " . Transfer Syntax does not exists in model: Add it first."
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:84
+#: ..\../api/dicom/idicomconformance.cpp:143
+msgid " . SOP Class does not exists in model: Add it first."
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:143
+#: ..\../api/dicom/idicomconformance.cpp:152
+msgid "Unable to add supported SOP Class "
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:143
+#: ..\../api/dicom/idicomconformance.cpp:152
+msgid " to Modality "
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:152
+msgid " . Modality does not exists in model: Add it first."
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:214
+msgid "Error loading DICOM Conformance file"
+msgstr ""
+
+#: ..\../api/dicom/idicomconformance.cpp:220
+msgid "Invalid DICOM Conformance file"
+msgstr ""
+
+#: ..\../api/threads/thread.cpp:114 ..\../api/threads/thread.cpp:117
+#: ..\../api/threads/thread.cpp:120
+msgid "Threading"
+msgstr ""
+
+#: ..\../api/threads/thread.cpp:114 ..\../api/threads/thread.cpp:117
+msgid "Error while running thread: "
+msgstr ""
+
+#: ..\../api/threads/thread.cpp:114 ..\../api/threads/thread.cpp:117
+msgid " : "
+msgstr ""
+
+#: ..\../api/threads/thread.cpp:120
+msgid "Internal error while running thread: "
+msgstr ""
+
+#: ..\../commands/autocleaningcommand.cpp:62
+msgid "Cleaning dicomdir..."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:67
+#, fuzzy
+msgid "Downloading files..."
+msgstr "İndirilenler"
+
+#: ..\../commands/cloudcommand.cpp:167
+msgid "CloudCommand"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:183
+msgid "Unknown operation"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:188
+msgid "Error in cloud operation. See log to get more details..."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:250
+msgid "Could to retrieve study."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:261 ..\../commands/cloudcommand.cpp:396
+msgid ""
+"This version of Ginkgo CADx is not compatible with current version of Ginkgo "
+"Cloud."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:263
+msgid "Error retrieving study."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:272
+msgid "Study successfully retrieved."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:272 ..\../commands/cloudcommand.cpp:407
+msgid "Speed"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:272 ..\../commands/cloudcommand.cpp:407
+msgid "bytes/sec during"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:272 ..\../commands/cloudcommand.cpp:407
+msgid "seconds"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:276
+msgid "Empty Response"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:290
+msgid "Extracting files..."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:314 ..\../commands/cloudcommand.cpp:317
+msgid "Invalid file has been downloaded"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:385
+msgid "Could to perform query."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:398
+#, fuzzy
+msgid "Error perfoming the query."
+msgstr "Hata mesajı"
+
+#: ..\../commands/cloudcommand.cpp:407
+msgid "Query successfully performed."
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:417
+msgid "JSon Response"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:474
+msgid "Unknown JSon attribute:"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:484
+msgid "Error parsing JSon: "
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:493
+msgid "Null Response"
+msgstr ""
+
+#: ..\../commands/cloudcommand.cpp:517
+#: ..\../commands/openremovableunit.cpp:145 ..\../main/gui/open/abrir.cpp:118
+#: ..\../main/gui/open/abrir.cpp:157 ..\../main/gui/open/opendialogs.cpp:92
+msgid "Storing in the history..."
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:49
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:355
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:361
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:522
+msgid "Check Updates"
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:83
+msgid "Checking program updates..."
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:141
+msgid "Not enough parameters found on XML"
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:150
+msgid "XML parsing internal error"
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:162
+msgid "Error checking application updates"
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:162
+msgid "Ginkgo CADx updates"
+msgstr ""
+
+#: ..\../commands/comandoactualizaciones.cpp:176
+msgid "Internal error checking updates"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:86
+msgid "Series path couldn't be found"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:92 ..\../commands/comandocarga.cpp:96
+msgid "Exception loading:"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:100
+msgid "Study malformed or unsupported"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:129 ..\../commands/comandocarga.cpp:139
+msgid "Error loading study: "
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:134
+msgid "Error loading study insufficient memory"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:144
+msgid "Error loading study."
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:149
+msgid "Load canceled by user"
+msgstr ""
+
+#: ..\../commands/comandocarga.cpp:156
+#: ..\../main/gui/history3/historypanel3.cpp:1463
+#: ..\../main/gui/history3/historypanel3.cpp:1470
+#: ..\../main/gui/history3/historypanel3.cpp:1475
+msgid "Error loading study"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:84
+#: ..\../commands/exporttodicomdircommand.cpp:214
+msgid "Exporting files..."
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:112
+#: ..\../commands/exporttodicomdircommand.cpp:450
+msgid "Export has been finished successfully"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:171
+#: ..\../commands/comandoexportacion.cpp:247
+#: ..\../commands/comandoexportacion.cpp:262
+#, c-format
+msgid "Exporting file %d of %d"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:226
+msgid "Error storing file, check the permissions over the directory."
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:238
+msgid ""
+"Unexpected Error exporting, the view is not allowed to export to the format "
+"selected"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:277
+msgid "Failed to store the file, check permissions on the directory"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:286
+msgid "The key files will not be exported"
+msgstr ""
+
+#: ..\../commands/comandoexportacion.cpp:340
+msgid "image_%m-%d-%Y_"
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:108
+msgid "Exploring directory ..."
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:122
+msgid "Reading DICOMDIR ..."
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:142
+#: ..\../commands/comandoincluirhistorial.cpp:156
+#: ..\../commands/comandoincluirhistorial.cpp:177
+msgid "Including files in the history .."
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:196
+msgid "Exploring directory "
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:256
+#: ..\../commands/linkhistorycommand.cpp:118
+msgid "Image acquisition finished."
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:258
+#, c-format
+msgid "There have been included %d images."
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:261
+#: ..\../commands/linkhistorycommand.cpp:121
+#, c-format
+msgid ""
+"\n"
+"There are %d errors (see log for more detailed description)"
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:273
+#: ..\../commands/linkhistorycommand.cpp:133
+msgid "This files doesn't exist:"
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:284
+#: ..\../commands/linkhistorycommand.cpp:144
+msgid "This files doesn't have DICOM format:"
+msgstr ""
+
+#: ..\../commands/comandoincluirhistorial.cpp:296
+#: ..\../commands/linkhistorycommand.cpp:156
+msgid "This files are Dicom Dirs:"
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:69 ..\../commands/pacsdownloadcommand.cpp:60
+#: ..\../commands/sendpacscommand.cpp:141
+msgid "There is not any Remote PACS configured"
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:97
+msgid "Querying PACS ..."
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:109
+msgid "Error accessing the controller subsystem integration: (GIL:: DICOM)."
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:112
+msgid "Subsystem integration error: uninitialized result data container."
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:115
+msgid "Starting Search ..."
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:178
+#: ..\../commands/pacsdownloadcommand.cpp:100
+msgid "Server ID not found. ID = "
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:181 ..\../commands/comandopacs.cpp:184
+#: ..\../commands/comandopacs.cpp:187 ..\../commands/comandopacs.cpp:190
+msgid "Query error with PACS Id "
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:190
+#: ..\../main/controllers/controladoreventos.cpp:285
+#: ..\../main/gui/history3/historypanel3.cpp:1475
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:2001
+msgid "Internal error"
+msgstr ""
+
+#: ..\../commands/comandopacs.cpp:212
+msgid "Failed to perform search: "
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:94
+#: ..\../commands/dbmigrationcommand.cpp:103
+msgid "Migrating old DICOM Dir ..."
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:99
+#: ..\../commands/dbmigrationcommand.cpp:108
+msgid "Including files ..."
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:116
+msgid "Migration finished successfully, now Ginkgo CADx will delete folder:\n"
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:116
+msgid ""
+"and all it's sub folders\n"
+"Do you confirm deletion?"
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:116
+#: ..\../commands/dicomizecommand.cpp:181
+#: ..\../commands/openremovableunit.cpp:71
+#: ..\../commands/openremovableunit.cpp:107
+#: ..\../commands/pdfextractercommand.cpp:113
+#: ..\../commands/pdfextractercommand.cpp:122
+#: ..\../commands/pdfextractercommand.cpp:130
+#: ..\../main/controllers/historycontroller.cpp:446
+#: ..\../main/controllers/historycontroller.cpp:1717
+#: ..\../main/controllers/historycontroller.cpp:1762
+#: ..\../main/controllers/historycontroller.cpp:1816
+#: ..\../main/controllers/historycontroller.cpp:1840
+#: ..\../main/controllers/historycontroller.cpp:1897
+#: ..\../main/controllers/historycontroller.cpp:1954
+#: ..\../main/controllers/historycontroller.cpp:1991
+#: ..\../main/gui/dicombrowsercomponent.cpp:491
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:689
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:261
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:263
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:286
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:288
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:626
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:632
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:637
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:943
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:161
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:172
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:186
+#: ..\../main/gui/configuration/panelconfiguracionextensiones.cpp:132
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:129
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:88
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:143
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:192
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:276
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:532
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:535
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:629
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:809
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:392
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:399
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:483
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:92
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:100
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:108
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:117
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:240
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:250
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:302
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:305
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:332
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:334
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:352
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:355
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:359
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:374
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:377
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:99
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:53
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:59
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:65
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:95
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:122
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:133
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:147
+#: ..\../main/gui/export/parametrosprincipales.cpp:186
+#: ..\../main/gui/export/parametrosprincipales.cpp:192
+#: ..\../main/gui/history3/historypanel3.cpp:1311
+#: ..\../main/gui/history3/historypanel3.cpp:1382
+#: ..\../main/gui/history3/historypanel3.cpp:1452
+#: ..\../main/gui/history3/historypanel3.cpp:1485
+#: ..\../main/gui/history3/historypanel3.cpp:1516
+#: ..\../main/gui/history3/historypanel3.cpp:1526
+#: ..\../main/gui/history3/historypanel3.cpp:1538
+#: ..\../main/gui/history3/historypanel3.cpp:1584
+#: ..\../main/gui/history3/historypanel3.cpp:1603
+#: ..\../main/gui/history3/historypanel3.cpp:1626
+#: ..\../main/gui/history3/historypanel3.cpp:1644
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:173
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:191
+#: ..\../main/gui/import/selectimagesimportation.cpp:163
+#: ..\../main/gui/import/selectimagesimportation.cpp:364
+#: ..\../main/gui/import/selectimagesimportation.cpp:765
+#: ..\../main/gui/import/selectimagesimportation.cpp:783
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:72
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:87
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:92
+#: ..\../main/gui/login/dialogologin.cpp:50
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:478
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:486
+#: ..\../main/gui/open/opendialogs.cpp:55
+#: ..\../main/gui/open/opendialogs.cpp:80
+#: ..\../main/gui/progress/statusbarprogreso.cpp:290
+#: ..\../main/gui/progress/statusbarprogreso.cpp:293
+#: ..\../main/gui/progress/statusbarprogreso.cpp:298
+#: ..\../main/tools/anonymizetool.cpp:46
+#: ..\../main/tools/exportdicomdirtool.cpp:57
+#: ..\../main/tools/sendpacstool.cpp:59
+#: ..\../main/tools/showtagshistorytool.cpp:42
+#: ..\../main/gui/history3/openwithdialog.h:72
+msgid "Info"
+msgstr ""
+
+#: ..\../commands/dbmigrationcommand.cpp:123
+msgid "Migration finisthed successfully"
+msgstr ""
+
+#: ..\../commands/dialogopathssobreescribirbase.cpp:27
+#: ..\../commands/dialogopathssobreescribirbase.cpp:62
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:117
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:161
+msgid "Overwrite"
+msgstr ""
+
+#: ..\../commands/dialogopathssobreescribirbase.cpp:36
+msgid "Would you like to overwrite them?"
+msgstr ""
+
+#: ..\../commands/dialogopathssobreescribirbase.cpp:65
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:340
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:425
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:123
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:98
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:756
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1086
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1192
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1606
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1820
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2041
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2288
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2484
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2711
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2786
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2829
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:61
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:138
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:85
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:65
+#: ..\../main/gui/history3/historypanel3base.cpp:365
+#: ..\../main/gui/history3/historypanel3base.cpp:437
+#: ..\../main/gui/history3/historypanel3base.cpp:504
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:185
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:322
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:136
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:245
+#: ..\../main/gui/open/opendialogsbase.cpp:55
+#: ..\../main/gui/open/opendialogsbase.cpp:129
+#: ..\../main/gui/pacsupload/pacsuploaddialogbase.cpp:71
+#: ..\../main/gui/print/printmanager.cpp:434
+#: ..\../main/gui/selectpacsserver/selectpacsserverbase.cpp:62
+#: ..\../widgets/gui/calibracionbase.cpp:86
+#: ..\../widgets/gui/selecciontextobase.cpp:72
+#: ..\../wx/thumbnailctrl/thumbnailwidget.cpp:144
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:164
+msgid "Cancel"
+msgstr "İptal"
+
+#: ..\../commands/dicomizationcompletebase.cpp:24
+#: ..\../commands/dicomizationcompletebase.cpp:33
+#: ..\../commands/dicomizationcompletebase.h:60
+msgid "Dicomization complete"
+msgstr ""
+
+#: ..\../commands/dicomizationcompletebase.cpp:38
+msgid "Dicomization finished successfully"
+msgstr ""
+
+#: ..\../commands/dicomizationcompletebase.cpp:56
+msgid "Don't show this message again"
+msgstr ""
+
+#: ..\../commands/dicomizationcompletebase.cpp:62
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:94
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:753
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1083
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1189
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1602
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1816
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2037
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2285
+#: ..\../main/gui/history3/historypanel3base.cpp:433
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:140
+#: ..\../widgets/gui/calibracionbase.cpp:82
+#: ..\../widgets/gui/selecciontextobase.cpp:68
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:162
+msgid "Accept"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:148
+msgid "Step 1 of 3: Importing images"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:157
+msgid "Step 2 of 3: Copying images"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:168
+msgid "Step 3 of 3: Uploading images"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:179
+msgid "Import process failed:"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:179
+msgid ""
+"\n"
+"Would you like to retry?"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:186
+msgid "Importing..."
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:370
+msgid "Unknown error in dicomization process"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:431
+#: ..\../commands/dicomizecommand.cpp:442
+#: ..\../commands/sendpacscommand.cpp:189
+msgid "Error sending evidences:"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:437
+#: ..\../commands/dicomizecommand.cpp:448
+msgid "Can not upload to the PACS:\n"
+msgstr ""
+
+#: ..\../commands/dicomizecommand.cpp:454
+msgid ""
+"Can not upload to the PACS:\n"
+"Internal Error"
+msgstr ""
+
+#: ..\../commands/exporttodicomdircommand.cpp:261
+#: ..\../commands/exporttodicomdircommand.cpp:338
+#, c-format
+msgid "Exporting series %d of %d"
+msgstr ""
+
+#: ..\../commands/exporttodicomdircommand.cpp:271
+msgid "Some of selected series has been deleted"
+msgstr ""
+
+#: ..\../commands/exporttodicomdircommand.cpp:279
+#: ..\../commands/exporttodicomdircommand.cpp:385
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:59
+#: ..\../main/gui/export/parametrosprincipales.cpp:192
+msgid "There was an error creating directory"
+msgstr ""
+
+#: ..\../commands/exporttodicomdircommand.cpp:303
+#: ..\../commands/exporttodicomdircommand.cpp:408
+msgid "There was an error writing file"
+msgstr ""
+
+#: ..\../commands/exporttodicomdircommand.cpp:358
+msgid "There was an error anonymizing files"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:113
+msgid "element patient id absent in dataset"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:120
+msgid "element study instance uid absent in dataset"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:127
+msgid "element series instance uid absent in dataset"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:135
+msgid "element sop instance uid absent in dataset"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:274
+#: ..\../commands/incomingdicomassociationcommand.cpp:355
+msgid "Ignoring incoming operation "
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:274
+#: ..\../commands/incomingdicomassociationcommand.cpp:298
+#: ..\../commands/incomingdicomassociationcommand.cpp:355
+msgid "Not implemented"
+msgstr ""
+
+#: ..\../commands/incomingdicomassociationcommand.cpp:473
+#: ..\../commands/pacsdownloadcommand.cpp:165
+#: ..\../commands/pacsdownloadcommand.cpp:172
+msgid "Including files..."
+msgstr ""
+
+#: ..\../commands/linkhistorycommand.cpp:68
+msgid "Linking study..."
+msgstr ""
+
+#: ..\../commands/openremovableunit.cpp:39
+#: ..\../commands/openremovableunit.cpp:41
+msgid "Exploring drives..."
+msgstr ""
+
+#: ..\../commands/openremovableunit.cpp:71
+msgid ""
+"No DICOMDIR found in removable units.\n"
+"Would you like to scan other path recursively?"
+msgstr ""
+
+#: ..\../commands/openremovableunit.cpp:106
+#, c-format
+msgid ""
+"No DICOMDIR found in removable units, would you like to scan recursively %s "
+"drive"
+msgstr ""
+
+#: ..\../commands/openremovableunit.cpp:127
+msgid "Select drive you want to open"
+msgstr ""
+
+#: ..\../commands/openremovableunit.cpp:129
+msgid ""
+"Ginkgo CADx has detected more than one removable units,\n"
+"but none of them includes a DICOMDIR at root.\n"
+"Select drive where you want to acquire recursively"
+msgstr ""
+
+#: ..\../commands/pacsdownloadcommand.cpp:87
+#: ..\../commands/synchronizationcommand.cpp:70
+msgid "Downloading files ..."
+msgstr ""
+
+#: ..\../commands/pacsdownloadcommand.cpp:113
+#: ..\../commands/synchronizationcommand.cpp:121
+msgid "Internal Error"
+msgstr ""
+
+#: ..\../commands/pacsdownloadcommand.cpp:132
+msgid "Error downloading study: "
+msgstr ""
+
+#: ..\../commands/pdfextractercommand.cpp:103
+msgid "Error extracting pdf, Ginkgo CADx is unable to load this format"
+msgstr ""
+
+#: ..\../commands/pdfextractercommand.cpp:103
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:360
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:367
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:373
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:399
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:362
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:152
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:175
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:182
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:192
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:202
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1100
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1202
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1224
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1240
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1244
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1248
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1252
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1256
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1260
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1483
+#: ..\../main/gui/progress/statusbarprogreso.cpp:284
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:67
+#: ..\../widgets/gui/calibracion.cpp:205 ..\../widgets/gui/calibracion.cpp:209
+#: ..\../widgets/gui/calibracion.cpp:219 ..\../widgets/gui/calibracion.cpp:225
+#: ..\../widgets/gui/calibracion.cpp:229
+msgid "Error"
+msgstr "Hata"
+
+#: ..\../commands/pdfextractercommand.cpp:113
+#: ..\../commands/pdfextractercommand.cpp:122
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:478
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:486
+msgid "There isn't any pdf reader registered in the system"
+msgstr ""
+
+#: ..\../commands/pdfextractercommand.cpp:130
+msgid "PDF files extracted successfully..."
+msgstr ""
+
+#: ..\../commands/secondarycapturedicomizecommand.cpp:73
+#, fuzzy
+msgid "Ginkgo CADx Secondary Capture"
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../commands/sendhl7command.cpp:63
+#, c-format
+msgid "Sending HL7 message %d of %d"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:73
+msgid "Message successfully sent"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:77
+msgid "Unknown protocol"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:80 ..\../commands/sendhl7command.cpp:93
+#: ..\../commands/sendhl7command.cpp:145
+msgid "Error sending message:"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:90
+msgid "Error sending HL7 message see log for more details"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:93 ..\../commands/sendhl7command.cpp:94
+msgid "Unknown error"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:134
+msgid "Failed to start connection"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:148
+msgid "Error sending message. It was sent "
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:148
+msgid " bytes from a total of "
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:247
+msgid ""
+"Error in the logic of confirmation. The control of the message ID does not "
+"match recognized"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:251
+msgid "NACK received:"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:258
+msgid "Failed delivery confirmation:"
+msgstr ""
+
+#: ..\../commands/sendhl7command.cpp:264
+msgid ""
+"Error in the confirmation of delivery: Delivery is not recognized by the "
+"remote end"
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:51
+msgid "Send files to PACS"
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:159
+msgid "Uploading files ..."
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:182
+msgid "Error: PACS entry configuration not found: "
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:185
+msgid "Error:"
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:193
+msgid "Error sending evidences: Internal error."
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:207
+msgid "Error uploading the study to PACS: "
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:209
+#, c-format
+msgid ""
+"\n"
+"Would you like to retry(automatically retried in %d seconds)?"
+msgstr ""
+
+#: ..\../commands/sendpacscommand.cpp:210
+msgid "Retry send to PACS"
+msgstr ""
+
+#: ..\../commands/synchronizationcommand.cpp:91
+#: ..\../main/controllers/dcmtk/dicomgetassociation.cpp:447
+#: ..\../main/controllers/dcmtk/dicomgetassociation.cpp:580
+#, c-format
+msgid "Downloading file %d"
+msgstr ""
+
+#: ..\../commands/synchronizationcommand.cpp:104
+msgid "Error downloading file"
+msgstr ""
+
+#: ..\../commands/synchronizationcommand.cpp:141
+msgid "Error synchronizing study: "
+msgstr ""
+
+#: ..\../commands/thumbnailscommand.cpp:107
+#: ..\../commands/thumbnailscommand.cpp:133
+#: ..\../commands/thumbnailscommand.cpp:247
+#: ..\../commands/thumbnailscommand.cpp:376
+#: ..\../commands/thumbnailscommand.cpp:382
+#: ..\../main/gui/import/selectimagesimportation.cpp:526
+msgid "Creating Thumbnail..."
+msgstr ""
+
+#: ..\../commands/thumbnailscommand.cpp:399
+msgid "Generating thumbnail ..."
+msgstr ""
+
+#: ..\../export/tools/iaddfiletohistorytool.cpp:19
+#: ..\../main/gui/history3/historypanel3.cpp:999
+msgid "Open study"
+msgstr ""
+
+#: ..\../export/tools/iangletool.cpp:19
+msgid "Angle \tCtrl+A"
+msgstr ""
+
+#: ..\../export/tools/ibrightnesscontrasttool.cpp:20
+msgid "Brightness/Contrast \tCtrl+B"
+msgstr ""
+
+#: ..\../export/tools/icamerarotationtool.cpp:19
+msgid "Rotate camera"
+msgstr ""
+
+#: ..\../export/tools/icolormaptool.cpp:20
+#, fuzzy
+msgid "Color Map"
+msgstr "Renk"
+
+#: ..\../export/tools/icopyimagetoclipboardtool.cpp:19
+#: ..\../main/gui/open/opendialogsbase.cpp:48
+#: ..\../main/gui/open/opendialogsbase.cpp:192
+msgid "Copy"
+msgstr ""
+
+#: ..\../export/tools/icornerannotationstool.cpp:20
+msgid "Window annotations"
+msgstr ""
+
+#: ..\../export/tools/idetachwindowtool.cpp:19
+msgid "Detach window"
+msgstr ""
+
+#: ..\../export/tools/iimageexporttool.cpp:19
+#, fuzzy
+msgid "Export image..."
+msgstr "Hata mesajı"
+
+#: ..\../export/tools/iimageprinttool.cpp:19
+#, fuzzy
+msgid "Print image..."
+msgstr "Düzenle ..."
+
+#: ..\../export/tools/imarkertool.cpp:20
+msgid "Marking Tools \tCtrl+M"
+msgstr ""
+
+#: ..\../export/tools/imetricgridtool.cpp:20
+msgid "Metric grid"
+msgstr ""
+
+#: ..\../export/tools/inotetool.cpp:19
+msgid "Text Note \tCtrl+N"
+msgstr ""
+
+#: ..\../export/tools/ipacsuploadtool.cpp:19
+#, fuzzy
+msgid "Upload study..."
+msgstr "İndirilenler"
+
+#: ..\../export/tools/ipixelsbluringtool.cpp:20
+msgid "Pixels blurring"
+msgstr ""
+
+#: ..\../export/tools/ipointertool.cpp:19
+msgid "Pointer \tEsc"
+msgstr ""
+
+#: ..\../export/tools/iqueryretrievetool.cpp:19
+#: ..\../main/tools/queryretrievehistorytool.cpp:25
+#: ..\../main/tools/queryretrievetool.cpp:93
+msgid "Acquire a DICOM study from PACS"
+msgstr ""
+
+#: ..\../export/tools/iresettool.cpp:19
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:341
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:435
+msgid "Reset"
+msgstr ""
+
+#: ..\../export/tools/irotateandfliptool.cpp:19
+msgid "Rotate and flip"
+msgstr ""
+
+#: ..\../export/tools/iruletool.cpp:19
+msgid "Rule \tCtrl+R"
+msgstr ""
+
+#: ..\../export/tools/isecondarycapturetool.cpp:19
+msgid "Save snapshot as new series..."
+msgstr ""
+
+#: ..\../export/tools/ishowhistorytool.cpp:19
+msgid "Show history \tAlt+h"
+msgstr ""
+
+#: ..\../export/tools/ishowtagstool.cpp:19
+msgid "Show / Hide DICOM tags panel"
+msgstr ""
+
+#: ..\../export/tools/istartdicomizationtool.cpp:19
+#, fuzzy
+msgid "Dicomize..."
+msgstr "Düzenle ..."
+
+#: ..\../export/tools/itoolpan.cpp:19
+msgid "Pan \tCtrl+P"
+msgstr ""
+
+#: ..\../export/tools/itoolslider.cpp:19
+msgid "Slider \tCtrl+S"
+msgstr ""
+
+#: ..\../export/tools/itoolwindowlevel.cpp:19
+msgid "Window/Level \tCtrl+W"
+msgstr ""
+
+#: ..\../export/tools/itoolzoom.cpp:19
+msgid "Zoom \tCtrl+O"
+msgstr ""
+
+#: ..\../export/tools/itrackballtool.cpp:19
+msgid "Trackball \tCtrl+T"
+msgstr ""
+
+#: ..\../export/tools/iundotool.cpp:20 ..\../main/tools/undotool.cpp:109
+msgid "Undo"
+msgstr ""
+
+#: ..\../export/tools/ivideotool.cpp:19
+msgid "Video \tCtrl+Space"
+msgstr ""
+
+#: ..\../export/tools/iwindowlayouttool.cpp:20
+msgid "Window layout"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:161
+msgid "Studies with"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:161
+msgid " unsupported components"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:210
+msgid "Reading properties"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:219
+#: ..\../main/controllers/controladorcarga.cpp:642
+#: ..\../main/controllers/controladorcarga.cpp:888
+#: ..\../main/controllers/streaming/streamingloader.cpp:600
+msgid "Error reading the study: "
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:224
+#: ..\../main/controllers/controladorcarga.cpp:229
+#: ..\../main/controllers/controladorcarga.cpp:647
+#: ..\../main/controllers/controladorcarga.cpp:893
+msgid "Internal error reading the study: "
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:269
+#: ..\../main/controllers/controladorcarga.cpp:281
+#: ..\../main/controllers/controladorcarga.cpp:905
+msgid "Spacing is not valid: ("
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:305
+#: ..\../main/controllers/controladorcarga.cpp:338
+#: ..\../main/controllers/controladorcarga.cpp:372
+#: ..\../main/controllers/controladorcarga.cpp:408
+#: ..\../main/controllers/controladorcarga.cpp:441
+#: ..\../main/controllers/controladorcarga.cpp:474
+#: ..\../main/controllers/controladorcarga.cpp:507
+#: ..\../main/controllers/controladorcarga.cpp:540
+#: ..\../main/controllers/controladorcarga.cpp:573
+#: ..\../main/controllers/controladorcarga.cpp:606
+#: ..\../main/controllers/controladorcarga.cpp:935
+msgid "Error loading the study: Out of memory"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:375
+msgid "Error loading the study: Internal Error"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:630
+#: ..\../main/controllers/streaming/streamingloader.cpp:1023
+#: ..\../main/controllers/streaming/streamingloader.cpp:1223
+#: ..\../main/controllers/streaming/streamingloader.cpp:1230
+msgid "Error reading the study: unsupported pixel format"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:651
+#: ..\../main/controllers/controladorcarga.cpp:960
+msgid "Process canceled by user."
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:878
+msgid "Interpreting properties"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:917
+msgid "Spacing of the image is invalid: ("
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:942
+msgid "Reading dataset"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:951
+msgid "Error reading the study:"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:956
+msgid "Internal error while reading the study:"
+msgstr ""
+
+#: ..\../main/controllers/controladorcarga.cpp:972
+msgid "load"
+msgstr ""
+
+#: ..\../main/controllers/controladorenviohl7.cpp:40
+msgid "Stopping HL7 sender"
+msgstr ""
+
+#: ..\../main/controllers/controladorenviohl7.cpp:63
+#: ..\../main/controllers/controladorenviohl7.cpp:76
+msgid "Error starting HL7 sender"
+msgstr ""
+
+#: ..\../main/controllers/controladorenviohl7.cpp:65
+#: ..\../main/controllers/controladorenviohl7.cpp:78
+msgid "HL7 sender started"
+msgstr ""
+
+#: ..\../main/controllers/controladorenviohl7.cpp:108
+msgid "HL7 controller destroyed"
+msgstr ""
+
+#: ..\../main/controllers/controladorenviohl7.cpp:151
+#, fuzzy
+msgid "Error processing message"
+msgstr "Hata mesajı"
+
+#: ..\../main/controllers/controladoreventos.cpp:285
+#: ..\../main/controllers/pacscontroller.cpp:1980
+#: ..\../main/controllers/pacscontroller.cpp:1984
+#: ..\../main/controllers/pacscontroller.cpp:1988
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:73
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:76
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:79
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:82
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:85
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:86
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:87
+#: ..\../main/gui/import/pasosimportacionbase.cpp:164
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:184
+msgid "Unknown"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:111
+msgid "Loading"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:114
+msgid "Could not load extension library file"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:115
+msgid "Could not load library file. Check log"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:150
+msgid "Extension descriptor does not match"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:154
+msgid "Could not find entry point"
+msgstr ""
+
+#: ..\../main/controllers/controladorextensiones.cpp:549
+msgid "Skipping extension with duplicated SID:"
+msgstr ""
+
+#: ..\../main/controllers/controladorhl7.cpp:74
+msgid "Integration engine hostname not set"
+msgstr ""
+
+#: ..\../main/controllers/controladorhl7.cpp:77
+msgid "Integration engine port not set"
+msgstr ""
+
+#: ..\../main/controllers/controladorhl7.cpp:91
+msgid "Unsupported protocol"
+msgstr ""
+
+#: ..\../main/controllers/controladorhl7.cpp:106
+msgid "Error queueing message. Check your supplier"
+msgstr ""
+
+#: ..\../main/controllers/controladorlog.cpp:69
+#: ..\../main/controllers/controladorlog.cpp:75
+msgid "%d{%Y/%m/%d %H:%M:%S.%q} [%t] %-5p %c %x - %m%n"
+msgstr ""
+
+#: ..\../main/controllers/dicommanager.cpp:501
+#: ..\../main/controllers/dicommanager.cpp:528
+msgid "Extracting file..."
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:603
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:767
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:76
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:98
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:140
+msgid "Default"
+msgstr "Varsayılan"
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:772
+msgid "Autocalculate"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:916
+msgid "SPINAL"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:920
+msgid "CRANIUM"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:924
+msgid "BONE"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:928
+msgid "CRANIUM BONE"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:932
+msgid "MEDIASTINUM"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:936
+msgid "LUNG"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:940
+msgid "BREAST"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:944
+msgid "VERTEBRA"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:954
+msgid "ANGIO"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:958
+msgid "CT CRANIUM"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:962
+msgid "T1 CRANIUM"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:966
+msgid "T2 CRANIUM"
+msgstr ""
+
+#: ..\../main/controllers/hangingprotocolcontroller.cpp:970
+msgid "KNEE"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:322
+msgid "Error creating history database "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:322
+msgid " trying temp"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:326
+msgid ""
+"You do not have permissions to write to the dicom Dir, preferences will be "
+"stored in the temporary directory"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:342
+msgid "Error creating dicomDir database "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:424
+#: ..\../main/controllers/historycontroller.cpp:440
+msgid "Error creating thumbnails database "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:446
+msgid "Error creating database:\n"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:559
+msgid "Including image "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:559
+#: ..\../main/controllers/historycontroller.cpp:706
+msgid " of "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:706
+msgid "Linking image "
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:1717
+#: ..\../main/controllers/historycontroller.cpp:1762
+#: ..\../main/controllers/historycontroller.cpp:1816
+#: ..\../main/controllers/historycontroller.cpp:1840
+msgid "Error reading history: \n"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:1897
+#: ..\../main/controllers/historycontroller.cpp:1954
+msgid "Failed to delete the number of database:\n"
+msgstr ""
+
+#: ..\../main/controllers/historycontroller.cpp:1991
+msgid "Failed to empty the history:\n"
+msgstr ""
+
+#: ..\../main/controllers/inactivitycontroller.cpp:43
+#, c-format
+msgid ""
+"Ginkgo CADx has detected inactivity and it will be closed in %d seconds.\n"
+"Do you want to continue?"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:94
+msgid "Fatal error! you can't register two parsers with same  key"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:480
+msgid "Malformed template Id ("
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:480
+#: ..\../main/controllers/integrationcontroller.cpp:510
+msgid ""
+"):\n"
+"Is not a valid HL7 identifier (ie: code^description^namespaceId)"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:510
+msgid "Id malformed template in the module configuration"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:527
+msgid "Template Id unsupported ("
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:527
+msgid ""
+"):\n"
+"Check the configuration and attach it if necessary"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:553
+msgid "Unknown module Id ("
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:579
+msgid "Empty configuration"
+msgstr ""
+
+#: ..\../main/controllers/integrationcontroller.cpp:616
+msgid "XML Parser Not Found. Key="
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1608
+#, fuzzy
+msgid "Downloading file"
+msgstr "İndirilenler"
+
+#: ..\../main/controllers/pacscontroller.cpp:1712
+msgid "Error downloading WADO file"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1712
+msgid "Check PACS configuration"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1800
+msgid "You have to specify at least uid study or accession number"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1807
+msgid "You have to specify at least uid series"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1813
+msgid "You have to specify uid series"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1817
+msgid "Unknown query/retrieve level"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1820
+msgid "Query retrieve level not specified"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1855
+msgid "Unable to perform HTTP request"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1859
+msgid "Invalid HTTP response"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1864
+msgid "Invalid HTTP code"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1871
+msgid "Unable to init HTTP subsystem"
+msgstr ""
+
+#: ..\../main/controllers/pacscontroller.cpp:1903
+msgid "PACS-Service"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:97
+#: ..\../main/controllers/parserxmlspanish.cpp:94
+msgid "Omitted Identificator"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:105
+#: ..\../main/controllers/parserxmlspanish.cpp:102
+msgid "Omitted AET"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:113
+#: ..\../main/controllers/parserxmlspanish.cpp:110
+msgid "Hostname missing"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:121
+#: ..\../main/controllers/parserxmlspanish.cpp:118
+msgid "Omitted port"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:206
+#: ..\../main/controllers/parserxmlenglish.cpp:237
+#: ..\../main/controllers/parserxmlspanish.cpp:188
+#: ..\../main/controllers/parserxmlspanish.cpp:219
+msgid "The pdu size is not a valid number"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:212
+#: ..\../main/controllers/parserxmlspanish.cpp:194
+msgid "Port is not a valid number"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:248
+#: ..\../main/controllers/parserxmlspanish.cpp:228
+msgid "The port is not a valid number"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:265
+#: ..\../main/controllers/parserxmlspanish.cpp:246
+msgid "Setting not found"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:308
+msgid "\"action\" attribute invalid at \"gnkworkflow\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:312
+msgid "\"action\" attribute expected at \"gnkworkflow\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:331
+msgid "\"pacs-retrieve-sid\" attribute empty at \"gnkworkflow\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:341
+msgid "\"pacs-store-sid\" attribute empty at \"gnkworkflow\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:358
+msgid "\"value\" attribute expected at \"query-retrieve-level\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:389
+msgid "\"code\" attribute expected at \"patient\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:425
+msgid "\"code\" attribute expected at \"physician\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:432
+msgid "\"value\" attribute expected at \"physician\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:443
+msgid "\"iid\" atribute expected at \"institution\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:477
+msgid "\"code\" attribute expected at \"metadata\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:484
+msgid "\"key\" attribute expected at \"metadata\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:549
+#: ..\../main/controllers/parserxmlspanish.cpp:555
+msgid "You must specify attributes you want to use in the query"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:553
+#: ..\../main/controllers/parserxmlspanish.cpp:562
+msgid "It has been read a \"patient\" tag without identifiers"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlenglish.cpp:571
+#: ..\../main/controllers/parserxmlspanish.cpp:578
+msgid ""
+"You must define a default PACS in the integration XML or in the settings menu"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:290
+msgid "\"accion\" attribute invalid at \"plantilla\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:294
+msgid "\"accion\" attribute expected at \"plantilla\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:313
+msgid "\"pacs_retrieve_sid\" attribute empty at \"plantilla\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:323
+msgid "\"pacs_store_sid\" attribute empty at \"plantilla\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:340
+msgid "\"uid\" attribute expected at \"dimse\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:363
+msgid "\"ambito\" attribute invalid at \"dimse\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:369
+msgid "\"ambito\" attribute expected at \"dimse\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:402
+msgid "\"codigo\" attribute expected at \"paciente\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:438
+msgid "\"codigo\" attribute expected at \"medico\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:445
+msgid "\"valor\" attribute expected at \"medico\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:456
+msgid "\"cid\" atribute expected at \"centro\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:472
+msgid "\"aid\" attribute expected at \"hce\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:486
+msgid "\"codigo\" attribute expected at \"metadato\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:493
+msgid "\"clave\" attribute expected at \"metadato\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:524
+msgid "\"id_peticion\" attribute expected at \"gnkworkflow\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:527
+msgid "\"ambito\" attribute expected at \"plantilla\" scope"
+msgstr ""
+
+#: ..\../main/controllers/parserxmlspanish.cpp:559
+msgid "id_application expected"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomfindassociation.cpp:123
+#, c-format
+msgid "%d results has been found"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomgetassociation.cpp:577
+#, c-format
+msgid "Downloading file %d/%d"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomgetassociation.cpp:597
+msgid "Study download size limit exceeded"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomimg2dcm.cpp:221
+msgid "Unable to reserve memory for PDF dicomization"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomimg2dcm.cpp:240
+msgid "Unable to reserve memory for image Dicomization"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomimg2dcm.cpp:254
+#: ..\../main/controllers/dcmtk/dicomimg2dcm.cpp:359
+msgid "Image format not supported"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:114
+msgid "Unable to create TLS transport layer"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:123
+msgid "Private key and Certificate do not match"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:145
+msgid "Error setting TLS layer: "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:200
+msgid "Receiving Association failed: "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:209
+msgid "Association received"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:210
+msgid "Parameters:"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:240
+msgid "Association Rejected: Bad Application Context Name: "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:258
+msgid "Association Rejected: No Implementation Class UID provided"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:272
+msgid "Association Acknowledged (Max Send PDV: "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:272
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:282
+msgid ")"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:274
+msgid "No valid presentation contexts"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:282
+msgid "Association(dicom://"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservice.cpp:282
+msgid "@"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomstoreassociation.cpp:712
+msgid "Ginkgo CADx is unable to compress from "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomstoreassociation.cpp:712
+msgid " to "
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomstoreassociation.cpp:1285
+#, c-format
+msgid "Uploading file %d of %d"
+msgstr ""
+
+#: ..\../main/controllers/log4cplus/guiappender.cpp:73
+#, fuzzy
+msgid "%Y/%m/%d %H:%M:%S.%q"
+msgstr "%m/%d/%Y %H:%M:%S"
+
+#: ..\../main/controllers/streaming/streamingloader.cpp:303
+#: ..\../main/controllers/streaming/streamingloader.cpp:311
+msgid ""
+"Error reading the study: Largest image pixel value data is not coherent with "
+"combination of Pixel Representation and High bit"
+msgstr ""
+
+#: ..\../main/controllers/streaming/streamingloader.cpp:608
+msgid "Internal error reading the study, unknown format "
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponent.cpp:266
+#: ..\../main/gui/dicombrowsercomponent.cpp:300
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:968
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1159
+msgid "Untitled"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponent.cpp:273
+#: ..\../main/gui/dicombrowsercomponent.cpp:308
+#: ..\../main/gui/dicombrowsercomponent.cpp:400
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:115
+msgid "%m/%d/%Y"
+msgstr "%m/%d/%Y"
+
+#: ..\../main/gui/dicombrowsercomponent.cpp:491
+#: ..\../main/gui/open/opendialogs.cpp:55
+msgid "Select a valid DICOMDIR file"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponent.cpp:583
+#: ..\../main/gui/history3/historypanel3base.cpp:362
+#: ..\../main/gui/history3/historytoolmenu.cpp:104
+#: ..\../main/gui/history3/historytoolmenu.cpp:202
+#: ..\../main/gui/history3/historytoolmenu.cpp:229
+#: ..\../wx/propgrid/props.cpp:2313
+msgid "Remove"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponent.cpp:622
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2346
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2638
+#: ..\../wx/propgrid/props.cpp:2282
+msgid "Add"
+msgstr "Ekle"
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:25
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:57
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:808
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:188
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:200
+msgid "Modality"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:26
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:58
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:105
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:184
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:202
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:42
+#: ..\../main/gui/import/pasosimportacionbase.cpp:237
+#: ..\../main/gui/import/pasosimportacionbase.cpp:278
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:23
+msgid "Date"
+msgstr "Tarih"
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:28
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:60
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:191
+msgid "Accession Number"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:29
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:61
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:192
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2632
+#: ..\../main/gui/history3/historypanel3base.cpp:206
+msgid "UID"
+msgstr ""
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:38
+msgid ">>"
+msgstr ">>"
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:41
+msgid ">"
+msgstr ">"
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:44
+msgid "<"
+msgstr "<"
+
+#: ..\../main/gui/dicombrowsercomponentbase.cpp:47
+msgid "<<"
+msgstr "<<"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:118
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:142
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:144
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:387
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:51
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:815
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:47
+msgid "Id"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:227
+msgid "There is no any PACS configured"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:379
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:216
+msgid ""
+"Search without parameters could take al long time\n"
+"Would you like to continue?"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:379
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:30
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:125
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:216
+msgid "Search"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:391
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:53
+msgid "Acc#"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:393
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:54
+msgid "Study UID"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:412
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:635
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:246
+msgid "Exploring PACS..."
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:503
+#, fuzzy
+msgid "Download series"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:505
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:312
+#, fuzzy
+msgid "Download study"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:519
+#, fuzzy
+msgid "Link series"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:521
+msgid "Link study"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:535
+msgid "Properties..."
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:689
+msgid "Select a valid PACS Server"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:733
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:751
+msgid "Download of modality "
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:733
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:751
+msgid " not allowed"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:734
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:752
+msgid "You are not allowed to download this kind of modalities."
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:734
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:752
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1008
+msgid "Modality download error"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:795
+msgid "Patient's Id"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:800
+msgid "Study Instance UID"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:801
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:203
+msgid "Accession number"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:802
+msgid "Study date"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:807
+msgid "Series Instance UID"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:809
+msgid "Series date"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:814
+msgid "search results"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:955
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1129
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1205
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:436
+#: ..\../main/gui/history3/historypanel3.cpp:299
+#: ..\../main/gui/history3/historypanel3.cpp:367
+#: ..\../main/gui/pacsupload/pacsuploaddialog.cpp:63
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:56
+#: ..\../main/gui/acquisition/wxtreelistctrlacquisition.h:85
+#: ..\../main/gui/acquisition/wxtreelistctrlacquisition.h:86
+#: ..\../main/gui/acquisition/wxtreelistctrlacquisition.h:115
+#: ..\../main/gui/acquisition/wxtreelistctrlacquisition.h:116
+#: ..\../main/gui/ginkgocloud/wxtreelistctrlcloud.h:80
+#: ..\../main/gui/ginkgocloud/wxtreelistctrlcloud.h:81
+#: ..\../main/gui/ginkgocloud/wxtreelistctrlcloud.h:109
+#: ..\../main/gui/ginkgocloud/wxtreelistctrlcloud.h:110
+#: ..\../main/gui/history3/wxtreelistctrlhistory.h:76
+#: ..\../main/gui/history3/wxtreelistctrlhistory.h:77
+#: ..\../main/gui/history3/wxtreelistctrlhistory.h:121
+#: ..\../main/gui/history3/wxtreelistctrlhistory.h:122
+msgid "%m/%d/%Y %H:%M:%S"
+msgstr "%m/%d/%Y %H:%M:%S"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:958
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1132
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1208
+msgid "%m/%d/%Y 00:00:00"
+msgstr "%m/%d/%Y 00:00:00"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:962
+#: ..\../main/gui/history3/historypanel3.cpp:302
+msgid "00/00/0000 00:00:00"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:997
+msgid "You are not allowed to download this kind of modalities ("
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1032
+msgid "No results found"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1252
+#: ..\../main/gui/history3/historypanel3.cpp:284
+#: ..\../main/gui/history3/historypanel3.cpp:288
+msgid "Searching..."
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1342
+#, fuzzy
+msgid "Downloading serie..."
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1345
+#, fuzzy
+msgid "Downloading study..."
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicion.cpp:1349
+msgid "Downloading from PACS..."
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:41
+#: ..\../main/gui/history3/historypanel3base.cpp:48
+#: ..\../main/gui/import/pasosimportacionbase.cpp:192
+msgid "Patient"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:66
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:159
+msgid "PACS acquisition is restricted"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:88
+msgid "Server"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:113
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:192
+#: ..\../main/gui/history3/historypanel3base.cpp:79
+msgid "Any date"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:117
+#: ..\../main/gui/history3/historypanel3base.cpp:83
+msgid "Today AM"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:120
+#: ..\../main/gui/history3/historypanel3base.cpp:86
+msgid "Today PM"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:123
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:196
+#: ..\../main/gui/history3/historypanel3base.cpp:89
+msgid "Today"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:131
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:199
+#: ..\../main/gui/history3/historypanel3base.cpp:97
+msgid "Yesterday"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:134
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:207
+#: ..\../main/gui/history3/historypanel3base.cpp:100
+msgid "Last 7 days"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:137
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:210
+#: ..\../main/gui/history3/historypanel3base.cpp:103
+msgid "Last 30 days"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:140
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:213
+#: ..\../main/gui/history3/historypanel3base.cpp:106
+msgid "Last 3 months"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:148
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:221
+#: ..\../main/gui/history3/historypanel3base.cpp:114
+msgid "Between:"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:174
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:844
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:247
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:261
+#: ..\../main/gui/history3/historypanel3base.cpp:140
+msgid "Modalities"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:189
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:264
+msgid "Date Time"
+msgstr "Tarih Saat"
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:202
+#: ..\../main/gui/open/opendialogsbase.cpp:52
+#: ..\../main/gui/open/opendialogsbase.cpp:196
+msgid "Link"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:204
+msgid "Available only in WADO servers"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:208
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:422
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:276
+msgid "Download"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:234
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:58
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:302
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1300
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1756
+#: ..\../main/gui/paneltags/paneltagsbase.cpp:28
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:41
+msgid "Close"
+msgstr "Kapat"
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:312
+msgid "Series does not exist"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:317
+msgid "These series have been deleted from the local history"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:336
+msgid "Continue"
+msgstr "Devam"
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:355
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2480
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2707
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2782
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:134
+#: ..\../main/gui/open/opendialogsbase.cpp:125
+#: ..\../main/gui/pacsupload/pacsuploaddialogbase.cpp:67
+#: ..\../main/gui/selectpacsserver/selectpacsserverbase.cpp:58
+#: ..\../main/tools/metricgridtool.cpp:101
+msgid "Ok"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:383
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:392
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.h:159
+#, fuzzy
+msgid "Download again"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.cpp:418
+#, fuzzy
+msgid "Open"
+msgstr "&Dosya Aç"
+
+#: ..\../main/gui/acquisition/downloadagaindialog.cpp:32
+msgid ""
+"This series has been already downloaded in the local history, Do you want to "
+"download it again?"
+msgstr ""
+
+#: ..\../main/gui/acquisition/downloadagaindialog.cpp:34
+msgid ""
+"This study has been already downloaded in the local history, Do you want to "
+"download it again?"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizedialog.cpp:67
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:93
+#: ..\../main/gui/export/parametrosprincipales.cpp:207
+msgid "Exporting images ..."
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:21
+msgid "Common tags"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:26
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:54
+msgid "Patient's name and surname"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:29
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:40
+msgid "Patient Id"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:32
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:46
+msgid "Institutions"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:35
+msgid "Referring physician"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:38
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:57
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:90
+msgid "Comments"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:41
+msgid "Ginkgo CADx tags  (Evaluation Maps...)"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:53
+msgid "Tags (double click to change value)"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:98
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:32
+#: ..\../main/tools/anonymizetool.cpp:26
+#: ..\../main/gui/anonymize/anonymizepanelbase.h:100
+msgid "Anonymize"
+msgstr ""
+
+#: ..\../main/gui/anonymize/anonymizepanelbase.cpp:120
+#, fuzzy
+msgid "Create new"
+msgstr "Oluşturulma Tarihi"
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:58
+msgid "settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:250
+msgid "Export Configuration"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:250
+msgid "Ini Files(*.ini)|*.ini"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:254
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:161
+msgid ""
+"File exists\n"
+"Would you like to overwrite it?"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:254
+msgid "Existing file"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:261
+msgid "Export successfully completed"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:263
+msgid "There was an error during exportation"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:270
+msgid "Import Configuration"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:270
+#, fuzzy
+msgid "Ini files(*.ini)|*.ini"
+msgstr "Tüm dosyalar (*.*)|*.*"
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:286
+msgid "Import successfully completed, restart Ginkgo CADx to apply changes"
+msgstr ""
+
+#: ..\../main/gui/configuration/dialogoconfiguracion.cpp:288
+msgid "There was an error during importation, check permissions"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:327
+msgid "Split horizontally..."
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:334
+msgid "Split vertically..."
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:429
+#: ..\../main/tools/windowlayouttool.cpp:273
+msgid "Split active horizontally"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:432
+#: ..\../main/tools/windowlayouttool.cpp:274
+msgid "Split active vertically"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:626
+msgid "You must fill in all fields"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:632
+msgid "Window/level label in use"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:637
+msgid "Fill in valid numbers in window and level fields."
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:664
+msgid "Nearest neighbour"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:665
+msgid "Linear"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:666
+msgid "Cubic"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:735
+msgid "Do you confirm the removal of the preset?"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:735
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:964
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:624
+msgid "Data modified"
+msgstr "Veri düzenlendi"
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:791
+msgid "New hanging protocol"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:834
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:938
+#, c-format
+msgid "Window %d"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:916
+#, c-format
+msgid "%s settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:943
+msgid "This view doesn't support multiple windows"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1007
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1087
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1102
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1124
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:751
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:915
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:997
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:446
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:545
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:580
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:220
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:222
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:224
+msgid "Yes"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1009
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1089
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1104
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1126
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:753
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:917
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:999
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:448
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:547
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:582
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:220
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:222
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:224
+msgid "No"
+msgstr ""
+
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1030
+#: ..\../main/gui/configuration/hangingprotocolconfigurationpanel.cpp:1035
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2111
+msgid "Hanging protocols"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:60
+msgid "One day"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:61
+msgid "Two days"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:62
+msgid "Three days"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:63
+msgid "One week"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:64
+msgid "Two weeks"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:65
+msgid "One month"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:66
+msgid "Three months"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:67
+msgid "One year"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:141
+msgid "Local database"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:146
+msgid "Local DICOM Dir setup"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:161
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:122
+msgid ""
+"The selected directory does not exist\n"
+"Would you like to create it?"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:172
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:133
+msgid ""
+"Failed to create directory, make sure the path is correct and you have "
+"permissions on parent directory"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:186
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:147
+msgid ""
+"There was an error reading the directory, make sure you have write "
+"permissions on it"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:259
+msgid "Select DICOMDIR"
+msgstr ""
+
+#: ..\../main/gui/configuration/localdatabaseconfigurationpanel.cpp:271
+msgid "Warning, to update the directory, you must close current opened series."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionestacion.cpp:87
+msgid "Workstation"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionestacion.cpp:92
+msgid "Configuration parameters of the local station"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionextensiones.cpp:121
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1407
+msgid "Extensions"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionextensiones.cpp:126
+msgid "Extensions settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionextensiones.cpp:132
+msgid "Ginkgo CADx must restart for the extensions changes to take effect"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:118
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2220
+#: ..\../wx/propiedades/wxpropiedadesbase.cpp:40
+msgid "General"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:123
+msgid "General configuration parameters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguraciongeneral.cpp:129
+msgid "Ginkgo CADx must restart for the changes to take effect"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:74
+msgid "Electronic health record"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:79
+msgid "Setting the electronic health record system"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:134
+msgid "Testing conectivity with the server..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:140
+msgid "Error connecting to url"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:141
+msgid "Connection test fail"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionhce.cpp:143
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:627
+msgid "Connection test successful"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:93
+msgid "Select certificate"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:93
+msgid "PEM files(*.pem;*.key)|*.pem;*.key|All files (*.*)|*.*"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:189
+msgid "You have to set private and public key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:224
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:249
+msgid "Change ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:226
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:251
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1165
+msgid "Import ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:273
+msgid ""
+"If you want to use SSL/TLS you have to set a valid certificate and a valid "
+"private key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:465
+msgid "There are this errors: "
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:470
+msgid ""
+"\n"
+"- This PACS id is in use"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:479
+msgid ""
+"\n"
+"- The port must be a positive short integer (16 bits)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:483
+msgid ""
+"\n"
+"- The port is too large"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:489
+msgid ""
+"\n"
+"- The maximum length of the AET is 16 characters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:496
+msgid ""
+"\n"
+"- The PDU size should be greater than or equal to zero (default = 16384)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:500
+msgid ""
+"\n"
+"- The maximum value of the PDU is "
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:504
+msgid ""
+"\n"
+"- The minimum value of the PDU is "
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:512
+msgid ""
+"\n"
+"- If you want to use SSL/TLS you have to set a valid certificate and private "
+"key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:518
+msgid ""
+"\n"
+"- If you want to use WADO you have to fill in wado url"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:522
+msgid ""
+"\n"
+"- WADO URL doesn't contains scheme (i.e. http://)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:525
+msgid ""
+"\n"
+"- WADO URL doesn't contains host"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:535
+msgid "You must fill in all fields to continue"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:550
+msgid "Testing the connection to the node ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:553
+#, fuzzy
+msgid "DICOM Error"
+msgstr "Hata"
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:583
+msgid "Unable to connect: Could not start network support."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:594
+msgid "The service did not respond correctly to the C-ECHO"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:599
+msgid "The service did not respond correctly to the DICOM standard"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:608
+msgid "Invalid port number"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:614
+#, fuzzy
+msgid "WADO Error"
+msgstr "Hata"
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:694
+msgid "Use by default"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:778
+msgid "DICOM nodes"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:783
+msgid "DICOM nodes settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:790
+msgid "They have produced the following errors:"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:795
+msgid ""
+"\n"
+"- The local port must be a positive short integer (16 bits)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:799
+msgid ""
+"\n"
+"- The local port is too large"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:805
+msgid ""
+"\n"
+"- Maximum length of local AET is 16 characters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:964
+msgid "Confirm the removal of the node"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpacs.cpp:1019
+msgid ""
+"You must configure the local AET, which is used to communicate with the "
+"DICOM nodes. The specified port must be opened in the firewall, as it is "
+"essential for transfers."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:90
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1561
+#: ..\../main/gui/export/pasosexportacionbase.cpp:20
+msgid "Profile"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:130
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:257
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:316
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:341
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2083
+msgid "Default value"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:255
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:415
+msgid "Active"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:255
+msgid "Set property active"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:256
+msgid "Inactive"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:256
+msgid "Set property inactive"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:257
+#, fuzzy
+msgid "Set default value"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:344
+msgid "Set by user"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:392
+msgid "Profile name can't be repeated"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:399
+msgid "You must fill in name field to continue"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:469
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1488
+msgid "Profiles"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:474
+msgid "Profiles Settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:483
+msgid "Ginkgo CADx must restart for the permission changes to take effect"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionpermisos.cpp:624
+msgid "Confirm the removal of the profile "
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:51
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:52
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:53
+msgid "New User"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:92
+msgid "User name has to contain at least 4 characters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:100
+msgid "User name repeated"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:108
+msgid "Password and confirm password can't be different."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:117
+msgid "Password has to contain at least 6 characters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:141
+msgid "No login"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:142
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1004
+msgid "User/Password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:143
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1019
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2001
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:219
+msgid "Password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:191
+msgid "Password is setted"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:192
+msgid "Change password"
+msgstr "Parolayı değiştir"
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:194
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1919
+msgid "Password is not setted"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:195
+msgid "Set password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:224
+msgid "Security Setting"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:240
+msgid "You must create at least one user"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:250
+msgid "You must set the main password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:302
+msgid "User inserted successfully"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:305
+msgid "There was an error inserting user. To get more info open the LOG."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:332
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:374
+msgid "Password changed successfully"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:334
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:377
+msgid ""
+"There was an error changing the password. To get more info open the LOG."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:352
+msgid "User deleted successfully"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:355
+msgid "There was an error deleting user. To get more info open the LOG."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:359
+msgid "Ginkgo CADx must have at least one user."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionseguridad.cpp:366
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1012
+#: ..\../main/gui/login/dialogologin.cpp:27
+msgid "User"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:242
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1757
+msgid "Title"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:244
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1790
+msgid "Monitorize"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:246
+msgid "Clean before"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:248
+#, fuzzy
+msgid "Clean after"
+msgstr "Merkez"
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:250
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1780
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:146
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:260
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:232
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:201
+#: ..\../main/gui/import/pasosimportacionbase.cpp:251
+#: ..\../main/gui/import/pasosimportacionbase.cpp:292
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:24
+msgid "Description"
+msgstr "Açıklama"
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:252
+msgid "Path"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:255
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:284
+msgid "unknown column"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:334
+#: ..\../main/gui/open/abrir.cpp:143
+msgid "Choose a directory"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:360
+msgid "Location titles can't be repeated"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:367
+msgid "Maximum length of title is 8 characters"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:373
+msgid "The selected directory can't be opened"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:399
+msgid "You must fill both title and location fields to continue"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:472
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1641
+msgid "Locations"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfiguracionubicaciones.cpp:477
+msgid "Location Settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfigurationanonymization.cpp:90
+msgid "Anonymization"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelconfigurationanonymization.cpp:95
+msgid "Anonymization settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:22
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:27
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:807
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2537
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2601
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1413
+msgid "Settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:80
+#, fuzzy
+msgid "Export config..."
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:83
+msgid "Import config..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:101
+msgid "Apply"
+msgstr "Uygula"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:155
+msgid "Physician's name"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:162
+msgid "Physician's Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:178
+msgid "Service"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:186
+msgid "Service's name"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:193
+msgid "Service's Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:209
+msgid "Local institution"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:217
+msgid "Institution's name"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:224
+msgid "Institution's Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:240
+msgid "Dicomized files"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:248
+msgid "Charset"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:253
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1048
+msgid "ISO_IR 192"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:254
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1049
+msgid "ISO_IR 6"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:255
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1047
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1050
+msgid "ISO_IR 100"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:256
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1051
+msgid "ISO_IR 101"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:257
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1052
+msgid "ISO_IR 109"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:258
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1053
+msgid "ISO_IR 110"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:259
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1054
+msgid "ISO_IR 126"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:260
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1055
+msgid "ISO_IR 127"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:261
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1056
+msgid "ISO_IR 138"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:262
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1057
+msgid "ISO_IR 144"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:263
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1058
+msgid "ISO_IR 148"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:304
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:309
+msgid "Language"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:325
+msgid "Updates"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:330
+msgid "Automatically check for updates"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:343
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:351
+msgid "Proxy settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:348
+msgid "Enable http proxy"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:388
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:403
+msgid "DICOM Dir"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:393
+msgid "DICOM Dir is the local directory where history is stored"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:410
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1775
+msgid "..."
+msgstr "..."
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:415
+msgid "Warning, to update the directory, you have to close every opened series"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:423
+msgid "Auto-cleaning"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:431
+msgid "Delete studies with acquisition date older than:"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:441
+msgid "Delete older studies when hd free space is less than:"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:452
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:469
+msgid "MB"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:458
+msgid "Delete studies when DICOM Dir size bigger than:"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:477
+msgid "This feature only affects to studies COPIED to DICOM Dir and not in use"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:530
+msgid "Local PACS"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:535
+msgid ""
+"You must configure the local AET, which is used to communicate with the PACS "
+"server. The specified port must be opened in the firewall, as it is "
+"essential for transfers."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:547
+msgid "Local AET"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:562
+msgid ""
+"For large-scale implementation in a homogenous environment, you can specify "
+"the following wildcards in the local AET:\n"
+"\t%IP IP Address\n"
+"\t%IP<n> n-th Octet (1~4)\n"
+"\t%HOSTNAME Host Name\""
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:568
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:836
+msgid "Port"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:578
+msgid "Advanced settings..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:592
+msgid "DICOM Nodes"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:606
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1500
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1688
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1890
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2125
+msgid "New ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:609
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1503
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1691
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2128
+msgid "Edit ..."
+msgstr "Düzenle ..."
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:614
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1508
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1696
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1898
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2133
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2352
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2641
+#: ..\../main/gui/history3/historypanel3.cpp:1047
+#: ..\../main/gui/history3/historypanel3.cpp:1056
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:431
+#: ..\../main/gui/import/selectimagesimportation.cpp:313
+#: ..\../main/managers/widgetsmanager.cpp:1075
+msgid "Delete"
+msgstr "Sil"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:622
+msgid "Set Default"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:677
+msgid "Edit public key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:682
+msgid "Use default certificate (certificate configured in local AET settings)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:694
+msgid "Public key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:699
+msgid "Public key in PEM format"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:706
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:730
+msgid "Load ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:718
+msgid "Private key"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:723
+msgid "Private key in PEM format"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:747
+#: ..\../main/tools/toolwindowlevel.cpp:201
+msgid "Reset to default"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:797
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:896
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:391
+msgid "DICOM Node"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:822
+msgid "AET"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:829
+msgid "Host"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:843
+msgid "PDU (KB)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:850
+msgid "Retrieve method"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:854
+msgid "Move"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:854
+msgid "Get"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:854
+msgid "WADO"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:860
+msgid "WADO URL"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:869
+msgid "Retrieve mode"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:873
+#: ..\../main/gui/import/pasosimportacionbase.cpp:271
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1435
+msgid "Series"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:873
+msgid "Studies"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:879
+msgid "Reuse connection"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:884
+msgid "Reuse connections when is needed to make more than one queries"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:902
+msgid "Worklists"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:907
+msgid "Select how do you want to handle MPPS items"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:911
+msgid "DICOM MPPS"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:915
+#, fuzzy
+msgid "HL7 messages"
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:919
+msgid "HL7"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:927
+#, fuzzy
+msgid "Abort message"
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:933
+#, fuzzy
+msgid "Completed message"
+msgstr "Mesajı sil"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:939
+#, fuzzy
+msgid "In progress message"
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:948
+#, fuzzy
+msgid "Default values"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:966
+msgid "Worklist"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:972
+msgid "SSL/TLS"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:977
+msgid "Verify server credentials"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:980
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1149
+msgid "Use SSL/TLS"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:984
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:306
+msgid "Certificate"
+msgstr "Sertifika"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:986
+msgid "Certificate to use in this connection"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:990
+msgid "Advanced Configuration ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1035
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1043
+#, fuzzy
+msgid "Default charset"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1069
+msgid "Advanced"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1077
+msgid "Test connection"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1146
+msgid "Verify client credentials"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1153
+msgid "Local AET certificate"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1161
+msgid "Certificate used by Ginkgo CADx"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1226
+msgid "Gingo CADx Application ID used to fill MSH.3 field"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1237
+msgid "Receiver organization Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1239
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1244
+msgid "Unique identifier of the organization receiving the message."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1248
+msgid "Petitioner System Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1250
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1255
+msgid "Unique identifier of the requesting system."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1259
+msgid "Filler Application Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1261
+msgid "Unique identifier of the filler application (SIID/Ginkgo CADx)."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1266
+msgid "Unique identifier of the filler application (SIID/Ginkgo)."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1270
+msgid "Ginkgo CADx Application Id"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1272
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1277
+msgid ""
+"Unique identifier of the Picture Archiving and Communication System "
+"Application (SIID/PACS)."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1292
+msgid "Integration engine"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1303
+msgid "Hostname / Port"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1305
+msgid "Hostname (IP or DNS) integration engine"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1315
+msgid "/"
+msgstr "/"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1324
+msgid "Protocol"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1326
+msgid "Integration Engine's Transport Layer Protocol"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1333
+msgid "MLLP"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1342
+#: ..\../main/gui/export/pasosexportacionbase.cpp:40
+msgid "Format"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1344
+msgid "Message's format"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1348
+msgid "ER7"
+msgstr "ER7"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1357
+msgid "Test engine"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1358
+msgid "Test Integration Engine connectivity"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1462
+msgid "Ginkgo Extension Title"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1516
+msgid "Set active"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1573
+msgid "Profile name"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1649
+msgid ""
+"Locations are predefined paths to set locations from well known paths (ex: "
+"remote shared disk)"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1746
+msgid "Configure location"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1765
+#: ..\../main/gui/history3/historypanel3base.cpp:205
+msgid "Location"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1793
+msgid "Clean directory after dicomization"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1796
+msgid "Clean directory before dicomization"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1859
+msgid "Security type"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1879
+msgid "Users"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1893
+msgid "Change Password ..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1914
+msgid "Set main password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1923
+msgid "Set Password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1971
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1980
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:709
+msgid "Edit User"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:1994
+msgid "User Name"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2008
+msgid "Confirm Password"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2072
+msgid "Properties"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2118
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:62
+msgid "Enabled"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2141
+msgid "Enable/Disable"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2179
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:805
+msgid "Hanging protocol"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2201
+#, fuzzy
+msgid "Opening mode"
+msgstr "&Dosya Aç"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2212
+#, fuzzy
+msgid "Study opening criteria"
+msgstr "Açıklama"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2227
+msgid "+"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2234
+msgid "Workspace"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2274
+msgid "Visualization"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2326
+msgid "Window/level"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2334
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2438
+msgid "Label"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2335
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2445
+msgid "Window"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2336
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2454
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:59
+msgid "Level"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2349
+#: ..\../main/gui/history3/historytoolmenu.cpp:151
+#: ..\../widgets/gui/selecciontextobase.h:64
+#, fuzzy
+msgid "Edit"
+msgstr "&Düzenle"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2366
+#, fuzzy
+msgid "Default Window/Level"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2380
+msgid "Other settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2387
+msgid "Interpolate pixel data"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2430
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2742
+msgid "Add DICOM tag"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2509
+msgid "Setup window"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2514
+msgid "Push configuration button and place window where you want"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2521
+#, fuzzy
+msgid "Set default"
+msgstr "Varsayılan değer"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2522
+msgid "Open in main window"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2526
+msgid "Setup position..."
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2527
+msgid "Setup undocked window position"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2542
+msgid "Layout"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2549
+#, fuzzy
+msgid "Current layout"
+msgstr "Mevcut"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2562
+msgid "Rows"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2569
+#, fuzzy
+msgid "Columns"
+msgstr "Sütun Ekle"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2588
+msgid "Series criteria"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2630
+msgid "Dicom tag"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2631
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2753
+#: ..\../widgets/wangulo.cpp:1223
+msgid "Value"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2676
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2681
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:961
+msgid "Select opening mode"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2749
+msgid "Tag"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2818
+msgid "Setup position and size of the window where you want to open the study"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.cpp:2825
+#, fuzzy
+msgid "Save"
+msgstr "&Kaydet"
+
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:23
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:32
+#: ..\../main/gui/countdownmessage/countdownmessagebase.cpp:108
+msgid "Inactivity detected"
+msgstr ""
+
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:23
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.h:64
+msgid "Export DICOM"
+msgstr ""
+
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:43
+msgid "Refering physician"
+msgstr ""
+
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:60
+#, fuzzy
+msgid "Ginkgo CADx private tags"
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../main/gui/dicomdirexport/dicomdirexportbase.cpp:82
+#: ..\../main/gui/history3/historypanel3.cpp:677
+#: ..\../main/gui/history3/historytoolmenu.cpp:160
+#, fuzzy
+msgid "Export"
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:46
+#: ..\../main/gui/export/parametrosprincipales.cpp:179
+msgid "Select the directory where the files will be stored"
+msgstr ""
+
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:53
+#: ..\../main/gui/export/parametrosprincipales.cpp:186
+msgid ""
+"The selected directory does not exist\n"
+"Would you like to create?"
+msgstr ""
+
+#: ..\../main/gui/dicomdirexport/exportdicomdir.cpp:65
+msgid "There are other DICOM directory in selected path"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:36
+#, c-format
+msgid ""
+"Ginkgo CADx has detected a default DICOM Dir created with an old version of\n"
+"Ginkgo CADx (BBDD v.%d). What do you want to do?"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:39
+#, c-format
+msgid ""
+"DICOM Dir has been created with a new version of Ginkgo CADx (BBDD v.%d).\n"
+"This version is unabled to open it."
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:95
+msgid ""
+"Error renaming old dicomdir to <name>_old, ensure you have permissions to do "
+"it"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigration.cpp:108
+msgid "Select the DICOM Dir folder"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:27
+msgid "DICOM Dir migration"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:44
+msgid "Migrate existing (recommended)"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:55
+msgid ""
+"Migrate existing DICOM Dir, existing files will be added to new DICOM Dir. "
+"Do not close Ginkgo CADx until migration is finished."
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:59
+msgid "Remove old DICOM Dir after migration (will be renamed as *_old)"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:65
+#, fuzzy
+msgid "Continue..."
+msgstr "Devam"
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:77
+msgid "Select other"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:85
+msgid ""
+"Select other path, if path doesn't contains a Ginkgo CADx DICOM Dir, a new "
+"one will be created, else existing DICOM Dir will be used"
+msgstr ""
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.cpp:89
+msgid "Browse..."
+msgstr ""
+
+#: ..\../main/gui/export/parametrosprincipales.cpp:109
+msgid "DICOM Export"
+msgstr ""
+
+#: ..\../main/gui/export/parametrosprincipales.cpp:113
+msgid "Select the format and the images you want to export"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:30
+#: ..\../main/gui/import/pasosimportacionbase.cpp:21
+msgid "Selected images"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:34
+msgid "Current"
+msgstr "Mevcut"
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:34
+msgid "All"
+msgstr "Tümü"
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:47
+msgid "DICOM (native format)"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:47
+msgid "JPG"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:47
+msgid "BMP"
+msgstr "BMP"
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:47
+msgid "PNG"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:67
+#: ..\../main/gui/print/printmanager.cpp:325
+msgid "Content"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:72
+msgid "Include annotation Widgets"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:75
+msgid "Evaluation maps"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:95
+msgid "JPEG"
+msgstr ""
+
+#: ..\../main/gui/export/pasosexportacionbase.cpp:100
+msgid "Quality"
+msgstr ""
+
+#: ..\../main/gui/export/wxwizardexportacionginkgo.cpp:35
+msgid "Image Export Wizard"
+msgstr ""
+
+#: ..\../main/gui/export/wxwizardexportacionginkgo.cpp:144
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:61
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:422
+#: ..\../main/gui/license/aboutdialogbase.cpp:66
+#: ..\../main/gui/license/aboutdialogbase.cpp:147
+#: ..\../wx/propiedades/wxpropiedadesbase.cpp:54
+msgid "&Accept"
+msgstr ""
+
+#: ..\../main/gui/export/wxwizardexportacionginkgo.cpp:146
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:370
+#: ..\../wx/wizardginkgo/wxwizardginkgobasewx.cpp:55
+msgid "&Next >"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:32
+#, fuzzy
+msgid "Open link"
+msgstr "&Dosya Aç"
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:37
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:386
+msgid "File link:"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:136
+#: ..\../main/gui/import/pasosimportacionbase.cpp:231
+msgid "Study"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:147
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:234
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:212
+msgid "User name"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:262
+#, fuzzy
+msgid "Creator"
+msgstr "Oluşturulma Tarihi"
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:263
+msgid "Last Modificator"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:265
+msgid "URL"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:266
+msgid "BucketId"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:381
+msgid "Ginkgo Cloud link"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:393
+msgid ""
+"You can copy and paste link to use it in e-mails and web pages, you have to "
+"install Ginkgo CADx to download and visualize it."
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:413
+msgid "Send link by e-mail"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.cpp:419
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/filelinkdialog.cpp:59
+#, fuzzy
+msgid "New Ginkgo Cloud study"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/ginkgocloud/filelinkdialog.cpp:59
+msgid "To download the study, paste this url "
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/filelinkdialog.cpp:61
+msgid ""
+"into \"Open Ginkgo Cloud link\" tool of Ginkgo CADx history, or paste it "
+"into the address bar of your browser."
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/ginkgocloudsearchdialog.cpp:322
+msgid "Show link..."
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/openginkgoclouddialog.cpp:39
+msgid "Invalid link"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:370
+#: ..\../main/gui/pacsupload/pacsuploaddialog.cpp:66
+#, fuzzy
+msgid "0000/00/00 00:00:00"
+msgstr "%m/%d/%Y 00:00:00"
+
+#: ..\../main/gui/history3/historypanel3.cpp:437
+#: ..\../main/gui/history3/historypanel3.cpp:1007
+msgid "Open Series"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:439
+#: ..\../main/gui/history3/historypanel3.cpp:1009
+msgid "Open Series with .."
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:645
+#: ..\../main/gui/history3/historytoolmenu.cpp:83
+#: ..\../main/gui/startup/startupform.cpp:52
+msgid "Acquire"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:653
+#: ..\../main/tools/dicomizetool.cpp:28
+msgid "Dicomize"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:699
+msgid "All patients"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:778
+msgid "There are pending tasks, do you want to execute them?"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:778
+#: ..\../main/gui/history3/historypanel3base.cpp:204
+msgid "Pending tasks"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:830
+#: ..\../main/gui/history3/historypanel3base.cpp:173
+#: ..\../main/gui/open/opendialogsbase.cpp:32
+msgid "Results"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:830
+#, c-format
+msgid " (%d images)"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1001
+msgid "Open study with .."
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1029
+#: ..\../main/gui/history3/historypanel3base.cpp:500
+msgid "Synchronize"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1047
+msgid "&Delete from history"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1056
+#, fuzzy
+msgid "&Clear history"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historypanel3.cpp:1084
+msgid "Restart pending tasks"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1087
+msgid "Remove pending tasks"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1090
+msgid "Advanced tasks management..."
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1311
+#: ..\../main/gui/history3/historypanel3.cpp:1382
+msgid ""
+"You have reached maximum number of opened tabs, close some tabs and try it "
+"again"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1452
+msgid "Unable to open modality "
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1452
+msgid " with transfer syntax "
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1463
+msgid "Error loading study, check hanging protocol settings"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1485
+msgid "Failed to empty the history, you have to close opened studies"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1493
+msgid "all files"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1516
+#: ..\../main/gui/history3/historypanel3.cpp:1584
+#: ..\../main/gui/history3/historypanel3.cpp:1603
+#: ..\../main/gui/history3/historypanel3.cpp:1626
+#: ..\../main/gui/history3/historypanel3.cpp:1644
+#: ..\../main/tools/anonymizetool.cpp:46
+#: ..\../main/tools/exportdicomdirtool.cpp:57
+#: ..\../main/tools/sendpacstool.cpp:59
+#: ..\../main/tools/showtagshistorytool.cpp:42
+msgid "Select at least one series"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1526
+msgid "You can't remove opened series"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1538
+msgid "You can't remove series with pending tasks, cancel tasks and retry"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1544
+msgid "those series"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1544
+msgid "this series"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3.cpp:1607
+#, fuzzy
+msgid "Are you sure you want to delete task?"
+msgstr "Silmek istediğinize emin misiniz? "
+
+#: ..\../main/gui/history3/historypanel3.cpp:1607
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:117
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:136
+#, fuzzy
+msgid "Delete tasks"
+msgstr "Mesajı sil"
+
+#: ..\../main/gui/history3/historypanel3base.cpp:57
+msgid "Advanced search"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:71
+msgid "Acquisition date"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:182
+msgid "Sort by"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:197
+msgid "Patient name"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+msgid "Pateint id"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:186
+#: ..\../main/gui/history3/historypanel3base.cpp:199
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:108
+msgid "Age"
+msgstr "Yaş"
+
+#: ..\../main/gui/history3/historypanel3base.cpp:198
+msgid "Patient id"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:330
+#: ..\../main/gui/history3/historypanel3base.h:151
+msgid "Confirm removal"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:338
+msgid "Are you sure you want to delete "
+msgstr "Silmek istediğinize emin misiniz? "
+
+#: ..\../main/gui/history3/historypanel3base.cpp:405
+msgid "Choose the view you want to use to open file/s"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:413
+msgid "Always use this view to open these files"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:474
+#: ..\../main/gui/history3/historypanel3base.h:206
+msgid "Synchronize files"
+msgstr ""
+
+#: ..\../main/gui/history3/historypanel3base.cpp:479
+msgid ""
+"There are files that has to be downloaded to local database before executing "
+"this action, \n"
+"do you want to synchornize files now?"
+msgstr ""
+
+#: ..\../main/gui/history3/historytoolmenu.cpp:140
+#, fuzzy
+msgid "Close history"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historytoolmenu.cpp:141
+#: ..\../main/gui/startup/startupform.cpp:49
+#, fuzzy
+msgid "History"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historytoolmenu.cpp:203
+#: ..\../main/gui/history3/historytoolmenu.cpp:230
+#, fuzzy
+msgid "Clear history"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historytoolmenu.cpp:232
+#, fuzzy
+msgid "Select all"
+msgstr "Tümünü Kapat"
+
+#: ..\../main/gui/history3/historytoolmenu.cpp:233
+msgid "Deselect all"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:198
+msgid "Show Message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:199
+msgid "Edit Message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:200
+msgid "Delete message"
+msgstr "Mesajı sil"
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:247
+msgid "Error editing message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:293
+msgid "Error purguing messages"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:307
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:388
+#: ..\../main/gui/progress/paneltarea.cpp:52
+msgid "Stop"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:352
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:152
+msgid "Sent"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:355
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:152
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:63
+msgid "Pending"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:358
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:152
+#: ..\../main/gui/progress/statusbarprogreso.cpp:287
+msgid "Warning"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:376
+msgid "Error getting message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:385
+msgid "Running"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:386
+msgid "The submission process is started and ready to send"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:390
+msgid "Stopped"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:391
+msgid "Usually due to an error in sending a message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:393
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:69
+#: ..\../main/gui/progress/paneltarea.cpp:52
+msgid "Start"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:431
+msgid "Would you like to remove these messages?"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7.cpp:437
+msgid "Error deleting messages"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:19
+msgid "Remove sent messages"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:25
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:33
+msgid "Exit"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:28
+msgid "Messages"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:31
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:38
+msgid "Refresh"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:34
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1434
+msgid "View"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:43
+msgid "Destination"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:44
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:25
+msgid "Status"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:45
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:26
+msgid "Error message"
+msgstr "Hata mesajı"
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:46
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:119
+msgid "Message"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:58
+msgid "Send task status:"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:127
+msgid "Date:"
+msgstr "Tarih:"
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:135
+msgid "Destination:"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:142
+msgid "Status:"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:164
+msgid "Message content:"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.cpp:181
+#: ..\../wx/thumbnailctrl/thumbnailwidget.cpp:141
+msgid "OK"
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:172
+msgid "Overview data of DICOM files"
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:176
+msgid "DICOM data from the files to be generated can be populated"
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:200
+msgid ""
+"\n"
+"* The patient ID is required."
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:204
+msgid ""
+"\n"
+"* Concatenation of patient name and surnames can't be higher than 61."
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:208
+msgid ""
+"\n"
+"* The format of the height in centimeters is not correct. "
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:212
+msgid ""
+"\n"
+"* The patient's birth date is after the date of study"
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:216
+msgid ""
+"\n"
+"* The format of the weight is not correct. Valid range is between 0 and 400 "
+"Kg."
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:221
+msgid "The following errors have occurred when validating fields"
+msgstr ""
+
+#: ..\../main/gui/import/generaldata.cpp:221
+msgid "Error validating fields"
+msgstr ""
+
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:151
+msgid "Selecting Import Profile"
+msgstr ""
+
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:155
+msgid "You must select the profile you want to use import"
+msgstr ""
+
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:173
+msgid "You must select the import profile"
+msgstr ""
+
+#: ..\../main/gui/import/pasoperfilimportacion.cpp:191
+msgid "Unexpected error, select the module again"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:54
+#: ..\../main/gui/print/printmanager.cpp:352
+msgid "Preview"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:60
+msgid "Remove all"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:107
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:65
+msgid "Demographic data"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:120
+#, fuzzy
+msgid "Identificator *"
+msgstr "Sertifika"
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:131
+msgid "(ID or medical history number)"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:145
+msgid "Surname"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:153
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:115
+#, fuzzy
+msgid "Birth date"
+msgstr "Doğum günü"
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:160
+msgid "Sex"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:164
+msgid "Male"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:164
+msgid "Female"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:164
+msgid "Others"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:181
+#, fuzzy
+msgid "Study Details"
+msgstr "Açıklama"
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:199
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:122
+#: ..\../wx/propgrid/advprops.cpp:683
+msgid "Weight"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:209
+msgid "Kg"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:215
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:119
+msgid "Height"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:225
+msgid "cm"
+msgstr ""
+
+#: ..\../main/gui/import/pasosimportacionbase.cpp:244
+#: ..\../main/gui/import/pasosimportacionbase.cpp:285
+#, fuzzy
+msgid "Time"
+msgstr "Tarih Saat"
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:163
+msgid "Path of the location doesn't exists"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:189
+msgid ""
+"Images (*.jpg;*.jpeg;*.bmp;*.png;*.tif;*.tiff;*.pdf)|*.jpg;*.jpeg;*.bmp;*."
+"png;*.tif;*.tiff;*.pdf|JPEG Images (*.jpg;*.jpeg)|*.jpg;*.jpeg|BMP Images (*."
+"bmp)|*.bmp|PNG Images (*.png)|*.png|TIFF Images (*.tif;*.tiff)|*.tif;*.tiff|"
+"PDF documents (*.pdf)|*.pdf|All files(*.*)|*.*"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:191
+msgid ""
+"Images (*.jpg;*.jpeg;*.bmp;*.png;*.tif;*.tiff;*.pdf)|*.jpg;*.jpeg;*.bmp;*."
+"png;*.tif;*.tiff;*.pdf;*.JPG;*.JPEG;*.BMP;*.PNG;*.TIF;*.TIFF;*.PDF|JPEG "
+"Images (*.jpg;*.jpeg)|*.jpg;*.jpeg;*.JPG;*.JPEG|BMP Images (*.bmp)|*.bmp;"
+"*BMP|PNG Images (*.png)|*.png;*PNG|TIFF Images (*.tif;*.tiff)|*.tif;*.tiff;"
+"*TIF;*TIFF|PDF documents (*.pdf;*.PDF)|*.PDF;*.pdf|All files (*.*)|*.*"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:213
+msgid "Select files..."
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:213
+msgid "Select files from filesystem"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:225
+msgid "Paste"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:225
+msgid "Paste from clipboard"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:232
+msgid "Back"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:313
+msgid "Are you sure to delete this file from disk?"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:352
+msgid "Delete selected items"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:364
+msgid "You must select an image"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:368
+msgid "Generating preview..."
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:522
+msgid "Select images"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:556
+msgid "Creating Thumbnails..."
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:737
+msgid "Image selection"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:741
+msgid "You must select the images you want to import"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:765
+msgid "You must select at least one image"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:782
+msgid "The file"
+msgstr ""
+
+#: ..\../main/gui/import/selectimagesimportation.cpp:783
+msgid " doesn't exist"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:50
+msgid "Image Import Wizard"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:72
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:74
+msgid "Requested module does not support importation"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:87
+msgid "There is not registered any module with importation support"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:89
+msgid "There aren't any module with importation support"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:92
+msgid "Requested module is not registered"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:94
+msgid "The requested module isn't registered"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:159
+msgid "free of"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:173
+msgid "in dicomization dir."
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:322
+msgid "Are you sure you want to cancel the import process?"
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:361
+#, c-format
+msgid "Step %d of %d: "
+msgstr ""
+
+#: ..\../main/gui/import/wxwizardimportacionginkgo.cpp:368
+msgid "&End"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialog.cpp:25
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1376
+msgid "About"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:22
+msgid "Ginkgo CADx"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:31
+msgid "Credits"
+msgstr "Hazırlayanlar"
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:54
+msgid "Licenses"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:57
+msgid "UPDATE_INFO"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:105
+#: ..\../main/gui/license/aboutdialogbase.h:89
+msgid "Open Source Licenses"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:114
+msgid "Cairo"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:115
+msgid "DCMTK"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:116
+msgid "FamFamFam Icons"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:117
+msgid "Fugue Icons"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:118
+msgid "ITK"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:119
+msgid "LibJpeg"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:120
+msgid "LibPng"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:121
+msgid "OpenSSL"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:122
+msgid "VTK"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:123
+msgid "WxWidgets"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:124
+msgid "Zlib"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:125
+msgid "SQL Lite"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:126
+msgid "CharLS"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:127
+msgid "Dark Glass Icons"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:128
+msgid "Libcurl"
+msgstr ""
+
+#: ..\../main/gui/license/aboutdialogbase.cpp:129
+msgid "JsonCpp"
+msgstr ""
+
+#: ..\../main/gui/license/acceptlicensedialogbase.cpp:23
+#: ..\../main/gui/license/acceptlicensedialogbase.h:63
+msgid "License agreement"
+msgstr ""
+
+#: ..\../main/gui/license/acceptlicensedialogbase.cpp:43
+msgid ""
+"If you accept the terms of the agreement, click \"I Accept the license\" to "
+"continue. You must accept the license to start using Ginkgo CADx."
+msgstr ""
+
+#: ..\../main/gui/license/acceptlicensedialogbase.cpp:50
+msgid "Check for updates automatically"
+msgstr ""
+
+#: ..\../main/gui/license/acceptlicensedialogbase.cpp:57
+msgid "I Accept the license"
+msgstr ""
+
+#: ..\../main/gui/license/acceptlicensedialogbase.cpp:61
+msgid "I do NOT accept the license"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:157
+msgid "Save logs"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:157
+msgid "Log file (*.log) | *.log | Text file (*.txt) | *.txt"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:174
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:181
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:191
+msgid "File couldn't be stored "
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogs.cpp:201
+msgid "Could not write to file"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:21
+msgid "Save log..."
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:27
+msgid "Clear log"
+msgstr "Kayıt Dosyasını Temizle"
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:36
+msgid "Log"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:73
+msgid "Clear"
+msgstr "Temizle"
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.cpp:127
+msgid "LogText"
+msgstr ""
+
+#: ..\../main/gui/login/dialogologin.cpp:50
+msgid "The username or password is incorrect"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:228
+#: ..\../main/gui/taskcontrol/taskcontrolbase.h:59
+msgid "Tasks"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:510
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1135
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1167
+msgid "Included in the history ..."
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:519
+msgid "There is no URL to check updates on the current configuration."
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:519
+msgid "Check update error"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1100
+msgid ""
+"Semantic/Sintactic error parsing integration URL (see log for details):\n"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1202
+msgid "Malformed XML"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1220
+msgid "Error in interpreting the parameters of the command line. ("
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1240
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1244
+msgid ""
+"Semantic/Sintactic error parsing integration XML (see log for details):\n"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1248
+msgid "Error parsing integration XML:\n"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1252
+msgid "PACS error:\n"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1256
+msgid "Error executing WorkFlow\n"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1260
+msgid ""
+"Error executing WorkFlow\n"
+"Internal Error"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1300
+msgid "Close current view"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1301
+#, fuzzy
+msgid "Close all"
+msgstr "Tümünü Kapat"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1301
+msgid "Close all views"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1302
+msgid "&Exit"
+msgstr "&Çıkış"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1302
+msgid "Exit application"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1331
+msgid "Full screen"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1331
+msgid "Show full screen"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1333
+msgid "Tab grouping"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1334
+msgid "Horizontal mosaic"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1335
+msgid "Vertical mosaic"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1356
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1781
+msgid "Tabbed organization"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1372
+#, fuzzy
+msgid "Ginkgo CADx manual ..."
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1373
+msgid "Open test card"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1374
+msgid "Check for updates"
+msgstr "Güncellemeleri kontrol et"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1374
+msgid "Check for newest versions"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1375
+msgid "Need support ..."
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1376
+msgid "About "
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1414
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.h:73
+msgid "HL7 monitor"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1414
+msgid "HL7 message control"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1415
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.h:72
+msgid "Log monitor"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1415
+msgid "Log monitored"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1432
+#, fuzzy
+msgid "&File"
+msgstr "&Dosyalar"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1433
+msgid "&Edit"
+msgstr "&Düzenle"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1437
+#: ..\../wx/thumbnailctrl/thumbnailwidget.cpp:147
+msgid "&Help"
+msgstr "&Yardım"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1483
+msgid "Error loading history, Ginkgo CADx will be closed"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1497
+msgid "Mosaic"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1702
+msgid "Would you like to save the changes in the study:"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1704
+msgid "Unsaved data"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1712
+msgid ""
+"Errors have occurred when saving the series.\n"
+"Would you like to continue closing? "
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1712
+msgid "Error saving"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1745
+msgid "Full Screen"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1745
+msgid "View Full Screen"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1748
+msgid "Tab Regroup"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1749
+msgid "Tile Horizontally"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1750
+msgid "Tile Vertically"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1753
+msgid "Grid (two columns)"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1754
+msgid "Grid (three columns)"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1756
+msgid "&Close"
+msgstr "&Kapat"
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1757
+msgid "&Close all"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1757
+msgid "Close all windows"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1784
+msgid "Grid organization"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1824
+msgid "There is not newest Ginkgo CADx versions at this moment."
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1824
+msgid "Ginkgo CADx updated"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:1838
+msgid "New version available ("
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipal.cpp:2001
+msgid "Internal error during auth process"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:29
+msgid "New Update"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:34
+msgid "New version available"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:40
+msgid "Do not warn me again about this update"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:43
+msgid "X"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:45
+msgid "Close this notification"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:106
+msgid "The following commands will be aborted if you close the application"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:131
+msgid "Close Ginkgo CADx"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:132
+msgid "Closes the application and aborts pending commands"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:138
+msgid "Do not close the application and keep commands running"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:189
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.h:144
+msgid "User login"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:198
+msgid "System authentication"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.cpp:251
+msgid "Login"
+msgstr ""
+
+#: ..\../main/gui/open/abrir.cpp:79 ..\../main/gui/open/abrir.cpp:81
+msgid "Open..."
+msgstr ""
+
+#: ..\../main/gui/open/opendialogs.cpp:80
+msgid "Select dicom dir files you want to acquire"
+msgstr ""
+
+#: ..\../main/gui/open/opendialogs.cpp:126
+#: ..\../main/gui/open/opendialogsbase.cpp:166
+#: ..\../main/gui/open/opendialogsbase.h:114
+msgid "Copy or link"
+msgstr ""
+
+#: ..\../main/gui/open/opendialogsbase.cpp:23
+#: ..\../main/gui/open/opendialogsbase.h:58
+msgid "Acquire from DICOM Dir"
+msgstr ""
+
+#: ..\../main/gui/open/opendialogsbase.cpp:94
+#: ..\../main/gui/open/opendialogsbase.h:86
+msgid "Select drive"
+msgstr ""
+
+#: ..\../main/gui/open/opendialogsbase.cpp:171
+msgid "Do you want to copy or link files?"
+msgstr ""
+
+#: ..\../main/gui/pacsupload/pacsuploaddialog.cpp:42
+#: ..\../main/gui/selectpacsserver/selectpacsserver.cpp:30
+msgid "There aren't any PACS configured"
+msgstr ""
+
+#: ..\../main/gui/pacsupload/pacsuploaddialogbase.cpp:27
+#: ..\../main/gui/pacsupload/pacsuploaddialogbase.h:57
+#, fuzzy
+msgid "Upload study"
+msgstr "İndirilenler"
+
+#: ..\../main/gui/pacsupload/pacsuploaddialogbase.cpp:35
+#: ..\../main/gui/selectpacsserver/selectpacsserverbase.cpp:32
+msgid "Select PACS server"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:119
+msgid "Metadata"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:120
+msgid "Identification information"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:121
+msgid "Patient information"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:122
+msgid "Acquisition information"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:123
+msgid "Relationship information"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:124
+msgid "Image presentation information"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:125 ..\../widgets/wnota.cpp:597
+msgid "Text"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:126
+msgid "Other"
+msgstr ""
+
+#: ..\../main/gui/paneltags/paneltags.cpp:137
+#: ..\../main/gui/paneltags/paneltags.cpp:173
+msgid "Data"
+msgstr "Veri"
+
+#: ..\../main/gui/previewpanel/previewpanel.cpp:47
+msgid "Hide"
+msgstr ""
+
+#: ..\../main/gui/previewpanel/previewpanelbase.cpp:27
+msgid "javi"
+msgstr ""
+
+#: ..\../main/gui/previewpanel/previewpanelbase.cpp:178
+#: ..\../main/gui/previewpanel/previewpanelbase.cpp:197
+msgid "Previews"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:284
+#: ..\../main/gui/print/printmanager.cpp:312
+msgid "Print"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:329
+msgid "Include Annotations"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:333
+msgid "Evaluation Maps"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:372
+msgid "Zoom"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:397
+msgid "Options"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:401
+msgid "Images per sheet"
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:426
+msgid "Page Setup ..."
+msgstr ""
+
+#: ..\../main/gui/print/printmanager.cpp:430
+msgid "Print ..."
+msgstr ""
+
+#: ..\../main/gui/progress/progresobase.cpp:23
+msgid "There is no running tasks"
+msgstr ""
+
+#: ..\../main/gui/progress/statusbarprogreso.cpp:169
+msgid "0 running tasks."
+msgstr ""
+
+#: ..\../main/gui/progress/statusbarprogreso.cpp:196
+#, c-format
+msgid "There are %d pending tasks"
+msgstr ""
+
+#: ..\../main/gui/selectpacsserver/selectpacsserverbase.cpp:27
+#: ..\../main/gui/selectpacsserver/selectpacsserverbase.h:55
+msgid "Select PACS"
+msgstr ""
+
+#: ..\../main/gui/startup/startupformbase.cpp:28
+#, fuzzy
+msgid "http://ginkgo-cadx.com"
+msgstr "http://ginkgo-cadx.com/en/services"
+
+#: ..\../main/gui/startup/startupformbase.cpp:35
+msgid "Powered by"
+msgstr ""
+
+#: ..\../main/gui/startup/startupformbase.cpp:39
+msgid "MetaEmotion Healthcare"
+msgstr ""
+
+#: ..\../main/gui/startup/startupview.cpp:140
+msgid "Start page"
+msgstr ""
+
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:60
+msgid "Completed"
+msgstr ""
+
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:86
+#, fuzzy
+msgid "Delete task"
+msgstr "Sil"
+
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:88
+msgid "Restart task"
+msgstr ""
+
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:90
+#, fuzzy
+msgid "Delete all"
+msgstr "Tümünü Kapat"
+
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:117
+#: ..\../main/gui/taskcontrol/taskcontrol.cpp:136
+#, fuzzy
+msgid "Are you sure you want to delete tasks?"
+msgstr "Silmek istediğinize emin misiniz? "
+
+#: ..\../main/gui/taskcontrol/taskcontrolbase.cpp:27
+msgid "ID"
+msgstr ""
+
+#: ..\../main/managers/widgetsmanager.cpp:1075
+msgid "Delete Widget"
+msgstr ""
+
+#: ..\../main/managers/widgetsmanager.cpp:1086
+msgid "Properties ..."
+msgstr ""
+
+#: ..\../main/managers/widgetsmanager.cpp:1086
+msgid "Widget Properties"
+msgstr ""
+
+#: ..\../main/tools/addfiletohistorytool.cpp:114
+#, fuzzy
+msgid "Open file"
+msgstr "&Dosya Aç"
+
+#: ..\../main/tools/addfiletohistorytool.cpp:115
+#: ..\../main/tools/openfoldertool.cpp:27
+#, fuzzy
+msgid "Open folder"
+msgstr "&Dosya Aç"
+
+#: ..\../main/tools/addfiletohistorytool.cpp:116
+#: ..\../main/tools/openremovabletool.cpp:28
+msgid "Open removable unit"
+msgstr ""
+
+#: ..\../main/tools/addfiletohistorytool.cpp:117
+#: ..\../main/tools/openginkgocloudlinktool.cpp:27
+msgid "Open Ginkgo Cloud link"
+msgstr ""
+
+#: ..\../main/tools/angletool.cpp:133
+msgid "Normal Angle (3 points)"
+msgstr ""
+
+#: ..\../main/tools/angletool.cpp:134
+msgid "Cobb Angle (2 straight lines)"
+msgstr ""
+
+#: ..\../main/tools/colormaptool.cpp:110
+msgid "Invert color map"
+msgstr ""
+
+#: ..\../main/tools/cornerannotationstool.cpp:44
+msgid "Hide corner annotations"
+msgstr ""
+
+#: ..\../main/tools/cornerannotationstool.cpp:46
+msgid "Show corner annotations"
+msgstr ""
+
+#: ..\../main/tools/detachwindowtool.cpp:42
+msgid "Attach View"
+msgstr ""
+
+#: ..\../main/tools/detachwindowtool.cpp:44
+msgid "Detach view"
+msgstr ""
+
+#: ..\../main/tools/dicomizetool.cpp:28
+#, fuzzy
+msgid "Dicomize files"
+msgstr "Düzenle ..."
+
+#: ..\../main/tools/exportdicomdirtool.cpp:32
+msgid "Export to DICOM Dir"
+msgstr ""
+
+#: ..\../main/tools/markertool.cpp:162
+msgid "Point"
+msgstr ""
+
+#: ..\../main/tools/markertool.cpp:163
+msgid "Arrow"
+msgstr ""
+
+#: ..\../main/tools/markertool.cpp:164
+msgid "Ellipse"
+msgstr ""
+
+#: ..\../main/tools/markertool.cpp:165
+msgid "Trapezoid"
+msgstr ""
+
+#: ..\../main/tools/markertool.cpp:166
+msgid "Polygon"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:57
+msgid "Grid"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:67
+msgid "Grid Scale"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:74
+msgid "Scale X"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:78
+msgid "X axis scale"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:87
+msgid "Scale Y"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:91
+msgid "Y axis scale"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:206
+msgid "Show grid"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:207
+msgid "Configure Grid ..."
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:207
+msgid "Configure Grid"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:250
+msgid "Hide Grid"
+msgstr ""
+
+#: ..\../main/tools/metricgridtool.cpp:252
+msgid "Show Grid"
+msgstr ""
+
+#: ..\../main/tools/openfiletool.cpp:28
+msgid "Open File"
+msgstr ""
+
+#: ..\../main/tools/pacsuploadtool.cpp:54
+msgid "Send to PACS..."
+msgstr ""
+
+#: ..\../main/tools/pixelsbluringtool.cpp:58
+msgid "Unset pixels blurring"
+msgstr ""
+
+#: ..\../main/tools/pixelsbluringtool.cpp:60
+msgid "Set pixels blurring"
+msgstr ""
+
+#: ..\../main/tools/queryretrievehistorytool.cpp:25
+msgid "PACS Q/R"
+msgstr ""
+
+#: ..\../main/tools/queryretrievetool.cpp:94
+#: ..\../main/tools/searchginkgocloudhistorytool.cpp:28
+msgid "Search Ginkgo Cloud"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:151
+msgid "Undo rotate and flip"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:153
+#: ..\../main/tools/rotateandfliptool.cpp:154
+msgid "Rotate 90"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:153
+msgid "counter-clockwise"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:154
+msgid "clockwise"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:156
+msgid "Flip horizontal"
+msgstr ""
+
+#: ..\../main/tools/rotateandfliptool.cpp:157
+msgid "Flip vertical"
+msgstr ""
+
+#: ..\../main/tools/sendpacstool.cpp:34
+msgid "Send to PACS"
+msgstr ""
+
+#: ..\../main/tools/sendpacstool.cpp:70
+msgid "Sending to PACS..."
+msgstr ""
+
+#: ..\../main/tools/showtagshistorytool.cpp:27
+msgid "Show metadatada"
+msgstr ""
+
+#: ..\../main/tools/showtagstool.cpp:42
+msgid "Hide DICOM inspector"
+msgstr ""
+
+#: ..\../main/tools/showtagstool.cpp:44
+msgid "Show DICOM inspector"
+msgstr ""
+
+#: ..\../main/tools/toolwindowlevel.cpp:202
+msgid "Auto calculate"
+msgstr ""
+
+#: ..\../main/tools/toolzoom.cpp:113
+msgid "Reset size to display resolution"
+msgstr ""
+
+#: ..\../main/tools/undotool.cpp:110
+msgid "Redo"
+msgstr ""
+
+#: ..\../main/tools/videotool.cpp:150
+msgid "Disable loop"
+msgstr ""
+
+#: ..\../main/tools/videotool.cpp:153
+msgid "Enable loop"
+msgstr ""
+
+#: ..\../main/tools/videotool.cpp:162
+#, c-format
+msgid "%.1f fps"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:267
+#, fuzzy
+msgid "Add column"
+msgstr "Bir sütun ekle"
+
+#: ..\../main/tools/windowlayouttool.cpp:268
+#, fuzzy
+msgid "Add row"
+msgstr "Satır Ekle"
+
+#: ..\../main/tools/windowlayouttool.cpp:270
+msgid "Remove column"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:271
+msgid "Remove row"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:276
+msgid "1x1 Layout"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:277
+msgid "1x2 Layout"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:278
+msgid "2x1 Layout"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:279
+msgid "2x2 Layout"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:280
+msgid "3x3 Layout"
+msgstr ""
+
+#: ..\../main/tools/windowlayouttool.cpp:281
+msgid "4x4 Layout"
+msgstr ""
+
+#: ..\../main/toolsystem/toolsregistry.cpp:63
+msgid "Module tool still registered when disposing ToolsRegistry"
+msgstr ""
+
+#: ..\../main/toolsystem/toolsregistry.cpp:82
+msgid "The tool is already registered"
+msgstr ""
+
+#: ..\../main/toolsystem/toolsregistry.cpp:187
+msgid "The module "
+msgstr ""
+
+#: ..\../resources/ginkgoresourcesmanager.cpp:49
+msgid "Unable to load PNG bitmap resource"
+msgstr ""
+
+#: ..\../resources/ginkgoresourcesmanager.cpp:56
+msgid "Unable to load PNG image resource"
+msgstr ""
+
+#: ..\../resources/ginkgoresourcesmanager.cpp:63
+msgid "Unable to load GIF animation resource"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "B/W"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "B/W Inverse"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Barten"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Black Body"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Cardiac"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "VR Bones"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "VR Muscles & Bones"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "VR Red Vessels"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Gray Rainbow"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Stern"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Spectrum"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Hot Metal"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Hot Iron"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Hot Green"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "GE Color"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "PERFusion"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "PET"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Flow"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "LONI"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "LONI2"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "Asymmetry"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "P-Value"
+msgstr ""
+
+#: ..\../VTKInria3D/vtkVISUManagement/vtkLookupTableManager.cpp:54
+msgid "ROI"
+msgstr ""
+
+#: ..\../widgets/wangulo.cpp:1210 ..\../widgets/wangulo.cpp:1212
+msgid "Type"
+msgstr ""
+
+#: ..\../widgets/wangulo.cpp:1210
+msgid "Normal"
+msgstr ""
+
+#: ..\../widgets/wangulo.cpp:1212
+msgid "Cobb"
+msgstr ""
+
+#: ..\../widgets/welipse.cpp:720 ..\../widgets/wpoligono.cpp:531
+msgid "Center (I)"
+msgstr ""
+
+#: ..\../widgets/welipse.cpp:726 ..\../widgets/wpoligono.cpp:537
+msgid "Center (M)"
+msgstr ""
+
+#: ..\../widgets/welipse.cpp:761 ..\../widgets/welipse.cpp:765
+msgid "Greater Radius"
+msgstr ""
+
+#: ..\../widgets/welipse.cpp:762 ..\../widgets/welipse.cpp:766
+msgid "Lower Radius"
+msgstr ""
+
+#: ..\../widgets/wnota.cpp:517
+#, fuzzy
+msgid "Default text"
+msgstr "Varsayılan değer"
+
+#: ..\../widgets/wpoligono.cpp:543
+msgid "Number of Vertex"
+msgstr ""
+
+#: ..\../widgets/wpunto.cpp:353
+msgid "Position (I)"
+msgstr ""
+
+#: ..\../widgets/wpunto.cpp:358
+msgid "Position (M)"
+msgstr ""
+
+#: ..\../widgets/wrule.cpp:628
+msgid "Image Calibration"
+msgstr ""
+
+#: ..\../widgets/wrule.cpp:794
+msgid "Length"
+msgstr ""
+
+#: ..\../widgets/wrule.cpp:799
+msgid "Points (I)"
+msgstr ""
+
+#: ..\../widgets/wrule.cpp:806
+msgid "Points (M)"
+msgstr ""
+
+#: ..\../widgets/wtrapezoide.cpp:521
+msgid "Vertex (I)"
+msgstr ""
+
+#: ..\../widgets/wtrapezoide.cpp:531
+msgid "Vertex (M)"
+msgstr ""
+
+#: ..\../widgets/wtrapezoide.cpp:537
+msgid "Center"
+msgstr "Merkez"
+
+#: ..\../widgets/gui/calibracion.cpp:205
+msgid "The calibration value must be a decimal number"
+msgstr ""
+
+#: ..\../widgets/gui/calibracion.cpp:209
+msgid "Calibration value is too low"
+msgstr ""
+
+#: ..\../widgets/gui/calibracion.cpp:219
+msgid "Enter the calibration value"
+msgstr ""
+
+#: ..\../widgets/gui/calibracion.cpp:225
+msgid "The calibration value is too low"
+msgstr ""
+
+#: ..\../widgets/gui/calibracion.cpp:229
+msgid "The calibration value is too high"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:34
+msgid "Calibrating..."
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:47
+msgid "Real Measure"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:52
+msgid "Distance"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:59
+msgid "Microns"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:59
+msgid "Milimeters"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.cpp:59
+msgid "Centimeters"
+msgstr "Santimetre"
+
+#: ..\../widgets/gui/calibracionbase.cpp:59
+msgid "Meters"
+msgstr ""
+
+#: ..\../widgets/gui/selecciontextobase.cpp:26
+msgid "Note"
+msgstr ""
+
+#: ..\../widgets/gui/selecciontextobase.cpp:42
+msgid "Color"
+msgstr "Renk"
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:41
+msgid "Commit date"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:80
+msgid "UNKNOW"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:86
+msgid "<unknown ID>"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:214
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:124
+msgid "Commited"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:219
+msgid "Modified"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebase.cpp:225
+msgid "Not commited"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:42
+msgid "NAME SURNAME SECOND_SURNAME"
+msgstr ""
+
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:52
+msgid "644654645"
+msgstr "644654645"
+
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:109
+#: ..\../wx/gnkinforme/gnkinformebasewx.cpp:130
+msgid "Commit inform"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:660
+msgid "Point Size"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:663
+msgid "Family"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:673
+msgid "Face Name"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:680
+msgid "Style"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:686
+msgid "Underline"
+msgstr ""
+
+#: ..\../wx/propgrid/advprops.cpp:1927
+msgid "Make a selection:"
+msgstr ""
+
+#: ..\../wx/propgrid/manager.cpp:1332
+msgid "Categorized Mode"
+msgstr ""
+
+#: ..\../wx/propgrid/manager.cpp:1333
+msgid "Alphabetic Mode"
+msgstr ""
+
+#: ..\../wx/propgrid/propgrid.cpp:542
+msgid "False"
+msgstr ""
+
+#: ..\../wx/propgrid/propgrid.cpp:543
+msgid "True"
+msgstr ""
+
+#: ..\../wx/propgrid/propgrid.cpp:3279
+msgid "Unspecified"
+msgstr ""
+
+#: ..\../wx/propgrid/propgrid.cpp:4913
+#, c-format
+msgid ""
+"Type operation \"%s\" failed: Property labeled \"%s\" is of type \"%s\", NOT "
+"\"%s\"."
+msgstr ""
+
+#: ..\../wx/propgrid/propgrid.cpp:13565
+#, c-format
+msgid "Error in resource: %s"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:463 ..\../wx/propgrid/props.cpp:477
+#, c-format
+msgid "Value must be %lld or higher"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:647
+#, c-format
+msgid "Value must be %llu or higher"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:657
+#, c-format
+msgid "Value must be %llu or less"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:831
+#, c-format
+msgid "Value must be %f or higher"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:846
+#, c-format
+msgid "Value must be %f or less"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:930
+#, c-format
+msgid "Not %s"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:1717
+msgid "Choose a directory:"
+msgstr "Bir dizin seç:"
+
+#: ..\../wx/propgrid/props.cpp:1772
+msgid "Choose a file"
+msgstr "Bir dosya seçin"
+
+#: ..\../wx/propgrid/props.cpp:1775 ..\../wx/propgrid/props.cpp:1804
+msgid "All files (*.*)|*.*"
+msgstr "Tüm dosyalar (*.*)|*.*"
+
+#: ..\../wx/propgrid/props.cpp:2310
+msgid "Update"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:2316
+msgid "Up"
+msgstr ""
+
+#: ..\../wx/propgrid/props.cpp:2319
+msgid "Down"
+msgstr ""
+
+#: ..\../wx/propgrid/xh_propgrid.cpp:267
+#, c-format
+msgid "Page %i"
+msgstr ""
+
+#: ..\../wx/propiedades/wxpropiedades.cpp:30
+msgid "Properties of "
+msgstr ""
+
+#: ..\../wx/propiedades/wxpropiedadesbase.cpp:31
+msgid "Widget's Name"
+msgstr ""
+
+#: ..\../wx/wizardginkgo/wxwizardginkgobasewx.cpp:52
+msgid "< &Previous"
+msgstr ""
+
+#: ..\../wx/wizardginkgo/wxwizardginkgobasewx.cpp:62
+msgid "&Cancel"
+msgstr "&İptal"
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:54
+msgid "Configure proxy"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:61
+msgid "Use system settings"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:62
+msgid "Manual configuration of proxy:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:81
+msgid "Server settings"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:86
+msgid "Host:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:93
+msgid "Port:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:103
+msgid "Authentication"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:106
+msgid "Proxy server requires authentication"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:110
+msgid "Username:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:118
+msgid "Password:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:129
+#, fuzzy
+msgid "Exceptions"
+msgstr "Eylemler"
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:134
+msgid "No proxy for addresses containing:"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/proxysettingsdlg.cpp:145
+msgid "Separate addresses with commas."
+msgstr ""
+
+#: ..\../wx/wxsqlite3/wxsqlite3.cpp:3701
+msgid "Regular expression invalid: '"
+msgstr ""
+
+#: ..\../wx/wxsqlite3/wxsqlite3.cpp:3706
+#, c-format
+msgid "REGEXP called with wrong number of arguments: %d instead of 2."
+msgstr ""
+
+#: ..\../api/dicom/imodelodicom.h:691
+msgid "Logical error: Study not associated with existent patient in model"
+msgstr ""
+
+#: ..\../api/dicom/imodelodicom.h:719
+msgid "Logical error: Serie not associated with existent study in model"
+msgstr ""
+
+#: ..\../api/dicom/imodelodicom.h:748
+msgid "Logical error: Image not associated with existent serie in model"
+msgstr ""
+
+#: ..\../commands/dialogopathssobreescribirbase.h:56
+msgid "Overwrite Paths"
+msgstr ""
+
+#: ..\../ginkgopro/ginkgo_pro_defines.h:21
+msgid "Professional DICOM CADx environment"
+msgstr ""
+
+#: ..\../main/license.h:31
+msgid "Open Source DICOM CADx environment"
+msgstr ""
+
+#: ..\../main/controllers/dcmtk/dicomservers.h:39
+msgid "Server not found"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.h:104
+msgid "DICOM Query/Retrieve"
+msgstr ""
+
+#: ..\../main/gui/acquisition/dialogoadquisicionbase.h:130
+msgid "Not found"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:422
+msgid "Advanced Settings"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:567
+msgid "Edit profile"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:634
+msgid "Add/Edit Location"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:871
+msgid "Add window/level"
+msgstr ""
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:987
+#, fuzzy
+msgid "Add tag"
+msgstr "Bir satır ekle"
+
+#: ..\../main/gui/configuration/panelesconfiguracionginkgobase.h:1007
+msgid "Setup window position"
+msgstr ""
+
+#: ..\../main/gui/countdownmessage/countdownmessagebase.h:61
+#, fuzzy
+msgid "Closing"
+msgstr "Kapat"
+
+#: ..\../main/gui/dicomdirmigration/dicomdirmigrationbase.h:66
+msgid "DICOM Dir configuration"
+msgstr ""
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.h:80
+#, fuzzy
+msgid "Open Ginkgo Cloud"
+msgstr "&Dosya Aç"
+
+#: ..\../main/gui/ginkgocloud/downloadcloudbase.h:133
+msgid "Ginkgo Cloud search"
+msgstr ""
+
+#: ..\../main/gui/history3/confirmdeletedialog.h:29
+#, fuzzy
+msgid " from History?"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historypanel3base.h:115
+#, fuzzy
+msgid "Medical history"
+msgstr "&Geçmişi Temizle"
+
+#: ..\../main/gui/history3/historypanel3base.h:179
+msgid "Open With ..."
+msgstr ""
+
+#: ..\../main/gui/history3/openwithdialog.h:72
+msgid "Select a View"
+msgstr ""
+
+#: ..\../main/gui/hl7controlwindow/ventanacontrolhl7base.h:101
+msgid "Message detail"
+msgstr ""
+
+#: ..\../main/gui/logcontrolwindow/ventanacontrollogsbase.h:91
+msgid "Log node"
+msgstr ""
+
+#: ..\../main/gui/mainwindow/ventanaprincipalbase.h:91
+#, fuzzy
+msgid "Closing Ginkgo CADx"
+msgstr "Ginkgo CADx Hakkında ..."
+
+#: ..\../main/gui/paneltags/paneltagsbase.h:57
+msgid "DICOM Inspector"
+msgstr ""
+
+#: ..\../widgets/gui/calibracionbase.h:65
+msgid "Calibration"
+msgstr ""
+
+#: ..\../wx/propiedades/wxpropiedadesbase.h:62
+msgid "Properties of ..."
+msgstr ""
+
+#: ..\../wx/thumbnailctrl/thumbnailwidget.h:44
+msgid "Image Browser Dialog"
+msgstr ""
+
+#: ..\../wx/wizardginkgo/wxwizardginkgobasewx.h:61
+msgid "Test title"
+msgstr ""
+
+#: ..\../wx/wxhttpengine/authdlg.h:46
+#, fuzzy
+msgid "Authenticate"
+msgstr "Sertifika"
+
+#, fuzzy
+#~ msgid "Study description"
+#~ msgstr "Açıklama"
+
+#, fuzzy
+#~ msgid "Clean"
+#~ msgstr "Temizle"
+
+#~ msgid "Display Options"
+#~ msgstr "Görünüm Seçenekleri"
+
+#~ msgid "Close All"
+#~ msgstr "Tümünü Kapat"
+
+#~ msgid "&Open File"
+#~ msgstr "&Dosya Aç"
+
+#~ msgid "12412012 Q"
+#~ msgstr "12412012 Q"
+
+#~ msgid "31/08/1983"
+#~ msgstr "31/08/1983"
+
+#~ msgid "10:20"
+#~ msgstr "10:20"
+
+#~ msgid "31/02/2010"
+#~ msgstr "31/02/2010"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "Description: "
+#~ msgstr "Açıklama: "
+
+#~ msgid "Date: "
+#~ msgstr "Tarih: "
+
+#~ msgid "About &Ginkgo CADx ..."
+#~ msgstr "&Ginkgo CADx Hakkında ..."
+
+#~ msgid "About Ginkgo CADx ..."
+#~ msgstr "Ginkgo CADx Hakkında ..."
+
+#, fuzzy
+#~ msgid "Ginkgo CADx settings"
+#~ msgstr "Ginkgo CADx Hakkında ..."
+
+#~ msgid "1x1"
+#~ msgstr "1x1"
+
+#~ msgid "1x2"
+#~ msgstr "1x2"
+
+#~ msgid "2x1"
+#~ msgstr "2x1"
+
+#~ msgid "2X2"
+#~ msgstr "2X2"
+
+#~ msgid "3x3"
+#~ msgstr "3x3"
+
+#~ msgid "4x4"
+#~ msgstr "4x4"
+
+#, fuzzy
+#~ msgid "About Ginkgo CADx..."
+#~ msgstr "Ginkgo CADx Hakkında ..."
+
+#~ msgid "Default Value"
+#~ msgstr "Varsayılan Değer"
+
+#, fuzzy
+#~ msgid "Save Certificate"
+#~ msgstr "Sertifika"
+
+#~ msgid "Address"
+#~ msgstr "Adres"

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4482;4996;4275;4251;4995;4503;4512;4248;4239;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ProgramDatabaseFile>$(SolutionDir)\Symbols\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <MapExports>false</MapExports>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

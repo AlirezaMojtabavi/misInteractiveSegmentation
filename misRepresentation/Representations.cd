@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="misRepresentation" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAABIAAQKAIBKEAIACACgAgACgAAgCAQAAQAAAIAAQ=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misVoreenRepresentation" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAJAAJBCgGARFAECCIAGGAAEIAKAAAAIAQEEQkQ=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misVoreenRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misToolRepresentation" Collapsed="true">
+    <Position X="16.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IcUDAMBAAiIAECQ4BUAADQAAAGAEAAMAQEoCAAAACBA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misToolRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misTextRepresentation" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAiAAAIAEAAAACAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misTextRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misSurfaceRepresentation" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABBAAAAAAACCAAAAACAAAAAAABAAAAABgAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misSurfaceRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misSpherePointLandmark" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAACAAAAAAAIAAAAAAAAAAQAAAAAEAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misSpherePointLandmark.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misSeedRepresentation" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAEE=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misSeedRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misPointLandMark" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAECAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misPointLandMark.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misPartialVolumeBaseRepresentation" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAACAAAACAAAAAIQAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misPartialVolumeBaseRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderRepresentationForDistance" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAEAAAAAAIBBAAAAAAAAAAE=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderRepresentationForDistance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misAnnoatationGroupRep" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misAnnoatationGroupRep.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misAnnotationRepresentation" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAACABAJAAAEAAAAAAAhAAAAAEBAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misAnnotationRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misBiopsyPlanRepresentation" Collapsed="true">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAOQAkAJSACACAAAEAEAQCAAwADAAACACEAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misBiopsyPlanRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misDepthIndicatorRepresentation" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAACACAAAAAAAAAAAAAAAAAAIDAAAAAEAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misDepthIndicatorRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misDistanceRepresentation2D" Collapsed="true">
+    <Position X="34.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAQAQAAABCAgAAAAAIAAAQAgEQAIEAAgABAACgA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misDistanceRepresentation2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misFrustumRepresentation" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAQAAAAAACAAAAAIAAAAAAAABAAAAAACACAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misFrustumRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misGpuRepresentation" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HjIAGIiLNJBEBCBBAwFJQFEQJKIYGBEFABGBQA0AGAI=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misGpuVideoRepresentation" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAACCAACAIAAAAAAABAAAAAAAAQAAAAAEIABA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuVideoRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misLandMarkLabel" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQECCgBAAAMACAAAIiAKAAAAChQgIACAAIQAgkAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misLandMarkLabel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misLandmarkPointerRepresentation" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIgmAMECDIAGDgJQjgCJgAAAg0whQBACAQGAAAQQA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misLandmarkPointerRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misManModelrepresentation" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misManModelrepresentation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderRepresentationBase" Collapsed="true">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAAEAASAAABAAACAAQgCIAAAIAAAAAAAAAQg=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderRepresentationBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="misNavigatorGuiderRepresentationForAngle" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAEQACAAAAACAAAEQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderRepresentationForAngle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="PlaneProperties" Collapsed="true">
+    <Position X="36.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="misImagePlaneInformationStrct" Collapsed="true">
+    <Position X="34.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAABAAABBAQAAAAAAAIAAAAABAAAECgAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="RepresentionsListType" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="layerRep" Collapsed="true">
+    <Position X="34.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="misLayerEnum" Collapsed="true">
+    <Position X="36.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAACAAAACAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misGpuRepresentation.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ConePlace" Collapsed="true">
+    <Position X="34.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\MISServerWkSpc\misSoloution 89-5-3\misSoloution\Header\misNavigatorGuiderRepresentationBase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<ParsissData version="1">
+  <ImageCorrelationSetting>
+    <LoggerEnabled value="false" />
+    <MultiResolutionLevel value="3" />
+    <UsedPrimeryCorrelationValue value="true" />
+    <DefaultIterationNumberForEachLevel value="100" />
+    <UseThreadInPyramidCreation value="true" />
+    <IntervalOfUpdateResult value="100" />
+    <FixedImageOpacity value="0.5" />
+    <MovingImageOpacity value="0.5" />
+    <FixedImageColor>
+      <Red value="250" />
+      <Green value="220" />
+      <Blue value="160" />
+      <Alpha value="1" />
+    </FixedImageColor>
+    <MovingImageColor>
+      <Red value="255" />
+      <Green value="0" />
+      <Blue value="0" />
+      <Alpha value="1" />
+    </MovingImageColor>
+    <AutomaticRegistration value="true" />
+    <MinimumLandmarkNumberForManualRegistartion value="4" />
+    <IsPyramidCalculatedInMultiThreadProcedure value="true" />
+    <Permute x="0" y="1" z="2" />
+    <Flip x="0" y="0" z="0" />
+    <NumberOfLevel value="4" />
+    <LevelInformation>
+      <item>
+        <Number_of_Iterations value="2500" />
+        <Learning_Rate value="0.0005" />
+        <LevelIndex value="0" />
+      </item>
+      <item>
+        <Number_of_Iterations value="3000" />
+        <Learning_Rate value="0.0001" />
+        <LevelIndex value="1" />
+      </item>
+      <item>
+        <Number_of_Iterations value="3000" />
+        <Learning_Rate value="0.00001" />
+        <LevelIndex value="2" />
+      </item>
+      <item>
+        <Number_of_Iterations value="2500" />
+        <Learning_Rate value="0.000001" />
+        <LevelIndex value="3" />
+      </item>
+    </LevelInformation>
+    <TranslationScale value="320" />
+    <FreeTranslationStep value ="2.0"/>
+    <FreeRotationStep value ="2.0"/>
+
+  </ImageCorrelationSetting>
+</ParsissData>

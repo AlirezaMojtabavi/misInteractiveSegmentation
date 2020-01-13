@@ -1,0 +1,683 @@
+<?xml version="1.0" ?>
+<ParsissData version="1">
+    <misApplicationSetting>
+        <MISDataPath value="D:\MIS data\Biopsy\" type="String" hrname="Path for MIS Data Folder" popularity="5" description="This address used to keep images and snapshots and other data, and used in pacs for importing data"/>
+        <PulseTimerPeriod value="50" popularity="3" type="Integer" hrname="Pulse timer period (ms)" description="The system core pulse timer period in milliseconds. This value determines how often system status (tracking, navigation, ...) is refreshed/updated."/>
+        <AdaptiveZoomFunctionCoefficients value="0.1951, 0.19, 37.7, 0.7278" type="String" hrname="AdaptiveZoomFunction Coefficients" popularity="5" description="a * std::atan(b * (x - c)) + d"/>
+        <DontShowProcedureSelection value="false" type="Boolean" hrname="Do not show Procedure Selection UI on application startup" popularity="5" description="Do not show Procedure Selection UI on application startup"/>
+        <RenderingSampleRate value="0.5" type="Double" hrname="Rendering Sample Rate(0-1)" popularity="5" description="0 and 1 indicate the lowest and highest acceptable rendering quality respectively"/>
+        <Passwords type="StringList" hrname="" popularity="5" description="">
+            <item value="77E0239FF0B26A740D9F99D790BB8223A8537BA14C4088934A1EF9E0D16BF351186105AE11BCAF34E8494E6C6B5C22694C44B4797FFD65ECE988E9AFDC8BA3C77D9DD1D15559C89D" type="String" hrname="" popularity="5" description=""/>
+            <item value="AF5B9D2F1C71E42EA77F1B3F903D07BF9F1F293C2F370625C5A5C5FA7531B5B1A7CECF7C528E43D512C43689617DB018008B95FEFA1218E4C2DB90FA26C4DF932557557F1CC2C8E1" type="String" hrname="" popularity="5" description=""/>
+            <item value="E9FB34CA92B60CCEE591DE42F222C04396F2D449DF0350B212CC0628EAFD49DD2D5A0682874D889FBD72D9F39D1EDB3C9F578C7C96E2A13B80D47E7E41DF30A1E853628ACD0B0B07" type="String" hrname="" popularity="5" description=""/>
+            <item value="7E3C98056382ED20ADEB79FC49E426AAD61F1C7455A3F4906F467C5E2D002BCD67443D901C7BB08EE35951172043ABCCA32154AAEC2372CCA22026A047229D782A3AFC86A7389E3A" type="String" hrname="" popularity="5" description=""/>
+        </Passwords>
+        <misGUISetting>
+            <PPSA value="false"/>
+            <CheckTaskIsCompeleteForLeaving value="true"/>
+            <CheckSubSeqActivation value="true"/>
+            <AutomaticCaptureSnapShot value="true"/>
+            <ShowConsoleLogWindow value="false"/>
+            <ShowVTKLogWindow value="false"/>
+            <EnableExitButton value="true"/>
+            <InvalidLicenseText value=" Invalid License File ! "/>
+            <PPSA value="false"/>
+            <showSplashScreen value="true" popularity="5" type="Boolean" hrname="Display splash screen" description="Specifies whether the application splash screen should be displayed at application startup while waiting for application resources to be loaded."/>
+            <EnableVoiceCommand value="false" popularity="5" type="Boolean" hrname="Enable voice command" description="Enable Capture, Accept and Reset voice commands for landmark registeration tab."/>
+            <showFPSInRenderes value="false"/>
+        </misGUISetting>
+        <misDebugSettings>
+            <LoggDetail value="false"/>
+            <LoggerEnabled value="true"/>
+            <LogEventName value="true"/>
+            <RegDataFromFile value="true"/>
+            <TrackerLog value="false"/>
+            <Use3DTexture value="true"/>
+            <ShowMultipleViewTracker value="true"/>
+            <RealtimeLog value="false"/>
+            <DebugLevel value="DEBUGLOGGING">
+                <ValueRange>
+                    <item value="MUSTFLUSH"/>
+                    <item value="FATAL"/>
+                    <item value="CRITICAL"/>
+                    <item value="WARNING"/>
+                    <item value="INFO"/>
+                    <item value="DEBUGLOGGING"/>
+                    <item value="NOTSET"/>
+                </ValueRange>
+            </DebugLevel>
+            <IsInTestMode value="false"/>
+            <logMicronDetail value="false"/>
+            <LogTrackerToolPosition value="false"/>
+            <!--typedef enum
+      {
+      MUSTFLUSH=0, 
+      FATAL,
+      CRITICAL,
+      WARNING,
+      INFO,-
+      DEBUGLOGGING,
+      NOTSET
+      } PriorityLevelType;-->
+            <AppRuningMode value="RunNormal">
+                <ValueRange>
+                    <item value="RunNormal"/>
+                    <item value="Profiling"/>
+                    <item value="Testing"/>
+                </ValueRange>
+            </AppRuningMode>
+            <TestCount value="20"/>
+            <TestFile value="TrackingReconnect.xml"/>
+            <ReadLayoutFromXMl value="false"/>
+        </misDebugSettings>
+        <WorkflowButtonSet value="Ent" popularity="5" type="String" hrname="Surgery type" description="Defines type of the surgery which will affect all aspects of application behaviour (appearance, image slice views, ...)">
+            <ValueRange>
+                <item value="Ent"/>
+                <item value="Dental"/>
+                <item value="Cranial"/>
+                <item value="Spine"/>
+                <item value="Biopsy"/>
+                <item value="CMF"/>
+            </ValueRange>
+        </WorkflowButtonSet>
+        <Authentication>
+            <UsersRegistryFilePath value="Users.xml" description="Absolute or relative path to the XML file containing users&apos; description records (which specify each user by their ID and profile directory path)."/>
+            <Ent type="String" value="ENT_Preferences.xml" description="Name of the file located within each user&apos;s profile directory and contain their preferences. The file must exist and be similar, in structure, to that of the default user, except that users&apos; preference files might omit any of the preference items, in which case that of the default user will be used for the user in question."/>
+            <Cranial type="String" value="ST_NEU_Preferences.xml" description="Name of the file located within each user&apos;s profile directory and contain their preferences. The file must exist and be similar, in structure, to that of the default user, except that users&apos; preference files might omit any of the preference items, in which case that of the default user will be used for the user in question."/>
+            <Spine type="String" value="SPINE_Preferences.xml" description="Name of the file located within each user&apos;s profile directory and contain their preferences. The file must exist and be similar, in structure, to that of the default user, except that users&apos; preference files might omit any of the preference items, in which case that of the default user will be used for the user in question."/>
+            <Biopsy type="String" value="BIOPSY_Preferences.xml" description="Name of the file located within each user&apos;s profile directory and contain their preferences. The file must exist and be similar, in structure, to that of the default user, except that users&apos; preference files might omit any of the preference items, in which case that of the default user will be used for the user in question."/>
+            <CMF type="String" value="CMF_Preferences.xml" description="Name of the file located within each user&apos;s profile directory and contain their preferences. The file must exist and be similar, in structure, to that of the default user, except that users&apos; preference files might omit any of the preference items, in which case that of the default user will be used for the user in question."/>
+        </Authentication>
+        <misDataBaseSetting>
+            <LoggerEnabled value="true"/>
+            <ForceToSaveAllContianedOfSoluion value="false"/>
+            <SaveSolutionMode value="saveSolutionComplete"/>
+            <ConnectionString value="."/>
+            <LegacySqlServer value="true" popularity="5" type="Boolean" hrname="Use legacy MSSQLServer" description="Enable this option to use the legacy Microsoft SQL Server persistence for patient and solution data."/>
+            <SqliteDatabaseFilePath value="D:\MIS data\Biopsy\DB\Database.db" popularity="3" type="String" hrname="SQLite Database File Path" description="Complete or relative file path where the main application SQLite database is stored and retrieved from."/>
+            <SqliteExportDbFilePath value="TempExportDatabase.db" popularity="3" type="String" hrname="SQLite Database File Path" description="Complete or relative file path to be used as a temporary database during exporting and importing of a solution from database."/>
+            <SaveRawImageFilePath value="D:\MIS data\Biopsy\DB\image_raw_data" popularity="3" type="String" hrname="Raw Image Data Folder Path" description="Complete or relative folder path where the raw data for the images (with metadata within the database) are stored."/>
+        </misDataBaseSetting>
+        <misDataUploadingSetting>
+            <LoggerEnabled value="true"/>
+            <UseThredaForFolderAnalysis value="true"/>
+            <UesThredaForDicomReading value="false"/>
+            <MinimumImageNumberIsAccptedForNavigation value="10"/>
+            <MaxImageSpacaingIsAccptedForNavigation value="3"/>
+            <CopyPatientCDOnHard value="true"/>
+            <CheckDataRepresentation value="true"/>
+            <TmpFolderPathForUncompressedData value="D:\mis Data\biopsy\PatientDataResource\Temp"/>
+            <MaxMRIRange value="30000.0"/>
+            <MinMRIRange value="-1000.0"/>
+            <MaxCTRange value="20000.0"/>
+            <MinCTRange value="-5000.0"/>
+            <LogDicomData value="false"/>
+            <MinSliceNumber type="Double" value="40" hrname="Minimum number of image" popularity="5" description="Minimum number of image."/>
+            <MriLevelWindowCenterCoeffs hrname="MRI level window center coefficients" description="The parameters are calculated by fitting the equation of (center = offset + MeanCoeff * Mean + StdCoeff * STD) on the center values which are manually set to some MRI images for a suitable contrast. The data is available in $/misSolution_2010/misSoloution/Documents/Research/MRI_level_window_params_fitting.">
+                <Offset type="Double" value="-4.0919999999999996" hrname="Offset" popularity="5" description=""/>
+                <MeanCoeff type="Double" value="-0.37830000000000003" hrname="Coefficient for mean value of image intensity" popularity="5" description=""/>
+                <StdCoeff type="Double" value="2.6160000000000001" hrname="Coefficient for standard deviation of image intensity" popularity="5" description=""/>
+            </MriLevelWindowCenterCoeffs>
+            <MriLevelWindowWidthCoeffs hrname="MRI level window width coefficients" description="The parameters are calculated by fitting the equation of (width = offset + MeanCoeff * Mean + StdCoeff * STD) on the width values which are manually set to some MRI images for a suitable contrast. The data is available in $/misSolution_2010/misSoloution/Documents/Research/MRI_level_window_params_fitting.">
+                <Offset type="Double" value="22.600000000000001" hrname="Offset" popularity="5" description=""/>
+                <MeanCoeff type="Double" value="-1.145" hrname="Coefficient for mean value of image intensity" popularity="5" description=""/>
+                <StdCoeff type="Double" value="4.8440000000000003" hrname="Coefficient for standard deviation of image intensity" popularity="5" description=""/>
+            </MriLevelWindowWidthCoeffs>
+            <CtLevelWindowParams hrname="CT level window parameters" description="Two constant parameters are assumed for center and width of the level window. The values are estimated based on the values which are manually set in order to displaying CT images with a suitable contrast.">
+                <Default hrname="Default" description="">
+                    <Center type="Double" value="0" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="1000" hrname="Viewing level window width" popularity="5" description=""/>
+                </Default>
+                <Bone hrname="Bone" description="">
+                    <Center type="Double" value="600.0" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="900.0" hrname="Viewing level window width" popularity="5" description=""/>
+                </Bone>
+                <Tumor hrname="Tumor" description="">
+                    <Center type="Double" value="40" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="80" hrname="Viewing level window width" popularity="5" description=""/>
+                </Tumor>
+                <BrainSoftTissues hrname="Brain Soft Tissues" description="">
+                    <Center type="Double" value="400" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="350" hrname="Viewing level window width" popularity="5" description=""/>
+                </BrainSoftTissues>
+                <SpineSoftTissues hrname="Spine Soft Tissues" description="">
+                    <Center type="Double" value="50" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="250" hrname="Viewing level window width" popularity="5" description=""/>
+                </SpineSoftTissues>
+                <Brain hrname="Brain" description="">
+                    <Center type="Double" value="40" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="80" hrname="Viewing level window width" popularity="5" description=""/>
+                </Brain>
+            </CtLevelWindowParams>
+            <MRILevelWindowParams hrname="MRI level window parameters" description="Two constant parameters are assumed for center and width of the level window. The values are estimated based on the values which are manually set in order to displaying MRI images with a suitable contrast.">
+                <T1 hrname="T1" description="">
+                    <Center type="Double" value="350.0" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="1000.0" hrname="Viewing level window width" popularity="5" description=""/>
+                </T1>
+                <T2 hrname="T2" description="">
+                    <Center type="Double" value="200.0" hrname="Viewing level window center" popularity="5" description=""/>
+                    <Width type="Double" value="650.0" hrname="Viewing level window width" popularity="5" description=""/>
+                </T2>
+            </MRILevelWindowParams>
+        </misDataUploadingSetting>
+        <misDataCkeckingSetting>
+            <LoggerEnabled value="false"/>
+            <VisibilityMarginInAnatomicalPlanesDirection type="Double" value="3" hrname="VisibilityMarginInAnatomicalPlanesDirection" popularity="5" description="Specifies the needed distance between two slice (landmark slice and tool position slice ) for visbilty of landmarks,the reported distabce in application is direct distnace between 2 points  "/>
+        </misDataCkeckingSetting>
+        <misPlanningSetting>
+            <VisibilityMarginInAnatomicalPlanesDirection type="Double" value="3" hrname="VisibilityMarginInAnatomicalPlanesDirection" popularity="5" description="Specifies the needed distance between two slice (landmark slice and tool position slice ) for visbilty of landmarks,the reported distabce in application is direct distnace between 2 points  "/>
+            <LineRadius type="Double" value="0.34999999999999998" hrname="Screw Line Radius" popularity="5" description="Displaying acrew axis"/>
+            <LineHeight type="Double" value="200" hrname="Line Height" popularity="5" description="The lenghth of screw axis"/>
+            <DisplayExtension type="Boolean" value="true" hrname="AxisDisplaying" popularity="5" description="Displaying acrew axis"/>
+            <DisplayExtension type="Boolean" value="true" hrname="AxisDisplaying" popularity="5" description="Displaying acrew axis"/>
+            <BorderInlineOpacity type="Double" value="1" hrname="BorderInlineOpacity" popularity="5" description="Screw BorderInlineOpacity "/>
+            <BordereOpacity type="Double" value="0.75" hrname="BordereOpacity" popularity="5" description="Screw BordereOpacity "/>
+            <DisplayCrossSection type="Boolean" value="true" hrname="displayCrossSection" popularity="5" description="Biopsyplan cross section with Image"/>
+            <DisplayProjection type="Boolean" value="true" hrname="displayProjection" popularity="5" description="Biopsy plan projection on image plane"/>
+            <PlanDiameter type="Double" value="2.5" hrname="PlanDiameter" popularity="5" description="Biopsy plan diameter"/>
+            <DashLineSize type="Double" value="6" hrname="DashLineSize" popularity="5" description="Size of biopsy dashline plan"/>
+            <IntersectionRedColor type="Double" value="1" hrname="RedColor" popularity="5" description="Red Color of intersection point"/>
+            <IntersectionGreenColor type="Double" value="1" hrname="GreenColor" popularity="5" description="Green Color of intersection point"/>
+            <IntersectionBlueColor type="Double" value="0" hrname="BlueColor" popularity="5" description="Blue Color of intersection point"/>
+            <IntersectionOpacity type="Double" value="1" hrname="IntersectionOpacity" popularity="5" description="Opacity of intersection point"/>
+            <IntersectionRadius type="Double" value="3" hrname="IntersectionRadius" popularity="5" description="Radius of intersection point"/>
+            <DefaultPlanColor>
+                <FirstColor popularity="5" type="String" value="0 223 28" hrname="First Default Plan Color" description="Color of First Plan"/>
+                <SecondColor popularity="5" type="String" value="0 100 255" hrname="Second Default Color" description="Color of Second Plan"/>
+                <ThirdColor popularity="5" type="String" value="255 52 23" hrname="Third Default Color" description="Color of Third Plan"/>
+            </DefaultPlanColor>
+            <PlanTargetRadius type="Double" value="3" hrname="PlanTargetRadius" popularity="5" description="Radius of target for targeting"/>
+            <misPlanningFlowSetting>
+                <Delay type="Integer" value="500" hrname="FlowSpeed" popularity="5" description="Delay of planning flow"/>
+                <StepCount type="Integer" value="50" hrname="FlowStep" popularity="5" description="Step of planning flow"/>
+            </misPlanningFlowSetting>
+        </misPlanningSetting>
+        <misStructTrackingSetting hrname="Tracking">
+            <CalibrationWorkflowManagerProperties hrname="Calibration">
+                <UserType value="User" type="String" hrname="User Type" popularity="5" description="Type of the user performing calibration. For different user type, different calibration profiles are invoked. E.g., ordinary users are only allowed to perform validation on fixed tools whereas administrators can fully calibrate both detached and fixed tools.">
+                    <ValueRange>
+                        <item value="Admin"/>
+                        <item value="User"/>
+                    </ValueRange>
+                </UserType>
+                <DataBufferLength value="150" description="Length of the data buffer used for calibration data gathering, that is, the number of consecutive instantaneous tool transform instances that should be analyzed for fixation (of orientation and/or position) and if found &quot;roughly&quot; fixed (basedon the fixation threshold values."/>
+                <TipCalibrationStrategy value="Fixed Tip Position Mean" description="The strategy used for calibration of the tool tip position. Possible values are &quot;Fixed Tip Position Mean&quot; (the tool tip is held fixed at a previously known spatial position - on the calibration tool), and &quot;Fixed Pivot Point Calculation&quot; (the tip of the tool is held fixed at any position while the stem of the tool is rotated."/>
+                <AutomaticCalibration value="true" description="Determines whether automatic calibration is by default enabled."/>
+            </CalibrationWorkflowManagerProperties>
+            <WaitingTimeBeforeCalibrationStarts value="2000" description="Time, in milliseconds, to wait after detecting a new tracking tool before the tool accuracy window is displayed (if the tool is still visible after that time)."/>
+            <PreCalibrationWaitTimeGrowthFactor value="3" description="The factor by which to increase the WaitingTimeBeforeCalibrationStarts parameter of a tracking tool each time the user cancels the calibration popup screen."/>
+            <WaitingTimeAfterCalibrationDone value="2000" description="Time, in milliseconds, to wait after automatic calibration/validation process is completed before the tool accuracy window is automatically closed."/>
+            <ToolCalibrationValidityPeriod type="Double" value="36000" hrname="Calibration validity time" popularity="5" description="Time, in seconds, that a calibrated tool is considered valid and is not recalibrated even if the application is restarted and the tool is detected again. It acts based on the last calibration time tag of each tracking tool."/>
+            <TrackerToolDataLog popularity="5" hrname="Tracker tool data log" description="Settings related to the logging of tracker tool data which periodically records spatial correlation between tracking tools.">
+                <OutputFilePath value="output/ToolCorrelationsLog.txt" type="String" hrname="Output file path" popularity="5" description="Path to the output file where the log will be stored. If the file exists, it will be truncated."/>
+                <Interval value="1" type="Double" hrname="Logging interval" popularity="5" description="Length of time, in seconds, between sequential log records. Very small intervals could negatively affect performance of the application."/>
+                <LoggerList popularity="1" hrname="List of logger names" type="StringList" description="List of names assigned to individual loggers each of which are in charge of logging correlation between a set of two tracker tools to a file.">
+                    <item value="Logger1"/>
+                    <item value="Logger2"/>
+                    <item value="Logger3"/>
+                    <item value="Logger4"/>
+                    <item value="Logger5"/>
+                    <item value="Logger6"/>
+                    <item value="Logger7"/>
+                    <item value="Logger8"/>
+                    <item value="Logger9"/>
+                </LoggerList>
+                <Loggers>
+                    <Logger1 hrname="Logger 1" description="Configuration settings for the logger 1">
+                        <Enabled value="true" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="Reference" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="LonelyRef" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger1>
+                    <Logger2 hrname="Logger 2" description="Configuration settings for the logger 2">
+                        <Enabled value="true" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="Reference" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="NavTool" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger2>
+                    <Logger3 hrname="Logger 3" description="Configuration settings for the logger 3">
+                        <Enabled value="true" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="Reference" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="RegTool" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger3>
+                    <Logger4 hrname="Logger 4" description="Configuration settings for the logger 4">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger4>
+                    <Logger5 hrname="Logger 5" description="Configuration settings for the logger 5">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger5>
+                    <Logger6 hrname="Logger 6" description="Configuration settings for the logger 6">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger6>
+                    <Logger7 hrname="Logger 7" description="Configuration settings for the logger 7">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger7>
+                    <Logger8 hrname="Logger 8" description="Configuration settings for the logger 8">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger8>
+                    <Logger9 hrname="Logger 9" description="Configuration settings for the logger 9">
+                        <Enabled value="false" popularity="5" type="Boolean" hrname="Enabled" description="Specifies whether this logger should be enabled."/>
+                        <SourceToolPartNumber value="" type="String" hrname="Source tool part number" popularity="5" description="Part number of the source tracker tool."/>
+                        <DestinationToolPartNumber value="" type="String" hrname="Destination tool part number" popularity="5" description="Part number of the destination tracker tool."/>
+                    </Logger9>
+                </Loggers>
+            </TrackerToolDataLog>
+            <TypeOfTracker popularity="5" type="String" hrname="Type of tracker" value="Micron" description="Type of the tracker that will be used for navigation.">
+                <ValueRange>
+                    <item value="Micron"/>
+                    <item value="Polaris"/>
+                    <item value="Ascension"/>
+                    <item value="Aurora"/>
+                </ValueRange>
+            </TypeOfTracker>
+            <TrackerCommunicationFailureRateThreshold value="0.9" description="Threshold for the rate of failed communication attempts within the last evaluation period. A failure rate above this threshold will cause reporting a disconnected state. The threshold is in the range [0..1]."/>
+            <MicronTrackerConnectivityEvaluationDuration value="30" description="Amount of time, in seconds, during which tracker connectivity is observed and failure rate is compared with the threshold."/>
+            <PolarisTrackerConnectivityEvaluationDuration value="1" description="Amount of time, in seconds, during which tracker connectivity is observed and failure rate is compared with the threshold."/>
+            <TranslationToleranceSmoothingFilter value="0.0030000000000000001" type="Double" hrname="Translation Tolerance in mm" popularity="5"/>
+            <RotationToleranceSmoothingFilter value="0.0030000000000000001" type="Double" hrname="Rotation Tolerance in deg" popularity="5"/>
+            <HistoryLenghtSmoothingFilter value="1000" type="Integer" hrname="History lenght in checking smoothing" popularity="5"/>
+            <TimeForCheckFixedOrMoving value="500" type="Double" hrname="Time between two frame for check fixed or moving" popularity="5"/>
+            <TimeFixingKernel value="2000" type="Double" hrname="Maximum time for extending smoothing kernel when tool is fixed" popularity="5"/>
+            <MicronSetting>
+                <jitterParam>
+                    <JitterFilterCoefficient value="0.75"/>
+                    <JitterFilteron_off value="true"/>
+                    <ExtrapolatedFramesNum value="5"/>
+                    <AngularDotProductToleranceDeg value="8"/>
+                    <AngularJitter value="0.05"/>
+                    <KalmanFilter value="true"/>
+                    <JitterFilterHistoryLength value="5"/>
+                </jitterParam>
+                <MicronFrequncy value="16"/>
+                <PredictiveFrameInterleave value="0"/>
+                <TemplateMatchToleranceMMValue value="1"/>
+                <SmallerXpFootprint value="false"/>
+                <AutomaticLightCoolness value="false"/>
+                <lightcoolnessValue value="0.16"/>
+                <MiddleSensorEnable value="false"/>
+                <BackGroundProcess value="false"/>
+                <NumberOfsampleForanAnalyzeJitter value="1000"/>
+                <ReportInterval value="15"/>
+                <ReferencePrefixList type="StringList" description="Prioritized list of values to be used as reference prefix for Micron tracker such that if any of the tools whose part number contains the first item on the list will be taken as tracker reference. If none of the tools match the first item on the list, it moves on to the second item on the list and so on.">
+                    <item value="Ref"/>
+                    <item value="Calib"/>
+                </ReferencePrefixList>
+            </MicronSetting>
+            <AnalyzeAndShowToolPositionData value="false"/>
+            <TimeBeforeReconnecting value="2500"/>
+            <NumberOfTrialsForMicronConnecting value="5"/>
+            <NumberOfTrialsForPolarisConnecting value="10"/>
+        </misStructTrackingSetting>
+        <RegisterationSetting hrname="Registration">
+            <MaxRegistrationError popularity="5" type="Double" hrname="MaxRegistrationError" value="7" description="MaxRegistrationError"/>
+            <CameraVectorSize value="150"/>
+            <LoggerEnabled value="false"/>
+            <ShowIsoSurface value="false"/>
+            <ExportIsoSurfaceToFile value="false"/>
+            <ReadDataFromFile value="false"/>
+            <AutoConnectOnLandRegSelection value="true"/>
+            <MinimumRequiredPointsForPointBasedRegistration value="4"/>
+            <StartupNumberOfPointsForPointBasedRegistration popularity="5" type="Integer" hrname="Initial number of landmark points" value="5" description="Initial number of landmark points presented to the user to be used in registration."/>
+            <MinimumAcceptedDistanceFromPreviousCapturedPoint value="5.0"/>
+            <AutoGoToTheNextPointInCapturing value="true"/>
+            <AutoGoToTheNextPointInSelection value="true"/>
+            <ValidNearestDistanceOfLankmarks value="10"/>
+            <ShowToolInformationInGUI value="false"/>
+            <CheckNewLandmarkMaxErrorForAccepting value="true"/>
+            <SkipNonCapturedLandmarkAutomatically value="true"/>
+            <DistanceOfShowinglankmarkError value="7.5"/>
+            <BestErrorRange value="1.5"/>
+            <AccteptableErrorForLeavelandmarkReg value="5"/>
+            <PlayAutoCapturingSoundInLandReg value="true"/>
+            <PlayAutoCapturingSoundInSurfReg value="true"/>
+            <PlayDistanceSoundToSurfaceInSurfReg value="true"/>
+            <TimeToKeepRegistrationEffect value="-1"/>
+            <LandmarkRegistarationPlaySoundStatus value="CurrentLandmarkError"/>
+            <ToolFixationForAutomaticCaptureLandmark>
+                <Activation value="true"/>
+                <maxMovementAssumeFixTool value="0.7"/>
+                <TimeForActivation value="1"/>
+            </ToolFixationForAutomaticCaptureLandmark>
+            <ToolFixationForAutomaticCaptureSurfaceLandmark>
+                <Activation value="true"/>
+                <maxMovementAssumeFixTool value="0.6"/>
+                <TimeForActivation value="1"/>
+            </ToolFixationForAutomaticCaptureSurfaceLandmark>
+            <DelayBeforeLandmarkCaptureOffCalibration value="6" description="Initial value for time waiting, in seconds, before starting to capture landmarks during registration after the tool calibration is applied."/>
+            <MinimumPointsToAcceptSurfaceRegistration value="20"/>
+            <MaxPermittedErrorForSurfaceRegistrationCapturingError value="50"/>
+            <UseAutomaticThresholdForSurfaceRegistrationCapturingError value="true"/>
+            <NearestLandmarkDistance type="Double" value="1" description="Allowed distance between 2 captured point in surface registration."/>
+            <EnableTrackingInRegistrationTab type="Boolean" popularity="5" value="false" description="After capturing the last selected landmark the registration result is applied and tracking the tool is enabled in the registration tab."/>
+            <LandmarkLableHandleLength type="Double" popularity="5" value="30" description=""/>
+            <LandmarkLableAngleOffset type="Double" popularity="5" value="30" description=""/>
+            <LandmarkLableCameraDistance type="Double" popularity="5" value="150" description=""/>
+            <VisibilityMarginInAnatomicalPlanesDirection type="Double" value="3" hrname="VisibilityMarginInAnatomicalPlanesDirection" popularity="5" description="Specifies the needed distance between two slice (landmark slice and tool position slice ) for visbilty of landmarks,the reported distabce in application is direct distnace between 2 points  "/>
+        </RegisterationSetting>
+        <misNavigationSetting>
+            <SphereRadiusSliderRange description="Set range of threshold slider in data checking tab.">
+                <Minimum popularity="5" type="Double" value="1"/>
+                <Maximum popularity="5" type="Double" value="8"/>
+            </SphereRadiusSliderRange>
+            <ShowLandmarkError value="true"/>
+            <SecondImageColor>
+                <Red value="255"/>
+                <Green value="255"/>
+                <Blue value="255"/>
+                <Alpha value="1"/>
+            </SecondImageColor>
+            <TimePassingToAutomaticFullScreen>
+                <Activation value="true"/>
+                <TimeForActivation value="15"/>
+            </TimePassingToAutomaticFullScreen>
+            <attachCameraToTool value="false"/>
+            <ToolFixationPropertiesToTakingSnapshot>
+                <Activation value="true"/>
+                <maxMovementAssumeFixTool value="1.5"/>
+                <TimeForActivation value="1.5"/>
+            </ToolFixationPropertiesToTakingSnapshot>
+            <VolumeObliqueCropping value="false"/>
+            <CroppingDirectionInVR value="NoCut"/>
+            <AutomaticFindPackageOnSelected value="true"/>
+            <TimeForAutoDisappearToolMarkerWindow value="3"/>
+            <FinalOpacityForAutoDisappearToolMarkerWindow value="0"/>
+            <PlannedNavigationStageSettings>
+                <CameraFocalPointDistanceFromPlan value="100" description="Distance, in world coordinates, of the stage camera focal point from the plan start point along the negative plan axis, that is, plan end point to plan start point."/>
+                <CameraPositionDistanceFromPlan value="1000" description="Initial distance, in world coordinates, of the stage camera position from the plan start point along the negative plan axis, that is, plan end point to plan start point. The camera distance is subsequently modified by the automatic zoom controller."/>
+                <OrientationGuideArrowVisualScale value="3" description="Visual scale factor of the orientation navigation guide arrow. Use this to enlarge or shrink the arrow regardless of current stage zoom (which is controlled automatically)."/>
+                <OrientationGuideArrowViewPosition description="The view coordinates of the orientation navigation guide arrow (arrow start point) on the stage">
+                    <item value="-.9"/>
+                    <item value=".7"/>
+                    <item value=".3"/>
+                </OrientationGuideArrowViewPosition>
+                <ToolLength value="50" description="The length, in world measures, of the tracking tool used for navigation. This is used to place the orientation navigation guide mark near the tail end of the tool."/>
+                <OrientationNavigationGuideProperties>
+                    <ThresholdAngle value="30" description="The threshold angle, in degrees, for scaling the guide. Scale of the guide mark is calculated as the ratio of the angle between plan direction and tool orientation over the threshold."/>
+                    <MinimumGuideScale value=".03" description="The minimum scale of the guide mark. The guide mark shrinks linearly with the magnitude of the angle between plan and tool. This minimum keeps the guide mark from shrinking out of sight."/>
+                    <MaximumGuideScale value="1" description="The maximum scale of the guide mark. The guide mark grows linearly with the magnitude of the angle between plan and tool. This maximum keeps the guide mark from growing out of convenience."/>
+                    <GuideArrowColour description="Colour of the guide arrow using R/G/B colour scheme">
+                        <item value=".6"/>
+                        <item value=".4"/>
+                        <item value=".5"/>
+                    </GuideArrowColour>
+                    <CaptionColour description="The colour of the caption using R/G/B colour scheme">
+                        <item value=".65"/>
+                        <item value=".45"/>
+                        <item value=".55"/>
+                    </CaptionColour>
+                    <CaptionPosition description="The position, in viewport normalized coordinates, of the caption relative to the position of the guide arrow tail point.">
+                        <item value=".03"/>
+                        <item value=".9"/>
+                    </CaptionPosition>
+                    <CaptionSize description="Sets the size of the caption rectangle in view port normalized measures.">
+                        <item value=".1"/>
+                        <item value=".05"/>
+                    </CaptionSize>
+                </OrientationNavigationGuideProperties>
+                <ToriBasedOrientationNavigationGuide description="The properties object for the tori based navigation guide.">
+                    <ToriCollectionPropertiesForTool description="The properties used by the torus collection displaying position and orientation of the plan.">
+                        <NumberOfTori value="10.0" description="Number of tori to be displayed."/>
+                        <CrossSectionRadius value="0.2" description="Cross section radius of all the tori."/>
+                        <SmallestRingRadius value="7" description="Inner radius of the smallest torus in the collection."/>
+                        <RingRadiusIncrementSize value="3" description="Amount of increment applied to the radius of every next torus in the collection with respect to the one immediately before it."/>
+                        <XYPlaneDisplacement value="1.0" description="Distance from the smallest torus to the XY plane (assuming the axis of the tori is parallel to the Z axis)."/>
+                        <RingsSeparation value="7" description="Distance between the planes containing each two adjacent tori within the collection."/>
+                        <ToriColour description="Color of the tori using the R/G/B color scheme">
+                            <item value="255.0"/>
+                            <item value=".0"/>
+                            <item value=".0"/>
+                        </ToriColour>
+                    </ToriCollectionPropertiesForTool>
+                    <ToriCollectionPropertiesForPlan description="The properties used by the torus collection displaying position and orientation of the tracking tool.">
+                        <NumberOfTori value="10.0" description="Number of tori to be displayed."/>
+                        <CrossSectionRadius value="0.2" description="Cross section radius of all the tori."/>
+                        <SmallestRingRadius value="7" description="Inner radius of the smallest torus in the collection."/>
+                        <RingRadiusIncrementSize value="3" description="Amount of increment applied to the radius of every next torus in the collection with respect to the one immediately before it."/>
+                        <XYPlaneDisplacement value="1.0" description="Distance from the smallest torus to the XY plane (assuming the axis of the tori is parallel to the Z axis)."/>
+                        <RingsSeparation value="7" description="Distance between the planes containing each two adjacent tori within the collection."/>
+                        <ToriColour description="Color of the tori using the R/G/B color scheme">
+                            <item value=".0"/>
+                            <item value="255.0"/>
+                            <item value=".0"/>
+                        </ToriColour>
+                    </ToriCollectionPropertiesForPlan>
+                </ToriBasedOrientationNavigationGuide>
+                <PlanAxisNavigationGuideProperties>
+                    <ThresholdDistance value="200" description="The threshold distance, in degrees, for scaling the guide. Distances greater than or equal to this will identically scale the guide, while smaller angles scale down the guide to the tool tip to start point distance and the threshold angle."/>
+                    <MinimumGuideScale value=".001" description="The minimum scale of the guide mark. The guide mark shrinks linearly with the decreasing distance between tool tip and the plan start point. This minimum keeps the guide mark from shrinking out of sight."/>
+                    <MaximumGuideScale value="1.0" description="The maximum scale of the guide mark. The guide mark grows linearly with the increasing distance between tool tip and the plan start point. This maximum keeps the guide mark from growing out of convenience."/>
+                    <GuideArrowColour description="Colour of the guide arrow using R/G/B colour scheme">
+                        <item value=".1"/>
+                        <item value=".6"/>
+                        <item value=".3"/>
+                    </GuideArrowColour>
+                    <CaptionColour description="The colour of the caption using R/G/B colour scheme">
+                        <item value=".15"/>
+                        <item value=".65"/>
+                        <item value=".35"/>
+                    </CaptionColour>
+                    <CaptionPosition description="The position, in normalized viewport coordinates, of the caption relative to the position of the guide arrow tail point.">
+                        <item value=".16"/>
+                        <item value=".9"/>
+                    </CaptionPosition>
+                    <CaptionSize description="Sets the size of the caption rectangle in view port normalized measures.">
+                        <item value=".12"/>
+                        <item value=".05"/>
+                    </CaptionSize>
+                </PlanAxisNavigationGuideProperties>
+                <ZoomControllerProperties>
+                    <AngleRatio value="1.2" description="The ratio used to increase (or decrease) the view angle of the camera after it has been determined by coverage points. If the ratio is set to 1, one of the coverage points will fall on the border of the view port. To bring it further in, the ratio must be set to a value slightly greater than 1."/>
+                    <ThresholdRatio value=".7" description="The ratio of the threshold distance and the camera focal distance. The threshold distance is the distance that determines if the distance of the camera should be increased. If any of the points fall behind the threshold plane (normal to the camera axis) looking from the focal point, the camera is moved away from the focal point (kept fixed) to increase the distance and fit the point within the threshold range."/>
+                    <DistanceModificationFactor value="1.1" description="The factor by which the camera distance is increased or decreased when the view angle is below the minimum or above the maximum angle."/>
+                    <MinimumAngle value="10" description="The minimum view angle of the camera. If the calculated view angle is below this measure, the camera is moved toward the focal point using DistanceModificationFactor and calculation is performed again (up to three times)."/>
+                    <MaximumAngle value="30" description="The maximum view angle of the camera. If the calculated view angle is above this measure, the camera is moved away from the focal point using DistanceModificationFactor and calculation is performed again (up to three times)."/>
+                    <MinimumDistance value="150" description="The minimum focal distance of the camera. No matter how small the calculated view angle, the focal point will not be moved closer than this measure to the camera."/>
+                    <MaximumDistance value="4000" description="The maximum focal distance of the camera. No matter how great the calculated view angle, the focal point will not be moved further than this measure away from the focal point."/>
+                    <MaximumAngleCalculationPasses value="3" description="The maximum number of times the calculation of the view angle is performed if it is not within the acceptable range."/>
+                </ZoomControllerProperties>
+                <RadiusGrayZoneThreshold hrname="Gray Zone Threshold for Radius" type="Double" value="60"/>
+                <RadiusYellowZoneThreshold hrname="Yellow Zone Threshold for Radius" type="Double" value="30"/>
+                <RadiusGreenZoneThreshold hrname="Green Zone Threshold for Radius" type="Double" value="6"/>
+                <HeightGrayZoneThreshold hrname="Gray Zone Threshold for Height" type="Double" value="50"/>
+                <HeightYellowZoneThreshold hrname="Yellow Zone Threshold for Height" type="Double" value="20"/>
+                <HeightGreenZoneThreshold hrname="Green Zone Threshold for Height" type="Double" value="3"/>
+                <PilotRotationAngleStep type="Double" popularity="5" value="10" description="Angle step in degrees for pilot coordinate system rotation by pressing Right or Left key."/>
+            </PlannedNavigationStageSettings>
+            <VisibilityMarginInAnatomicalPlanesDirection type="Double" value="7" hrname="VisibilityMarginInAnatomicalPlanesDirection" popularity="5" description="Specifies the needed distance between two slice (landmark slice and tool position slice ) for visbilty of landmarks,the reported distabce in application is direct distnace between 2 points  "/>
+            <RealTimeUpdateTransfom value="false" popularity="5" type="Boolean" hrname="Updating transforms" description="updating transform dynamically in navigation"/>
+        </misNavigationSetting>
+        <BiopsyToolSettings>
+            <StrayMarkersDistance type="Double" value="30" description="Distance between two stray markers in biopsy tool."/>
+            <DistanceTolerance type="Double" value="2" description="Distance tolerance between two stray markers in biopsy tool."/>
+        </BiopsyToolSettings>
+        <misVisualizationSetting popularity="5" hrname="Visualization Settings" description="Visualization Settings">
+            <WidgetProperties hrname="Widget Properties" description="Display properties of the widget in the viewers including line width factor, colour composition, etc.">
+                <ColorComposition hrname="Colour Composition" description="Colour composition for the three principal axes of the widget. The colour values should be coded as &quot;RRR GGG BBB&quot; where RRR, GGG, and BBB are decimal intensity values for Red, Green, and Blue channels.">
+                    <XAxis popularity="5" type="String" value="0 223 28" hrname="X Axis Colour" description="Colour of the X axis"/>
+                    <YAxis popularity="5" type="String" value="0 100 255" hrname="Y Axis Colour" description="Colour of the Y axis"/>
+                    <ZAxis popularity="5" type="String" value="255 52 23" hrname="Z Axis Colour" description="Colour of the Z axis"/>
+                </ColorComposition>
+                <LineWidthFactor popularity="5" type="Double" value="1" hrname="Line Width Factor" description="Scale factor for the width of the lines comprising the widget."/>
+                <WidgetPickingTolerance popularity="5" type="Double" value="0.0050000000000000001" hrname="Widgte Picking Tolerance Factor" description="The Area that widget is picked around widget."/>
+            </WidgetProperties>
+            <ImageSliceViewerZoomFactorForCtImages value="1" description="Using this option, you can override the ImageSliceViewerZoomFactor option for displaying of CT images. It is understood that CT images usually need to be viewed with a greater zoom than MR images."/>
+            <ImageSliceViewerZoomFactor value="1" description="Zoom factor of the slice generated from a 3D image. By default (zoom factor being 1), side length of the slice quad is equal to the diagonal of the image box. Modifying this value divides the default length of the image slice side by the specified factor."/>
+            <ImageSliceViewerZoomFactorForDentalViews value="3" description="Zoom factor for the slices generated for the dental specific views Distal-Mesial and Lingual-Buccal."/>
+            <numberOfImagesShowInStandardModeForPreview value="150.0"/>
+            <TransFunctionsAddresses hrname="Address map of modalities" description="Contains a map of address of a transfunction for each modality that describes the color map for each modality.">
+                <CT>
+                    <TeethViewing popularity="5" type="String" hrname="TeethViewing ColorMap File Address" value="Resources\transferfuncs\dental.XML" description="Address for Dental volume rendering colormap."/>
+                    <SpineViewing popularity="5" type="String" hrname="SpineViewing ColorMap File Address" value="Resources\transferfuncs\Spine.XML" description="Address for Spine volume rendering colormap."/>
+                </CT>
+                <MRI>
+                    <SkinViewing popularity="5" type="String" hrname="SkinTransparentViewing ColorMap File Address" value="Resources\transferfuncs\MRI_SkinTransparent.XML" description="Address for MRI SkinTransparentViewing volume rendering colormap."/>
+                    <SkinFilledViewing popularity="5" type="String" hrname="SkinFilledViewing ColorMap File Address" value="Resources\transferfuncs\MRI_SkinFilled.XML" description="Address for MRI SkinFiledViewing volume rendering colormap."/>
+                    <AllViewing popularity="5" type="String" hrname="AllViewing ColorMap File Address" value="Resources\transferfuncs\MRI.XML" description="Address for MRI AllViewing volume rendering colormap."/>
+                    <SinusesViewing popularity="5" type="String" hrname="SinusesViewing ColorMap File Address" value="Resources\transferfuncs\MRI.XML" description="Address for MRI Sinus Viewing volume rendering colormap."/>
+                </MRI>
+            </TransFunctionsAddresses>
+            <UseRayCastOnCameraChange value="true"/>
+            <ShowImageAnnotation value="false"/>
+            <RepresentationLoggerEnabled value="true"/>
+            <SkinThresholdForCT value="-600"/>
+            <SkinThresholdForMRI value="250"/>
+            <SkinThresholdForMRT1 value="67"/>
+            <SkinThresholdForMRT2 value="27"/>
+            <BoneThresholdForCT value="175"/>
+            <TeethThresholdForCT value="800"/>
+            <ProstrateState value="false"/>
+            <MinPlaneOpacityForSettingWindowLevel value="0.00000000000001"/>
+            <DataCheckingSliderRange description="Set range of threshold slider in data checking tab.">
+                <CT>
+                    <Minimum popularity="5" type="Integer" value="50"/>
+                    <Maximum popularity="5" type="Integer" value="400"/>
+                </CT>
+                <MRI>
+                    <Minimum popularity="5" type="Integer" value="-300"/>
+                    <Maximum popularity="5" type="Integer" value="800"/>
+                </MRI>
+            </DataCheckingSliderRange>
+            <ObjectRangeListTypdef>
+                <item>
+                    <ImageModality value="CT"/>
+                    <ThreeDModelType value="misSkin"/>
+                    <ValidRange x="-800" y="-300"/>
+                </item>
+                <item>
+                    <ImageModality value="CT"/>
+                    <ThreeDModelType value="misBone"/>
+                    <ValidRange x="50" y="400"/>
+                </item>
+                <item>
+                    <ImageModality value="CT"/>
+                    <ThreeDModelType value="misTeeth"/>
+                    <ValidRange x="500" y="3000"/>
+                </item>
+                <item>
+                    <ImageModality value="MRI"/>
+                    <ThreeDModelType value="misSkin"/>
+                    <ValidRange x="0" y="500"/>
+                </item>
+            </ObjectRangeListTypdef>
+            <ScrewTubeRadius value="0.5"/>
+        </misVisualizationSetting>
+        <misSegmentationSetting>
+            <LoggerEnabeld value="true"/>
+            <UseThreadForSegmentation value="true"/>
+            <SegmentedObjectOpacityScale value="1"/>
+            <DefaultObjectMargin value="2.0"/>
+            <VisibilityMarginInAnatomicalPlanesDirection type="Double" value="3" hrname="VisibilityMarginInAnatomicalPlanesDirection" popularity="5" description="Specifies the needed distance between two slice (landmark slice and tool position slice ) for visbilty of landmarks,the reported distabce in application is direct distnace between 2 points  "/>
+        </misSegmentationSetting>
+        <misSnapShotSetting>
+            <SnapShotFileExtension value=".jpg"/>
+        </misSnapShotSetting>
+        <misVideoSetting>
+            <VideoFileExtension value=".xesc"/>
+        </misVideoSetting>
+        <mis3DModelColorTypdef>
+            <key value="misAll"/>
+            <value>
+                <Red value="247"/>
+                <Green value="222"/>
+                <Blue value="166"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misBone"/>
+            <value>
+                <Red value="226"/>
+                <Green value="198"/>
+                <Blue value="137"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misTeeth"/>
+            <value>
+                <Red value="229"/>
+                <Green value="212"/>
+                <Blue value="192"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misMetal"/>
+            <value>
+                <Red value="125"/>
+                <Green value="125"/>
+                <Blue value="125"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misOther"/>
+            <value>
+                <Red value="250"/>
+                <Green value="250"/>
+                <Blue value="250"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misSkin"/>
+            <value>
+                <Red value="247"/>
+                <Green value="222"/>
+                <Blue value="166"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misTumor"/>
+            <value>
+                <Red value="237"/>
+                <Green value="220"/>
+                <Blue value="10"/>
+                <Alpha value="1"/>
+            </value>
+            <key value="misVein"/>
+            <value>
+                <Red value="250"/>
+                <Green value="100"/>
+                <Blue value="125"/>
+                <Alpha value="1"/>
+            </value>
+        </mis3DModelColorTypdef>
+        <misCaptureDevices hrname="Video capture">
+            <AllInstalledCaptureDevices type="StringList" popularity="5" description="">
+                <item value="Pinnacle 710-USB"/>
+                <item value="USB 2.0 AOC Webcam"/>
+                <item value="Decklink Video Capture"/>
+                <item value="Blackmagic WDM Capture"/>
+                <item value="Pinnacle 510-USB"/>
+                <ValueRange>
+                    <item value="Pinnacle 710-USB"/>
+                    <item value="USB 2.0 AOC Webcam"/>
+                    <item value="Decklink Video Capture"/>
+                    <item value="Blackmagic WDM Capture"/>
+                    <item value="Pinnacle 510-USB"/>
+                </ValueRange>
+            </AllInstalledCaptureDevices>
+            <EndoscopeCaptureDevice popularity="5" hrname="Video capture device" type="String" value="Decklink Video Capture">
+                <ValueRange>
+                    <item value="Pinnacle 710-USB"/>
+                    <item value="USB 2.0 AOC Webcam"/>
+                    <item value="Decklink Video Capture"/>
+                    <item value="Blackmagic WDM Capture"/>
+                    <item value="Pinnacle 510-USB"/>
+                </ValueRange>
+            </EndoscopeCaptureDevice>
+            <Webcam value="USB 2.0 AOC Webcam"/>
+            <DefaultStreamType value="Composite"/>
+            <!--"VIDEO_PREVIEW"
+      "SONO"
+      "SCREWNAVIGATION"
+      "VIDEO_CAPTURE"-->
+            <VideoType popularity="5" type="String" value="VIDEO_PREVIEW">
+                <ValueRange>
+                    <item value="VIDEO_PREVIEW"/>
+                    <item value="SONO"/>
+                    <item value="SCREWNAVIGATION"/>
+                    <item value="VIDEO_CAPTURE"/>
+                </ValueRange>
+            </VideoType>
+        </misCaptureDevices>
+    </misApplicationSetting>
+</ParsissData>

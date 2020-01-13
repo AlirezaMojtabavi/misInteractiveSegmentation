@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<ParsissData version="1">
+    <misPACSSettings>
+        <localAET value="jalalGinko" />
+        <localPort value="11112" />
+        <serverID value="jalal" />
+        <serverAET value="ORTHANC" />
+        <serverHost value="192.168.1.29" />
+        <serverPort value="4242" />
+        <retrieveMethod value="MOVE" />
+        <username value="" />
+        <password value="" />
+    </misPACSSettings>
+</ParsissData>
