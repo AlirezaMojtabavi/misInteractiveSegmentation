@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyAlgorithm3d" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKQEAAwFAAABAACAAwAQAAEAAgAEIAAABAAAABAQIAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyCallback3D" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAARAAAACECyAkgAEABEAgAEFAAAAABEQAEgIAAA=</HashCode>
+      <FileName>MyCallback3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyCanvas3D" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIwAECAAEAAQACAAEDAAAAAIIAAEAKACIAACEACIAAA=</HashCode>
+      <FileName>MyCanvas3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyInteractionStyle3D" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAgAAAAIAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyInteractionStyle3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySpeedFunction3D&lt;TImageType, TFeatureImageType&gt;" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAEAAAiAAAAAAAAAgAEAiAAAAQAIABAAAAAAAA=</HashCode>
+      <FileName>MySpeedFunction3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="coordinate3D" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>MyCanvas3D.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="InternalPixelType" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="InternalImageType" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ImageType" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OutputPixelType" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OutputImageType" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="WriterType" Collapsed="true">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ThresholdingFilterType" Collapsed="true">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="FastMarchingFilterType" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="NodeContainer" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="NodeType" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Image_2_Internal" Collapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="InternalWriterType" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MySpeedFunction3DType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ThresholdSegmentationLevelSetImageFilterType" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Image2DType" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SeriesWriterType" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="VTKImageToImageType" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyAlgorithm3d.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
