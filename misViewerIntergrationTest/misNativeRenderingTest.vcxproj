@@ -268,6 +268,9 @@
     <ProjectReference Include="..\misWidget\misWidget.vcxproj">
       <Project>{3ddb422b-a723-4752-9418-bcf45286f33a}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\Segmentation3D\Segmentation3D.vcxproj">
+      <Project>{f2942007-65b8-46d4-9bb2-4b3869c0fcf5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="misViewerIntergrationTest.rc" />
