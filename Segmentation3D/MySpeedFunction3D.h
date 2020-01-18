@@ -4,20 +4,6 @@
 #ifndef MySpeedFunction3D_h
 #define MySpeedFunction3D_h
 
-#include <itkImage.h>
-#include <itkMacro.h>
-#include "itkThresholdSegmentationLevelSetFunction.h"
-#include "itkImageRegionIterator.h"
-#include "itkGradientAnisotropicDiffusionImageFilter.h"
-#include "itkLaplacianImageFilter.h"
-#include "itkImageFileWriter.h"
-#include "itkRescaleIntensityImageFilter.h"
-#include "itkInvertIntensityImageFilter.h"
-#include "itkMinimumMaximumImageCalculator.h"
-#include "itkHistogram.h"
-#include <itkImageToHistogramFilter.h>
-#include "itkCurvatureAnisotropicDiffusionImageFilter.h"
-#include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
 
 
 template< typename TImageType, typename TFeatureImageType = TImageType >

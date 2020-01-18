@@ -2,17 +2,29 @@
 #pragma once
 
 #include<vector>
-#include "vtkObjectFactory.h"
-#include "itkFastMarchingImageFilter.h"
-#include "itkBinaryThresholdImageFilter.h"
-#include "itkZeroCrossingImageFilter.h"
-#include "itkThresholdSegmentationLevelSetImageFilter.h"
-#include "itkNumericSeriesFileNames.h"
+
 #include "MySpeedFunction3D.h"
-#include "MyInteractionStyle3D.h"
-#include "MyCanvas3D.h"
+const  unsigned int  Dimension = 3;
+typedef  float  InternalPixelType;
+typedef itk::Image< InternalPixelType, Dimension >  InternalImageType;
 
+typedef itk::Image < unsigned short, Dimension > ITKImageType;
 
+typedef unsigned short OutputPixelType;
+typedef itk::Image< OutputPixelType, Dimension > OutputImageType;
+
+#define VTK_CREATE(type, name) \
+  vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
+
+struct coordinate3D
+{
+	double _x;
+	double _y;
+	int _z;
+};
+
+typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
+typedef itk::CastImageFilter<ITKImageType, InternalImageType> ImageType_2_InternalType;
 
 
 typedef  itk::FastMarchingImageFilter< InternalImageType, InternalImageType > FastMarchingFilterType;
@@ -26,11 +38,10 @@ class MyAlgorithm3d
 public:
 
 
-	MyAlgorithm3d();
+	MyAlgorithm3d(std::vector<unsigned short> intensity, std::vector<coordinate3D> seeds);
 	void SetInternalImage(InternalImageType::Pointer _InternalImage);
 
-	void SetCanvas(MyCanvas3D*);
-
+ 
 	typedef MySpeedFunction3D< InternalImageType, InternalImageType > MySpeedFunction3DType;
 	void SetSpeedFunction(itk::SmartPointer<MySpeedFunction3DType>);
 
@@ -38,16 +49,13 @@ public:
 	void LevelSet(int lower, int upper, double edge, double weight);
 	void LevelSet(double edge, double weight);
 
-	void SetStyle(MyInteractionStyle3D*);
+ 
 	InternalImageType* GetFastMarching();
 	OutputImageType*  GetThresholder();
 
 private:
 
 	InternalImageType::Pointer IS_InternalImage;
-	vtkImageReslice* ImageReslice;
-	MyCanvas3D* IS_MyCanvas3D;
-	MyInteractionStyle3D* style;
 
 	MySpeedFunction3DType::Pointer SegmentationSpeedFunction = MySpeedFunction3DType::New();
 
@@ -59,7 +67,8 @@ private:
 	ThresholdSegmentationLevelSetImageFilterType::Pointer thresholdSegmentation = 
 		ThresholdSegmentationLevelSetImageFilterType::New();
 
-
+	std::vector<unsigned short> m_intensity;
+	std::vector<coordinate3D> m_Seeds;
 	FastMarchingFilterType::Pointer  fastMarching = FastMarchingFilterType::New();
 	NodeContainer::Pointer seeds = NodeContainer::New();
 };

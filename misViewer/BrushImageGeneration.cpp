@@ -2,6 +2,7 @@
 #include "BrushImageGeneration.h"
 #include "misImageToTextureMap.h"
 #include "misTransFunctionBuilder.h"
+#include "../Segmentation3D/MyAlgorithm3d.h"
 
 
 BrushImageGeneration::BrushImageGeneration(std::shared_ptr<I3DViewer> viewer, std::shared_ptr<IVolumeSlicer> Slicer,
@@ -52,7 +53,15 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	auto extent = m_Image->GetRawImageData()->GetExtent();
 	auto ptr = (short*)rawImageData->GetScalarPointer();
 	int coordinate[3] = {position[0] / spacing[0], position[1] / spacing[1], position[2] / spacing[2]};
+	auto dimension = m_Image->GetDimensions();
+	int ImageIndex = (coordinate[0] ) + (coordinate[1]  * dimension[0] )+ coordinate[2] * dimension[1] * dimension[0];
 
+	m_intensity.push_back(ptr[ImageIndex]);
+	coordinate3D coord;
+	coord._x = coordinate[0];
+	coord._y = coordinate[1];
+	coord._z = coordinate[2];
+	m_Seeds.push_back(coord);
 	//for (int x = 0; x < 20; x++)
 	//	for (int y = 0; y < 20; y++)
 	//		for (int z = 0; z < 20; z++)
@@ -130,4 +139,10 @@ void BrushImageGeneration::CreateTExture( )
 	//imagePlane->SetVisiblityOfColorMap(FirstImage, true);
 	
   
+}
+
+void BrushImageGeneration::Finalize()
+{
+	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
+	
 }

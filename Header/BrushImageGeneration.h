@@ -6,6 +6,7 @@
 #include "IBackToPanMode.h"
 #include <IImage.h>
 #include "misTextureEraser.h"
+#include "../Segmentation3D/MyAlgorithm3d.h"
 
 class BrushImageGeneration : public vtkCommand
 {
@@ -16,7 +17,7 @@ public:
 	                     std::shared_ptr<misCameraInteraction>, std::shared_ptr<IImage>  image);
 	void Execute(vtkObject* caller, unsigned long eventId, void* callData) override;
 	void CreateTExture();
-
+	void Finalize();
 private:
 	void EraseTexture(parcast::PointD3 point);
 	void Colortexture(parcast::PointD3 point);
@@ -32,4 +33,8 @@ private:
 	int	m_EraseSubBoxWidth = 14;
 	misColorStruct m_ErasedObjColor;
 	misTextureEraser m_Eraser;
+	
+	std::vector<unsigned short> m_intensity;
+	std::vector<coordinate3D> m_Seeds;
+
 };

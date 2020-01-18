@@ -30,9 +30,6 @@
     <ClInclude Include="MyCallback3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyCanvas3D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MyInteractionStyle3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -47,22 +44,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Segmentation3D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MyAlgorithm3d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyCallback3D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyCanvas3D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyInteractionStyle3D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Reslicer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

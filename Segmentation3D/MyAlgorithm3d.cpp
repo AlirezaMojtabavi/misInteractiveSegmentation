@@ -1,10 +1,9 @@
-
-
 #include "stdafx.h"
 #include "MyAlgorithm3d.h"
 
 
-MyAlgorithm3d::MyAlgorithm3d()
+MyAlgorithm3d::MyAlgorithm3d(std::vector<unsigned short> intensity, std::vector<coordinate3D> seeds)
+	:m_intensity(intensity), m_Seeds(seeds)
 {
 }
 
@@ -13,15 +12,7 @@ void MyAlgorithm3d::SetInternalImage(InternalImageType::Pointer _InternalImage)
 	IS_InternalImage = _InternalImage;
 }
 
-void MyAlgorithm3d::SetCanvas(MyCanvas3D* _IS_MyCanvas3D)
-{
-	IS_MyCanvas3D = _IS_MyCanvas3D;
-}
-
-void MyAlgorithm3d::SetStyle(MyInteractionStyle3D * _style)
-{
-	style = _style;
-}
+ 
 
 InternalImageType * MyAlgorithm3d::GetFastMarching()
 {
@@ -41,7 +32,7 @@ void MyAlgorithm3d::SetSpeedFunction(itk::SmartPointer<MySpeedFunction3DType> _F
 
 void MyAlgorithm3d::FastMarching(const double distance)
 {
-	int size = IS_MyCanvas3D->GetVectorOfPoints().size();
+	int size = m_Seeds.size();
 
 	std::vector<InternalImageType::IndexType>  seedPosition(size);
 	std::vector<NodeType> node(size);
@@ -53,9 +44,9 @@ void MyAlgorithm3d::FastMarching(const double distance)
 
 	for (int i = 0; i < size; i++)
 	{
-		seedPosition[i][0] = IS_MyCanvas3D->GetVectorOfPoints()[i]._x;
-		seedPosition[i][1] = IS_MyCanvas3D->GetVectorOfPoints()[i]._y;
-		seedPosition[i][2] = IS_MyCanvas3D->GetVectorOfPoints()[i]._z;
+		seedPosition[i][0] = m_Seeds[i]._x;
+		seedPosition[i][1] = m_Seeds[i]._y;
+		seedPosition[i][2] = m_Seeds[i]._z;
 
 		node[i].SetValue(seedValue);
 		node[i].SetIndex(seedPosition[i]);
@@ -109,7 +100,7 @@ void MyAlgorithm3d::LevelSet(int lower, int upper, double edge, double weight)
 
 void MyAlgorithm3d::LevelSet(double edge, double weight)
 {
-	auto window = IS_MyCanvas3D->GetMinMaxIntensity();
+	/*auto window = IS_MyCanvas3D->GetMinMaxIntensity();
 	double lower = window[0];
 	double upper = window[1];
 
@@ -138,6 +129,6 @@ void MyAlgorithm3d::LevelSet(double edge, double weight)
 
 	thresholdSegmentation->SetInput(fastMarching->GetOutput());
 	thresholdSegmentation->SetFeatureImage(IS_InternalImage);
-	thresholder->SetInput(thresholdSegmentation->GetOutput());
+	thresholder->SetInput(thresholdSegmentation->GetOutput());*/
 	//thresholder->Update();
 }

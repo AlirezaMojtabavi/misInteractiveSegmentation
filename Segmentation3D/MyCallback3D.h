@@ -35,13 +35,13 @@ private:
 	vtkSmartPointer<MyInteractionStyle3D> imageStyle;
 	MyCanvas3D* IS_MyCanvas3D;
 
-	typedef itk::VTKImageToImageFilter<ImageType> VTKImageToImageType;
+	typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 	VTKImageToImageType::Pointer vtkImageToImageFilter = VTKImageToImageType::New();
 
 	MyAlgorithm3d* IS_Algorithm = new MyAlgorithm3d();
 	MySpeedFunction3DType::Pointer SegmentationSpeedFunction;
 
-	typedef itk::CastImageFilter<ImageType, InternalImageType> ImageType_2_InternalType;
+	typedef itk::CastImageFilter<ITKImageType, InternalImageType> ImageType_2_InternalType;
 	ImageType_2_InternalType::Pointer IS_InternalImage = ImageType_2_InternalType::New();
 
 	//-----------------------Overlay-------------------

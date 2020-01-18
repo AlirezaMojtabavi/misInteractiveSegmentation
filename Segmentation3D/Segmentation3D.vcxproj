@@ -154,7 +154,6 @@
   <ItemGroup>
     <ClInclude Include="MyAlgorithm3d.h" />
     <ClInclude Include="MyCallback3D.h" />
-    <ClInclude Include="MyCanvas3D.h" />
     <ClInclude Include="MyInteractionStyle3D.h" />
     <ClInclude Include="MySpeedFunction3D.h" />
     <ClInclude Include="Reslicer.h" />
@@ -163,11 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyAlgorithm3d.cpp" />
-    <ClCompile Include="MyCallback3D.cpp" />
-    <ClCompile Include="MyCanvas3D.cpp" />
-    <ClCompile Include="MyInteractionStyle3D.cpp" />
-    <ClCompile Include="Reslicer.cpp" />
-    <ClCompile Include="Segmentation3D.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
