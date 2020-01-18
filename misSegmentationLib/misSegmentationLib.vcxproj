@@ -50,7 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Header\BusinessEntities;$(ITK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);../header;$(SolutionDir)\Header\ExtLibWrappers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Header\BusinessEntities;F:\ITK\include_Debug\ITK-4.13;$(BOOST_INCLUDE_DIR);$(GLEW_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);../header;$(SolutionDir)\Header\ExtLibWrappers</AdditionalIncludeDirectories>
       <BrowseInformation>false</BrowseInformation>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
     </ClCompile>
