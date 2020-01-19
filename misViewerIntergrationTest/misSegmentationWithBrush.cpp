@@ -71,7 +71,7 @@ misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
 	auto pairEvent2 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::RightButtonPressEvent, pointSelectCallBack);
 	m_Viewer->AddPointSelectObserver(pairEvent);
 	m_Viewer->AddPointSelectObserver(pairEvent2);
-	auto brushObserver = new BrushImageGeneration(viewer, m_Viewer, corner, dummy, cursorService, m_Viewer->GetCameraService(), m_SegemntedImage);
+	brushObserver = new BrushImageGeneration(viewer, m_Viewer, corner, dummy, cursorService, m_Viewer->GetCameraService(), m_SegemntedImage);
 	auto pairEvent3 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::MouseMoveEvent, brushObserver);
 	auto pairEvent4 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonPressEvent, brushObserver);
 	auto pairEvent5 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonReleaseEvent, brushObserver);
@@ -161,7 +161,7 @@ void misSegmentationWithBrush::PulseHandler()
 
 		{
 
-
+			brushObserver->Finalize();
 
 			break;
 		}

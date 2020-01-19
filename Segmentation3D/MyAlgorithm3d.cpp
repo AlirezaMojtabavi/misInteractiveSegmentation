@@ -7,19 +7,19 @@ MyAlgorithm3d::MyAlgorithm3d(std::vector<unsigned short> intensity, std::vector<
 {
 }
 
-void MyAlgorithm3d::SetInternalImage(InternalImageType::Pointer _InternalImage)
+void MyAlgorithm3d::SetInternalImage(misInternalImageType::Pointer _InternalImage)
 {
 	IS_InternalImage = _InternalImage;
 }
 
  
 
-InternalImageType * MyAlgorithm3d::GetFastMarching()
+misInternalImageType * MyAlgorithm3d::GetFastMarching()
 {
 	return fastMarching->GetOutput();
 }
 
-OutputImageType * MyAlgorithm3d::GetThresholder()
+misOutputImageType * MyAlgorithm3d::GetThresholder()
 {
 	return thresholder->GetOutput();
 }
@@ -34,7 +34,7 @@ void MyAlgorithm3d::FastMarching(const double distance)
 {
 	int size = m_Seeds.size();
 
-	std::vector<InternalImageType::IndexType>  seedPosition(size);
+	std::vector<misInternalImageType::IndexType>  seedPosition(size);
 	std::vector<NodeType> node(size);
 
 	const double initialDistance = distance;

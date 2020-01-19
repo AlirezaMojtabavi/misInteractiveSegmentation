@@ -7,6 +7,7 @@
 #include <IImage.h>
 #include "misTextureEraser.h"
 #include "../Segmentation3D/MyAlgorithm3d.h"
+typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 
 class BrushImageGeneration : public vtkCommand
 {

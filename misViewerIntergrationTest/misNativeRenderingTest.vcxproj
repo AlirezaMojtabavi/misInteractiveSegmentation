@@ -68,7 +68,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>../Header/BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;../Header/Adapters;../header/voreen;$(GDCM_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);%(AdditionalIncludeDirectories);$(GLEW_INCLUDE_DIR);$(DCMTK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(TINYXML2_INCLUDE_DIR);..\Header\Segmentation3D</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;UNICODE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Debug";_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;ITK_IO_FACTORY_REGISTER_MANAGER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;UNICODE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Debug";_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -270,6 +270,9 @@
     </ProjectReference>
     <ProjectReference Include="..\misWidget\misWidget.vcxproj">
       <Project>{3ddb422b-a723-4752-9418-bcf45286f33a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Segmentation3D\Segmentation3D.vcxproj">
+      <Project>{f2942007-65b8-46d4-9bb2-4b3869c0fcf5}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

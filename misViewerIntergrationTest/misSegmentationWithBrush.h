@@ -6,6 +6,7 @@
 #include "misWindow.h"
 #include "vtkLineWidget2.h"
 #include "misTextureEraser.h"
+#include "BrushImageGeneration.h"
 
 class misSegmentationWithBrush : public misIntegrationTestApplication
 {
@@ -31,4 +32,5 @@ private:
 	int seriesNumber;
 	std::string fileName;
 	std::shared_ptr<misPlanarRepresentation> mainRep;
+	BrushImageGeneration* brushObserver;
 } ;

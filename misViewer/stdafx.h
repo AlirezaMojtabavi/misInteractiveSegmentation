@@ -110,6 +110,7 @@
 #include "vtkTransform.h"
 #include "vtkWin32OpenGLRenderWindow.h"
 #include "vtkWin32RenderWindowInteractor.h"
+#include <vtkImageCast.h>
 
 #include "igstkEvents.h"
 #include "igstkPulseGenerator.h"

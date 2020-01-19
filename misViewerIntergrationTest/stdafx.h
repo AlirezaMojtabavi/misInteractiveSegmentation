@@ -129,7 +129,6 @@
 #include "itkImageRegionIterator.h"
 #include "itkGradientAnisotropicDiffusionImageFilter.h"
 #include "itkLaplacianImageFilter.h"
-#include "itkImageFileWriter.h"
 #include "itkRescaleIntensityImageFilter.h"
 #include "itkInvertIntensityImageFilter.h"
 #include "itkMinimumMaximumImageCalculator.h"
@@ -138,7 +137,8 @@
 #include "itkCurvatureAnisotropicDiffusionImageFilter.h"
 #include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
 #include "itkBinaryThresholdImageFilter.h" 
-
+#include "itkThresholdSegmentationLevelSetImageFilter.h"
+ 
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmBinEntry.h"
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDir.h"
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDirImage.h"

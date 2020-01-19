@@ -143,6 +143,14 @@ void BrushImageGeneration::CreateTExture( )
 
 void BrushImageGeneration::Finalize()
 {
+	auto casting = vtkSmartPointer<vtkImageCast>::New();
+	casting->SetInputData(m_Image->GetRawImageData());
+	casting->SetOutputScalarTypeToFloat();
+	casting->Update();
+	auto convertor = VTKImageToImageType::New();
+	convertor->SetInput(casting->GetOutput());
+	convertor->Update();
 	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
+	algoritm.SetInternalImage(convertor->GetOutput());
 	
 }
