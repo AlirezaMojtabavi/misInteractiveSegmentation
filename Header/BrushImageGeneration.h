@@ -7,7 +7,7 @@
 #include <IImage.h>
 #include "misTextureEraser.h"
 #include "../Segmentation3D/MyAlgorithm3d.h"
-typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
+
 
 class BrushImageGeneration : public vtkCommand
 {
@@ -37,5 +37,5 @@ private:
 	
 	std::vector<unsigned short> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
-
+	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();
 };

@@ -136,7 +136,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Release";_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;ITK_IO_FACTORY_REGISTER_MANAGER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>F:\VTK_Release\include\vtk-8.1;F:\ITK_Release\include\ITK-4.13;F:\Build_ITK_Release\Examples\ITKFactoryRegistration;E:\misSoloution\Header\Segmentation3D</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);E:\misSoloution\Header\Segmentation3D;E:\misSoloution\Header</AdditionalIncludeDirectories>
       <PrecompiledHeaderOutputFile />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>

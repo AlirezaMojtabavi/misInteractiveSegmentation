@@ -13,7 +13,6 @@ void MyAlgorithm3d::SetInternalImage(misInternalImageType::Pointer _InternalImag
 }
 
  
-
 misInternalImageType * MyAlgorithm3d::GetFastMarching()
 {
 	return fastMarching->GetOutput();
@@ -25,7 +24,7 @@ misOutputImageType * MyAlgorithm3d::GetThresholder()
 }
 
 
-void MyAlgorithm3d::SetSpeedFunction(itk::SmartPointer<MySpeedFunction3DType> _Function)
+void MyAlgorithm3d::SetSpeedFunction(itk::SmartPointer<misSpeedFunction3DType> _Function)
 {
 	SegmentationSpeedFunction = _Function;
 }

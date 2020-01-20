@@ -5,7 +5,6 @@
 #define MySpeedFunction3D_h
 
 
-
 template< typename TImageType, typename TFeatureImageType = TImageType >
 class MySpeedFunction3D :
 	public itk::ThresholdSegmentationLevelSetFunction< TImageType, TFeatureImageType >

@@ -25,7 +25,7 @@ public:
 	void SetInternalImage(misInternalImageType::Pointer _InternalImage);
 
  
-	void SetSpeedFunction(itk::SmartPointer<MySpeedFunction3DType>);
+	void SetSpeedFunction(itk::SmartPointer<misSpeedFunction3DType>);
 
 	void FastMarching(const double);
 	void LevelSet(int lower, int upper, double edge, double weight);
@@ -39,8 +39,10 @@ private:
 
 	misInternalImageType::Pointer IS_InternalImage;
 
-	itk::ThresholdSegmentationLevelSetFunction<misOutputImageType>::Pointer SegmentationSpeedFunction =
-		MySpeedFunction3DType::New();
+	//itk::ThresholdSegmentationLevelSetFunction<misOutputImageType>::Pointer SegmentationSpeedFunction =
+		//MySpeedFunction3DType::New();
+
+	misSpeedFunction3DType::Pointer SegmentationSpeedFunction;
 
 	ThresholdingFilterType::Pointer thresholder = ThresholdingFilterType::New();
 

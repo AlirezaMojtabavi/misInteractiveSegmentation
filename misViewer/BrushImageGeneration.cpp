@@ -4,6 +4,8 @@
 #include "misTransFunctionBuilder.h"
 #include "../Segmentation3D/MyAlgorithm3d.h"
 
+#include <itkImageToVTKImageFilter.h>
+#include <itkVTKImageToImageFilter.h>
 
 BrushImageGeneration::BrushImageGeneration(std::shared_ptr<I3DViewer> viewer, std::shared_ptr<IVolumeSlicer> Slicer,
                                            std::shared_ptr<ICornerProperties> cornerProperties
@@ -137,20 +139,52 @@ void BrushImageGeneration::CreateTExture( )
 	imagePlane->SetVisiblityOfColorMap(SecondImage, true);
 	//imagePlane->SetColorMapTransFuncID(FirstImage, transfunc);
 	//imagePlane->SetVisiblityOfColorMap(FirstImage, true);
-	
-  
+
 }
 
 void BrushImageGeneration::Finalize()
 {
+	auto vtkInputImage = m_Image->GetRawImageData(); // <vtkImageData>->Imagetype
+
+	typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
+	VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
+	vtkImageToITKImage->SetInput(vtkInputImage);
+	vtkImageToITKImage->Update(); // ITKImage -> unsigned short
+
+	ITKImageType_2_InternalType::Pointer internalImage = ITKImageType_2_InternalType::New();
+	internalImage->SetInput(vtkImageToITKImage->GetOutput());
+	internalImage->Update(); // internal image -> float
+
+	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
+	algoritm.SetInternalImage(internalImage->GetOutput());
+	algoritm.SetSpeedFunction(SegmentationSpeedFunction);
+	algoritm.FastMarching(5);
+	algoritm.LevelSet(191, 450, 0, 0.05);
+	auto outputImage = algoritm.GetThresholder();
+	outputImage->Update();
+
+
+	/*typedef itk::CastImageFilter<misOutputImageType, ImageType> OutputImageType_2_ImageType;
+	OutputImageType_2_ImageType::Pointer OutputImage_2_Image = OutputImageType_2_ImageType::New();
+	OutputImage_2_Image->SetInput(callback->GetAlgorithm()->GetThresholder());
+	OutputImage_2_Image->Update();
 	auto casting = vtkSmartPointer<vtkImageCast>::New();
 	casting->SetInputData(m_Image->GetRawImageData());
+	
 	casting->SetOutputScalarTypeToFloat();
 	casting->Update();
 	auto convertor = VTKImageToImageType::New();
 	convertor->SetInput(casting->GetOutput());
 	convertor->Update();
+
 	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
 	algoritm.SetInternalImage(convertor->GetOutput());
-	
+	algoritm.FastMarching(5);
+	algoritm.SetSpeedFunction(SegmentationSpeedFunction);
+	algoritm.LevelSet(191, 450, 0, 0.05);
+	algoritm.GetThresholder()->Update();
+	auto segmentationOutput = algoritm.GetThresholder();
+
+	auto itkToVTk = itk::ImageToVTKImageFilter::New();
+	//itkToVTk->Se*/
 }

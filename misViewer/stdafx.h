@@ -157,6 +157,7 @@
 #include "itkCurvatureAnisotropicDiffusionImageFilter.h"
 #include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
 #include "itkBinaryThresholdImageFilter.h"
+#include "itkImageToVTKImageFilter.h"
 
 
 #include "TinyXml/tinyxml.h"
