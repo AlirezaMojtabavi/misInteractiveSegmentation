@@ -15,7 +15,7 @@ public:
 	BrushImageGeneration(std::shared_ptr<I3DViewer>, std::shared_ptr<IVolumeSlicer> Slicer,
 	                     std::shared_ptr<ICornerProperties>,
 	                     misVolumeRendererContainer::Pointer, std::shared_ptr<ICursorService>,
-	                     std::shared_ptr<misCameraInteraction>, std::shared_ptr<IImage>  image);
+	                     std::shared_ptr<misCameraInteraction>, std::shared_ptr<IImage>  image, std::shared_ptr<IImage> origin);
 	void Execute(vtkObject* caller, unsigned long eventId, void* callData) override;
 	void CreateTExture();
 	void Finalize();
@@ -30,12 +30,13 @@ private:
 	std::shared_ptr<ICursorService> m_CursorService;
 	std::unique_ptr<ConvertMousexyToWorldCoordinate> m_ConvertMouseXYToWorldCoordinate;
 	std::shared_ptr<IImage>  m_Image;
+	std::shared_ptr<IImage>  m_OriginImage;
 	bool m_ErasingMode = false;
 	int	m_EraseSubBoxWidth = 14;
 	misColorStruct m_ErasedObjColor;
 	misTextureEraser m_Eraser;
 	
-	std::vector<unsigned short> m_intensity;
+	std::vector<short> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
 	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();
 };

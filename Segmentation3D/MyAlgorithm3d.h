@@ -21,7 +21,7 @@ class MyAlgorithm3d
 public:
 
 
-	MyAlgorithm3d(std::vector<unsigned short> intensity, std::vector<coordinate3D> seeds);
+	MyAlgorithm3d(std::vector< short> intensity, std::vector<coordinate3D> seeds);
 	void SetInternalImage(misInternalImageType::Pointer _InternalImage);
 
  
@@ -50,7 +50,7 @@ private:
 	ThresholdSegmentationLevelSetImageFilterType::Pointer thresholdSegmentation = 
 		ThresholdSegmentationLevelSetImageFilterType::New();
 
-	std::vector<unsigned short> m_intensity;
+	std::vector< short> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
 	FastMarchingFilterType::Pointer  fastMarching = FastMarchingFilterType::New();
 	NodeContainer::Pointer seeds = NodeContainer::New();

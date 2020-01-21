@@ -11,13 +11,14 @@ BrushImageGeneration::BrushImageGeneration(std::shared_ptr<I3DViewer> viewer, st
                                            std::shared_ptr<ICornerProperties> cornerProperties
                                            , misVolumeRendererContainer::Pointer,
                                            std::shared_ptr<ICursorService> currentService,
-                                           std::shared_ptr<misCameraInteraction> cameraInteraction, std::shared_ptr<IImage>  image)
+                                           std::shared_ptr<misCameraInteraction> cameraInteraction, std::shared_ptr<IImage>  image, std::shared_ptr<IImage> origin)
 	: m_3DViewer(viewer),
 	  m_Slicer(Slicer),
 	  m_Cornerproperties(cornerProperties),
 	  m_CursorService(currentService),
 	  m_CameraService(cameraInteraction),
 m_Image(image),
+m_OriginImage(origin),
 	  m_ConvertMouseXYToWorldCoordinate(
 		  std::make_unique<ConvertMousexyToWorldCoordinate>(m_Cornerproperties, m_CameraService)),
 	m_ErasedObjColor(255, 0, 0, 1)
@@ -50,7 +51,7 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	const auto interactor = dynamic_cast<vtkRenderWindowInteractor*>(m_3DViewer
 	                                                                 ->GetWindow()->GetInterActor().GetPointer());
 	auto position = m_ConvertMouseXYToWorldCoordinate->CalculateNewPosition(interactor);
-	auto rawImageData = m_Image->GetRawImageData();
+	auto rawImageData = m_OriginImage->GetRawImageData();
 	auto spacing = m_Image->GetSpacing();
 	auto extent = m_Image->GetRawImageData()->GetExtent();
 	auto ptr = (short*)rawImageData->GetScalarPointer();
@@ -144,25 +145,26 @@ void BrushImageGeneration::CreateTExture( )
 
 void BrushImageGeneration::Finalize()
 {
-	auto vtkInputImage = m_Image->GetRawImageData(); // <vtkImageData>->Imagetype
-
-	typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
-	VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
-	vtkImageToITKImage->SetInput(vtkInputImage);
-	vtkImageToITKImage->Update(); // ITKImage -> unsigned short
-
-	ITKImageType_2_InternalType::Pointer internalImage = ITKImageType_2_InternalType::New();
-	internalImage->SetInput(vtkImageToITKImage->GetOutput());
-	internalImage->Update(); // internal image -> float
+	auto casting = vtkSmartPointer<vtkImageCast>::New();
+	casting->SetInputData(m_Image->GetRawImageData());
+	casting->SetOutputScalarTypeToFloat();
+	casting->Update();
+	auto convertor = itk::VTKImageToImageFilter<misInternalImageType>::New();
+	convertor->SetInput(casting->GetOutput());
+	convertor->Update();
 
 	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
-	algoritm.SetInternalImage(internalImage->GetOutput());
+	algoritm.SetInternalImage(convertor->GetOutput());
 	algoritm.SetSpeedFunction(SegmentationSpeedFunction);
 	algoritm.FastMarching(5);
 	algoritm.LevelSet(191, 450, 0, 0.05);
 	auto outputImage = algoritm.GetThresholder();
 	outputImage->Update();
-
+	
+	auto invertConvertor = itk::ImageToVTKImageFilter<itk::Image<short, 3>>::New();
+	invertConvertor->SetInput(outputImage);
+	invertConvertor->Update();
+	m_Image->GetRawImageData()->DeepCopy(invertConvertor->GetOutput());
 
 	/*typedef itk::CastImageFilter<misOutputImageType, ImageType> OutputImageType_2_ImageType;
 	OutputImageType_2_ImageType::Pointer OutputImage_2_Image = OutputImageType_2_ImageType::New();

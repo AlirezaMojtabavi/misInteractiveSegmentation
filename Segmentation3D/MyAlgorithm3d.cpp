@@ -2,7 +2,7 @@
 #include "MyAlgorithm3d.h"
 
 
-MyAlgorithm3d::MyAlgorithm3d(std::vector<unsigned short> intensity, std::vector<coordinate3D> seeds)
+MyAlgorithm3d::MyAlgorithm3d(std::vector< short> intensity, std::vector<coordinate3D> seeds)
 	:m_intensity(intensity), m_Seeds(seeds)
 {
 }
