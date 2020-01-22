@@ -1,4 +1,4 @@
 # misInteractiveSegmentation
-Interactve Segmentation for Parseh Intelligent Surgical System Co. (Parsiss)
+Interactive Segmentation for Parseh Intelligent Surgical System Co. (Parsiss)
 #
 work in progress
