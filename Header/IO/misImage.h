@@ -64,7 +64,6 @@ public:
 	boost::optional<double> GetCurrentTeethThreshold();
 	parcast::PointD3 GetImageCenter() override;
 	bool GetDuplicatedRangeActivation(void);
-	bool CheckPrimaryConditionOnImageGeometry();
 	std::string GetBinaryFileName() const;
 	void SetBinaryFileName(std::string val);
 	int* GetDimensions();

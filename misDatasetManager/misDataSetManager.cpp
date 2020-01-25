@@ -172,11 +172,7 @@ void misDatasetManager::AddImage(std::shared_ptr<IImage> image)
 		return;
 	}
 
-	if (!image->CheckPrimaryConditionOnImageGeometry())
-	{
-		m_Logger->Debug("Invalid Image Format Error\n");
-	}
-
+ 
 	auto problemList = misImageUtilities::CheckImageValidity(image);
 	if (InAcceptedImageProblem == problemList[0])
 	{
