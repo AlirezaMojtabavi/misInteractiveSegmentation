@@ -9,6 +9,5 @@ class ILandamrkListCategorizer
 public:
 	virtual ~ILandamrkListCategorizer() = default;
 	virtual misSimplePointListType GetLandamrks(misLandmarkType lndType,
-	                                           const std::vector<std::shared_ptr<ILandmarkPointerRepresentation>>&,
-	                                            const std::shared_ptr<IImage> pImage) = 0;
+	                                           const std::vector<std::shared_ptr<ILandmarkPointerRepresentation>>&) = 0;
 };

@@ -18,7 +18,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccProvider>SAK</SccProvider>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -63,7 +63,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(SolutionDir)\tgtLib\tgt;$(SolutionDir)\\tgtLib;$(VTK_PATH);$(ITK_PATH);../header;../header/interactionStyleHeader;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\base\processors\image;$(SolutionDir)\voreen-src-2.6.1-win64\ext\tgt\glut;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\geometry;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\base\processors\proxygeometry;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\volume;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\modules\dicom;$(SolutionDir)\voreen-src-2.6.1-win64\include;$(SolutionDir)\voreen-src-2.6.1-win64\ext\;$(SolutionDir)\voreen-src-2.6.1-win64\ext\glew\include\GL;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\preprocessor;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\glsl;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\generator;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser\annotations;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\GLSLparser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils\cmdparser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\utils;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\properties\link;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\properties;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\processors;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\ports;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\plotting\parser;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\plotting;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\network;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io\serialization\meta;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io\serialization;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\io;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\interaction;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\animation\interpolation;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\animation;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\volume\bricking;$(SolutionDir)\voreen-src-2.6.1-win64\include\voreen\core\datastructures\transfunc;$(SolutionDir)\voreen-src-2.6.1-win64\ext\tgt\event;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories>..\Header\ExtLibWrappers;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header;../header/voreen;$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Header\ExtLibWrappers;..\Header\BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\Adapters;../header;../header/voreen;$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(GLEW_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(DIRECT_SHOW_SAMPLES_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);$(TINYXML2_INCLUDE_DIR);..\Header\Segmentation3D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -110,6 +110,7 @@
     <ClCompile Include="mis3DImageRenderer.cpp" />
     <ClCompile Include="mis3DPackageTransformUpdater.cpp" />
     <ClCompile Include="misBiopsyNavigationLayout.cpp" />
+    <ClCompile Include="misBrushViewerFactory.cpp" />
     <ClCompile Include="misCMFNavigationLayout.cpp" />
     <ClCompile Include="misDefaultVolumeRenderer.cpp" />
     <ClCompile Include="misDirectionStringConevrtor.cpp" />
@@ -120,10 +121,13 @@
     <ClCompile Include="misGroupViewerSettingFinder.cpp" />
     <ClCompile Include="misGroupViewerSetting.cpp" />
     <ClCompile Include="misImagePositionUpdater.cpp" />
+    <ClCompile Include="misLandmarkViewerCollection.cpp" />
     <ClCompile Include="misN4VStateVarible.cpp" />
     <ClCompile Include="misPackage2DDataRenderingAdapter.cpp" />
     <ClCompile Include="mis2DPackageTransformUpdater.cpp" />
+    <ClCompile Include="misPackage2DLandamrkAdapter.cpp" />
     <ClCompile Include="misPackage3DDataRenderingAdapter.cpp" />
+    <ClCompile Include="misPackage3DLandmarkAdapter.cpp" />
     <ClCompile Include="misPackageDataRenderingAdapter.cpp" />
     <ClCompile Include="misRepresentationFactory.cpp" />
     <ClCompile Include="misSpineNavigationLayout.cpp" />
@@ -161,8 +165,10 @@
     <ClInclude Include="..\Header\IDefaultVolumeRenderer.h" />
     <ClInclude Include="..\Header\IGroupViewerSettingFinder.h" />
     <ClInclude Include="..\Header\IImageToTextureMap.h" />
+    <ClInclude Include="..\Header\ILandmarkViewerCollection.h" />
     <ClInclude Include="..\Header\IOblqueView.h" />
     <ClInclude Include="..\Header\IPackage2DDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\IPackage2DLandmarkAdapter.h" />
     <ClInclude Include="..\Header\IPackage3DDataRenderingAdapter.h" />
     <ClInclude Include="..\Header\IPackageViewerAbstract.h" />
     <ClInclude Include="..\Header\IRepresentationFactory.h" />
@@ -179,10 +185,12 @@
     <ClInclude Include="..\Header\IVolumeSlicerEvents.h" />
     <ClInclude Include="..\Header\IVolumeViewerInitilizer.h" />
     <ClInclude Include="..\Header\IWidgetConfigure.h" />
+    <ClInclude Include="..\Header\LandmarkViewer.h" />
     <ClInclude Include="..\header\mis2DImageRenderingAdapter.h" />
     <ClInclude Include="..\header\mis3DImageRenderer.h" />
     <ClInclude Include="..\Header\mis3DPackageTransformUpdater.h" />
     <ClInclude Include="..\header\misBiopsyNavigationLayout.h" />
+    <ClInclude Include="..\Header\misBrushViewerFactory.h" />
     <ClInclude Include="..\Header\misCMFNavigationLayout.h" />
     <ClInclude Include="..\Header\misDataBoundstr.h" />
     <ClInclude Include="..\header\misDefaultVolumeRenderer.h" />
@@ -195,8 +203,11 @@
     <ClInclude Include="..\Header\misGroupViewerSettingFinder.h" />
     <ClInclude Include="..\Header\misGroupViewerSetting.h" />
     <ClInclude Include="..\header\misImagePositionUpdater.h" />
+    <ClInclude Include="..\Header\misLandmarkViewerCollection.h" />
     <ClInclude Include="..\Header\misN4VStateVariable.h" />
     <ClInclude Include="..\header\misPackage2DDataRenderingAdapter.h" />
+    <ClInclude Include="..\Header\misPackage2DLandamrkAdapter.h" />
+    <ClInclude Include="..\Header\misPackage3DLandmarkAdapter.h" />
     <ClInclude Include="..\Header\misPackagePanoramicDataRenderingAdapter.h" />
     <ClInclude Include="..\header\mis2DPackageTransformUpdater.h" />
     <ClInclude Include="..\Header\misPackage3DDataRenderingAdapter.h" />
@@ -227,6 +238,10 @@
     <ClInclude Include="..\header\ShowImagesAdapter2D.h" />
     <ClInclude Include="..\header\UpdatePlaneVisibilitiy.h" />
     <ClInclude Include="..\Header\VolumeViewerInitilizer.h" />
+    <ClInclude Include="..\misViewer\SlicerLandmarkViewer.h" />
+    <ClInclude Include="..\misViewer\SlicerPointSelectActionLandamrk.h" />
+    <ClInclude Include="..\misViewer\Volume3DLandmarkViewer.h" />
+    <ClInclude Include="..\misViewer\Volume3DSelectActionLandamrk.h" />
     <ClInclude Include="IVolumeRenderingStrategy.h" />
     <ClInclude Include="misSpineNavigationLayout.h" />
     <ClInclude Include="misViewingWindowElement.h" />

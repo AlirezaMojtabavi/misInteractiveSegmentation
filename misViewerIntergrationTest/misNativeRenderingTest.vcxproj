@@ -19,7 +19,7 @@
     <SccProvider>SAK</SccProvider>
     <Keyword>Win32Proj</Keyword>
     <ProjectName>misViewerIntergrationTest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -113,7 +113,7 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>../Header/BusinessEntities;..\Header\ApplicationBusinessRules;..\Header\ExtLibWrappers;../header;../Header/Adapters;../header/voreen;$(GDCM_INCLUDE_DIR);$(VTK_INCLUDE_DIR);$(ITK_INCLUDE_DIR);%(AdditionalIncludeDirectories);$(GLEW_INCLUDE_DIR);$(DCMTK_INCLUDE_DIR);$(BOOST_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR);$(MISEXT_INCLUDE_DIR)\tgt;$(TINYXML2_INCLUDE_DIR);..\Header\Segmentation3D</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;ITK_IO_FACTORY_REGISTER_MANAGER</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -128,7 +128,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX64</TargetMachine>
-      <AdditionalDependencies>%(AdditionalDependencies);opengl32.lib;WS2_32.lib;Rpcrt4.lib;$(VTK_LIBS_RLS);$(ITK_LIBS_RLS);$(DCMTK_LIBS_RLS);$(GLEW_LIBS_RLS);$(MISEXT_LIBS_RLS);$(SYSTEM_LIBS_RLS);$(TINYXML2_LIBS_RLS);$(GDCM_LIBS_RLS);$(GDCM2_LIBS_RLS);$(GRAPHIC_LIBS_RLS);$(CRYPTO_LIBS_RLS);Ry4S_X64.lib;voreen_core.lib;misLibrary.lib;misMathLibrary.lib;C:\Program Files\PACSDep\lib.Release;C:\Program Files\misLibrary_Release\BasicDataTypes.lib;C:\Program Files\misLibrary_Release\CoreSystemServices.lib;C:\Program Files\misLibrary_Release\LicenseCheck.lib;C:\Program Files\misLibrary_Release\MisAppVal.lib;C:\Program Files\misLibrary_Release\misBasicUtilities.lib;C:\Program Files\misLibrary_Release\misCommon.lib;C:\Program Files\misLibrary_Release\misDcmtkWrapper.lib;C:\Program Files\misLibrary_Release\misGeneralUtilities.lib;C:\Program Files\misLibrary_Release\misImageConvertor.lib;C:\Program Files\misLibrary_Release\misIO.lib;C:\Program Files\misLibrary_Release\misIOIntrgrationTest.lib;C:\Program Files\misLibrary_Release\misLibrary.lib;C:\Program Files\misLibrary_Release\misLibraryTest.lib;C:\Program Files\misLibrary_Release\misMathLibrary.lib;C:\Program Files\misLibrary_Release\misMathLibraryTest.lib;C:\Program Files\misLibrary_Release\misMTCu.lib;C:\Program Files\misLibrary_Release\misPacs.lib;C:\Program Files\misLibrary_Release\misPacsCore.lib;C:\Program Files\misLibrary_Release\misPacsWrapperLib.lib;C:\Program Files\misLibrary_Release\misPreID.lib;C:\Program Files\misLibrary_Release\misProjectSettingLib.lib;C:\Program Files\misLibrary_Release\misSerializationLib.lib;C:\Program Files\misLibrary_Release\misStrCommands.lib;C:\Program Files\misLibrary_Release\misTinyXmlLib.lib;C:\Program Files\misLibrary_Release\misVideoLib.lib;C:\Program Files\misLibrary_Release\tgtLib.lib;C:\Program Files\misLibrary_Release\voreen_core.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);opengl32.lib;WS2_32.lib;Rpcrt4.lib;$(VTK_LIBS_RLS);$(ITK_LIBS_RLS);$(DCMTK_LIBS_RLS);$(GLEW_LIBS_RLS);$(SYSTEM_LIBS_RLS);$(TINYXML2_LIBS_RLS);$(GDCM_LIBS_RLS);$(GDCM2_LIBS_RLS);$(GRAPHIC_LIBS_RLS);$(CRYPTO_LIBS_RLS);Ry4S_X64.lib;..\LIB.Release\misIO.lib;..\LIB.Release\BasicDataTypes.lib;..\LIB.Release\misGeneralUtilities.lib;..\LIB.Release\CoreSystemServices.lib;..\LIB.Release\misBasicUtilities.lib;..\LIB.Release\misProjectSettingLib.lib;..\LIB.Release\misCommon.lib;..\LIB.Release\misDcmtkWrapper.lib;..\LIB.Release\misImageConvertor.lib;..\LIB.Release\misMTCu.lib;..\LIB.Release\misSerializationLib.lib;..\LIB.Release\misTinyXmlLib.lib;..\LIB.Release\tgtLib.lib;..\LIB.Release\misPreID.lib;..\LIB.Release\misStrCommands.lib;..\LIB.Release\misLibrary.lib;..\LIB.Release\misMathLibrary.lib;..\LIB.Release\tgtlib.lib;..\LIB.Release\voreen_core.lib;..\LIB.Release\misAppVal.lib;..\LIB.Release\misIOIntrgrationTest.lib;..\LIB.Release\misIntegrationTestTools.lib;..\LIB.Release\misImageContainedPolyDatas.lib;..\LIB.Release\misGuiEvents.lib;..\LIB.Release\DataAccess.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(VTK_LIB_DIR_RLS);$(ITK_LIB_DIR_RLS);$(DCMTK_LIB_DIR_RLS);$(GLEW_LIB_DIR_RLS);$(MISEXT_LIB_DIR_RLS);$(BOOST_LIB_DIR_RLS);$(GRAPHIC_LIB_DIR_RLS);$(TINYXML2_LIB_DIR_RLS);$(GDCM_LIB_DIR_RLS);$(GDCM2_LIB_DIR_RLS);$(CRYPTO_LIB_DIR_RLS);$(R4S_LIB_DIR_RLS)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -137,10 +137,12 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="misIntegrationNView.cpp" />
     <ClCompile Include="misSegmentationWithBrush.cpp" />
     <ClCompile Include="main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SegmentationWithBrush4View.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -155,6 +157,7 @@
     <ClInclude Include="..\misOverlayActorIntgTest\misOverlayIntgTest.h" />
     <ClInclude Include="misExternalayer.h" />
     <ClInclude Include="misImageViewerLandMarkVisibilityTest.h" />
+    <ClInclude Include="misIntegrationNView.h" />
     <ClInclude Include="misPlanNavigationVisualizerIngtTest.h" />
     <ClInclude Include="misRemoveActorTest.h" />
     <ClInclude Include="misROIWigetTest.h" />
@@ -218,6 +221,7 @@
     <ClInclude Include="misVoreenSimpleTranformVolume.h" />
     <ClInclude Include="misVoreenTest2withddelay.h" />
     <ClInclude Include="SampleParametricFunction.h" />
+    <ClInclude Include="SegmentationWithBrush4View.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TestVtkVolumeRendering.h" />

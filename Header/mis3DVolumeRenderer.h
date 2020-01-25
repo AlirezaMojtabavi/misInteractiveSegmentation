@@ -22,6 +22,8 @@
 #include "misZoomFinder.h"
 #include "IMedicalCameraDirection.h"
 #include "IScrewViewer.h"
+#include "LandmarkDataAndType.h"
+#include "ILandmarkViewer.h"
 
 class IScrewCompound;
 class ICursorService;
@@ -40,53 +42,14 @@ public:
 	                    int index,
 	                    std::shared_ptr<I3DViewer> viewer,
 	                    std::shared_ptr<ICornerProperties>,
-	                    std::shared_ptr<IUpdateLandmarkCameraView> m_UpdateLandmarkCameraViewer,
 	                    std::shared_ptr<IInitializeScrewWidget>,
 	                    std::shared_ptr<IMedicalCameraDirection> medicalCameraDirection,
-	                    std::shared_ptr<IVolumeRayCaster> volumeRenderer);
+	                    std::shared_ptr<IVolumeRayCaster> volumeRenderer, misVolumeRendererContainer::Pointer dummy);
 	~mis3DVolumeRenderer();
 	void SetToolPosition(double xCoord, double yCoord, double zCoord) override; //double *GetBounds();
-	void SetCurrentLandmark(misLandmarkType val, int index) override;
-	void SetCurrentLandmarkType(misLandmarkType val) override;
-	void SetCurrentLandmarkIndex(int val) override;
-	void SetCurrentLandmarkLableType(LANDMARKLABLETYPE val);
-	void SetCaptureLandmarkFlag(bool val);
-	void SetUpdateLandmarkFlag(bool val);
-	// add a annotation label and  a line for a landmark
-	void AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList);
-	void AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList, misLandmarkType landmarkType,
-	                  LANDMARKLABLETYPE lableType);
 	void RemoveRepresentation(std::shared_ptr<IRepresentation> pRepresent);
-	virtual void AddLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-	                         LANDMARKLABLETYPE lableType = NUMERICALLANDMARK);
-	virtual void AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-	                                  LANDMARKLABLETYPE lableType = NUMERICALLANDMARK);
-	virtual int AddNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-	                            LANDMARKLABLETYPE lableType = NUMERICALLANDMARK);
-	virtual int AddOrSetNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-	                                 LANDMARKLABLETYPE lableType = NUMERICALLANDMARK);
-	//update  landmark position at index 
-	virtual void SetLandmarkPosition(int index, const double position[3]);
-	void SetViewCentrePosition(const double position[3]);
-	void UpdateLandmarkCameraView(int index);
-	void InvalidateLandmark(int index);
-	void HideLandmarks();
-	void ShowLandmarks();
 	virtual void SetToolTransform(std::shared_ptr<ITransform> transform);
-	// Remove all landmark representations from rendering scene
-	void RemoveLandMarkRepresentations();
 	void Reset() override;
-	double* GetLandmarkPosition(int index) override;
-	virtual double* GetLandmarkPosition(int index, misLandmarkType category) override;
-	// Once upon a time these two methods were made virtual because a subclass (ImageViewer) has methods of the same signature.
-	// This proved to be a fatal mistake. The subclass defined methods are entirely different methods which only happen to have the
-	// same name!!! Be warned!
-	LandmarkListType GetLandmarkList(void);
-	misSimplePointListType GetLandmarkList(misLandmarkType seedType /*= seedCatergory::GeneralSeed*/);
-	// Removes landmark representations from the list of contained representations within the viewer.
-	void ResetLandMarks(void);
-	// Removes landmark representations of the specified landmark type from the list of contained representations within the viewer. 
-	void ResetLandMarks(misLandmarkType lndType);
 	std::shared_ptr<ICursorService> GetCursorService() override;
 	std::shared_ptr<IScrewCompound> GetScrewWidgetService(misUID uid) override;
 	// Sets the Region of Interest
@@ -183,11 +146,6 @@ protected:
 	// in each direction while keeping its centre fixed. This yields the widget bounds before the transform is applied to it.
 	void GetWidgetBoundingBox(double bounds[6], double extensionScaleFactor = 1);
 	bool IsDentalSpecialViewsEnabled() const;
-	int m_currentLandmarkIndex;
-	misLandmarkType m_CurrentLandmarkType;
-	LANDMARKLABLETYPE m_CurrentLandmarkLableType;
-	bool m_CaptureLandmark;
-	bool m_UpdateLandmark;
 	bool m_IsPointWidgetObserverAdded;
 	bool m_IsPointSelectObserverAdded;
 	std::shared_ptr<ICursorService> m_CursorService;
@@ -195,34 +153,36 @@ protected:
 	std::shared_ptr<ICornerProperties> m_Cornerproperties;
 	using ScrewListType = std::vector<std::shared_ptr<IScrewCompound>>;
 	std::shared_ptr<IRepresentation> m_MainRepresentation; // See SetMainRepresentation().
+	virtual void SetTypeDirection(misViewerTypeDirection) override;
 
 private:
-	void RemoveLandmarkRepresentation(int index);
-	void InvalidateLandmarks();
 
-	virtual void InteractionStyleCallback(vtkObject* caller, unsigned long eventId, void* callData)
-	{
-	};
-	virtual void PointSelectAction(vtkObject* caller, unsigned long eventId, void* callData);
+	
+
+	virtual void InteractionStyleCallback(vtkObject* caller, unsigned long eventId, void* callData);;
 	virtual void WidgetChangeAction(vtkObject* caller, unsigned long eventId, void* callData);
 	virtual void UpdateScrewWidget(vtkObject* caller, unsigned long eventId, void* callData);
 	parcast::PointD3 GetLablePosition(const double* position, const itk::BoundingBox<double, 3, double>::Pointer
 	                                  & boundingBox, const double handleLength, const double offsetAngle) const;
 	void SetWindow(std::shared_ptr<Iwindows> pWindow, int index);
 
-private:
+
+public:
+	misVolumeRendererContainer::Pointer GetDummySubject() override;
+ private:
 	std::shared_ptr<misManModelrepresentation> m_ManModel;
 	std::shared_ptr<IVolumeRayCaster> m_VolumeRnderer;
 	bool m_ShowManModel;
 	bool m_DentalSpecialViewEnable;
 	std::shared_ptr<TransFuncIntensity> m_ColormapTransferFunction;
 	bool m_ShowLabels;
-	misVolumeRendererContainer::Pointer m_DummyObject = misVolumeRendererContainer::New();
+	misVolumeRendererContainer::Pointer m_DummyObject ;
 	DentalSurgeryType m_DentalSurgeryType;
-	std::shared_ptr<IUpdateLandmarkCameraView> m_UpdateLandmarkCameraViewer;
 	misZoomFinder m_ZoomFinder;
 	unsigned int m_CurrentZoomPercentage = 100;
 	std::shared_ptr<IMedicalCameraDirection> m_MedicalCameraDirection;
 	std::shared_ptr<parcast::IScrewViewer> m_ScrewViewer;
 	bool m_IsOblique = false;
+	misViewerTypeDirection m_ViewerTypeDirection;
+	// Inherited via IVolume3DRenderer
 };

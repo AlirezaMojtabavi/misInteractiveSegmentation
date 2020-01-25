@@ -21,6 +21,7 @@
 #include "mis3DImageRenderer.h"
 #include "IDefaultVolumeRenderer.h"
 #include "IOblqueView.h"
+#include "ILandmarkViewer.h"
 
 typedef std::vector<std::shared_ptr<IVolumeDataDependency>> VolumeDataDependencyListTypes;
  
@@ -58,7 +59,6 @@ typedef std::vector<std::shared_ptr<IVolumeDataDependency>> VolumeDataDependency
 		void SetColorValueToTexture(misPlaneEnum planeIndex, misDoubleColorStruct colorVal) override;
 		void SetOpacityValueToTexture(misPlaneEnum planeIndex, float opacityValue) override;
 		void UpdatePosition(parcast::Point<double, 3> position) override;
-		void SetCurrentLandmarkType(misLandmarkType val) override;
  		void SetVisibilityOfSegmentedImage(misUID imageuid, bool val) override;
 		void SetObliqueFlag(bool isOblique) override;
 

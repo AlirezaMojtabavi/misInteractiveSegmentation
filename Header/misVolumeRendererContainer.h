@@ -1,7 +1,8 @@
 #pragma once
 
 #include "misObject.h"
-#include "IVolume3DRenderer.h"
+
+class IVolumeRenderer;
 
 class misVolumeRendererContainer : public misOldObject
 {
@@ -11,6 +12,6 @@ public:
 	IVolumeRenderer* GetViewer() const;
 	void SetViewer(IVolumeRenderer* val);
 private:
-	IVolumeRenderer* m_Viewer;
+	IVolumeRenderer* m_Viewer = nullptr;
 
 };

@@ -5,24 +5,24 @@
 #include "../Segmentation3D/MyAlgorithm3d.h"
 
 #include <itkImageToVTKImageFilter.h>
-#include <itkVTKImageToImageFilter.h>
+#include <itkVTKImageToImageFilter.h>											
 
-BrushImageGeneration::BrushImageGeneration(std::shared_ptr<I3DViewer> viewer, std::shared_ptr<IVolumeSlicer> Slicer,
+vtkStandardNewMacro(BrushImageGeneration);
+
+void BrushImageGeneration::Create(std::shared_ptr<I3DViewer> viewer, std::shared_ptr<IVolumeSlicer> Slicer,
                                            std::shared_ptr<ICornerProperties> cornerProperties
                                            , misVolumeRendererContainer::Pointer,
                                            std::shared_ptr<ICursorService> currentService,
-                                           std::shared_ptr<misCameraInteraction> cameraInteraction, std::shared_ptr<IImage>  image)
-	: m_3DViewer(viewer),
-	  m_Slicer(Slicer),
-	  m_Cornerproperties(cornerProperties),
-	  m_CursorService(currentService),
-	  m_CameraService(cameraInteraction),
-m_Image(image),
-	  m_ConvertMouseXYToWorldCoordinate(
-		  std::make_unique<ConvertMousexyToWorldCoordinate>(m_Cornerproperties, m_CameraService)),
-	m_ErasedObjColor(255, 0, 0, 1)
+                                           std::shared_ptr<misCameraInteraction> cameraInteraction)
 {
-	CreateTExture();
+	m_3DViewer = viewer;
+	m_Slicer = Slicer;
+	m_Cornerproperties = cornerProperties;
+	m_CursorService = currentService;
+	m_CameraService = cameraInteraction;
+	m_ConvertMouseXYToWorldCoordinate = std::make_unique<ConvertMousexyToWorldCoordinate>(m_Cornerproperties);
+	m_ErasedObjColor = { 255, 0, 0, 1 };
+	m_SegmentationMode = Brush;
 }
 
 void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, void* callData)
@@ -41,15 +41,21 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	if (!m_ErasingMode)
 		return;
 	if (!m_Slicer->GetMainRepresentation() || !m_Slicer->GetCameraService()->GetCamera() || !m_Slicer
-	                                                                                         ->GetCornerProperties()->
-	                                                                                         GetTransform())
+		->GetCornerProperties()->
+		GetTransform())
 		return;
-
-
-	m_ConvertMouseXYToWorldCoordinate->SetMainRepresentation(m_Slicer->GetMainRepresentation());
+	auto image = m_SegmentationMode == Erase ? FirstImage : SecondImage;
+	if (!m_Image)
+	{
+		m_Image = m_Slicer->GetImageRprensentaion()->GetImage(image);
+		CreateTExture();
+	}
+	m_ConvertMouseXYToWorldCoordinate->SetViewer(m_3DViewer);
 	const auto interactor = dynamic_cast<vtkRenderWindowInteractor*>(m_3DViewer
 	                                                                 ->GetWindow()->GetInterActor().GetPointer());
 	auto position = m_ConvertMouseXYToWorldCoordinate->CalculateNewPosition(interactor);
+	
+ 
 	auto rawImageData = m_Image->GetRawImageData();
 	auto spacing = m_Image->GetSpacing();
 	auto extent = m_Image->GetRawImageData()->GetExtent();
@@ -64,6 +70,7 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	coord._y = coordinate[1];
 	coord._z = coordinate[2];
 	m_Seeds.push_back(coord);
+	
 	//for (int x = 0; x < 20; x++)
 	//	for (int y = 0; y < 20; y++)
 	//		for (int z = 0; z < 20; z++)
@@ -89,11 +96,11 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	//			if (validINdex)
 	//				ptr[idx] = -1000;
 		//	}
-	EraseTexture(parcast::PointD3(position));
+	EraseTexture(parcast::PointD3(position), m_SegmentationMode);
 }
 
 
-void BrushImageGeneration::EraseTexture(parcast::PointD3 point)
+void BrushImageGeneration::EraseTexture(parcast::PointD3 point, SegmentMode segmentMode)
 {
 	misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
 	misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_Image);
@@ -106,7 +113,7 @@ void BrushImageGeneration::EraseTexture(parcast::PointD3 point)
 	m_Eraser.SetEraserPosition(point, spac);
 	m_Eraser.SetEraserSize(m_EraseSubBoxWidth);
 	//m_Eraser.EraseTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id);
-	m_Eraser.EraseSphereTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id);
+	m_Eraser.EraseSphereTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id, segmentMode);
 }
 
 void BrushImageGeneration::CreateTExture( )
@@ -139,9 +146,9 @@ void BrushImageGeneration::CreateTExture( )
 	imagePlane->SetVisiblityOfColorMap(SecondImage, true);
 	//imagePlane->SetColorMapTransFuncID(FirstImage, transfunc);
 	//imagePlane->SetVisiblityOfColorMap(FirstImage, true);
-
+	
+  
 }
-
 void BrushImageGeneration::Finalize()
 {
 	auto vtkInputImage = m_Image->GetRawImageData(); // <vtkImageData>->Imagetype

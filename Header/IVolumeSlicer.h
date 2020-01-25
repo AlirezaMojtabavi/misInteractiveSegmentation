@@ -1,6 +1,6 @@
 #pragma once
 
-#include "misInteractorSTyleImageExtend.h"
+#include "misInteractorStyleImageExtend.h"
 #include "misMeasurment.h"
 #include "misPlaneContrast.h"
 #include "ICornerProperties.h"
@@ -8,7 +8,7 @@
 #include <misLandmarkenums.h>
 #include "IScrewCompound.h"
 #include "ICursorService.h"
-#include "misImageCallback.h"
+#include "misImageContrastObserver.h"
 #include "IVolumeRenderer.h"
 #include <../Adapters/IPilotIndicatorColorSpecifier.h>
 
@@ -37,11 +37,11 @@ public:
 	virtual void SetImageStyle() = 0;
 
 	// Set default window level 
-	virtual void SetDefaultWindowLevel( void ) = 0;
+	virtual void SetDefaultWindowLevel(void) = 0;
 
 	// ??? 
 	virtual misMeasurment* GetMeasurmentService() = 0;
-	
+
 	// Set interaction state for a viewing window (e.g. Pan, Contrast ...)
 	virtual InteractionState GetInteractionState() const = 0;
 	virtual void SetInteractionState(InteractionState val) = 0;
@@ -61,7 +61,7 @@ public:
 	virtual std::shared_ptr<misCameraInteraction> GetCameraService() = 0;
 	virtual void SetViewingProperties(misPlaneEnum planeIndex, misWindowLevelStr winLevStr) = 0;
 	virtual void SetRealTimeMode(bool val) = 0;
-	virtual bool GetRealTimeMode() const= 0;
+	virtual bool GetRealTimeMode() const = 0;
 	virtual void CheckFlyZone(const std::string& segmentationRegion) = 0;
 	virtual void LockAllScrews() = 0;
 	virtual void OnScrew(misUID screwUID) = 0;
@@ -70,18 +70,12 @@ public:
 	virtual void SetShowAnnotationDetail(bool status) = 0;
 	virtual bool ShowAnnotationDetail() const = 0;
 	virtual int GetNumberOfRepresentations() = 0;
-	virtual misImageCallback* GetImageCallBack() = 0;
 	virtual IMAGEORIENTATION GetOrientationDirection() const = 0;
 	// Remove images and volumes representation from viewer
 	virtual void ReleaseImageResource() = 0;
 	virtual void AddImageOrientation3DModel(std::shared_ptr<IRepresentation> pRepresentation) = 0;
-	virtual void AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) = 0;
-	virtual int AddOrSetNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) = 0;
- 	virtual double * GetROICompressData() = 0;
+	virtual double * GetROICompressData() = 0;
 	virtual std::shared_ptr<I3DViewer> Get3DViewer() const = 0;
 	virtual bool ChangeMeasurmentMode(MEASURMENTMODE measurmentMode) = 0;
-	virtual misROI GetSeedBounding(int* dimenstion, double* spacing) = 0;
-	virtual void AddPointSelectObserver(std::pair<unsigned long, vtkSmartPointer<vtkCommand>>) = 0;
-  };
+	virtual std::shared_ptr<parcast::WindowLevelSetting> GetWindowLevel() const = 0;
+};

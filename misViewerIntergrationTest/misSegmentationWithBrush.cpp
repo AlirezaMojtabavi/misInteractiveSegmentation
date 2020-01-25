@@ -16,6 +16,7 @@
 #include "resource.h"
 #include "BrushImageGeneration.h"
 #include <misDatasetIO.h>
+#include "../Header/SlicerPointSelectAction.h"
 using namespace std;
 
 misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
@@ -38,8 +39,8 @@ misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
 	auto imageStyle = vtkSmartPointer<misInteractorSTyleImageExtend>::New();
 	auto backToPan = std::make_shared<BackToPanMode>(measureMent, imageStyle, viewer, dummy);
 
-	m_Viewer = std::make_shared<misVolumeSlicer>(screwList, m_wnd, 0, viewer, corner, nullptr, nullptr,
-		interactorStyleImageExtend, measureMent, dummy, cursorService, backToPan, 7, std::make_shared<LandmarkDataAndType>());
+	//m_Viewer = std::make_shared<misVolumeSlicer>(screwList, m_wnd, 0, viewer, corner, nullptr, nullptr,
+	//	interactorStyleImageExtend, measureMent, dummy, cursorService, backToPan, 7, std::make_shared<LandmarkDataAndType>());
 	m_wnd->GetRenderer(0)->SetBackground(0.2, 1, 1);
 	m_Viewer->Render();
 	InitiVoreenShaders();
@@ -64,14 +65,19 @@ misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
 	m_SegemntedImage->Modified();
 	auto pan = std::make_shared<BackToPanMode>(measureMent, interactorStyleImageExtend, viewer, dummy);
 
-	auto pointSelectCallBack = new PointSelectAction(viewer, m_Viewer, corner, interactorStyleImageExtend, pan, dummy,
-		cursorService, m_Viewer->GetCameraService(),
-		std::make_shared<LandmarkDataAndType>());
-	auto pairEvent = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonPressEvent, pointSelectCallBack);
-	auto pairEvent2 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::RightButtonPressEvent, pointSelectCallBack);
-	m_Viewer->AddPointSelectObserver(pairEvent);
-	m_Viewer->AddPointSelectObserver(pairEvent2);
-	brushObserver = new BrushImageGeneration(viewer, m_Viewer, corner, dummy, cursorService, m_Viewer->GetCameraService(), m_SegemntedImage);
+	//auto pointSelectCallBack = new PointSelectAction(viewer, m_Viewer, corner, interactorStyleImageExtend, pan, dummy,
+	//	cursorService, m_Viewer->GetCameraService(),
+	//	std::make_shared<LandmarkDataAndType>());
+	//auto pairEvent = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonPressEvent, pointSelectCallBack);
+	//auto pairEvent2 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::RightButtonPressEvent, pointSelectCallBack);
+	//m_Viewer->AddPointSelectObserver(pairEvent);
+	//m_Viewer->AddPointSelectObserver(pairEvent2);
+
+	auto pointSelectCallBack = vtkSmartPointer<SlicerPointSelectAction>::New();
+	pointSelectCallBack->Create(viewer, m_Viewer, corner, interactorStyleImageExtend, pan, dummy,
+		cursorService, m_Viewer->GetCameraService());
+	brushObserver = vtkSmartPointer<BrushImageGeneration>::New();
+	brushObserver->Create(viewer, m_Viewer, corner, dummy, cursorService, m_Viewer->GetCameraService());
 	auto pairEvent3 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::MouseMoveEvent, brushObserver);
 	auto pairEvent4 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonPressEvent, brushObserver);
 	auto pairEvent5 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(vtkCommand::LeftButtonReleaseEvent, brushObserver);
@@ -79,7 +85,7 @@ misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
 	m_Viewer->AddPointSelectObserver(pairEvent4);
 	m_Viewer->AddPointSelectObserver(pairEvent5);
 	AddImage();
-	brushObserver->CreateTExture();
+	//brushObserver->CreateTExture();
 }
 
 void misSegmentationWithBrush::TranslatePlane()

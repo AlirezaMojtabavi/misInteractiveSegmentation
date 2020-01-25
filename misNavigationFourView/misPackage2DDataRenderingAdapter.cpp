@@ -83,37 +83,6 @@ void misPackage2DDataRenderingAdapter::UpdateImageAnnotation()
 	m_Slicer->CreateImageAnnotation();
 }
 
-void misPackage2DDataRenderingAdapter::ImageLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index,
-	LANDMARKLABLETYPE lableType)
-{
-	m_Slicer->SetCurrentLandmark(pLandmarkType, index);
-	m_Slicer->SetCurrentLandmarkLableType(lableType);
-	m_Slicer->SetCaptureLandmarkFlag(true);
-	m_Slicer->SetInteractionState(WidgetInteractionState);
-}
-
-void misPackage2DDataRenderingAdapter::ImageLandmarkCaptureDisable()
-{
-	m_Slicer->SetCurrentLandmarkType(UnkownLandmarkType);
-	m_Slicer->SetCaptureLandmarkFlag(false);
-	m_Slicer->SetCurrentLandmarkIndex(-1);
-}
-
-void misPackage2DDataRenderingAdapter::ImageLandmarkUpdateEnable(misLandmarkType pLandmarkType, int index)
-{
- 
-	m_Slicer->SetCurrentLandmark(pLandmarkType, index);
-	m_Slicer->SetUpdateLandmarkFlag(true);
-
-}
-
-void misPackage2DDataRenderingAdapter::ImageLandmarkUpdateDisable()
-{
-	m_Slicer->SetCurrentLandmarkType(UnkownLandmarkType);
-	m_Slicer->SetUpdateLandmarkFlag(false);
-	m_Slicer->SetCurrentLandmarkIndex(-1);
-}
-
 void misPackage2DDataRenderingAdapter::AddInternalObservers(itk::Command* ContrastObserver,
 	itk::Command* backToMapObserver, itk::Command* stateObsrever)
 {
@@ -624,11 +593,7 @@ void misPackage2DDataRenderingAdapter::ReleaseImageResources()
 		return;
 	}
 	m_Slicer->ReleaseImageResource();
-	if (!package->GetLandMarkPoints().empty())
-	{
-		m_Slicer->RemoveLandMarkRepresentations();
-	}
-	m_Slicer->ResetROI();
+ 	m_Slicer->ResetROI();
 	m_Slicer->GetCursorService()->ReleaseWidget();
 	m_CurrentImageContainedPolydataDependencies.clear();
 }

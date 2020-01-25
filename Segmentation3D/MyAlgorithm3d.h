@@ -1,7 +1,7 @@
 
 #pragma once
 #include "MySpeedFunction3D.h"
-#include "imagetype.h"
+#include "ImageType.h"
 
 
 #define VTK_CREATE(type, name) \

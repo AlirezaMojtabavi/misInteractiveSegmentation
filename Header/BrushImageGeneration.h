@@ -6,21 +6,22 @@
 #include "IBackToPanMode.h"
 #include <IImage.h>
 #include "misTextureEraser.h"
-#include "../Segmentation3D/MyAlgorithm3d.h"
-
+#include "../Segmentation3D/MyAlgorithm3d.h"											
 
 class BrushImageGeneration : public vtkCommand
 {
 public:
-	BrushImageGeneration(std::shared_ptr<I3DViewer>, std::shared_ptr<IVolumeSlicer> Slicer,
+	static BrushImageGeneration* New();
+	vtkBaseTypeMacro(BrushImageGeneration, vtkCommand);
+	void Create(std::shared_ptr<I3DViewer>, std::shared_ptr<IVolumeSlicer> Slicer,
 	                     std::shared_ptr<ICornerProperties>,
 	                     misVolumeRendererContainer::Pointer, std::shared_ptr<ICursorService>,
-	                     std::shared_ptr<misCameraInteraction>, std::shared_ptr<IImage>  image);
+	                     std::shared_ptr<misCameraInteraction>);
 	void Execute(vtkObject* caller, unsigned long eventId, void* callData) override;
 	void CreateTExture();
 	void Finalize();
 private:
-	void EraseTexture(parcast::PointD3 point);
+	void EraseTexture(parcast::PointD3 point, SegmentMode);
 	void Colortexture(parcast::PointD3 point);
 	std::shared_ptr<I3DViewer> m_3DViewer;
 	std::shared_ptr<IVolumeSlicer> m_Slicer;
@@ -31,11 +32,11 @@ private:
 	std::unique_ptr<ConvertMousexyToWorldCoordinate> m_ConvertMouseXYToWorldCoordinate;
 	std::shared_ptr<IImage>  m_Image;
 	bool m_ErasingMode = false;
-	int	m_EraseSubBoxWidth = 14;
+	int	m_EraseSubBoxWidth = 20;
 	misColorStruct m_ErasedObjColor;
 	misTextureEraser m_Eraser;
-	
+	SegmentMode m_SegmentationMode;
 	std::vector<unsigned short> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
-	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();
+	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();									 																		   
 };

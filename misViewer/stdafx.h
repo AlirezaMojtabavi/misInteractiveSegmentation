@@ -111,7 +111,7 @@
 #include "vtkWin32OpenGLRenderWindow.h"
 #include "vtkWin32RenderWindowInteractor.h"
 #include <vtkImageCast.h>
-
+#include <vtkSmartPointer.h>
 #include "igstkEvents.h"
 #include "igstkPulseGenerator.h"
 #include "igstkTracker.h"

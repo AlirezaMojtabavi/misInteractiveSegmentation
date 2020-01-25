@@ -2,7 +2,6 @@
 #define GLSL_VERSION_130
 precision highp float;
 #define VRN_TEXTURE_2D
-#define VRN_MAX_PROGRAM_LOOP_COUNT 16777216
 #define VRN_GLEW_ARB_draw_buffers
 //$ @name = "outport0"
 out vec4 FragData0;
