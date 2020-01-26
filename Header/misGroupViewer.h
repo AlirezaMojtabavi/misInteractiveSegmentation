@@ -39,7 +39,7 @@ public:
 	void SetImagePlanePosition(const double pos[3]);
 	parcast::Point<double, 3> GetCurrentPosition(void);
 	void GetCurrentPosition(double currentPos[3]);
-	void Render();
+	void Render() override;
 	void ResetCamera();
 	int GetCurrentZoomPercentage();
 	double GetCurrentZoomProportion();
@@ -63,22 +63,11 @@ public:
 	// Return viewers that are not image viewer!
 	std::vector<std::shared_ptr<IVolume3DRenderer>> Get3DViewers() override;
 	std::vector<std::shared_ptr<IVolumeSlicer>> Get2DViewers();
-	void ResetAllLandMarks();
-	void ResetLandMarks(misLandmarkType lndType);
-	virtual void ShowLandmarks() override;
-	void HideLandmarks(misGroupViewer::TypeOfViewer typeOfviewer) override;
-	void InvalidateLandmark(int index) override;
+
 	void Reset(void) override;
 	void ClearViewers() override;
 	void ReleaseResource();
-	void ImageLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index = -1,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK);
-	virtual void ImageLandmarkUpdateEnable(misLandmarkType pLandmarkType, int index) override;
-	void ImageLandmarkCaptureDisable();
-	virtual void ImageLandmarkUpdateDisable();
-	virtual void VolumeLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index = -1,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) override;
-	void VolumeLandmarkCaptureDisable();
+
 	void Remove3dRepresentation(std::shared_ptr<misRepresentation> PSurfaceRep);
 	void ShowPackage(std::shared_ptr<ISimpleDataPackage> pPackage, bool resetZoom) override;
 	void ShowPackageImages(std::shared_ptr<ISimpleDataPackage> pPackage, bool resetZoom) override;
@@ -99,8 +88,6 @@ public:
 	virtual void Unfreeze();
 	virtual void SetObliqueFlag(bool isObiquw) final;
 	virtual void SetCroppingDirection(misCroppingDirectionInVR croppingDirection, const double* center, bool isOblique);
-	virtual void AddLandmark(unsigned int landmarkIndex, itk::Point<double, 3> landmark, misLandmarkType landmarkType,
-		LANDMARKLABLETYPE lableType);
 	virtual void Reset2DZoom();
 	virtual void ClipVolumeWithObliquePlane(const double* planeNormal, const double* center);
 	void SetAnnotationDetailToViewer();
@@ -173,14 +160,11 @@ private:
 	void SetErasedObjColor(misColorStruct ColorStr);
 	virtual void DisableWidget();
 	void UpdateImageAnnotation(misVolumeSlicer* imageViewer);
-	virtual void ModifyBiopsyPoint(misLandmarkType landmarkType);
 	void ShowPackgeIn2DAdapter(std::shared_ptr<ISimpleDataPackage> pPackage, bool resetZoom);
 	void ShowPackageIn3dAdapter(std::shared_ptr<ISimpleDataPackage> pPackage, bool resetZoom);
-	virtual void UpdateLandmarks(misLandmarkInfoStruct& lndStr);
- 	void AddObservers(std::shared_ptr<IVolumeRenderer> viewer);
+		void AddObservers(std::shared_ptr<IVolumeRenderer> viewer);
 	void UpdatePlaneVisibilities(std::vector<std::map<misPlaneEnum, bool>> pPlaneVisible) override;
 
- 
 	misApplicationSetting* m_AppSetting;
 	std::shared_ptr<ISubsequenceLayout> m_Model;
 	std::shared_ptr<IGroupViewerSetting> m_GroupViewSetting;

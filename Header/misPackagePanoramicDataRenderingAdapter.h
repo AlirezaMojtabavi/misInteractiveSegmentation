@@ -34,11 +34,6 @@ public:
 	void UpdatePosition(parcast::Point<double, 3> position) override;
 	void SetObliqueFlag(bool isOblique) override;
 	void UpdateImageAnnotation(void) override;
-	void ImageLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index /*=-1*/,
-		LANDMARKLABLETYPE lableType) override;
-	void ImageLandmarkCaptureDisable() override;
-	void ImageLandmarkUpdateEnable(misLandmarkType, int) override;
-	void ImageLandmarkUpdateDisable() override;
 	void AddInternalObservers(itk::Command* ContrastObserver, itk::Command* backToMapObserver,
 		itk::Command* stateObsrever) override;
 	void SetRealTimeMode(bool val) override;

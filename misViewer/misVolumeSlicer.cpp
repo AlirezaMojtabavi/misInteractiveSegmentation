@@ -11,26 +11,18 @@
 #include "misAnnotationRepresentation.h"
 #include "misAutoMeasurment.h"
 #include "misColorPointWidget.h"
-#include "misCoreEvents.h"
 #include "misDistributionEvent.h"
-#include "misImageToTexturePropertyConvertor.h"
 #include "misMemberCommandCallback.h"
 #include "misScrewCompound.h"
-#include "misSeedBoundingCalculator.h"
 #include "misImagePlaneInformationStrct.h"
-#include "mis2DToolActor.h"
 #include "misLandamrkListCategorizer.h"
-#include "LandmarkVisibilty.h"
-#include "misCursorService.h"
-#include "misCamera.h"
-#include "misLandmarkVisualizer.h"
-#include "misLandmarkPointerRepresentation.h"
 #include "mis3DVolumeRenderer.h"
 #include <misMathUtils.h>
 #include "IVolumeSlicerEvents.h"
 #include "misChangeZoomPercentageCore.h"
 #include "misApplicationSetting.h"
 #include "ScrewViewerFactory.h"
+#include "PanImage.h"
 
 
 #pragma warning (disable : 4503)
@@ -41,63 +33,54 @@ misVolumeSlicer::misVolumeSlicer(std::shared_ptr<ScrewListType> screwServiceList
                                  int index,
                                  std::shared_ptr<I3DViewer> viewer,
                                  std::shared_ptr<ICornerProperties> cornerProperties,
-                                 std::shared_ptr<IUpdateLandmarkCameraView> updateLandmarkCameraViewer,
-                                 std::shared_ptr<IInitializeScrewWidget> screwIntilizer,
+                                std::shared_ptr<IInitializeScrewWidget> screwIntilizer,
                                  vtkSmartPointer<misInteractorSTyleImageExtend> interactorStyleImageExtend,
                                  misMeasurment::Pointer measurment, misVolumeRendererContainer::Pointer dummyObject,
                                  std::shared_ptr<ICursorService> cursorService,
                                  std::shared_ptr<IBackToPanMode> backToPanMOde,
-                                 double differenceForViewingSeed, std::shared_ptr<LandmarkDataAndType> landmarkData)
+                                 double differenceForViewingSeed, std::shared_ptr<misCameraInteraction> cameraInteraction)
 	: misVolumeRenderer(viewer, pWindow, index),
 	  m_ImageAnnotations(std::make_shared<misImageAnnotation>()),
 	  m_MeasurmentService(measurment),
-	  m_CameraService(std::make_shared<misCameraInteraction>()),
+	  m_CameraService(cameraInteraction),
 	  m_RealTimeMode(false),
-	  m_ShowAnnotationDetail(false),
 	  m_IsOblique(false),
 	  m_ShowAnnotation(false),
 	  m_ProstrateState(false),
 	  m_SurgeryType(ENT),
-	  m_pcallBack(vtkSmartPointer<misImageCallback>::New()),
 	  m_pImageStyle(interactorStyleImageExtend),
 	  m_DentalAnnotationBuilder(std::make_shared<parcast::DentalViewSideAnnotationTextBuilder>()),
 	  m_QuadrantFinder(std::make_shared<parcast::DentalQuadrantFinder>()),
 	  m_SideAnnotations(std::make_shared<misSideAnnotation>()),
-	  m_LandmarkVisibilty(std::make_unique<LandmarkVisibilty>(cornerProperties, differenceForViewingSeed)),
-	  m_UpdateLandmark(false),
-	  m_IsPointWidgetObserverAdded(false),
-	  m_IsPointSelectObserverAdded(false),
 	  m_CursorService(cursorService),
-	  m_ShowLabels(true),
 	  m_ShowManModel(true),
 	  m_ManModel(std::make_shared<misManModelrepresentation>("Man Model")),
-	  m_DentalSpecialViewEnable(false),
-	  m_DentalSurgeryType(DentalSurgeryType::MAXILLA),
-	  m_UpdateLandmarkCameraViewer(updateLandmarkCameraViewer),
 	  m_Cornerproperties(cornerProperties),
 	  m_DummyObject(dummyObject),
 	  m_BackToPanMode(backToPanMOde),
-	  m_LandmarkData(landmarkData)
-
+	m_PanImage(std::make_shared<PanImage>(cornerProperties))
 {
 	SetWindow(pWindow, index);
-
 	m_CameraService->SetAutoCameraScale(0);
 	m_WidgetFocalPoint[0] = 0;
 	m_WidgetFocalPoint[1] = 0;
 	m_WidgetFocalPoint[2] = 0;
 	misVolumeSlicer::SetImageStyle();
-	m_landMarkList.resize(m_maxLandmarkElementSize);
-	std::generate(m_landMarkList.begin(), m_landMarkList.end(), []()
-	{
-		auto appType = misApplicationSetting::GetInstance()->m_WorkflowButtonSet;
-		auto radius = 5.5;
-		if (appType == Spine)
-			radius = 2.0;
-		return std::make_shared<misLandmarkPointerRepresentation>(radius, false);
-	});
 	m_ScrewViewer = parcast::ScrewViewerFactory::Create(Dimention::_2D, screwIntilizer, screwServiceList,
-	                                                    m_Cornerproperties, m_DummyObject);
+                                                    m_Cornerproperties, m_DummyObject);
+	m_ImageContrastObserver->SetWindowLevel(m_WindowLevelSetting);
+	m_DummyObject->SetViewer(static_cast<IVolumeRenderer*>(this));
+}
+
+misVolumeRendererContainer::Pointer misVolumeSlicer::GetDummySubject()
+{
+	return m_DummyObject;
+}
+
+void misVolumeSlicer::SetTypeDirection(misViewerTypeDirection direction)
+{
+	m_ViewerTypeDirection = direction;
+	
 }
 
 misVolumeSlicer::~misVolumeSlicer()
@@ -126,21 +109,6 @@ void misVolumeSlicer::SetShowAnnotationDetail(bool status)
 bool misVolumeSlicer::ShowAnnotationDetail() const
 {
 	return m_ShowAnnotationDetail;
-}
-
-
-void misVolumeSlicer::AddAllPointSelectObserve()
-{
-	for (auto obserevrElement : m_Observers)
-	{
-		if (!m_IsPointSelectObserverAdded)
-		{
-			for (auto vtkObserver : obserevrElement.second)
-			{
-				GetRendererWindowInteractor()->AddObserver(obserevrElement.first, vtkObserver);
-			}
-		}
-	}
 }
 
 void misVolumeSlicer::AddRepresentation(std::shared_ptr<IRepresentation> pRepresentation)
@@ -172,6 +140,9 @@ void misVolumeSlicer::AddRepresentation(std::shared_ptr<IRepresentation> pRepres
 	AddAllPointSelectObserve();
 	m_IsPointSelectObserverAdded = true;
 	m_MainRepresentation = pStImage;
+	m_ImageContrastObserver->SetImageRep(gpu2DRep);
+	m_PanImage->SetMainRepresentation(gpu2DRep);
+	m_PanImage->SetInteractor(m_3DViewer->GetWindow()->GetInterActor());
 	const auto orientation = pStImage->GetOrientation();
 	m_CameraService->SetImageOrientation(orientation);
 	m_CameraService->SetCornerProperties(GetCornerProperties());
@@ -189,10 +160,10 @@ void misVolumeSlicer::SetImageStyle()
 	auto pStImage = std::dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
 	if (pStImage)
 		m_MeasurmentService->SetInteractionStyleExtend(m_pImageStyle, pStImage->GetOrientation());
-	m_pImageStyle->AddObserver(vtkCommand::WindowLevelEvent, m_pcallBack);
-	m_pImageStyle->AddObserver(vtkCommand::StartWindowLevelEvent, m_pcallBack);
-	m_pImageStyle->AddObserver(vtkCommand::EndWindowLevelEvent, m_pcallBack);
-	m_pImageStyle->AddObserver(vtkCommand::ResetWindowLevelEvent, m_pcallBack);
+	m_pImageStyle->AddObserver(vtkCommand::WindowLevelEvent, m_ImageContrastObserver);
+	m_pImageStyle->AddObserver(vtkCommand::StartWindowLevelEvent, m_ImageContrastObserver);
+	m_pImageStyle->AddObserver(vtkCommand::EndWindowLevelEvent, m_ImageContrastObserver);
+	m_pImageStyle->AddObserver(vtkCommand::ResetWindowLevelEvent, m_ImageContrastObserver);
 }
 
 
@@ -212,13 +183,11 @@ void misVolumeSlicer::SetImageContrast(misPlaneEnum planeIndex)
 	auto planes = gpu2DRep->GetPlaneInformation();
 
 	std::shared_ptr<IImage> imageData = gpu2DRep->GetImage(planeIndex);
-	misWindowLevelStr winLev;
 	if (!imageData)
 		return;
-	if (!m_pcallBack)
-		return;
+
 	auto levWin = imageData->GetImageDataProperties()->GetViewingProperties().GetLevelWindow();
-	m_pcallBack->SetCurrentWindowLevel(levWin);
+	m_WindowLevelSetting->SetCurrentWindowLevel(levWin);
 }
 
 void misVolumeSlicer::SetInteractionStyleProperties()
@@ -229,12 +198,13 @@ void misVolumeSlicer::SetInteractionStyleProperties()
 		dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
 
 
-	m_pcallBack->SetImageRep(gpu2DRep);
+	
 	auto image = gpu2DRep->GetImage(gpu2DRep->GetPlaneWithMaximumVisibility());
-	m_pcallBack->SetDefaultWindowLevel(
+	m_WindowLevelSetting->SetDefaultWindowLevel(
 		image->GetImageDataProperties()->GetViewingProperties().GetInitialLevelWindow());
 	int* sizeWindow = m_Renderer->GetSize();
-	m_pcallBack->SetSize(sizeWindow);
+
+	m_WindowLevelSetting->SetSize(sizeWindow);
 	vtkRenderWindowInteractor* pInteractor = GetRendererWindowInteractor()
 		/*GetRenderer()->GetRenderWindow()->GetInteractor()*/;
 	pInteractor->SetInteractorStyle(m_pImageStyle);
@@ -246,11 +216,6 @@ void misVolumeSlicer::SetInteractionStyleProperties()
 		m_pImageStyle->AddObserver(misSetMeasurmentWidgetEvent, callback);
 	if (!m_pImageStyle->HasObserver(misPanImageEvent))
 		m_pImageStyle->AddObserver(misPanImageEvent, callback);
-}
-
-misImageCallback* misVolumeSlicer::GetImageCallBack()
-{
-	return m_pcallBack;
 }
 
 
@@ -359,14 +324,16 @@ void misVolumeSlicer::UpdateWindowSize(misStrctWindowSize& size)
 	CreateImageAnnotation();
 }
 
-vtkRenderWindowInteractor* misVolumeSlicer::GetRendererWindowInteractor()
-{
-	return m_3DViewer->GetWindow()->GetInterActor();
-}
+
 
 std::shared_ptr<misCameraInteraction> misVolumeSlicer::GetCameraService()
 {
 	return m_CameraService;
+}
+
+std::shared_ptr<parcast::WindowLevelSetting> misVolumeSlicer::GetWindowLevel() const
+{
+	return m_WindowLevelSetting;
 }
 
 bool misVolumeSlicer::ChangeMeasurmentMode(MEASURMENTMODE measurmentMode)
@@ -421,7 +388,6 @@ void misVolumeSlicer::Render()
 			if (gpu2DRep)
 			{
 				m_CameraService->UpdateView();
-				m_LandmarkVisibilty->CheckVisibility(m_landMarkList);
 				UpdateViewROIBox();
 			}
 		}
@@ -481,30 +447,6 @@ void misVolumeSlicer::FindProperDirection(double direction[3], double position[3
 	}
 }
 
-void misVolumeSlicer::SetLandmarkPosition(int index, const double position[3])
-{
-	auto size = m_landMarkList.size();
-	if ((index >= 0) && (index < size))
-	{
-		for (int i = 0; i < m_landMarkList.size(); i++)
-		{
-			if (m_landMarkList[i]->IsValid())
-			{
-				if (i == index)
-				{
-					m_landMarkList[i]->UpdateAsSelected();
-					m_landMarkList[i]->SetPosition(position);
-					m_landMarkList[i]->SetLabelData(i + 1, SELECTED, m_LandmarkData->m_CurrentLandmarkLableType);
-					m_landMarkList[i]->Validate();
-				}
-				else
-				{
-					m_landMarkList[i]->UpdateNormal();
-				}
-			}
-		}
-	}
-}
 
 void misVolumeSlicer::UpdateLandmarkPosition()
 {
@@ -518,14 +460,7 @@ void misVolumeSlicer::UpdateLandmarkPosition()
 	InvokeEvent(ev);
 }
 
-misSimplePointListType misVolumeSlicer::GetLandmarkList(misLandmarkType seedType)
-{
-	auto pRep = std::dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
-	std::shared_ptr<IImage> pImage = pRep->GetImage();
-	auto imageGeo = std::make_shared<misImageGeoProperties>(pImage->GetRawImageData());
-	auto categorizer = std::make_unique<misLandamrkListCategorizer>(imageGeo);
-	return categorizer->GetLandamrks(seedType, m_landMarkList, pImage);
-}
+
 
 
 void misVolumeSlicer::UpdateImage(bool updateCamera/*=true*/)
@@ -602,8 +537,8 @@ void misVolumeSlicer::InteractionStyleCallback(vtkObject* caller, unsigned long 
 	}
 	else if (eventId == misPanImageEvent)
 	{
-		PanImage();
-		return;
+		m_PanImage->Pan();
+		
 	}
 }
 
@@ -644,21 +579,7 @@ void misVolumeSlicer::UpdateWidgetBox(vtkObject* caller, unsigned long eventId, 
 	Render();
 }
 
-misViewerTypeDirection misVolumeSlicer::GetTypeDirection() const
-{
-	auto orientatiopn = GetOrientationDirection();
-	switch (orientatiopn)
-	{
-	case AXIAL:
-		return misViewerTypeDirection::AxialDirection;
-	case CORONAL:
-		return misViewerTypeDirection::CoronalDirection;
-	case SAGITTAL:
-		return misViewerTypeDirection::SagittalDirection;
-	default:
-		return misViewerTypeDirection::AxialDirection;
-	}
-}
+
 
 
 void misVolumeSlicer::WidgetChangeAction(vtkObject* caller, unsigned long eventId, void* callData)
@@ -669,12 +590,7 @@ void misVolumeSlicer::WidgetChangeAction(vtkObject* caller, unsigned long eventI
 
 		if (m_Cornerproperties->GetTransform() == 0)
 		{
-			/*if (GetLogger())
-			{
-				GetLogger()->SetPriorityLevel(itk::LoggerBase::CRITICAL);
-				(*GetLogger()) << "misVolumeSlicer::WidgetChangeAction->Corner transform is zero!";
-			}*/
-			return;
+ 			return;
 		}
 
 		if ((state == ContrastState) || (state == MeasurmentInteractionState) || (state ==
@@ -703,27 +619,7 @@ void misVolumeSlicer::WidgetChangeAction(vtkObject* caller, unsigned long eventI
 			ev.Set(updateStr);
 			InvokeEvent(ev);
 
-			if (m_LandmarkData->m_currentLandmarkIndex.is_initialized())
-			{
-				//if (m_UpdateLandmark)
-				//{
-				SetLandmarkPosition(m_LandmarkData->m_currentLandmarkIndex.get(), pos);
 
-				misLandmarkInfoStruct evData;
-				evData.CurrentPosition = pos;
-				evData.landmarkIndex = m_LandmarkData->m_currentLandmarkIndex.get();
-				evData.Landmarktype = m_LandmarkData->m_CurrentLandmarkType;
-				evData.landmarkLableType = m_LandmarkData->m_CurrentLandmarkLableType;
-
-				misAddLandmarkEvent ev;
-				ev.Set(evData);
-				InvokeEvent(ev);
-
-				m_UpdateLandmark = false;
-				//m_CurrentLandmarkType  = UnkownLandmarkType;
-				//m_currentLandmarkIndex = -1;
-				//}
-			}
 		}
 	}
 }
@@ -821,33 +717,7 @@ bool misVolumeSlicer::ProcessRequest(const itk::EventObject* event)
 		return true;
 	}
 
-	else if ((typeid(*event) == typeid(misAddLandmarkEvent)))
-	{
-		const misAddLandmarkEvent* pEventData = dynamic_cast<const misAddLandmarkEvent*>(event);
-		misLandmarkInfoStruct lndmarkStr = pEventData->Get();
-
-		auto position = m_Cornerproperties->GetCurrentPosition();
-		AddLandmark(lndmarkStr.landmarkIndex, position.Elements(), lndmarkStr.Landmarktype,
-		            lndmarkStr.landmarkLableType);
-		m_LandmarkData->m_CaptureLandmark = false;
-		m_CursorService->Set3DInteractionCapturedFlag(true);
-		m_UpdateLandmark = false;
-		m_LandmarkVisibilty->CheckVisibility(m_landMarkList);
-		return true;
-	}
-
-	else if ((typeid(*event) == typeid(misUpdateLandmarkStatusEvent)))
-	{
-		const misUpdateLandmarkStatusEvent* pEventData = dynamic_cast<const misUpdateLandmarkStatusEvent*>(event);
-		misLandmarkInfoStruct lndmarkStr = pEventData->Get();
-
-		double* position = new double[3];
-		position[0] = lndmarkStr.CurrentPosition[0];
-		position[1] = lndmarkStr.CurrentPosition[1];
-		position[2] = lndmarkStr.CurrentPosition[2];
-		SetLandmarkPosition(lndmarkStr.landmarkIndex, position);
-		return true;
-	}
+	
 
 	else if ((typeid(*event) == typeid(misBackToPanModeEvent)))
 	{
@@ -1003,52 +873,6 @@ void misVolumeSlicer::SetOrientationDirection(IMAGEORIENTATION newOrientation)
 }
 
 
-void misVolumeSlicer::PanImage()
-{
-	// Calculate previous and current point in world space when moving the mouse pointer while dragging (start and end of panning).
-	// Calculate a vector from these points and then move the SightLineIntersectionPoint along this vector.
-	auto gpu2DRep = dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
-	if (!gpu2DRep)
-		return; // No panning when the main representation is not of GPU representation type.
-
-	misTexturePropertyStruct Prop = gpu2DRep->GetImageProperties(FirstImage, MainImage);
-	if (!Prop.IsValid())
-		return;
-
-	itk::Point<double, 3> panDestination, panOrigin;
-	int x = 0, y = 0;
-	int deltaX = 0, deltaY = 0;
-	GetRendererWindowInteractor()->GetEventPosition(x, y);
-	if (m_LastMouseEventX == x && m_LastMouseEventY == y)
-		return;
-	if (m_LastMouseEventX == -1 && m_LastMouseEventY == -1)
-	{
-		m_LastMouseEventX = x;
-		m_LastMouseEventY = y;
-		return;
-	}
-	m_Renderer->SetDisplayPoint(x, y, 0);
-	m_Renderer->DisplayToWorld();
-	double* pos = m_Renderer->GetWorldPoint();
-	panDestination[0] = pos[0];
-	panDestination[1] = pos[1];
-	panDestination[2] = pos[2];
-	m_Renderer->SetDisplayPoint(m_LastMouseEventX, m_LastMouseEventY, 0);
-	m_Renderer->DisplayToWorld();
-	pos = m_Renderer->GetWorldPoint();
-	panOrigin[0] = pos[0];
-	panOrigin[1] = pos[1];
-	panOrigin[2] = pos[2];
-	m_LastMouseEventX = x;
-	m_LastMouseEventY = y;
-	// When panning starts at origin and ends in destination, in fact the camera must be moved in the opposite direction to mimic
-	// the panning movement.
-	itk::Vector<double, 3> panVector = panOrigin - panDestination;
-	misSimplePointType previousSightLineIntersectionPoint = m_Cornerproperties->GetSightLineIntersectionPoint();
-	itk::Point<double, 3> newSightLineIntersectionPoint;
-	newSightLineIntersectionPoint = previousSightLineIntersectionPoint.GetItkPoint() + panVector;
-	m_Cornerproperties->SetSightLineIntersectionPointTo(newSightLineIntersectionPoint.GetDataPointer());
-}
 
 void misVolumeSlicer::ApplyOffset(double offset)
 {
@@ -1070,13 +894,7 @@ void misVolumeSlicer::ResetZoom()
 	InvokeEvent(ev);
 }
 
-IMAGEORIENTATION misVolumeSlicer::GetOrientationDirection() const
-{
-	auto pStImage = dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
-	if (!pStImage)
-		return UNKnownDirection;
-	return pStImage->GetOrientation();
-}
+
 
 void misVolumeSlicer::SetInteractionMode(INTERACTIONMODE mode)
 {
@@ -1088,7 +906,7 @@ void misVolumeSlicer::ResetContrast()
 	auto gpu2DRep = dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation);
 	if (!gpu2DRep)
 		return;
-	m_pcallBack->SetDefaultWindowLevel(
+	m_WindowLevelSetting->SetDefaultWindowLevel(
 		gpu2DRep->GetImage(gpu2DRep->GetPlaneWithMaximumVisibility())->
 		          GetImageDataProperties()->GetViewingProperties().GetInitialLevelWindow());
 	m_pImageStyle->SetStateToResetContrast();
@@ -1180,12 +998,6 @@ void misVolumeSlicer::UpdatePanMode()
 	ResetGeneralToolbarState();
 }
 
-misROI misVolumeSlicer::GetSeedBounding(int* dimenstion, double* spacing)
-{
-	misSimplePointListType tFGSeedList = GetLandmarkList(ForeGroundSeed);
-	misSeedBoundingCalculator seedCalculator(tFGSeedList);
-	return seedCalculator.GetSeedBounding(dimenstion, spacing);
-}
 
 void misVolumeSlicer::CheckFlyZone(const std::string& segmentationRegion)
 {
@@ -1219,18 +1031,6 @@ bool misVolumeSlicer::GetRealTimeMode() const
 std::shared_ptr<ICornerProperties> misVolumeSlicer::GetCornerProperties() const
 {
 	return m_Cornerproperties;
-}
-
-
-double* misVolumeSlicer::GetLandmarkPosition(const int index)
-{
-	if (m_landMarkList[index]->IsValid())
-	{
-		const auto pos = new double[3];
-		m_landMarkList[index]->GetPosition(pos);
-		return pos;
-	}
-	return nullptr;
 }
 
 std::shared_ptr<IScrewCompound> misVolumeSlicer::GetScrewWidgetService(misUID uid)
@@ -1269,13 +1069,7 @@ std::shared_ptr<IRepresentation> misVolumeSlicer::GetMainRepresentation()
 	return m_MainRepresentation;
 }
 
-void misVolumeSlicer::SetCurrentLandmarkType(misLandmarkType val)
-{
-	m_LandmarkData->m_CurrentLandmarkType = val;
-	if (m_LandmarkData->m_currentLandmarkIndex.is_initialized() && m_LandmarkData->m_currentLandmarkIndex.get() >= 0 &&
-		val != UnkownLandmarkType)
-		m_landMarkList[m_LandmarkData->m_currentLandmarkIndex.get()]->SetCategory(val);
-}
+
 
 std::shared_ptr<ICursorService> misVolumeSlicer::GetCursorService()
 {
@@ -1294,7 +1088,6 @@ unsigned long misVolumeSlicer::AddObserver(const itk::EventObject& event, itk::C
 
 void misVolumeSlicer::InvokeEvent(const itk::EventObject& event)
 {
-	m_DummyObject->SetViewer(static_cast<IVolumeRenderer*>(this));
 	m_DummyObject->InvokeEvent(event);
 }
 
@@ -1306,11 +1099,7 @@ bool misVolumeSlicer::HasObserver(const itk::EventObject& event) const
 void misVolumeSlicer::RemoveRepresentation(std::shared_ptr<IRepresentation> pRepresent)
 {
 	m_3DViewer->RemoveRepresentation(pRepresent);
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->GetSurface() == pRepresent)
-			landmark->InValidate();
-	}
+	
 }
 
 void misVolumeSlicer::AddImageOrientation3DModel(std::shared_ptr<IRepresentation> pRepresentation)
@@ -1339,113 +1128,12 @@ std::shared_ptr<Iwindows> misVolumeSlicer::GetWindow() const
 	return m_3DViewer->GetWindow();
 }
 
-int misVolumeSlicer::AddNextLandmark(const double position[3], misLandmarkType category, LANDMARKLABLETYPE lableType)
-{
-	misCamera camera(m_3DViewer->GetRenderer()->GetActiveCamera()->GetPosition(),
-	                 m_3DViewer->GetRenderer()->GetActiveCamera()->GetFocalPoint(),
-	                 m_3DViewer->GetRenderer()->GetActiveCamera()->GetViewUp());
-	const parcast::Point<double, 3> point(position);
-
-	misLandmarkVisualizer landmarkVisualizer(
-		m_MainRepresentation->GetBoundingBox(), camera, m_landMarkList, category,
-		lableType, m_ShowLabels, point, GetTypeDirection(), 5.5);
-
-	AddRepresentation(landmarkVisualizer.GetRepresenTation());
-	return landmarkVisualizer.GetIndex();
-}
-
-void misVolumeSlicer::AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category,
-                                           LANDMARKLABLETYPE lableType)
-{
-	auto pLnd = std::make_shared<misLandmarkPointerRepresentation>(index + 1, NORMAL, category, position, lableType,
-	                                                               5.5, false);
-	pLnd->Validate();
-	pLnd->SetVisibilityOn();
-	const auto boundingBox = m_MainRepresentation->GetBoundingBox();
-	const auto handleLength = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableHandleLength");
-	const auto offsetAngle = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableAngleOffset");
-	auto lablePosition = GetLablePosition(position, boundingBox, handleLength, offsetAngle);
-	pLnd->SetLabelPosition(lablePosition.Elements());
-	AddRepresentation(pLnd->GetSurface());
-	m_landMarkList[index] = pLnd;
-}
-
-void misVolumeSlicer::AddLandmark(int index, const double position[3], misLandmarkType category,
-                                  LANDMARKLABLETYPE lableType)
-{
-	if (m_landMarkList[index]->IsValid())
-	{
-		if (m_landMarkList[index]->GetCategory() == category)
-		{
-			SetLandmarkPosition(index, position);
-			const auto boundingBox = m_MainRepresentation->GetBoundingBox();
-			const auto handleLength = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableHandleLength");
-			const auto offsetAngle = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableAngleOffset");
-
-			auto lablePosition = GetLablePosition(position, boundingBox, handleLength, offsetAngle);
-			m_landMarkList[index]->SetLabelPosition(lablePosition.Elements());
-			UpdateLandmarkCameraView(index);
-			return;
-		}
-	}
-	AddOrSetNextLandmark(index, position, category, lableType);
-}
-
 double* misVolumeSlicer::GetROICompressData()
 {
 	vtkPoints* p = m_ROIBox->GetPoints();
 	double* compData = m_ROIBox->GetCompressData(p);
 	m_ROIBox->UpdateWidgetData();
 	return compData;
-}
-
-void misVolumeSlicer::HideLandmarks()
-{
-	for (auto& i : m_landMarkList)
-	{
-		if (i->IsValid())
-		{
-			i->SetVisibilityOff();
-		}
-	}
-}
-
-int misVolumeSlicer::AddOrSetNextLandmark(const double position[3], misLandmarkType category,
-                                          const LANDMARKLABLETYPE lableType)
-{
-	int index = -1;
-	for (int i = 0; i < m_landMarkList.size(); i++)
-	{
-		if (!(m_landMarkList[i]->IsValid()))
-		{
-			index = i;
-			break;
-		}
-	}
-	if (index == -1)
-	{
-		index = static_cast<int>(m_landMarkList.size());
-		auto emptyPointer = std::make_shared<misLandmarkPointerRepresentation>(5.5, false);
-		emptyPointer->InValidate();
-		m_landMarkList.push_back(emptyPointer);
-	}
-
-	if (m_landMarkList[index]->IsValid())
-	{
-		SetLandmarkPosition(index, position);
-	}
-	else
-	{
-		AddOrSetNextLandmark(index, position, category, lableType);
-	}
-	return index;
-}
-
-
-void misVolumeSlicer::UpdateLandmarkCameraView(const int index)
-{
-	if (m_UpdateLandmarkCameraViewer)
-		m_UpdateLandmarkCameraViewer->Update(m_MainRepresentation->GetBoundingBox(), m_landMarkList[index]);
 }
 
 void misVolumeSlicer::DeleteAllScrews()
@@ -1458,17 +1146,7 @@ std::shared_ptr<I3DViewer> misVolumeSlicer::Get3DViewer() const
 	return m_3DViewer;
 }
 
-parcast::PointD3 misVolumeSlicer::GetLablePosition(const double* position,
-                                                   const itk::BoundingBox<double, 3, double>::Pointer
-                                                   & boundingBox, const double handleLength,
-                                                   const double offsetAngle) const
-{
-	auto lablePositionCalculator = parcast::LandmarkLablePositionCalculator(
-		parcast::PointD3(boundingBox->GetMinimum().GetDataPointer()),
-		parcast::PointD3(boundingBox->GetMaximum().GetDataPointer()), handleLength, offsetAngle);
-	const auto landmarkPos = parcast::PointD3(position[0], position[1], position[2]);
-	return lablePositionCalculator.GetLabelPosition(landmarkPos, GetTypeDirection());
-}
+
 
 void misVolumeSlicer::GetWidgetBoundingBox(double bounds[6], double extensionScaleFactor)
 {
@@ -1498,37 +1176,23 @@ void misVolumeSlicer::SetState(int val)
 	}
 }
 
-double* misVolumeSlicer::GetLandmarkPosition(int index, misLandmarkType category)
-{
-	double* pos = 0;
-	if ((index >= 0) && (index < m_landMarkList.size()))
-	{
-		auto seedList = GetLandmarkList(category);
-		if ((index >= 0) && (index < seedList.size()))
-		{
-			if (seedList[index].validity)
-			{
-				pos = new double[3];
-				pos[0] = seedList[index].data[0];
-				pos[1] = seedList[index].data[1];
-				pos[2] = seedList[index].data[2];
-				return pos;
-			}
-		}
-	}
-	return pos;
-}
-
-void misVolumeSlicer::AddPointSelectObserver(std::pair<unsigned long, vtkSmartPointer<vtkCommand>> observer)
-{
-	m_Observers[observer.first].push_back(observer.second);
-}
-
 void misVolumeSlicer::SetWindow(std::shared_ptr<Iwindows> pWindow, int index)
 {
 	m_IndexInGroup = index;
 	m_3DViewer->SetWindow(pWindow, index);
 	m_Renderer = pWindow->GetRenderer(index);
+}
+
+misViewerTypeDirection misVolumeSlicer::GetTypeDirection() const
+{
+	return m_ViewerTypeDirection;
+ }
+
+IMAGEORIENTATION misVolumeSlicer::GetOrientationDirection() const
+{
+	TypeDirection typeDirection;
+	return  typeDirection.GetOrientationDirection(std::dynamic_pointer_cast<misPlanarRepresentation>(m_MainRepresentation));
+ 
 }
 
 void misVolumeSlicer::SetMainRepresentation(std::shared_ptr<IRepresentation> pMainRep, IMAGEORIENTATION orientation)
@@ -1540,7 +1204,6 @@ void misVolumeSlicer::SetMainRepresentation(std::shared_ptr<IRepresentation> pMa
 
 void misVolumeSlicer::Reset()
 {
-	InvalidateLandmarks();
 	DeleteAllScrews();
 	m_3DViewer->Reset();
 	if (m_MainRepresentation)
@@ -1549,24 +1212,6 @@ void misVolumeSlicer::Reset()
 	}
 }
 
-void misVolumeSlicer::InvalidateLandmarks(void)
-{
-	for (auto i = 0; i < m_landMarkList.size(); i++)
-	{
-		RemoveLandmarkRepresentation(i);
-		m_landMarkList[i]->InValidate();
-	}
-}
-
-void misVolumeSlicer::RemoveLandmarkRepresentation(int index)
-{
-	const auto size = m_landMarkList.size();
-	if ((index < size) && (index >= 0))
-	{
-		const auto prep = m_landMarkList[index];
-		RemoveRepresentation(prep->GetSurface());
-	}
-}
 
 void misVolumeSlicer::RemoveRepresentationByName(std::string name)
 {
@@ -1589,51 +1234,7 @@ void misVolumeSlicer::SetShowManModel(bool val)
 	m_ShowManModel = val;
 }
 
-void misVolumeSlicer::ResetLandMarks(void)
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid())
-		{
-			RemoveRepresentation(landmark->GetSurface());
-			landmark->SetCategory(UnkownLandmarkType);
-		}
-	}
-}
 
-void misVolumeSlicer::ResetLandMarks(misLandmarkType lndType)
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid() && landmark->GetCategory() == lndType)
-		{
-			RemoveRepresentation(landmark->GetSurface());
-			landmark->SetCategory(UnkownLandmarkType);
-		}
-	}
-}
-
-void misVolumeSlicer::InvalidateLandmark(int index)
-{
-	if ((index >= 0) && (index < m_landMarkList.size()) && m_landMarkList[index])
-	{
-		RemoveLandmarkRepresentation(index);
-		m_landMarkList[index]->InValidate();
-	}
-}
-
-
-void misVolumeSlicer::SetCurrentLandmark(misLandmarkType val, int index)
-{
-	if (index != -1)
-		m_LandmarkData->m_currentLandmarkIndex = index;
-	SetCurrentLandmarkType(val);
-}
-
-void misVolumeSlicer::SetCurrentLandmarkLableType(LANDMARKLABLETYPE val)
-{
-	m_LandmarkData->m_CurrentLandmarkLableType = val;
-}
 
 void misVolumeSlicer::SetDentalSurgeryType(DentalSurgeryType surgeryType)
 {
@@ -1678,47 +1279,16 @@ void misVolumeSlicer::SetPanoramicCoordinateConverter(
 	m_Cornerproperties->SetPanoramicCoordinateConverter(coordinateConverter);
 }
 
-void misVolumeSlicer::SetCaptureLandmarkFlag(bool val)
-{
-	m_LandmarkData->m_CaptureLandmark = val;
-	m_CursorService->Set3DInteractionCapturedFlag(!val);
-}
-
-void misVolumeSlicer::RemoveLandMarkRepresentations()
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid())
-		{
-			RemoveRepresentation(landmark->GetSurface());
-		}
-	}
-}
-
 void misVolumeSlicer::InitializeScrewWidget(misScrewWidgetData initVals, IMAGEORIENTATION orientation)
 {
 	m_ScrewViewer->InitializeScrewWidget(initVals, orientation);
 }
 
-void misVolumeSlicer::SetCurrentLandmarkIndex(int val)
-{
-	m_LandmarkData->m_currentLandmarkIndex = val;
-}
+
 
 void misVolumeSlicer::OffScrew(misUID screwUID)
 {
 	m_ScrewViewer->OffScrew(screwUID);
-}
-
-void misVolumeSlicer::SetUpdateLandmarkFlag(bool val)
-{
-	m_UpdateLandmark = val;
-}
-
-
-mis3DVolumeRenderer::LandmarkListType misVolumeSlicer::GetLandmarkList(void)
-{
-	return m_landMarkList;
 }
 
 void misVolumeSlicer::SetToolPosition(double xCoord, double yCoord, double zCoord)

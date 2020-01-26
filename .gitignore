@@ -261,5 +261,6 @@ __pycache__/
 *.pyc
 *.dcm
 LIB/
+LIB.Release/
 CreateMISRelease_local/Images/
 x64/

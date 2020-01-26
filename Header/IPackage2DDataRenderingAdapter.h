@@ -22,11 +22,6 @@ public:
 	virtual void SetOrientation(IMAGEORIENTATION newOrientation) = 0;
 	virtual void SetColorValueToTexture(misUID imageUID, misDoubleColorStruct Color) = 0;
 	virtual void UpdateImageAnnotation(void) = 0;
-	virtual void ImageLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index /*=-1*/,
-		LANDMARKLABLETYPE lableType) = 0;
-	virtual void ImageLandmarkCaptureDisable() = 0;
-	virtual void ImageLandmarkUpdateEnable(misLandmarkType, int) = 0;
-	virtual void  ImageLandmarkUpdateDisable() = 0;
 	virtual void AddInternalObservers(itk::Command* ContrastObserver, itk::Command* backToMapObserver,
 		itk::Command* stateObsrever) = 0;
 	virtual void SetRealTimeMode(bool val) = 0;

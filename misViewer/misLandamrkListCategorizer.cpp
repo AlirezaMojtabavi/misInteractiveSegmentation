@@ -9,7 +9,7 @@ misLandamrkListCategorizer::misLandamrkListCategorizer(std::shared_ptr<IImageGeo
 }
 
 misSimplePointListType misLandamrkListCategorizer::GetLandamrks(misLandmarkType lndType,
-	const std::vector<std::shared_ptr<ILandmarkPointerRepresentation>>& landMarkList, const std::shared_ptr<IImage> pImage)
+	const std::vector<std::shared_ptr<ILandmarkPointerRepresentation>>& landMarkList)
 {
 	misSimplePointListType  res;
 	for (auto landmark : landMarkList)

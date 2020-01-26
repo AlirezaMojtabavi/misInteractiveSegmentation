@@ -69,7 +69,6 @@ public:
 	virtual boost::optional<double> GetCurrentTeethThreshold() = 0;
 	virtual parcast::PointD3 GetImageCenter() = 0;
 	virtual bool GetDuplicatedRangeActivation() = 0;
-	virtual bool CheckPrimaryConditionOnImageGeometry() = 0;
 	virtual std::string GetBinaryFileName() const = 0;
 	virtual void SetBinaryFileName(std::string val) = 0;
 	virtual int* GetDimensions() = 0;

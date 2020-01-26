@@ -51,7 +51,6 @@
 #include <strsafe.h>
 #include <smartptr.h>
 
-#include "itkEventObject.h"
 
 #include "vtkactor.h"
 #include "vtkOpenGLActor.h"
@@ -91,21 +90,44 @@
 #include "vtkWin32RenderWindowInteractor.h"
 #include "vtkwin32OpenGLRenderWindow.h"
 
-// ITK headers
-
-#include "itkBoundingBox.h"
-#include "itkEventObject.h"
-#include "itkImage.h"
-#include "itkMutexLock.h"
-#include "itkNeighborhoodConnectedImageFilter.h"
-
-// IGSTK headers
-#include "igstkMacros.h"
 #include "igstkEvents.h"
+#include "igstkMacros.h"
+#include "igstkPulseGenerator.h"
 #include "igstkTracker.h"
 #include "igstkTrackerTool.h"
-
-
+#include "itkBinaryFillholeImageFilter.h"
+#include "itkBinaryThresholdImageFilter.h"
+#include "itkBoundingBox.h"
+#include "itkCastImageFilter.h"
+#include "itkCurvatureAnisotropicDiffusionImageFilter.h"
+#include "itkEventObject.h"
+#include "itkFastMarchingImageFilter.h"
+#include "itkGradientAnisotropicDiffusionImageFilter.h"
+#include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
+#include "itkHistogram.h"
+#include "itkImage.h"
+#include "itkImageFileWriter.h"
+#include "itkImageRegionIterator.h"
+#include "itkImageToVTKImageFilter.h"
+#include "itkInvertIntensityImageFilter.h"
+#include "itkLaplacianImageFilter.h"
+#include "itkMinimumMaximumImageCalculator.h"
+#include "itkMutexLock.h"
+#include "itkNeighborhoodConnectedImageFilter.h"
+#include "itkNumericSeriesFileNames.h"
+#include "itkObject.h"
+#include "itkPoint.h"
+#include "itkRescaleIntensityImageFilter.h"
+#include "itkThresholdSegmentationLevelSetFunction.h"
+#include "itkThresholdSegmentationLevelSetImageFilter.h"
+#include "itkVector.h"
+#include "itkZeroCrossingImageFilter.h"
+#include "vtkObjectFactory.h"
+#include <itkImage.h>
+#include <itkImageToHistogramFilter.h>
+#include <itkImageToVTKImageFilter.h>
+#include <itkMacro.h>
+#include <itkVTKImageToImageFilter.h>
 
 #include "tinyxml2.h"
 

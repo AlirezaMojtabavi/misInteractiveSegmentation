@@ -18,21 +18,21 @@
     <SccProvider>SAK</SccProvider>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>misViewer</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -121,7 +121,9 @@
     <ClInclude Include="..\header\FakeBarycentricInterpolation.h" />
     <ClInclude Include="..\Header\FakeMap2D.h" />
     <ClInclude Include="..\Header\IBackToPanMode.h" />
+    <ClInclude Include="..\Header\ILandmarkViewer.h" />
     <ClInclude Include="..\Header\IMedicalCameraDirection.h" />
+    <ClInclude Include="..\Header\IPanImage.h" />
     <ClInclude Include="..\Header\IScrew3DViewer.h" />
     <ClInclude Include="..\Header\IScrewViewer.h" />
     <ClInclude Include="..\Header\IUpdatePlaneVisibilitiy.h" />
@@ -159,6 +161,8 @@
     <ClInclude Include="..\Header\MedicalCameraDirectionSpine.h" />
     <ClInclude Include="..\header\mis2DROIActivation.h" />
     <ClInclude Include="..\Header\misChangeZoomPercentageCore.h" />
+    <ClInclude Include="..\Header\misImageContrastObserver.h" />
+    <ClInclude Include="..\Header\misInteractorSTyleImageExtend.h" />
     <ClInclude Include="..\header\misVolumeRendererContainer.h" />
     <ClInclude Include="..\Header\mis3DViewer.h" />
     <ClInclude Include="..\Header\misAutoMeasurment.h" />
@@ -213,11 +217,23 @@
     <ClInclude Include="..\Header\Screw3DViewer.h" />
     <ClInclude Include="..\header\ScrewViewer.h" />
     <ClInclude Include="..\Header\ScrewViewerFactory.h" />
+    <ClInclude Include="..\Header\TypeDirection.h" />
     <ClInclude Include="ConvertMousexyToWorldCoordinate.h" />
+    <ClInclude Include="PanImage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LandmarkViewer.cpp" />
+    <ClCompile Include="misImageContrastObserver.cpp" />
+    <ClCompile Include="PanImage.cpp" />
+    <ClCompile Include="SlicerLandmarkViewer.cpp" />
+    <ClCompile Include="SlicerPointSelectActionLandamrk.cpp" />
+    <ClCompile Include="TypeDirection.cpp" />
+    <ClCompile Include="Volume2DPointSelectAction.cpp" />
+    <ClCompile Include="Volume3DLandmarkViewer.cpp" />
+    <ClCompile Include="Volume3DSelectActionLandamrk.cpp" />
+    <ClCompile Include="WindowLevelSetting.cpp" />
     <ClInclude Include="..\Header\IPanoramicViewer.h">
       <FileType>CppCode</FileType>
     </ClInclude>
@@ -277,11 +293,11 @@
     <ClCompile Include="misVoreenVolumeRenderingViewer.cpp" />
     <ClCompile Include="misZoomFinder.cpp" />
     <ClCompile Include="PlanTransformUpdater.cpp" />
-    <ClCompile Include="PointSelectAction.cpp" />
     <ClCompile Include="Screw2DViewer.cpp" />
     <ClCompile Include="Screw3DViewer.cpp" />
     <ClCompile Include="ScrewViewer.cpp" />
     <ClCompile Include="ScrewViewerFactory.cpp" />
+    <ClCompile Include="SlicerPointSelectAction.cpp" />
     <ClCompile Include="SquareQuadCreator.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>

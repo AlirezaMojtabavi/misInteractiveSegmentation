@@ -4,7 +4,7 @@
 #include "misCameraInteraction.h"
 #include "misEnums.h"
 #include "misEvent.h"
-#include "misImageCallback.h"
+#include "misImageContrastObserver.h"
 #include "misMacros.h"
 #include "misSideAnnotation.h"
 #include "misImageAnnotation.h"
@@ -25,10 +25,14 @@
 #include "IScrewViewer.h"
 #include "misVolumeRenderer.h"
 #include "IBackToPanMode.h"
-#include "PointSelectAction.h"
+#include "SlicerPointSelectAction.h"
 #include "LandmarkDataAndType.h"
 #include <IPilotIndicatorColorSpecifier.h>
 #include <vtkCaptionActor2D.h>
+#include "IPanImage.h"
+#include "TypeDirection.h"
+#include "ILandmarkViewer.h"
+
 
 
 #pragma warning (push)
@@ -48,18 +52,16 @@ public:
 	                , int index,
 	                std::shared_ptr<I3DViewer> viewer,
 	                std::shared_ptr<ICornerProperties>,
-	                std::shared_ptr<IUpdateLandmarkCameraView> m_UpdateLandmarkCameraViewer,
 	                std::shared_ptr<IInitializeScrewWidget>, vtkSmartPointer<misInteractorSTyleImageExtend>,
 	                misMeasurment::Pointer, misVolumeRendererContainer::Pointer,
 	                std::shared_ptr<ICursorService>, std::shared_ptr<IBackToPanMode> backToPanMOde,
-	                double differenceForViewingSeed, std::shared_ptr<LandmarkDataAndType> landmarkData);
+	                double differenceForViewingSeed, std::shared_ptr<misCameraInteraction> cameraInteraction);
 	~misVolumeSlicer();
 
 	void ShowAnnotationDetailOn() override;
 	void ShowAnnotationDetailOff() override;
 	void SetShowAnnotationDetail(bool status) override;
 	bool ShowAnnotationDetail() const override;
-	void AddAllPointSelectObserve();
 	// Calls superclass Render() after updating camera, screw view, landmark view, region of interest. It also renders the video
 	// texture if the GPU representation is a video GPU representation.
 	void Render() override;
@@ -70,13 +72,10 @@ public:
 	void AddRepresentation(std::shared_ptr<IRepresentation> pRepresentation) override;
 	virtual bool ProcessRequest(const itk::EventObject* event) override;
 	//update  landmark position at index 
-	virtual void SetLandmarkPosition(int index, const double position[3]);
 	void InitializeWidget(misCursorType widgetType,  double pickingTolerance) override;
 	virtual void SetROI(const double* radius);
 	virtual void SetROI(const misROI& data);
 	virtual void InitializeCornerProperties() final;
-	misSimplePointListType GetLandmarkList(misLandmarkType seedType /*= seedCatergory::General*/);
-	LandmarkListType GetLandmarkList();
 	void SetToolPosition(double xCoord, double yCoord, double zCoord);
 	bool HasRepresentationByName(const std::string& name);
 	std::vector<std::shared_ptr<IRepresentation>> FindRepresentationByName(const std::string& name);
@@ -89,13 +88,13 @@ public:
 	void ResetGeneralToolbarState() override;
 	void SetGeneralToolbarState(const misGeneralToolbarState& generalToolbarState) override;
 	misGeneralToolbarState GetGeneralToolbarState() const override;
-	misImageCallback* GetImageCallBack() override;
-	std::shared_ptr<misCameraInteraction> GetCameraService() override;
+ 	std::shared_ptr<misCameraInteraction> GetCameraService() override;
+	 std::shared_ptr<parcast::WindowLevelSetting> GetWindowLevel() const override;
+
 	void SetViewingProperties(misPlaneEnum planeIndex, misWindowLevelStr winLevStr) override;
 	void SetObliqueFlag(bool isOblique) final;
 	void SetOrientationDirection(IMAGEORIENTATION newOrientation) override;
 	// Return image viewer orientation based on added representation orientation
-	IMAGEORIENTATION GetOrientationDirection()  const override;
 	void ApplyOffset(double offset) override;
 	void SetImageSliceViewerZoomFactor(double zoomFactor) override;
 	virtual misMeasurment* GetMeasurmentService() override;
@@ -110,7 +109,6 @@ public:
 	void SetSurgeryType(misApplicationType surgeryType);
 	misGeneralToolbarState ApplyMeasurment(misGeneralToolbarState ls);
 	void UpdatePanMode();
-	misROI GetSeedBounding(int* dimenstion, double* spacing) override;
 	void CheckFlyZone(const std::string& segmentationRegion) override;
 	void UpdateWindowSize(misStrctWindowSize& size) override;
 	void CreateImageAnnotation(void) override;
@@ -120,14 +118,12 @@ public:
 	void SetRealTimeMode(bool val) final;
 	bool GetRealTimeMode() const override;
 	virtual std::shared_ptr<ICornerProperties> GetCornerProperties() const override;
-	double* GetLandmarkPosition(int index) override;
 	void LockAllScrews();
 	void UnlockAllScrews();
 	void SetAllScrewsLocked(bool isLocked);
 	void RemoveAllScrewServices();
 	vtkRenderer* GetRenderer();
 	std::shared_ptr<IRepresentation> GetMainRepresentation();
-	void SetCurrentLandmarkType(misLandmarkType val);
 	std::shared_ptr<ICursorService> GetCursorService();
 	void OnScrew(misUID screwUID);
 	unsigned long AddObserver(const itk::EventObject& event, itk::Command* command);
@@ -135,32 +131,19 @@ public:
 	bool HasObserver(const itk::EventObject& event) const;
 	void RemoveRepresentation(std::shared_ptr<IRepresentation> pRepresent);
 	void AddImageOrientation3DModel(std::shared_ptr<IRepresentation> pRepresentation);
-	void UpdateLandmarkCameraView(int index);
 	void DeleteAllScrews();
 	std::shared_ptr<I3DViewer> Get3DViewer() const;
 	std::shared_ptr<IScrewCompound> GetScrewWidgetService(misUID uid) override;
-	int AddNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-	                    LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) override;
-	void AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-	                          LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) override;
-	int AddOrSetNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-	                         LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) override;
+
 	std::shared_ptr<Iwindows> GetWindow() const override; // Gets the render window = 0.
 	double* GetROICompressData() override;
-	void HideLandmarks() override;
 	void SetMainRepresentation(std::shared_ptr<IRepresentation> pMainRep, IMAGEORIENTATION orientation) override;
 	void Reset() override;
-	void InvalidateLandmarks();
-	void RemoveLandmarkRepresentation(int index);
+
 	void RemoveRepresentationByName(std::string name) override;
 	void MakeCurrentRenderer() override;
 	void SetViewPort(const misViewPort& val) override;
 	void SetShowManModel(bool val) override;
-	void ResetLandMarks() override;
-	void ResetLandMarks(misLandmarkType lndType) override;
-	void InvalidateLandmark(int index) override;
-	void SetCurrentLandmark(misLandmarkType val, int index) override;
-	void SetCurrentLandmarkLableType(LANDMARKLABLETYPE val) override;
 	void SetDentalSurgeryType(DentalSurgeryType surgeryType) override;
 	void DeleteScrew(misUID screwUID) override;
 	void HighlightScrew(misUID screwUID, bool highlight) override;
@@ -169,23 +152,14 @@ public:
 	void SetDentalSpecialViewsEnable(bool enabled) override;
 	void SetPanoramicCoordinateConverter(std::shared_ptr<const IPanoramicCoordinatesConverter> coordinateConverter)
 	override;
-	void SetCaptureLandmarkFlag(bool val) override;
-	void RemoveLandMarkRepresentations() override;
+
 	void InitializeScrewWidget(misScrewWidgetData initVals, IMAGEORIENTATION orientation) override;
-	void SetCurrentLandmarkIndex(int val) override;
+
 	void OffScrew(misUID screwUID) override;
-	void SetUpdateLandmarkFlag(bool val) override;
-	void AddLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-	                 LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) override;
 	void SetState(int val) override;
-	double* GetLandmarkPosition(int index, misLandmarkType category) override;
-	void AddPointSelectObserver(std::pair<unsigned long, vtkSmartPointer<vtkCommand>>) override;
  
  private:
 	virtual void UpdateWidgetBox(vtkObject* caller, unsigned long eventId, void* callData);
-	misViewerTypeDirection GetTypeDirection(void) const override;
-	parcast::PointD3 GetLablePosition(const double* position, const itk::BoundingBox<double, 3, double>::Pointer
-	                                  & boundingBox, const double handleLength, const double offsetAngle) const;
 	virtual void InteractionStyleCallback(vtkObject* caller, unsigned long eventId, void* callData);
 	virtual void ROIClickAction(vtkObject* caller, unsigned long eventId, void* callData);
 	virtual void WidgetChangeAction(vtkObject* caller, unsigned long eventId, void* callData);
@@ -197,13 +171,10 @@ public:
 	void FindProperDirection(double [3], double [3]);
  	void SetInteractionStyleProperties();
 	void SetImageContrast(misPlaneEnum planeIndex);
-	void PanImage();
 	void UpdateDentalSideAnnotationsBuilder();
 	virtual void SetDefaultWindowLevel() override;
 	void SetWidgetFocalPoint(const double*);
 	void UpdateLandmarkPosition();
-	void ResetGeneralToolbarInRightClick();
-	vtkRenderWindowInteractor* GetRendererWindowInteractor();
 	void CaptureLandmark(double* position);
 	virtual vtkProp3D* GetWidgetBoundedActor();
 	void SetROIActive();
@@ -211,14 +182,13 @@ public:
 	void ModifyPlane(misPlanWidget* planWidget, misScrewWidgetData &screwWidgetVal);
 	std::shared_ptr<misCameraInteraction> m_CameraService;
 	vtkSmartPointer<misInteractorSTyleImageExtend> m_pImageStyle;
-	int m_LastMouseEventX;
-	int m_LastMouseEventY;
+
 	bool m_IsOblique;
 	double m_WidgetFocalPoint[3];
 	bool m_RealTimeMode;
 	std::shared_ptr<misImageAnnotation> m_ImageAnnotations;
 	std::shared_ptr<misSideAnnotation> m_SideAnnotations;
-	vtkSmartPointer<misImageCallback> m_pcallBack;
+	vtkSmartPointer<misImageContrastObserver> m_ImageContrastObserver = vtkSmartPointer<misImageContrastObserver>::New();
 	misMeasurment::Pointer m_MeasurmentService;
 	misGeneralToolbarState m_GeneralToolbarState;
 	bool m_ShowAnnotation;
@@ -227,27 +197,31 @@ public:
 	std::shared_ptr<parcast::IDentalViewSideAnnotationTextBuilder> m_DentalAnnotationBuilder;
 	std::shared_ptr<parcast::IDentalQuadrantFinder> m_QuadrantFinder;
 	misImageViewerAnnotations m_AnnotationUpdater;
-	std::unique_ptr<ILandmarkVisibilty> m_LandmarkVisibilty;
-	bool m_ShowAnnotationDetail;
-	std::shared_ptr<IRepresentation> m_MainRepresentation; // See SetMainRepresentation().
-	bool m_IsPointSelectObserverAdded;
+	bool m_ShowAnnotationDetail = false;
+	std::shared_ptr<IRepresentation> m_MainRepresentation = nullptr; // See SetMainRepresentation().
 	std::shared_ptr<ICornerProperties> m_Cornerproperties;
-	std::shared_ptr<IUpdateLandmarkCameraView> m_UpdateLandmarkCameraViewer;
 	std::shared_ptr<ICursorService> m_CursorService;
 	void GetWidgetBoundingBox(double bounds[6], double extensionScaleFactor = 1);
 	void SetWindow(std::shared_ptr<Iwindows> pWindow, int index);
-	bool m_IsPointWidgetObserverAdded;
-	bool m_UpdateLandmark;
+	virtual void SetTypeDirection(misViewerTypeDirection) override;
+
+public:
+	misViewerTypeDirection GetTypeDirection() const override;
+	IMAGEORIENTATION GetOrientationDirection() const override;
+	misVolumeRendererContainer::Pointer GetDummySubject() override;
+private:
+	bool m_IsPointWidgetObserverAdded = false;
 	misVolumeRendererContainer::Pointer m_DummyObject;
 	bool m_ShowManModel;
 	std::shared_ptr<misManModelrepresentation> m_ManModel;
-	bool m_ShowLabels;
-	DentalSurgeryType m_DentalSurgeryType;
-	bool m_DentalSpecialViewEnable;
+	DentalSurgeryType m_DentalSurgeryType = DentalSurgeryType::MAXILLA;
+	bool m_DentalSpecialViewEnable = false;
 	std::shared_ptr<parcast::IScrewViewer> m_ScrewViewer;
 	std::shared_ptr<IBackToPanMode> m_BackToPanMode;
-	std::map<unsigned long, std::vector<vtkSmartPointer<vtkCommand>>> m_Observers;
-	std::shared_ptr<LandmarkDataAndType> m_LandmarkData;
+	std::shared_ptr<parcast::WindowLevelSetting>  m_WindowLevelSetting = std::make_shared<parcast::WindowLevelSetting>();
+	std::shared_ptr<IPanImage> m_PanImage;
+	misViewerTypeDirection m_ViewerTypeDirection;
+	// Inherited via IVolumeSlicer
 };
 
  

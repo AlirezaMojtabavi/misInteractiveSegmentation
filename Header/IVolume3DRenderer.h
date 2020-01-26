@@ -1,9 +1,9 @@
 #pragma once
-#include "mislandMarkPosAndStatusStr.h"
 #include "IVolumeRenderer.h"
 #include "misROIWidget.h"
 #include "TransferFuncs3D.h"
 #include "IMedicalCameraDirection.h"
+#include "ILandmarkPointerRepresentation.h"
 
 
 enum class DentalSurgeryType;
@@ -14,19 +14,6 @@ public:
 
 	typedef std::vector < std::shared_ptr < ILandmarkPointerRepresentation >> LandmarkListType;
 
-	// add a annotation label and  a line for a landmark
-	virtual void AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList) = 0;
-	virtual void AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList, misLandmarkType landmarkType, LANDMARKLABLETYPE lableType) = 0;
-
-	virtual void AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category = GeneralSeed,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) = 0;
-	virtual int AddOrSetNextLandmark(const double position[3], misLandmarkType category = GeneralSeed,
-		LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) = 0;
-	//update  landmark position at index 
-	virtual void SetLandmarkPosition(int index, const double position[3]) = 0;
-	virtual void SetViewCentrePosition(const double position[3]) = 0;
-	virtual void UpdateLandmarkCameraView(int index) = 0;
-	virtual void ShowLandmarks() = 0;
 	// Return a list contains all representation by provided name
 	virtual std::vector<std::shared_ptr<IRepresentation>> FindRepresentationByName(const std::string& name) = 0;
 

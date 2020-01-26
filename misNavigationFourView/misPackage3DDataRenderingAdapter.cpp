@@ -53,14 +53,7 @@ void misPackage3DDataRenderingAdapter::ReleaseImageResources()
 	m_CurrentImageContainedPolydataDependencies.clear();
 	m_CurrentVolumeDataDependencies.clear();
 	m_viewer->ReleaseImageResource();
-	auto package = m_CurrentPackage.lock();
-	if (auto package = m_CurrentPackage.lock())
-	{
-		if (!package->GetLandMarkPoints().empty())
-		{
-			m_viewer->RemoveLandMarkRepresentations();
-		}
-	}
+
 }
 
 
@@ -222,10 +215,6 @@ void misPackage3DDataRenderingAdapter::UpdatePosition(parcast::Point<double, 3> 
 	m_viewer->GetCursorService()->UpdateWidgetPosition();
 }
 
-void misPackage3DDataRenderingAdapter::SetCurrentLandmarkType(misLandmarkType val)
-{
-	m_viewer->SetCurrentLandmarkType(val);
-}
 
 
 void misPackage3DDataRenderingAdapter::ShowVolume(std::shared_ptr<IVolumeDataDependency> volumeProp)

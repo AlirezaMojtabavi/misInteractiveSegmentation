@@ -26,16 +26,10 @@ mis3DVolumeRenderer::mis3DVolumeRenderer(std::shared_ptr<ScrewListType> screwSer
 	std::shared_ptr<Iwindows> pWindow, int index,
 	std::shared_ptr<I3DViewer> viewer,
 	std::shared_ptr<ICornerProperties> cornerProperties,
-	std::shared_ptr<IUpdateLandmarkCameraView> updateLandmarkCameraViewer,
 	std::shared_ptr<IInitializeScrewWidget> screwIntilizer,
 	std::shared_ptr<IMedicalCameraDirection> medicalCameraDirection,
-	std::shared_ptr<IVolumeRayCaster> volumeRenderer)
+	std::shared_ptr<IVolumeRayCaster> volumeRenderer, misVolumeRendererContainer::Pointer dummy)
 	: misVolumeRenderer(viewer, pWindow, index),
-	m_currentLandmarkIndex(-1),
-	m_CurrentLandmarkType(UnkownLandmarkType),
-	m_CurrentLandmarkLableType(NUMERICALLANDMARK),
-	m_CaptureLandmark(false),
-	m_UpdateLandmark(false),
 	m_ShowLabels(true),
 	m_IsPointWidgetObserverAdded(false),
 	m_IsPointSelectObserverAdded(false),
@@ -46,20 +40,13 @@ mis3DVolumeRenderer::mis3DVolumeRenderer(std::shared_ptr<ScrewListType> screwSer
 	m_DentalSpecialViewEnable(false),
 	m_VolumeRnderer(volumeRenderer),
 	m_DentalSurgeryType(DentalSurgeryType::MAXILLA),
-	m_UpdateLandmarkCameraViewer(updateLandmarkCameraViewer),
 	m_Cornerproperties(cornerProperties),
-	m_MedicalCameraDirection(medicalCameraDirection)
+	m_MedicalCameraDirection(medicalCameraDirection),
+
+m_DummyObject(dummy)
 {
 	SetWindow(pWindow, index);
-	m_landMarkList.resize(m_maxLandmarkElementSize);
-	std::generate(m_landMarkList.begin(), m_landMarkList.end(), []()
-	{
-		auto appType = misApplicationSetting::GetInstance()->m_WorkflowButtonSet;
-		auto radius = 5.5;
-		if (appType == Spine)
-			radius = 2.0;
-		return std::make_shared<misLandmarkPointerRepresentation>(radius, true);
-	});
+	m_DummyObject->SetViewer(static_cast<IVolumeRenderer*> (this));
 	m_ScrewViewer = parcast::ScrewViewerFactory::Create(Dimention::_3D, screwIntilizer, screwServiceList,
 		m_Cornerproperties, m_DummyObject);
 }
@@ -96,92 +83,7 @@ void mis3DVolumeRenderer::HighlightScrew(misUID screwUID, bool highlight)
 	m_ScrewViewer->HighlightScrew(screwUID, highlight);
 }
 
-void mis3DVolumeRenderer::AddLandmark(int index, const double position[3], misLandmarkType category,
-	LANDMARKLABLETYPE lableType)
-{
-	if (m_landMarkList[index]->IsValid())
-	{
-		if (m_landMarkList[index]->GetCategory() == category)
-		{
-			SetLandmarkPosition(index, position);
-			const auto boundingBox = m_MainRepresentation->GetBoundingBox();
-			const auto handleLength = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableHandleLength");
-			const auto offsetAngle = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableAngleOffset");
-
-			auto lablePosition = GetLablePosition(position, boundingBox, handleLength, offsetAngle);
-			m_landMarkList[index]->SetLabelPosition(lablePosition.Elements());
-			UpdateLandmarkCameraView(index);
-			return;
-		}
-	}
-	AddOrSetNextLandmark(index, position, category, lableType);
-}
-
-//==================================================================================================================
-int mis3DVolumeRenderer::AddNextLandmark(const double position[3], misLandmarkType category,
-	LANDMARKLABLETYPE lableType)
-{
-	misCamera camera(m_3DViewer->GetRenderer()->GetActiveCamera()->GetPosition(),
-		m_3DViewer->GetRenderer()->GetActiveCamera()->GetFocalPoint(),
-		m_3DViewer->GetRenderer()->GetActiveCamera()->GetViewUp());
-	auto appType = misApplicationSetting::GetInstance()->m_WorkflowButtonSet;
-	auto radius = 5.5;
-	if (appType == Spine)
-		radius = 2.0;
-	const parcast::Point<double, 3> point(position);
-	misLandmarkVisualizer landmarkVisualizer(
-		m_MainRepresentation->GetBoundingBox(), camera, m_landMarkList, category,
-		lableType, m_ShowLabels, point, GetTypeDirection(), radius);
-
-	AddRepresentation(landmarkVisualizer.GetRepresenTation());
-	return landmarkVisualizer.GetIndex();
-}
-
-int mis3DVolumeRenderer::AddOrSetNextLandmark(const double position[3], misLandmarkType category,
-	const LANDMARKLABLETYPE lableType)
-{
-	int index = -1;
-	for (int i = 0; i < m_landMarkList.size(); i++)
-	{
-		if (!(m_landMarkList[i]->IsValid()))
-		{
-			index = i;
-			break;
-		}
-	}
-	if (index == -1)
-	{
-		index = static_cast<int>(m_landMarkList.size());
-		auto appType = misApplicationSetting::GetInstance()->m_WorkflowButtonSet;
-		auto radius = 5.5;
-		if (appType == Spine)
-			radius = 2.0;
-		auto emptyPointer = std::make_shared<misLandmarkPointerRepresentation>(radius, true);
-		emptyPointer->InValidate();
-		m_landMarkList.push_back(emptyPointer);
-	}
-
-	if (m_landMarkList[index]->IsValid())
-	{
-		SetLandmarkPosition(index, position);
-	}
-	else
-	{
-		AddOrSetNextLandmark(index, position, category, lableType);
-	}
-	return index;
-}
-
-PointD3 mis3DVolumeRenderer::GetLablePosition(const double* position, const itk::BoundingBox<double, 3, double>::Pointer
-	& boundingBox, const double handleLength, const double offsetAngle) const
-{
-	const auto lablePositionCalculator = parcast::LandmarkLablePositionCalculatorFactory::Create(PointD3(boundingBox->GetMinimum().GetDataPointer()),
-		PointD3(boundingBox->GetMaximum().GetDataPointer()),
-		handleLength, offsetAngle, misApplicationSetting::GetInstance()->m_WorkflowButtonSet);
-	const auto landmarkPos = PointD3(position[0], position[1], position[2]);
-	return lablePositionCalculator->GetLabelPosition(landmarkPos, GetTypeDirection());
-}
-
+ 
 void mis3DVolumeRenderer::SetWindow(std::shared_ptr<Iwindows> pWindow, int index)
 {
 	m_IndexInGroup = index;
@@ -190,6 +92,18 @@ void mis3DVolumeRenderer::SetWindow(std::shared_ptr<Iwindows> pWindow, int index
 	if (m_VolumeRnderer)
 		m_VolumeRnderer->SetRenderer(m_Renderer);
 }
+
+misVolumeRendererContainer::Pointer mis3DVolumeRenderer::GetDummySubject()
+{
+	return m_DummyObject;
+}
+
+void mis3DVolumeRenderer::SetTypeDirection(misViewerTypeDirection direction)
+{
+	m_ViewerTypeDirection = direction;
+
+}
+
 
 void mis3DVolumeRenderer::ZoomIn()
 {
@@ -236,163 +150,10 @@ void mis3DVolumeRenderer::SetObliqueFlag(bool isOblique)
 	m_IsOblique = isOblique;
 }
 
-void mis3DVolumeRenderer::AddOrSetNextLandmark(int index, const double position[3], misLandmarkType category,
-	LANDMARKLABLETYPE labelType)
+
+
+ void mis3DVolumeRenderer::Reset()
 {
-	auto appType = misApplicationSetting::GetInstance()->m_WorkflowButtonSet;
-	auto radius = 5.5;
-	if (appType == Spine)
-		radius = 2.0;
-	auto pLnd = std::make_shared<misLandmarkPointerRepresentation>(index + 1, NORMAL, category, position, labelType, radius, true);
-	pLnd->Validate();
-	pLnd->SetVisibilityOn();
-	const auto boundingBox = m_MainRepresentation->GetBoundingBox();
-	const auto handleLength = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableHandleLength");
-	const auto offsetAngle = m_SettingContainer->GetDouble("RegisterationSetting/LandmarkLableAngleOffset");
-	auto lablePosition = GetLablePosition(position, boundingBox, handleLength, offsetAngle);
-	pLnd->SetLabelPosition(lablePosition.Elements());
-	AddRepresentation(pLnd->GetSurface());
-	m_landMarkList[index] = pLnd;
-}
-
-void mis3DVolumeRenderer::AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList)
-{
-	AddLandmarks(landmarkList, GeneralSeed, NUMERICALLANDMARK);
-}
-
-void mis3DVolumeRenderer::AddLandmarks(std::vector<mislandMarkPosAndStatusStr> landmarkList,
-	misLandmarkType landmarkType,
-	LANDMARKLABLETYPE lableType/*= NUMERICALLANDMARK*/)
-{
-	ResetLandMarks();
-
-	const auto landmarkSize = landmarkList.size();
-	int i = 0;
-	if (landmarkSize > 0)
-	{
-		for_each(landmarkList.begin(), landmarkList.end(), [&](mislandMarkPosAndStatusStr landmark)
-		{
-			if (landmark.status == ValidPoint)
-			{
-				double pos[3];
-				std::copy(landmark.position.GetItkPoint().Begin(), landmark.position.GetItkPoint().End(), pos);
-				AddLandmark(i, pos, landmarkType, lableType);
-				m_Cornerproperties->SetCurrentPosition(pos);
-				m_CursorService->UpdateWidgetPosition();
-				misLandmarkInfoStruct landmarkStr;
-				landmarkStr.Landmarktype = landmarkType;
-				landmarkStr.CurrentPosition = pos;
-				landmarkStr.landmarkIndex = i;
-				landmarkStr.landmarkLableType = lableType;
-				misAddLandmarkEvent LndEv;
-				LndEv.Set(landmarkStr);
-				InvokeEvent(LndEv);
-			}
-			i++;
-		});
-	}
-}
-
-void mis3DVolumeRenderer::RemoveLandmarkRepresentation(int index)
-{
-	const auto size = m_landMarkList.size();
-	if ((index < size) && (index >= 0))
-	{
-		const auto prep = m_landMarkList[index];
-		RemoveRepresentation(prep->GetSurface());
-	}
-}
-
-void mis3DVolumeRenderer::SetViewCentrePosition(const double position[3])
-{
-	if (!position)
-	{
-		return;
-	}
-	m_Cornerproperties->SetCurrentPosition(position);
-	if (m_CursorService)
-		m_CursorService->UpdateWidgetPosition();
-	misUpdatePositionEvent ev;
-	misUpdatePositionInfoStruct updateStr;
-	updateStr.CornerTransform->DeepCopy(m_Cornerproperties->GetTransform());
-	updateStr.IsCameraUpdate = true;
-	ev.Set(updateStr);
-	InvokeEvent(ev);
-}
-
-void mis3DVolumeRenderer::SetLandmarkPosition(const int index, const double position[3])
-{
-	_ASSERT(position != NULL);
-	if (!position)
-	{
-		return;
-	}
-	if (m_Cornerproperties->GetTransform() == 0)
-		return;
-
-	for (auto i = 0; i < m_landMarkList.size(); i++)
-	{
-		if (m_landMarkList[i]->IsValid())
-		{
-			if (i == index)
-			{
-				m_landMarkList[i]->UpdateAsSelected();
-				m_landMarkList[i]->SetPosition(position);
-				m_landMarkList[i]->Validate();
-
-				SetViewCentrePosition(position);
-
-				misUpdateLandmarkStatusEvent UpdateEv;
-				misLandmarkInfoStruct infoStatus;
-				infoStatus.CurrentPosition = position;
-				infoStatus.landmarkIndex = index;
-				infoStatus.Landmarktype = m_CurrentLandmarkType;
-				UpdateEv.Set(infoStatus);
-				InvokeEvent(UpdateEv);
-			}
-			else
-			{
-				m_landMarkList[i]->UpdateNormal();
-			}
-		}
-	}
-}
-
-double* mis3DVolumeRenderer::GetLandmarkPosition(const int index)
-{
-	if (m_landMarkList[index]->IsValid())
-	{
-		const auto pos = new double[3];
-		m_landMarkList[index]->GetPosition(pos);
-		return pos;
-	}
-	return nullptr;
-}
-
-double* mis3DVolumeRenderer::GetLandmarkPosition(int index, misLandmarkType category)
-{
-	double* pos = 0;
-	if ((index >= 0) && (index < m_landMarkList.size()))
-	{
-		auto seedList = GetLandmarkList(category);
-		if ((index >= 0) && (index < seedList.size()))
-		{
-			if (seedList[index].validity)
-			{
-				pos = new double[3];
-				pos[0] = seedList[index].data[0];
-				pos[1] = seedList[index].data[1];
-				pos[2] = seedList[index].data[2];
-				return pos;
-			}
-		}
-	}
-	return pos;
-}
-
-void mis3DVolumeRenderer::Reset()
-{
-	InvalidateLandmarks();
 	DeleteAllScrews();
 	m_3DViewer->Reset();
 	if (m_MainRepresentation)
@@ -401,27 +162,8 @@ void mis3DVolumeRenderer::Reset()
 	}
 }
 
-void mis3DVolumeRenderer::HideLandmarks()
-{
-	for (auto& i : m_landMarkList)
-	{
-		if (i->IsValid())
-		{
-			i->SetVisibilityOff();
-		}
-	}
-}
+ 
 
-void mis3DVolumeRenderer::ShowLandmarks()
-{
-	for (auto& landamrk : m_landMarkList)
-	{
-		if (landamrk->IsValid())
-		{
-			landamrk->SetVisibilityOn();
-		}
-	}
-}
 
 void mis3DVolumeRenderer::SetToolTransform(std::shared_ptr<ITransform> transform)
 {
@@ -433,153 +175,23 @@ void mis3DVolumeRenderer::SetToolTransform(std::shared_ptr<ITransform> transform
 	}
 }
 
-void mis3DVolumeRenderer::RemoveLandMarkRepresentations()
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid())
-		{
-			RemoveRepresentation(landmark->GetSurface());
-		}
-	}
-}
-
-void mis3DVolumeRenderer::InvalidateLandmark(const int index)
-{
-	if ((index >= 0) && (index < m_landMarkList.size()) && m_landMarkList[index])
-	{
-		RemoveLandmarkRepresentation(index);
-		m_landMarkList[index]->InValidate();
-	}
-}
-
-void mis3DVolumeRenderer::InvalidateLandmarks(void)
-{
-	for (auto i = 0; i < m_landMarkList.size(); i++)
-	{
-		RemoveLandmarkRepresentation(i);
-		m_landMarkList[i]->InValidate();
-	}
-}
-
-misSimplePointListType mis3DVolumeRenderer::GetLandmarkList(misLandmarkType seedType /*= seedCatergory::General*/)
-{
-	misSimplePointListType res;
-	for (const auto& landmark : m_landMarkList)
-	{
-		misSimplePointType seed;
-		if (landmark)
-		{
-			if (landmark->GetCategory() == seedType)
-			{
-				double pos[3];
-				landmark->GetPosition(pos);
-				seed[0] = pos[0];
-				seed[1] = pos[1];
-				seed[2] = pos[2];
-				seed.validity = landmark->IsValid();
-				res.push_back(seed);
-			}
-		}
-	}
-	return res;
-}
-
-mis3DVolumeRenderer::LandmarkListType mis3DVolumeRenderer::GetLandmarkList(void)
-{
-	return m_landMarkList;
-}
-
-void mis3DVolumeRenderer::RemoveRepresentation(std::shared_ptr<IRepresentation> pRepresent)
-{
-	m_3DViewer->RemoveRepresentation(pRepresent);
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->GetSurface() == pRepresent)
-			landmark->InValidate();
-	}
-}
-
-void mis3DVolumeRenderer::ResetLandMarks(void)
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid())
-		{
-			RemoveRepresentation(landmark->GetSurface());
-			landmark->SetCategory(UnkownLandmarkType);
-		}
-	}
-}
-
-void mis3DVolumeRenderer::ResetLandMarks(misLandmarkType lndType)
-{
-	for (const auto& landmark : m_landMarkList)
-	{
-		if (landmark->IsValid() && landmark->GetCategory() == lndType)
-		{
-			RemoveRepresentation(landmark->GetSurface());
-			landmark->SetCategory(UnkownLandmarkType);
-		}
-	}
-}
-
 std::shared_ptr<ICursorService> mis3DVolumeRenderer::GetCursorService()
 {
 	return m_CursorService;
 }
 
 
-void mis3DVolumeRenderer::SetCaptureLandmarkFlag(bool val)
+void mis3DVolumeRenderer::RemoveRepresentation(std::shared_ptr<IRepresentation> pRepresent)
 {
-	m_CaptureLandmark = val;
-
-}
-
-void mis3DVolumeRenderer::SetUpdateLandmarkFlag(bool val)
-{
-	m_UpdateLandmark = val;
+	m_3DViewer->RemoveRepresentation(pRepresent);
+ 
 }
 
 
-void mis3DVolumeRenderer::SetCurrentLandmark(misLandmarkType val, int index)
-{
-	if (index != -1)
-		m_currentLandmarkIndex = index;
-	SetCurrentLandmarkType(val);
-}
-
-void mis3DVolumeRenderer::SetCurrentLandmarkType(misLandmarkType val)
-{
-	m_CurrentLandmarkType = val;
-	if (m_currentLandmarkIndex >= 0 && val != UnkownLandmarkType)
-		m_landMarkList[m_currentLandmarkIndex]->SetCategory(val);
-}
-
-void mis3DVolumeRenderer::SetCurrentLandmarkIndex(int val)
-{
-	m_currentLandmarkIndex = val;
-}
-
-void mis3DVolumeRenderer::SetCurrentLandmarkLableType(LANDMARKLABLETYPE val)
-{
-	m_CurrentLandmarkLableType = val;
-}
 
 bool mis3DVolumeRenderer::ProcessRequest(const itk::EventObject* event)
 {
 	const auto res = false;
-	if (typeid(*event) == typeid(misAddLandmarkEvent))
-	{
-		const auto pEventData = dynamic_cast<const misAddLandmarkEvent*>(event);
-		const auto infoStr = pEventData->Get();
-		auto position = m_Cornerproperties->GetCurrentPosition();
-		AddLandmark(infoStr.landmarkIndex, position.Elements(), infoStr.Landmarktype, infoStr.landmarkLableType);
-
-		m_CaptureLandmark = false;
-		m_UpdateLandmark = false;
-		return true;
-	}
 	if (typeid(*event) == typeid(misROIWidgetUpdateEvent))
 	{
 		const misROIWidgetUpdateEvent* pEventData = dynamic_cast<const misROIWidgetUpdateEvent*>(event);
@@ -611,11 +223,7 @@ void mis3DVolumeRenderer::SetCurrentPosition(vtkMatrix4x4* matrix)
 	m_CursorService->UpdateWidgetPosition();
 }
 
-void mis3DVolumeRenderer::UpdateLandmarkCameraView(const int index)
-{
-	if (m_UpdateLandmarkCameraViewer)
-		m_UpdateLandmarkCameraViewer->Update(m_MainRepresentation->GetBoundingBox(), m_landMarkList[index]);
-}
+ 
 
 IMAGEORIENTATION mis3DVolumeRenderer::GetOrientationDirection()
 {
@@ -720,28 +328,6 @@ void mis3DVolumeRenderer::WidgetChangeAction(vtkObject* caller, unsigned long ev
 		{
 			double pos[3];
 			pointWidget->GetPosition(pos);
-
-			if (m_UpdateLandmark)
-			{
-				_ASSERT(m_currentLandmarkIndex != -1);
-				if (m_currentLandmarkIndex == -1)
-					return;
-
-				SetLandmarkPosition(m_currentLandmarkIndex, pos);
-				m_UpdateLandmark = false;
-
-				misLandmarkInfoStruct landmarkStr;
-				landmarkStr.CurrentPosition = pos;
-				landmarkStr.landmarkIndex = m_currentLandmarkIndex;
-				landmarkStr.Landmarktype = m_CurrentLandmarkType;
-				landmarkStr.landmarkLableType = m_CurrentLandmarkLableType;
-				misAddLandmarkEvent ev;
-				ev.Set(landmarkStr);
-				InvokeEvent(ev);
-				m_UpdateLandmark = false;
-				return;
-			}
-
 			misUpdatePositionEvent ev;
 			misUpdatePositionInfoStruct updateStr;
 			updateStr.CornerTransform->DeepCopy(m_Cornerproperties->GetTransform());
@@ -774,19 +360,8 @@ void mis3DVolumeRenderer::AddRepresentation(std::shared_ptr<IRepresentation> pRe
 	ROIChangeCallback->SetCallbackFunction(this, &mis3DVolumeRenderer::UpdateWidgetBox);
 	if (!m_ROIBox->HasObserver(vtkCommand::EndInteractionEvent))
 		m_ROIBox->AddObserver(vtkCommand::EndInteractionEvent, ROIChangeCallback);
+	AddAllPointSelectObserve();
 
-	misMemberCommandCallback<mis3DVolumeRenderer>* pointSelectCallback = misMemberCommandCallback<mis3DVolumeRenderer>::
-		New();
-	pointSelectCallback->SetCallbackFunction(this, &mis3DVolumeRenderer::PointSelectAction);
-
-	if (!m_IsPointSelectObserverAdded)
-	{
-		m_3DViewer->GetRenderer()->GetRenderWindow()->GetInteractor()->AddObserver(
-			vtkCommand::LeftButtonPressEvent, pointSelectCallback);
-		m_3DViewer->GetRenderer()->GetRenderWindow()->GetInteractor()->AddObserver(
-			vtkCommand::RightButtonPressEvent, pointSelectCallback);
-		m_IsPointSelectObserverAdded = true;
-	}
 	// If the newly added representation is a Voreen representation, assign its underlying volumeMapper to the interactionStyle of 
 	// the viewer, set camera to anterior view.
 	if (m_3DViewer->Get3DStyle())
@@ -815,88 +390,10 @@ void mis3DVolumeRenderer::AddCoordinateSytemRenderer(std::shared_ptr<ICoordinate
 	m_3DViewer->AddCoordinateSytemRenderer(coordianteRenderer);
 }
 
-void mis3DVolumeRenderer::PointSelectAction(vtkObject* caller, unsigned long eventId, void* callData)
+void mis3DVolumeRenderer::InteractionStyleCallback(vtkObject* caller, unsigned long eventId, void* callData)
 {
-	if (!m_CaptureLandmark)
-	{
-		return;
-	}
-
-	if (m_Cornerproperties->GetTransform() == nullptr)
-	{
-		m_CurrentLandmarkType = UnkownLandmarkType;
-		m_currentLandmarkIndex = -1;
-		m_CaptureLandmark = false;
-		return;
-	}
-
-	auto* interactor = reinterpret_cast<vtkRenderWindowInteractor*>(caller);
-	int x;
-	int y;
-	interactor->GetEventPosition(x, y);
-
-	double position[3];
-	auto* pStyle = dynamic_cast<MIS3DInteractionStyle*>(interactor->GetInteractorStyle());
-	if (!pStyle)
-		return;
-	auto picker = dynamic_cast<vtkPicker*>(pStyle->GetPointPicker());
-	if (!picker)
-		return;
-	picker->Pick(x, y, 0, m_3DViewer->GetRenderer());
-	vtkPoints* pos = vtkPoints::New();
-	pos = picker->GetPickedPositions();
-	const auto num = pos->GetNumberOfPoints();
-	if (num == 1)
-		pos->GetPoint(0, position);
-	else
-		return;
-
-	if ((0 == position[0]) && (0 == position[1]) && (0 == position[2]))
-	{
-		return;
-	}
-
-	if (num > 0)
-	{
-		m_Cornerproperties->SetCurrentPosition(position);
-
-		if (m_currentLandmarkIndex == -1)
-		{
-			m_currentLandmarkIndex = AddNextLandmark(position, m_CurrentLandmarkType, m_CurrentLandmarkLableType);
-		}
-		else
-		{
-			AddLandmark(m_currentLandmarkIndex, position, m_CurrentLandmarkType, m_CurrentLandmarkLableType);
-		}
-
-		m_CursorService->UpdateWidgetPosition();
-		m_Cornerproperties->SetCurrentPosition(position);
-
-		misUpdatePositionEvent ev;
-		misUpdatePositionInfoStruct updateStr;
-		updateStr.CornerTransform->DeepCopy(m_Cornerproperties->GetTransform());
-		updateStr.IsCameraUpdate = true;
-		ev.Set(updateStr);
-		InvokeEvent(ev);
-
-		if (m_currentLandmarkIndex != -1)
-		{
-			misLandmarkInfoStruct lndStr;
-			lndStr.Landmarktype = m_CurrentLandmarkType;
-			lndStr.CurrentPosition = position;
-			lndStr.landmarkIndex = m_currentLandmarkIndex;
-			lndStr.landmarkLableType = m_CurrentLandmarkLableType;
-
-			misAddLandmarkEvent lndEv;
-			lndEv.Set(lndStr);
-			InvokeEvent(lndEv);
-		}
-
-		m_CurrentLandmarkType = UnkownLandmarkType;
-		m_currentLandmarkIndex = -1;
-		m_CaptureLandmark = false;
-	}
 }
+
 
 void mis3DVolumeRenderer::ReleaseImageResource()
 {
@@ -996,7 +493,6 @@ unsigned long mis3DVolumeRenderer::AddObserver(const itk::EventObject& event, it
 
 void mis3DVolumeRenderer::InvokeEvent(const itk::EventObject& event)
 {
-	m_DummyObject->SetViewer(static_cast<IVolumeRenderer*> (this));
 	m_DummyObject->InvokeEvent(event);
 }
 
@@ -1333,4 +829,4 @@ bool mis3DVolumeRenderer::IsDentalSpecialViewsEnabled() const
 {
 	return m_DentalSpecialViewEnable;
 }
-
+ 

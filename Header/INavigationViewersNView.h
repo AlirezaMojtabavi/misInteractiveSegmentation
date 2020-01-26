@@ -10,7 +10,6 @@
 #include "misDistributionStruct.h"
 #include "misEnums.h"
 #include "misGroupViewerSetting.h"
-#include "misLandmarkenums.h"
 #include "voreen/misCroppingDirectionInVR.h"
 #include "ToolVisulizationProp.h"
 #include "IPackageDataRenderingAdapter.h"
@@ -42,13 +41,9 @@ public:
 	virtual void ClearAnnotationDetailFromViewer() = 0;
 	virtual void Freeze() = 0;
 	virtual void Unfreeze() = 0;
-	virtual void ResetLandMarks(misLandmarkType lndType) = 0;
-	virtual void ResetAllLandMarks() = 0;
 	virtual void SetRealTimeMode(bool val) = 0;
 	virtual void SetDentalSurgeryType(DentalSurgeryType surgeryType) = 0;
 	virtual void SetCroppingDirection(misCroppingDirectionInVR croppingDirection, const double* center, bool isobliqe) = 0;
-	virtual void AddLandmark(unsigned int landmarkIndex, itk::Point<double, 3> landmark, misLandmarkType landmarkType,
-		LANDMARKLABLETYPE lableType) = 0;
 	virtual void Reset2DZoom() = 0;
 	virtual void ClipVolumeWithObliquePlane(const double* planeNormal, const double* center) = 0;
 	// Sets the relative weight of the line used in drawing the cursor widget at the center of each of the image viewers.
@@ -60,14 +55,10 @@ public:
 	virtual void Render() = 0;
 	virtual void SetAnnotationDetailToViewer() = 0;
 	virtual void ClippingOff() = 0;
-	virtual void ImageLandmarkUpdateEnable(misLandmarkType pLandmarkType, int index) = 0;
-	virtual void ImageLandmarkUpdateDisable() = 0; 
 	virtual void UpdateSliderInGUI() = 0;
-	virtual void ModifyBiopsyPoint(misLandmarkType landmarkType) = 0;
 	virtual int	GetCurrentZoomPercentage() = 0;
 	virtual double GetCurrentZoomProportion() = 0;
 	//updating landmarks label and position when changing screw widget
-	virtual void UpdateLandmarks(misLandmarkInfoStruct &lndStr) = 0;
 	virtual std::shared_ptr<IVolumeRenderer> GetViewerByType(misViewerTypeDirection type) const = 0;
 	virtual std::vector<std::shared_ptr<I3DViewer>> GetAllViewers() const = 0;
 	virtual void SetImagePlanePosition(const double pos[3]) = 0;
@@ -86,8 +77,6 @@ public:
 	virtual void ResetROI(misROI roi) = 0;
 	virtual void ResetROI() = 0;
 	virtual void UpdateViewerWithImage(std::shared_ptr<IImage> image) = 0;
-	virtual	void VolumeLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index = -1, LANDMARKLABLETYPE lableType = NUMERICALLANDMARK) = 0;
-	virtual void ShowLandmarks() = 0;
 	virtual std::shared_ptr<IPackage3DDataRenderingAdapter> GetVolumePackageViewer() = 0;
 
 	using IPackageDataRenderingAdapter::UpdateRepresentationTransforms;
@@ -98,8 +87,6 @@ public:
 	virtual void Add3dRepresentation(std::shared_ptr<misRepresentation> PSurfaceRep) = 0;
 	virtual void Add2DViewer(std::shared_ptr<IPackage2DDataRenderingAdapter> viewer, std::shared_ptr<Iwindows> window) = 0;
 	virtual void Add3DViewer(std::shared_ptr<IPackage3DDataRenderingAdapter> viewer, std::shared_ptr<Iwindows> window) = 0;
-	virtual void HideLandmarks(TypeOfViewer typeOfviewer) = 0;
-	virtual void InvalidateLandmark(int index) = 0;
 	virtual  void Remove3dRepresentation(std::shared_ptr<misRepresentation> PSurfaceRep) = 0;
 	virtual void ResetCamera() = 0;
 	virtual void ResetMeasurment() = 0;

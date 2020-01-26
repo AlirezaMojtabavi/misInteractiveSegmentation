@@ -1,12 +1,12 @@
 #pragma once
 const  unsigned int  Dimension = 3;
 
+typedef  short misPixelType;
 typedef  float  misInternalPixelType;
+
 typedef itk::Image< misInternalPixelType, Dimension >  misInternalImageType;// input algorithm
-typedef itk::Image<  short, Dimension > ITKImageType;
-
-
-typedef  short misOutputPixelType;
+typedef itk::Image<misPixelType, Dimension > ITKImageType;
+typedef unsigned short misOutputPixelType;
 typedef itk::Image< misOutputPixelType, Dimension > misOutputImageType; //output algorithm
 
 typedef itk::CastImageFilter<ITKImageType, misInternalImageType> ITKImageType_2_InternalType;

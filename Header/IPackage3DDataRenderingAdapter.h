@@ -7,7 +7,6 @@ class IPackage3DDataRenderingAdapter : public virtual IPackageDataRenderingAdapt
 public:
 	virtual void ModifyVolume() = 0;
 	virtual std::shared_ptr<IVolume3DRenderer> GetVolumeViewer() = 0;
-	virtual void SetCurrentLandmarkType(misLandmarkType val)  = 0;
 
 	~IPackage3DDataRenderingAdapter() = default;
 };

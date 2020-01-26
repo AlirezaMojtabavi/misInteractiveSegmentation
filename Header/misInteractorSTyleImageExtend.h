@@ -1,5 +1,4 @@
-#ifndef MISINTERACTORSTYLEIMAGEEXTEND
-#define MISINTERACTORSTYLEIMAGEEXTEND
+#pragma once
 
 #include "misDataProdecureEnum.h"
 #include "misImageGeoProperties.h"
@@ -124,4 +123,4 @@ private:
 	InteractionState m_InteractionState;
 };
 
-#endif
+

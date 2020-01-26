@@ -11,13 +11,10 @@
 #include "misImageToTextureMap.h"
 #include "misVolumeSlicer.h"
 #include "misMathUtils.h"
-#include "misPackage2DDataRenderingAdapter.h"
 #include "misPackage3DDataRenderingAdapter.h"
 #include "misPanoramicCoordinatesConverter.h"
 #include "misPanoramicToolCoordSysRenderer.h"
 #include "misRepresentationContainer.h"
-#include "misSurgeryDirectionViewerType.h"
-#include "misTransform.h"
 #include "misWindow.h"
 #include "misPackagePanoramicDataRenderingAdapter.h"
 #include "misUpdateViewPortToStandard.h"
@@ -26,6 +23,7 @@
 #include "misVisibiltyHolder.h"
 #include "UpdatePlaneVisibilitiy.h"
 #include "misImageVisibiltyMapGenerator.h"
+#include "misTransform.h"
 
 using namespace std;
 
@@ -78,6 +76,7 @@ void misGroupViewer::Render()
 	{
 		adapter->GetViewer()->Render();
 	}
+
 	timer->StopTimer();
 	double elpsedTime = timer->GetElapsedTime(); // in milliseconds
 	int fps = static_cast<int>(1.0 / elpsedTime);
@@ -152,20 +151,6 @@ void misGroupViewer::Add2DInternalObservers()
 
 void misGroupViewer::AddObservers(std::shared_ptr<IVolumeRenderer> viewer)
 {
-	typedef itk::MemberCommand< misGroupViewer >   ObserverType;
-	ObserverType::Pointer      addNextLandmarkObserver = ObserverType::New();
-	addNextLandmarkObserver->SetCallbackFunction(this, &misGroupViewer::DistributeEvent);
-	if (!viewer->HasObserver(misAddLandmarkEvent()))
-	{
-		viewer->AddObserver(misAddLandmarkEvent(), addNextLandmarkObserver);
-	}
-
-	ObserverType::Pointer      updateLandmarkStatusObserver = ObserverType::New();
-	updateLandmarkStatusObserver->SetCallbackFunction(this, &misGroupViewer::DistributeEvent);
-	if (!viewer->HasObserver(misUpdateLandmarkStatusEvent()))
-	{
-		viewer->AddObserver(misUpdateLandmarkStatusEvent(), updateLandmarkStatusObserver);
-	}
 
 	ObserverType::Pointer      PointSelectObserver = ObserverType::New();
 	PointSelectObserver->SetCallbackFunction(this, &misGroupViewer::DistributeEvent);
@@ -202,6 +187,8 @@ void misGroupViewer::UpdatePlaneVisibilities(std::vector<std::map<misPlaneEnum, 
 		index++;
 	}
 }
+
+ 
 
 
 void  misGroupViewer::SetVolumeViewingType(misVolumeViewingTypes volumeViewingType)
@@ -452,42 +439,6 @@ void misGroupViewer::SetErasedObjColor(misColorStruct ColorStr)
 	}
 }
 
-void misGroupViewer::ResetAllLandMarks()
-{
-	for (auto packageViewer : GetAllPackageViewers())
-		packageViewer->GetViewer()->ResetLandMarks();
-}
-
-void misGroupViewer::ShowLandmarks()
-{
-	for (auto viewer : m_3DViewers)
-		viewer->GetVolumeViewer()->ShowLandmarks();
-}
-
-void misGroupViewer::HideLandmarks(misGroupViewer::TypeOfViewer typeOfviewer)
-{
-	if (typeOfviewer == ALLVIEWERS)
-		for (auto packageViewer : GetAllPackageViewers())
-			packageViewer->GetViewer()->HideLandmarks();
-	else
-		for (auto adapter : GetAllPackageViewers())
-		{
-			auto imageViewer = std::dynamic_pointer_cast<misVolumeSlicer> (adapter->GetViewer());
-			if (imageViewer && typeOfviewer == D2VIEWER)
-				imageViewer->HideLandmarks();
-			else if (!imageViewer && typeOfviewer == D3VIEWER)
-				adapter->GetViewer()->HideLandmarks();
-		}
-}
-
-
-
-void misGroupViewer::InvalidateLandmark(int index)
-{
-	for (auto packageViewer : GetAllPackageViewers())
-		packageViewer->GetViewer()->InvalidateLandmark(index);
-}
-
 void misGroupViewer::ChangeInteractionState(itk::Object *caller, const itk::EventObject & event)
 {
 	const misChangedInterctionStateEvent* pEventDat = dynamic_cast<const misChangedInterctionStateEvent*>(&event);
@@ -511,63 +462,6 @@ void misGroupViewer::ClearViewers()
 	m_Windows.clear();
 }
 
-void misGroupViewer::ImageLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index /*=-1*/,
-	LANDMARKLABLETYPE lableType /*= NUMERICALLANDMARK*/)
-{
-	misAddLandmarkEvent* addNextLandmarkEvent = new misAddLandmarkEvent();
-	misDistributionMap* landMarkMap = m_GroupViewSetting->FindDistributionMap(addNextLandmarkEvent);
-	if (!landMarkMap)
-		return;
-	for (auto viewer : m_2DViewers)
-	{
-		viewer->ImageLandmarkCaptureEnable(pLandmarkType, index, lableType);
-	}
-}
-
-
-void misGroupViewer::ImageLandmarkUpdateEnable(misLandmarkType pLandmarkType, int index /*=-1*/)
-{
-	misAddLandmarkEvent* addNextLandmarkEvent = new misAddLandmarkEvent();
-	misDistributionMap* landMarkMap = m_GroupViewSetting->FindDistributionMap(addNextLandmarkEvent);
-	if (!landMarkMap)
-		return;
-	for (auto viewer : m_2DViewers)
-	{
-		viewer->ImageLandmarkUpdateEnable(pLandmarkType, index);
-	}
-}
-void misGroupViewer::ImageLandmarkUpdateDisable()
-{
-	misAddLandmarkEvent* addNextLandmarkEvent = new misAddLandmarkEvent();
-	misDistributionMap* landMarkMap = m_GroupViewSetting->FindDistributionMap(addNextLandmarkEvent);
-	if (!landMarkMap)
-		return;
-	for (auto viewer : m_2DViewers)
-	{
-		viewer->ImageLandmarkUpdateDisable();
-	}
-}
-
-void misGroupViewer::VolumeLandmarkCaptureEnable(misLandmarkType pLandmarkType, int index /*=-1*/, LANDMARKLABLETYPE lableType /*= NUMERICALLANDMARK*/)
-{
-	misAddLandmarkEvent* addNextLandmarkEvent = new misAddLandmarkEvent();
-	misDistributionMap* landMarkMap = m_GroupViewSetting->FindDistributionMap(addNextLandmarkEvent);
-	if (!landMarkMap)
-		return;
-
-	for (auto viewer : m_3DViewers)
-	{
- 		viewer->GetVolumeViewer()->SetCurrentLandmark(pLandmarkType, index);
-		viewer->GetVolumeViewer()->SetCurrentLandmarkLableType(lableType);
-		viewer->GetVolumeViewer()->SetCaptureLandmarkFlag(true);
-
-	}
-	for (auto viewer : m_2DViewers)
-	{
-		viewer->GetViewer()->SetCurrentLandmark(pLandmarkType, index);
-		viewer->GetViewer()->SetCurrentLandmarkLableType(lableType);
-	}
-}
 
 void misGroupViewer::DistributeEvent(itk::Object *caller, const itk::EventObject& pEvent)
 {
@@ -598,7 +492,6 @@ void misGroupViewer::DistributeEvent(itk::Object *caller, const itk::EventObject
 	for (int i = 0; i < GetAllPackageViewers().size(); i++)
 	{
 		auto viewer = GetAllPackageViewers()[i]->GetViewer();
-
 		if (viewer && targetMap->GetMap()[callerIndex][i] || typeid(pEvent) == typeid(misScrewWidgetUpdateEvent))
 			viewer->ProcessRequest(&pEvent);
 	}
@@ -621,6 +514,9 @@ void misGroupViewer::HandleUpdatePositionEvent(const misUpdatePositionEvent* upd
 	{
 		volumes[i]->SetToolPosition(toolTipPoint[0], toolTipPoint[1], toolTipPoint[1]);
 	}
+
+
+
 }
 
 void misGroupViewer::SetPanoCoordConverterToPackageViewers(std::shared_ptr<ISimpleDataPackage> pPackage)
@@ -815,10 +711,7 @@ void misGroupViewer::ReleaseResource()
 		packageViwer->ReleaseImageResources();
 		packageViwer->Reset();
 	}
-	ResetAllLandMarks();
-	ImageLandmarkCaptureDisable();
-	ImageLandmarkUpdateDisable();
-	VolumeLandmarkCaptureDisable();
+
 	m_CurrentPackage.reset();
 }
 
@@ -871,13 +764,6 @@ void  misGroupViewer::GetCurrentPosition(double currentPos[3])
 	currentPos[2] = pos[2];
 }
 
-void misGroupViewer::ResetLandMarks(misLandmarkType lndType)
-{
-	for (auto packageViwer : GetAllPackageViewers())
-		packageViwer->GetViewer()->ResetLandMarks(lndType);
-}
-
-
 void misGroupViewer::SetImageColor(vector<misUID> UIDs, misColorStruct imageColor)
 {
 	m_ImagesColor[UIDs] = imageColor;
@@ -915,23 +801,7 @@ void misGroupViewer::ShowFPS(bool showFPS)
 }
 
 
-void misGroupViewer::ImageLandmarkCaptureDisable()
-{
-	for (auto viewer : m_2DViewers)
-	{
-		viewer->ImageLandmarkCaptureDisable();
-	}
-}
 
-void misGroupViewer::VolumeLandmarkCaptureDisable()
-{
-	for (auto viewer : m_3DViewers)
-	{
-		viewer->GetVolumeViewer()->SetCurrentLandmarkType(UnkownLandmarkType);
-		viewer->GetVolumeViewer()->SetCaptureLandmarkFlag(false);
-		viewer->GetVolumeViewer()->SetCurrentLandmarkIndex(-1);
-	}
-}
 
 void misGroupViewer::UpdateImageAnnotation(misVolumeSlicer* imageViewer)
 {
@@ -1033,35 +903,6 @@ bool misGroupViewer::FindDistributerViewer(itk::Object* caller, size_t& viewerIn
 }
 
 
-void misGroupViewer::ModifyBiopsyPoint(misLandmarkType landmarkType)
-{
-	auto volumelist = Get3DViewers();
-	if (volumelist.empty())
-		return;
-	std::shared_ptr< IVolume3DRenderer> volumeViewer = volumelist[0];
-	if (!volumeViewer)
-		return;
-	volumeViewer->SetCurrentLandmarkType(landmarkType);
-	ImageLandmarkUpdateDisable();
-	VolumeLandmarkCaptureDisable();
-	ImageLandmarkUpdateEnable(landmarkType, 0);
-}
-
-
-void misGroupViewer::UpdateLandmarks(misLandmarkInfoStruct &landmarkInfo)
-{
-	auto viewers = GetAllLandMarkViewers();
-	for (auto &viewer : viewers)
-	{
-		if (viewer->GetTypeDirection() == PanormaicView)
-			continue;
-
-		if (viewer && landmarkInfo.validity)
-			viewer->AddLandmark(landmarkInfo.landmarkIndex, landmarkInfo.CurrentPosition.GetDataPointer(),
-				landmarkInfo.Landmarktype, landmarkInfo.landmarkLableType);
-	}
-}
-
 std::shared_ptr<IVolumeRenderer> misGroupViewer::GetViewerByType(misViewerTypeDirection type) const
 {
 	std::shared_ptr<IVolumeRenderer> viewer = nullptr;
@@ -1145,19 +986,6 @@ void misGroupViewer::SetCroppingDirection(misCroppingDirectionInVR croppingDirec
 	{
 		p3DViewers[i]->SetToolPosition(center[0], center[1], center[2]);
 		p3DViewers[i]->Get3DViewer()->SetCroppingDirection(croppingDirection);
-	}
-}
-
-void misGroupViewer::AddLandmark(unsigned int landmarkIndex, itk::Point<double, 3> landmark, misLandmarkType landmarkType,
-	LANDMARKLABLETYPE lableType)
-{
-	for (const auto adapter2D : m_2DViewers)
-	{
-		adapter2D->GetViewer()->AddLandmark(landmarkIndex, landmark.GetDataPointer(), landmarkType, lableType);
-	}
-	for (const auto adapter3D : m_3DViewers)
-	{
-		adapter3D->GetViewer()->AddLandmark(landmarkIndex, landmark.GetDataPointer(), landmarkType, lableType);
 	}
 }
 
@@ -1572,4 +1400,3 @@ void misGroupViewer::WarnFlyZone(const  vector<PropertiesOfPixelInImageType>& Fl
 		flyZoneStatusText[i]->SetPosition(10, 10);
 	}
 }
-
