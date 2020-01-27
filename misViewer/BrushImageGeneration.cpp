@@ -170,7 +170,7 @@ void BrushImageGeneration::Finalize()
 	auto outputImage = algoritm.GetThresholder();
 	outputImage->Update();
 	
-	auto invertConvertor = itk::ImageToVTKImageFilter<itk::Image<short, 3>>::New();
+	auto invertConvertor = itk::ImageToVTKImageFilter<itk::Image<misPixelType, 3>>::New();
 	invertConvertor->SetInput(outputImage);
 	invertConvertor->Update();
 	m_Image->GetRawImageData()->DeepCopy(invertConvertor->GetOutput());

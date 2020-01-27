@@ -163,7 +163,9 @@ void SegmentationWithBrush4View::PulseHandler()
 		}
 		case VK_BACK:
 		{
+
 			brushObserver[0]->Finalize();
+			m_GroupViewer->ShowPackage(packages[0], 0);
 		}
 		
 		case  'm':
