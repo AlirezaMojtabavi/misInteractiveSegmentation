@@ -45,23 +45,25 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 		GetTransform())
 		return;
 	auto image = m_SegmentationMode == Erase ? FirstImage : SecondImage;
-	if (!m_Image)
+	if (!m_SegmentedImage)
 	{
-		m_Image = m_Slicer->GetImageRprensentaion()->GetImage(image);
-		CreateTExture();
+		m_SegmentedImage = m_Slicer->GetImageRprensentaion()->GetImage(SecondImage);
+		m_OriginalImage = m_Slicer->GetImageRprensentaion()->GetImage(FirstImage);
+		CreateTransferFunction();
 	}
+	
 	m_ConvertMouseXYToWorldCoordinate->SetViewer(m_3DViewer);
 	const auto interactor = dynamic_cast<vtkRenderWindowInteractor*>(m_3DViewer
 	                                                                 ->GetWindow()->GetInterActor().GetPointer());
 	auto position = m_ConvertMouseXYToWorldCoordinate->CalculateNewPosition(interactor);
 	
  
-	auto rawImageData = m_Image->GetRawImageData();
-	auto spacing = m_Image->GetSpacing();
-	auto extent = m_Image->GetRawImageData()->GetExtent();
+	auto rawImageData = m_OriginalImage->GetRawImageData();
+	auto spacing = m_OriginalImage->GetSpacing();
+	auto extent = m_OriginalImage->GetRawImageData()->GetExtent();
 	auto ptr = (short*)rawImageData->GetScalarPointer();
 	int coordinate[3] = {position[0] / spacing[0], position[1] / spacing[1], position[2] / spacing[2]};
-	auto dimension = m_Image->GetDimensions();
+	auto dimension = m_OriginalImage->GetDimensions();
 	int ImageIndex = (coordinate[0] ) + (coordinate[1]  * dimension[0] )+ coordinate[2] * dimension[1] * dimension[0];
 
 	m_intensity.push_back(ptr[ImageIndex]);
@@ -70,32 +72,7 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	coord._y = coordinate[1];
 	coord._z = coordinate[2];
 	m_Seeds.push_back(coord);
-	
-	//for (int x = 0; x < 20; x++)
-	//	for (int y = 0; y < 20; y++)
-	//		for (int z = 0; z < 20; z++)
-	//		{
-	//			vtkIdType incs[3];
-	//			auto* scalars = rawImageData->GetPointData()->GetScalars();
-	//			rawImageData->GetArrayIncrements(scalars, incs);
 
-	//			bool validINdex = true;
-	//			for (auto idx = 0; idx < 3; ++idx)
-	//			{
-	//				if (coordinate[idx] < extent[idx * 2] ||
-	//					coordinate[idx] > extent[idx * 2 + 1])
-	//				{
-	//					validINdex = false;
-	//				}
-	//			}
-
-	//			const int idx = ((coordinate[0] + x - extent[0]) * incs[0]
-	//				+ (coordinate[1] + y - extent[2]) * incs[1]
-	//				+ (coordinate[2] + z - extent[4]) * incs[2]);
-
-	//			if (validINdex)
-	//				ptr[idx] = -1000;
-		//	}
 	EraseTexture(parcast::PointD3(position), m_SegmentationMode);
 }
 
@@ -103,7 +80,7 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 void BrushImageGeneration::EraseTexture(parcast::PointD3 point, SegmentMode segmentMode)
 {
 	misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
-	misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_Image);
+	misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
 	const auto dataScalars = static_cast<short*>(imageTexure->GetTexturePropertyStrct().Data);
 	tgt::ivec3 dim = imageTexure->GetTexturePropertyStrct().GetDimensions();
 	tgt::vec3 spacing = imageTexure->GetTexturePropertyStrct().Spacing;
@@ -112,86 +89,83 @@ void BrushImageGeneration::EraseTexture(parcast::PointD3 point, SegmentMode segm
 	auto spac  = parcast::PointD3(spacing.elem[0], spacing.elem[1], spacing.elem[2]);
 	m_Eraser.SetEraserPosition(point, spac);
 	m_Eraser.SetEraserSize(m_EraseSubBoxWidth);
-	//m_Eraser.EraseTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id);
+	
 	m_Eraser.EraseSphereTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id, segmentMode);
 }
 
-void BrushImageGeneration::CreateTExture( )
+void BrushImageGeneration::CreateTransferFunction( )
 {
 	auto TextureHandler = misImageToTextureMap::GetInstance();
-	auto imageTexure = TextureHandler->LookUpTexture(m_Image);
+	auto imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
 	auto TableRange = imageTexure->GetTableRange();
 
 	misTransFunctionBuilder	trasferfunction;
 	misDoubleColorListTypedef opacityColorMappingLst;
 	opacityColorMappingLst[TableRange[0]] = misDoubleColorStruct(0, 0, 0, 0);
 	opacityColorMappingLst[-800] = misDoubleColorStruct(0, 0, 0, 0);
-	//opacityColorMappingLst[-750] = misDoubleColorStruct(0, 0, 1, .5);
-	//opacityColorMappingLst[-600] = misDoubleColorStruct(0, 0, 1, 0.5);
-	//opacityColorMappingLst[-501] = misDoubleColorStruct(0, 0, 1, 0.5);
 	opacityColorMappingLst[-500] = misDoubleColorStruct(1, 0, 0, .2);
 	opacityColorMappingLst[-400] = misDoubleColorStruct(1, 0, 0, .2);
 	opacityColorMappingLst[-390] = misDoubleColorStruct(1, 0, 0, 0);
 	opacityColorMappingLst[TableRange[1]] = misDoubleColorStruct(0, 0, 0, 0);
-	
 	auto transfunc = trasferfunction.GenerateTransferFunction(opacityColorMappingLst, TableRange);
-
-
 	transfunc->updateTexture();
-
 	auto imagePlane = m_Slicer->GetImageRprensentaion();
 	if (!imagePlane)
 		return;
 	imagePlane->SetColorMapTransFuncID(SecondImage, transfunc);
 	imagePlane->SetVisiblityOfColorMap(SecondImage, true);
-	//imagePlane->SetColorMapTransFuncID(FirstImage, transfunc);
-	//imagePlane->SetVisiblityOfColorMap(FirstImage, true);
 	
   
 }
 void BrushImageGeneration::Finalize()
 {
-	auto vtkInputImage = m_Image->GetRawImageData(); // <vtkImageData>->Imagetype
+	const bool testVisualization = false;
+	if (!testVisualization)
+	{
+		auto vtkInputImage = m_SegmentedImage->GetRawImageData(); // <vtkImageData>->Imagetype
 
-	typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
-	VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
-	vtkImageToITKImage->SetInput(vtkInputImage);
-	vtkImageToITKImage->Update(); // ITKImage -> unsigned short
+		typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
+		VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
+		vtkImageToITKImage->SetInput(vtkInputImage);
+		vtkImageToITKImage->Update(); // ITKImage -> unsigned short
 
-	ITKImageType_2_InternalType::Pointer internalImage = ITKImageType_2_InternalType::New();
-	internalImage->SetInput(vtkImageToITKImage->GetOutput());
-	internalImage->Update(); // internal image -> float
+		ITKImageType_2_InternalType::Pointer internalImage = ITKImageType_2_InternalType::New();
+		internalImage->SetInput(vtkImageToITKImage->GetOutput());
+		internalImage->Update(); // internal image -> float
 
-	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
-	algoritm.SetInternalImage(internalImage->GetOutput());
-	algoritm.SetSpeedFunction(SegmentationSpeedFunction);
-	algoritm.FastMarching(5);
-	algoritm.LevelSet(191, 450, 0, 0.05);
-	auto outputImage = algoritm.GetThresholder();
-	outputImage->Update();
+		MyAlgorithm3d algoritm(m_intensity, m_Seeds);
+		algoritm.SetInternalImage(internalImage->GetOutput());
+		algoritm.SetSpeedFunction(SegmentationSpeedFunction);
+		algoritm.FastMarching(5);
+		algoritm.LevelSet(191, 450, 0, 0.05);
+		auto outputImage = algoritm.GetThresholder();
+		outputImage->Update();
+
+		auto invertConvertor = itk::ImageToVTKImageFilter<itk::Image<misPixelType, 3>>::New();
+		invertConvertor->SetInput(outputImage);
+		invertConvertor->Update();
+		auto image = invertConvertor->GetOutput();
+		m_SegmentedImage->GetRawImageData()->DeepCopy(image);
 
 
-	/*typedef itk::CastImageFilter<misOutputImageType, ImageType> OutputImageType_2_ImageType;
-	OutputImageType_2_ImageType::Pointer OutputImage_2_Image = OutputImageType_2_ImageType::New();
-	OutputImage_2_Image->SetInput(callback->GetAlgorithm()->GetThresholder());
-	OutputImage_2_Image->Update();
-	auto casting = vtkSmartPointer<vtkImageCast>::New();
-	casting->SetInputData(m_Image->GetRawImageData());
+	}
+
+	else
+	{
+		misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
+		misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
+		const auto dataScalars = static_cast<short*>(imageTexure->GetTexturePropertyStrct().Data);
+		tgt::ivec3 dim = imageTexure->GetTexturePropertyStrct().GetDimensions();
+		for (int i = dim[0] / 4; i < dim[0] / 2; i++)
+			for (int j = dim[1] / 4; j < dim[1] / 2; j++)
+				for (int k = dim[2] / 4; k < dim[2] / 2; k++)
+					dataScalars[i + j * dim[0] + k * dim[0] * dim[1]] = 300;
+	}
+
+	m_SegmentedImage->Modified();
+
+
+
 	
-	casting->SetOutputScalarTypeToFloat();
-	casting->Update();
-	auto convertor = VTKImageToImageType::New();
-	convertor->SetInput(casting->GetOutput());
-	convertor->Update();
 
-	MyAlgorithm3d algoritm(m_intensity, m_Seeds);
-	algoritm.SetInternalImage(convertor->GetOutput());
-	algoritm.FastMarching(5);
-	algoritm.SetSpeedFunction(SegmentationSpeedFunction);
-	algoritm.LevelSet(191, 450, 0, 0.05);
-	algoritm.GetThresholder()->Update();
-	auto segmentationOutput = algoritm.GetThresholder();
-
-	auto itkToVTk = itk::ImageToVTKImageFilter::New();
-	//itkToVTk->Se*/
 }
