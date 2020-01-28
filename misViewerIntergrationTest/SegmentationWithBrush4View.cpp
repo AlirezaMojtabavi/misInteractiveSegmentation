@@ -22,6 +22,7 @@
 #include "misBrushViewerFactory.h"
 #include "resource.h"
 #include <misMathUtils.h>
+#include "misImageToTextureMap.h"
 
  using namespace std;
 
@@ -34,26 +35,25 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	std::istringstream seriesNumberStream(argv[2]);
 	seriesNumberStream >> seriesNumber;
 	misIntegrationTestTools testTools;
-	std::shared_ptr<misImage> image = testTools.LoadImageData(argv[1], seriesNumber);
-	std::shared_ptr<misImage> SegemntedImage = testTools.LoadImageData(argv[1], seriesNumber);
-	SegemntedImage->Update();
-	auto segementationIMage = SegemntedImage->GetRawImageData();
-	auto tabklerange1 = SegemntedImage->GetRawImageData()->GetScalarRange();
-	int* dims = image->GetDimensions();
+	m_Image = testTools.LoadImageData(argv[1], seriesNumber);
+	m_SegemntedImage = testTools.LoadImageData(argv[1], seriesNumber);
+	m_SegemntedImage->Update();
+	auto segementationIMage = m_SegemntedImage->GetRawImageData();
+	int* dims = m_Image->GetDimensions();
 	short* pointerImage = (short*)segementationIMage->GetScalarPointer();
 	for (int z = 0; z < dims[2]; z++)
 		for (int y = 0; y < dims[1]; y++)
 			for (int x = 0; x < dims[0]; x++)
 				pointerImage[z*(dims[1] * dims[0]) + y * dims[0] + x] = -1000;
 
-	image->SetConfirmedDirection(true);
-	SegemntedImage->SetConfirmedDirection(true);
+	m_Image->SetConfirmedDirection(true);
+	m_SegemntedImage->SetConfirmedDirection(true);
 
 	std::shared_ptr<misCoordinateSystemRepository> reposity = make_shared<misCoordinateSystemRepository>();
 	misDatasetManager::GetInstance()->SetCSRepository(reposity);
 	correlationManager = make_shared<misCoordinateSystemCorrelationTreeManager>();
 
-	misDatasetManager::GetInstance()->AddCoordinateSystem(image);
+	misDatasetManager::GetInstance()->AddCoordinateSystem(m_Image);
 	misGroupViewerSettingFinder groupViewerSettingFinder;
 	auto layout = groupViewerSettingFinder.MakePckageGroupViewer("NavigationTab");
 	misGroupViewerFactory groupViewerFactory;
@@ -61,9 +61,7 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	subtabModel->SetName(misTabAndSubTabName::GetInstanse()->GetSubTabNameNavigatoinMain(ENT));
 	m_GroupViewer = groupViewerFactory.Create(layout, subtabModel, ENT,
 		std::make_shared<misBrushViewerFactory>(), correlationManager, 5);
-	//auto activationLogic = std::make_shared<misTabAndSubTabActicationControl>();
-	//auto solutonCrl = std::make_shared<misSolutionControl>(activationLogic, nullptr);
-	//m_EventDispacth = std::make_unique<misGUIInteractionDispatchers>(solutonCrl->GetViewerRepo());
+
 	auto slicers = m_GroupViewer->Get2DViewers();
 	brushObserver.clear();
 	for (auto i = 0; i < slicers.size(); i++)
@@ -71,9 +69,6 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 		auto brushobserver = vtkSmartPointer<BrushImageGeneration>::New();
 		brushobserver->Create(slicers[i]->Get3DViewer(), slicers[i], slicers[i]->GetCornerProperties(), slicers[i]->GetDummySubject(), slicers[i]->GetCursorService(),
 			slicers[i]->GetCameraService());
-		//brushObserver.push_back(vtkSmartPointer<BrushImageGeneration>::New());
-		//brushObserver[i]->Create(slicers[i]->Get3DViewer(), slicers[i], slicers[i]->GetCornerProperties(), slicers[i]->GetDummySubject(), slicers[i]->GetCursorService(),
-			//slicers[i]->GetCameraService());
 		brushObserver.push_back(brushobserver);
 
 		const auto pairEvent3 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(
@@ -96,7 +91,7 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	auto identityMat = misMathUtils::CreateTransform(tansform->GetMatrix());
 
 	//correlationManager->SetTransform(image->GetUID(), SegemntedImage->GetUID(), identityMat);
-	packages[0]->SetImageToRelatedImageDataDependancy(SegemntedImage);
+	packages[0]->SetImageToRelatedImageDataDependancy(m_SegemntedImage);
 
 	auto volumeSlicers = m_GroupViewer->Get2DViewers();
 	auto allSlicer = m_GroupViewer->GetAllViewers();
@@ -165,23 +160,24 @@ void SegmentationWithBrush4View::PulseHandler()
 		{
 
 			brushObserver[0]->Finalize();
-			m_GroupViewer->ShowPackage(packages[0], 0);
+			m_GroupViewer->Reset();
+			auto package = std::make_shared<misSimpleDataPackage>(misDatasetManager::GetInstance()->GetPackagePlanRelRepo());
+			package->SetImageToRelatedImageDataDependancy(m_SegemntedImage);
+			package->SetImageToRelatedImageDataDependancy(m_Image);
+			m_GroupViewer->ShowPackage(package, false);
+			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1,0,0, .5));
 		}
 		
 		case  'm':
 		case  'M':
 
 		{
-			//for (auto viewer : m_GroupViewer->Get2DViewers())
-			//	m_EventDispacth->ApplyMeasurmentToWindow(viewer, MEASURMENTSTATE);
 			break;
 		}
 		case 'p':
 		case 'P':
 
 		{
-			//for (auto viewer : m_GroupViewer->Get2DViewers())
-			//	m_EventDispacth->ApplyPanToWindow(viewer);
 			break;
 		}
 		}
@@ -189,6 +185,24 @@ void SegmentationWithBrush4View::PulseHandler()
 	m_GroupViewer->Render();
 
 
+}
+void SegmentationWithBrush4View::UpdateTexture()
+{
+	misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
+	auto imageTexure = TextureHandler->LookUpTexture(m_Image);
+	auto slicers = m_GroupViewer->Get2DViewers();
+	for (auto slicer : slicers)
+	{
+		auto mainRep = slicer->GetImageRprensentaion();
+		mainRep->SetImageSource(m_Image, FirstImage, MainImage);
+		mainRep->SetTexture(FirstImage, MainImage, imageTexure);
+
+		
+		auto imageTexure2 = TextureHandler->LookUpTexture(m_SegemntedImage);
+		mainRep->SetImageSource(m_SegemntedImage, SecondImage, MainImage);
+		mainRep->SetTexture(SecondImage, MainImage, imageTexure2);
+
+	}
 }
 void SegmentationWithBrush4View::LoadTFIMap()
 {
