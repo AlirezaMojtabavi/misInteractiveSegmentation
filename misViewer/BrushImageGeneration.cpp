@@ -119,7 +119,7 @@ void BrushImageGeneration::CreateTransferFunction( )
 }
 void BrushImageGeneration::Finalize()
 {
-	const bool testVisualization = false;
+	const bool testVisualization = true;
 	if (!testVisualization)
 	{
 		auto vtkInputImage = m_SegmentedImage->GetRawImageData(); // <vtkImageData>->Imagetype
