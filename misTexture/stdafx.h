@@ -31,6 +31,32 @@
 #include "vtkSmartPointer.h"
 #include "vtkTimeStamp.h"
 #include "vtkPolyData.h"
+#include <itkVTKImageToImageFilter.h>
+#include "itkBinaryFillholeImageFilter.h"
+#include <itkImageToVTKImageFilter.h>
+#include <vtkImageSliceMapper.h>
+#include "itkCastImageFilter.h"
+#include "vtkObjectFactory.h"
+#include "itkFastMarchingImageFilter.h"
+#include "itkZeroCrossingImageFilter.h"
+#include "itkThresholdSegmentationLevelSetImageFilter.h"
+#include "itkNumericSeriesFileNames.h"
+#include <itkImage.h>
+#include <itkMacro.h>
+#include "itkThresholdSegmentationLevelSetFunction.h"
+#include "itkImageRegionIterator.h"
+#include "itkGradientAnisotropicDiffusionImageFilter.h"
+#include "itkLaplacianImageFilter.h"
+#include "itkImageFileWriter.h"
+#include "itkRescaleIntensityImageFilter.h"
+#include "itkInvertIntensityImageFilter.h"
+#include "itkMinimumMaximumImageCalculator.h"
+#include "itkHistogram.h"
+#include <itkImageToHistogramFilter.h>
+#include "itkCurvatureAnisotropicDiffusionImageFilter.h"
+#include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
+#include "itkBinaryThresholdImageFilter.h"
+//#include "MySpeedFunction3D.h"
 
 #include "TinyXml//tinyxml.h"
 

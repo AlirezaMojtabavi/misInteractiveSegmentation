@@ -40,7 +40,7 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	m_SegemntedImage->Update();
 	auto segementationIMage = m_SegemntedImage->GetRawImageData();
 	int* dims = m_Image->GetDimensions();
-	short* pointerImage = (short*)segementationIMage->GetScalarPointer();
+	misPixelType* pointerImage = (misPixelType*)segementationIMage->GetScalarPointer();
 	for (int z = 0; z < dims[2]; z++)
 		for (int y = 0; y < dims[1]; y++)
 			for (int x = 0; x < dims[0]; x++)
@@ -63,20 +63,20 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 		std::make_shared<misBrushViewerFactory>(), correlationManager, 5);
 
 	auto slicers = m_GroupViewer->Get2DViewers();
-	brushObserver.clear();
+	brushObserverList.clear();
 	for (auto i = 0; i < slicers.size(); i++)
 	{
 		auto brushobserver = vtkSmartPointer<BrushImageGeneration>::New();
 		brushobserver->Create(slicers[i]->Get3DViewer(), slicers[i], slicers[i]->GetCornerProperties(), slicers[i]->GetDummySubject(), slicers[i]->GetCursorService(),
 			slicers[i]->GetCameraService());
-		brushObserver.push_back(brushobserver);
+		brushObserverList.push_back(brushobserver);
 
 		const auto pairEvent3 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(
-			vtkCommand::MouseMoveEvent, brushObserver[i]);
+			vtkCommand::MouseMoveEvent, brushObserverList[i]);
 		auto pairEvent4 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(
-			vtkCommand::LeftButtonPressEvent, brushObserver[i]);
+			vtkCommand::LeftButtonPressEvent, brushObserverList[i]);
 		auto pairEvent5 = std::make_pair<unsigned long, vtkSmartPointer<vtkCommand>>(
-			vtkCommand::LeftButtonReleaseEvent, brushObserver[i]);
+			vtkCommand::LeftButtonReleaseEvent, brushObserverList[i]);
 		slicers[i]->AddPointSelectObserver(pairEvent3);
 		slicers[i]->AddPointSelectObserver(pairEvent4);
 		slicers[i]->AddPointSelectObserver(pairEvent5);
@@ -136,30 +136,15 @@ void SegmentationWithBrush4View::PulseHandler()
 		case  VK_END:
 
 		{
-			for (auto viewer : m_GroupViewer->Get2DViewers())
-			{
-				viewer->SetInteractionState(InteractionState::ContrastState);
-				viewer->SetInteractionMode(ContrastEvent);
-			}
+			
 			break;
 		}
 
-		case  VK_HOME:
-
-		{
-			std::string directory = FileSystem::currentDirectory();
-			directory.append("\\Resources\\Layouts\\Navigation\\Biopsy\\default.xml");
-			misENTBraineNavigationLayoutFactory navigationLayoutFactory;
-			auto layout = navigationLayoutFactory.GetLayoutFromFile(directory);
-			m_GroupViewer = std::make_shared<misGroupViewer>(correlationManager, layout);
-			misIntegrationTestTools::InitializeRendering(m_GroupViewer->GetAllViewers());
-			m_GroupViewer->ShowPackage(packages[0], 0);
-			break;
-		}
+		
 		case VK_BACK:
 		{
 
-			brushObserver[0]->Finalize();
+			brushObserverList[0]->Finalize();
 			m_GroupViewer->Reset();
 			auto package = std::make_shared<misSimpleDataPackage>(misDatasetManager::GetInstance()->GetPackagePlanRelRepo());
 			package->SetImageToRelatedImageDataDependancy(m_SegemntedImage);
@@ -168,16 +153,42 @@ void SegmentationWithBrush4View::PulseHandler()
 			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1,0,0, .5));
 		}
 		
-		case  'm':
-		case  'M':
+		case  'a':
+		case  'A':
 
 		{
+			for (auto observer : brushObserverList)
+				observer->Activate();
+			for (auto viewer : m_GroupViewer->Get2DViewers())
+			{
+				viewer->SetInteractionState(InteractionState::WidgetInteractionState);
+				viewer->SetInteractionMode(NoState);
+ 			}
 			break;
 		}
-		case 'p':
-		case 'P':
+
+		case  'd':
+		case  'D':
 
 		{
+			for (auto observer : brushObserverList)
+				observer->DeActive();
+			for (auto viewer : m_GroupViewer->Get2DViewers())
+			{
+				viewer->SetInteractionState(InteractionState::ContrastState);
+				viewer->SetInteractionMode(ContrastEvent);
+			}
+
+			break;
+		}
+		case 'r':
+		case 'R':
+
+		{
+			for (auto viewer : m_GroupViewer->Get2DViewers())
+			{
+				viewer->ResetContrast();
+ 			}
 			break;
 		}
 		}

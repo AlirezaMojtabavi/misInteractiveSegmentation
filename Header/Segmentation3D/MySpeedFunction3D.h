@@ -1,9 +1,7 @@
 
 #pragma once
 
-#ifndef MySpeedFunction3D_h
-#define MySpeedFunction3D_h
-
+ 
 #include <itkImage.h>
 #include <itkMacro.h>
 #include "itkThresholdSegmentationLevelSetFunction.h"
@@ -299,4 +297,4 @@ inline void MySpeedFunction3D<TImageType, TFeatureImageType>::CalculateSpeedImag
 
 #endif
 
-#endif
+ 

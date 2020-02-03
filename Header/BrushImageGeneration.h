@@ -6,8 +6,9 @@
 #include "IBackToPanMode.h"
 #include <IImage.h>
 #include "misTextureEraser.h"
+ #include "ImageType.h"
+#include "../Segmentation3D/MySpeedFunction3D.h"
 #include "../Segmentation3D/MyAlgorithm3d.h"
-#include "ImageType.h"
 
 class BrushImageGeneration : public vtkCommand
 {
@@ -20,6 +21,8 @@ public:
 	                     std::shared_ptr<misCameraInteraction>);
 	void Execute(vtkObject* caller, unsigned long eventId, void* callData) override;
 	void Finalize();
+	void Activate();
+	void DeActive();
 private:
 	void EraseTexture(parcast::PointD3 point, SegmentMode);
 	void Colortexture(parcast::PointD3 point);
@@ -38,7 +41,7 @@ private:
 	misColorStruct m_ErasedObjColor;
 	misTextureEraser m_Eraser;
 	SegmentMode m_SegmentationMode;
-	
+	bool m_IsActive = false;
 	std::vector<misPixelType> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
 	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();									 																		   

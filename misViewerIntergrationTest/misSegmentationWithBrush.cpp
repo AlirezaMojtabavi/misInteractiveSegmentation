@@ -55,11 +55,11 @@ misSegmentationWithBrush::misSegmentationWithBrush(int &argc, char ** argv)
 	auto segementationIMage = m_SegemntedImage->GetRawImageData();
 	auto tabklerange1 = m_SegemntedImage->GetRawImageData()->GetScalarRange();
 	int* dims = m_Image->GetDimensions();
-	short* pointerImage = (short*)segementationIMage->GetScalarPointer();
+	misPixelType* pointerImage = (misPixelType*)segementationIMage->GetScalarPointer();
 	for (int z = 0; z < dims[2]; z++)
 		for (int y = 0; y < dims[1]; y++)
 			for (int x = 0; x < dims[0]; x++)
-				pointerImage[z*(dims[1] * dims[0]) + y * dims[0] + x] = -1000;
+				pointerImage[z*(dims[1] * dims[0]) + y * dims[0] + x] = 0;
 	//segementationIMage->Modified();
 	auto tabklerange2 = m_SegemntedImage->GetRawImageData()->GetScalarRange();
 	m_SegemntedImage->Modified();

@@ -25,7 +25,7 @@ private:
 	PackagesListTypedef packages;
 	std::shared_ptr< ICoordinateSystemCorrelationManager<std::string> > correlationManager;
 	//std::unique_ptr<misGUIInteractionDispatchers> m_EventDispacth;
-	std::vector<BrushImageGeneration*> brushObserver;
+	std::vector<BrushImageGeneration*> brushObserverList;
 	std::shared_ptr<IImage> m_Image;
 	std::shared_ptr<IImage> m_SegemntedImage;
 };

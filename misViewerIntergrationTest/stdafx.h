@@ -138,6 +138,7 @@
 #include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
 #include "itkBinaryThresholdImageFilter.h" 
 #include "itkThresholdSegmentationLevelSetImageFilter.h"
+#include "MySpeedFunction3D.h"
  
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmBinEntry.h"
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDir.h"

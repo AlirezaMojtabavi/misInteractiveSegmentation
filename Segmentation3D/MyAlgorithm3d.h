@@ -1,8 +1,9 @@
 
 #pragma once
-#include "MySpeedFunction3D.h"
+#include "./Segmentation3D/MySpeedFunction3D.h"
 #include "ImageType.h"
 
+using  misSpeedFunction3DType = MySpeedFunction3D< misInternalImageType, misInternalImageType >;
 
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
@@ -28,7 +29,7 @@ public:
 	void SetSpeedFunction(itk::SmartPointer<misSpeedFunction3DType>);
 
 	void FastMarching(const double);
-	void LevelSet(int lower, int upper, double edge, double weight);
+	void LevelSet(short int	 lower, short int upper, double edge, double weight);
 	void LevelSet(double edge, double weight);
 
  

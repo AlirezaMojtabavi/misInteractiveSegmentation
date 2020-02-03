@@ -1,8 +1,6 @@
 
 #pragma once
-
-#ifndef MySpeedFunction3D_h
-#define MySpeedFunction3D_h
+ 
 
 
 template< typename TImageType, typename TFeatureImageType = TImageType >
@@ -279,9 +277,6 @@ inline void MySpeedFunction3D<TImageType, TFeatureImageType>::CalculateSpeedImag
 
 }
 
+ 
 
-#ifndef ITK_MANUAL_INSTANTIATION
-
-#endif
-
-#endif
+ 

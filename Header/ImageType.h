@@ -1,12 +1,13 @@
+
 #pragma once
 const  unsigned int  Dimension = 3;
 
-typedef  short misPixelType;
+typedef  unsigned short misPixelType;
 typedef  float  misInternalPixelType;
 
 typedef itk::Image< misInternalPixelType, Dimension >  misInternalImageType;// input algorithm
 typedef itk::Image<misPixelType, Dimension > ITKImageType;
-typedef  short misOutputPixelType;
+typedef unsigned short misOutputPixelType;
 typedef itk::Image< misOutputPixelType, Dimension > misOutputImageType; //output algorithm
 
 typedef itk::CastImageFilter<ITKImageType, misInternalImageType> ITKImageType_2_InternalType;
@@ -18,6 +19,5 @@ typedef FastMarchingFilterType::NodeType    NodeType;
 typedef  itk::ThresholdSegmentationLevelSetImageFilter< misInternalImageType, misInternalImageType>
 	ThresholdSegmentationLevelSetImageFilterType;
 typedef itk::BinaryThresholdImageFilter<misInternalImageType, misOutputImageType> ThresholdingFilterType;
-typedef MySpeedFunction3D< misInternalImageType, misInternalImageType > misSpeedFunction3DType;
 typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 //typedef itk::CastImageFilter<ITKImageType, misInternalImageType>;

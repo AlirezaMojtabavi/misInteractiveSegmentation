@@ -1,11 +1,11 @@
 #include "stdafx.h"
+
 #include "BrushImageGeneration.h"
 #include "misImageToTextureMap.h"
 #include "misTransFunctionBuilder.h"
-#include "../Segmentation3D/MyAlgorithm3d.h"
 
-#include <itkImageToVTKImageFilter.h>
-#include <itkVTKImageToImageFilter.h>											
+
+									
 
 vtkStandardNewMacro(BrushImageGeneration);
 
@@ -27,6 +27,8 @@ void BrushImageGeneration::Create(std::shared_ptr<I3DViewer> viewer, std::shared
 
 void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, void* callData)
 {
+	if (!m_IsActive)
+		return;
 	std::cout << eventId << std::endl;
 	std::cout << m_ErasingMode << std::endl;
 
@@ -61,7 +63,7 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	auto rawImageData = m_OriginalImage->GetRawImageData();
 	auto spacing = m_OriginalImage->GetSpacing();
 	auto extent = m_OriginalImage->GetRawImageData()->GetExtent();
-	auto ptr = (short*)rawImageData->GetScalarPointer();
+	auto ptr = (misPixelType*)rawImageData->GetScalarPointer();
 	int coordinate[3] = {position[0] / spacing[0], position[1] / spacing[1], position[2] / spacing[2]};
 	auto dimension = m_OriginalImage->GetDimensions();
 	int ImageIndex = (coordinate[0] ) + (coordinate[1]  * dimension[0] )+ coordinate[2] * dimension[1] * dimension[0];
@@ -81,7 +83,7 @@ void BrushImageGeneration::EraseTexture(parcast::PointD3 point, SegmentMode segm
 {
 	misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
 	misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
-	const auto dataScalars = static_cast<short*>(imageTexure->GetTexturePropertyStrct().Data);
+	const auto dataScalars = static_cast<misPixelType*>(imageTexure->GetTexturePropertyStrct().Data);
 	tgt::ivec3 dim = imageTexure->GetTexturePropertyStrct().GetDimensions();
 	tgt::vec3 spacing = imageTexure->GetTexturePropertyStrct().Spacing;
 	double* TableRange = imageTexure->GetTableRange();
@@ -119,7 +121,7 @@ void BrushImageGeneration::CreateTransferFunction( )
 }
 void BrushImageGeneration::Finalize()
 {
-	const bool testVisualization = true;
+	const bool testVisualization = false;
 	if (!testVisualization)
 	{
 		auto vtkInputImage = m_SegmentedImage->GetRawImageData(); // <vtkImageData>->Imagetype
@@ -137,7 +139,7 @@ void BrushImageGeneration::Finalize()
 		algoritm.SetInternalImage(internalImage->GetOutput());
 		algoritm.SetSpeedFunction(SegmentationSpeedFunction);
 		algoritm.FastMarching(5);
-		algoritm.LevelSet(191, 450, 0, 0.05);
+		algoritm.LevelSet(350, 800, 0, 0.05);
 		auto outputImage = algoritm.GetThresholder();
 		outputImage->Update();
 
@@ -154,7 +156,7 @@ void BrushImageGeneration::Finalize()
 	{
 		misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
 		misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
-		const auto dataScalars = static_cast<short*>(imageTexure->GetTexturePropertyStrct().Data);
+		const auto dataScalars = static_cast<misPixelType*>(imageTexure->GetTexturePropertyStrct().Data);
 		tgt::ivec3 dim = imageTexure->GetTexturePropertyStrct().GetDimensions();
 		for (int i = dim[0] / 4; i < dim[0] / 2; i++)
 			for (int j = dim[1] / 4; j < dim[1] / 2; j++)
@@ -168,4 +170,14 @@ void BrushImageGeneration::Finalize()
 
 	
 
+}
+
+void BrushImageGeneration::Activate()
+{
+	m_IsActive = true;
+}
+
+void BrushImageGeneration::DeActive()
+{
+	m_IsActive = false;
 }

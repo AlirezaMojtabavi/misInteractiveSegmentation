@@ -30,9 +30,6 @@
     <ClInclude Include="MyInteractionStyle3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MySpeedFunction3D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Reslicer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
