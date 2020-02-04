@@ -44,7 +44,7 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	for (int z = 0; z < dims[2]; z++)
 		for (int y = 0; y < dims[1]; y++)
 			for (int x = 0; x < dims[0]; x++)
-				pointerImage[z*(dims[1] * dims[0]) + y * dims[0] + x] = -1000;
+				pointerImage[z*(dims[1] * dims[0]) + y * dims[0] + x] = 0;
 
 	m_Image->SetConfirmedDirection(true);
 	m_SegemntedImage->SetConfirmedDirection(true);
@@ -175,6 +175,7 @@ void SegmentationWithBrush4View::PulseHandler()
 				observer->DeActive();
 			for (auto viewer : m_GroupViewer->Get2DViewers())
 			{
+				viewer->ResetContrast();
 				viewer->SetInteractionState(InteractionState::ContrastState);
 				viewer->SetInteractionMode(ContrastEvent);
 			}

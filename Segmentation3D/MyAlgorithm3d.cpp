@@ -72,7 +72,7 @@ void MyAlgorithm3d::LevelSet(short int	 lower, short int	 upper, double edge, do
 	thresholder->SetUpperThreshold(0);
 
 	thresholder->SetOutsideValue(0.0);
-	thresholder->SetInsideValue(-450.0);
+	thresholder->SetInsideValue(FillValue);
 
 	SegmentationSpeedFunction->SetLowerThreshold(lower);
 	SegmentationSpeedFunction->SetUpperThreshold(upper);

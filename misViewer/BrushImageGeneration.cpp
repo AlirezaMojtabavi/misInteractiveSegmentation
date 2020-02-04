@@ -104,10 +104,15 @@ void BrushImageGeneration::CreateTransferFunction( )
 	misTransFunctionBuilder	trasferfunction;
 	misDoubleColorListTypedef opacityColorMappingLst;
 	opacityColorMappingLst[TableRange[0]] = misDoubleColorStruct(0, 0, 0, 0);
-	opacityColorMappingLst[-800] = misDoubleColorStruct(0, 0, 0, 0);
-	opacityColorMappingLst[-500] = misDoubleColorStruct(1, 0, 0, .2);
-	opacityColorMappingLst[-400] = misDoubleColorStruct(1, 0, 0, .2);
-	opacityColorMappingLst[-390] = misDoubleColorStruct(1, 0, 0, 0);
+	//opacityColorMappingLst[-800] = misDoubleColorStruct(0, 0, 0, 0);
+	//opacityColorMappingLst[-500] = misDoubleColorStruct(1, 0, 0, .2);
+	//opacityColorMappingLst[-400] = misDoubleColorStruct(1, 0, 0, .2);
+	//opacityColorMappingLst[-390] = misDoubleColorStruct(1, 0, 0, 0);
+
+	opacityColorMappingLst[0] = misDoubleColorStruct(0, 0, 0, 0);
+	opacityColorMappingLst[100] = misDoubleColorStruct(1, 0, 0, .4);
+	opacityColorMappingLst[200] = misDoubleColorStruct(1, 0, 0, .4);
+	opacityColorMappingLst[300] = misDoubleColorStruct(1, 0, 0, 0);
 	opacityColorMappingLst[TableRange[1]] = misDoubleColorStruct(0, 0, 0, 0);
 	auto transfunc = trasferfunction.GenerateTransferFunction(opacityColorMappingLst, TableRange);
 	transfunc->updateTexture();

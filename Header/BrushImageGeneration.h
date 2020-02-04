@@ -37,7 +37,7 @@ private:
 	std::shared_ptr<IImage>  m_SegmentedImage;
 	std::shared_ptr<IImage>  m_OriginalImage;
 	bool m_ErasingMode = false;
-	int	m_EraseSubBoxWidth = 20;
+	int	m_EraseSubBoxWidth = 9;
 	misColorStruct m_ErasedObjColor;
 	misTextureEraser m_Eraser;
 	SegmentMode m_SegmentationMode;

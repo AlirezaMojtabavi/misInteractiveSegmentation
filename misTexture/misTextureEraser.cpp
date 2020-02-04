@@ -7,8 +7,8 @@
 
 misTextureEraser::misTextureEraser(void)
 {
-	m_EraserSize = 32;
-	m_ErasingBoxSize[0] = m_ErasingBoxSize[1] = m_ErasingBoxSize[2] = 16;
+	m_EraserSize = 9;
+	m_ErasingBoxSize[0] = m_ErasingBoxSize[1] = m_ErasingBoxSize[2] = 9;
 }
 void misTextureEraser::EraseSphereTexture(misPixelType* Scalars, parcast::Point<int, 3> dimension, double* TableRange,
 	int id, SegmentMode segmentMode)
@@ -35,16 +35,18 @@ void misTextureEraser::EraseSphereTexture(misPixelType* Scalars, parcast::Point<
 	GLsizei depth = m_ErasingBoxSize[2];
 	if (depth + m_EraserPosition[2] >= dimension[2])
 		depth = dimension[2];
-	m_ModifiedEraserPosition[0] = m_EraserPosition[0] - floor(m_ErasingBoxSize[0] * m_EraserSpacing[0]);
-	m_ModifiedEraserPosition[1] = m_EraserPosition[1] - floor(m_ErasingBoxSize[1] * m_EraserSpacing[1]) - 6;
+	m_ModifiedEraserPosition[0] = m_EraserPosition[0] - ((m_ErasingBoxSize[0]/2) * m_EraserSpacing[0]);
+	m_ModifiedEraserPosition[1] = m_EraserPosition[1] - (m_ErasingBoxSize[1] * m_EraserSpacing[1]);
 	m_ModifiedEraserPosition[2] = m_EraserPosition[2];
 	CreateBrushBox(Scalars, dimension);
 
 	auto MinImage = TableRange[0];
 	auto MaxImage = TableRange[1];
-	auto scale = UNSIGNED_SHORT_MAX / (MaxImage - MinImage);
-	auto shift = -(2 * MinImage + 1) / UNSIGNED_SHORT_MAX;
+	//auto scale = UNSIGNED_SHORT_MAX / (MaxImage - MinImage);
+	//auto shift = -(2 * MinImage + 1) / UNSIGNED_SHORT_MAX;
 
+	auto shift = -MinImage / UNSIGNED_SHORT_MAX;
+	auto scale = UNSIGNED_SHORT_MAX / (MaxImage - MinImage);
 	glPixelTransferf(GL_RED_SCALE, (GLfloat)scale);
 	glPixelTransferf(GL_RED_BIAS, (GLfloat)(shift*scale));
 
@@ -128,8 +130,8 @@ void misTextureEraser::CreateBrushBox(misPixelType* Scalars, parcast::Point<int,
 								}
 								else
 								{
-									m_SubBox[SubBoxIndex] = -450;
-									Scalars[ImageIndex] = -450;
+									m_SubBox[SubBoxIndex] = 150;
+									Scalars[ImageIndex] = 150;
 								}
 							}
 							else

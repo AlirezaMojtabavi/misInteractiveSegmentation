@@ -19,7 +19,7 @@ public:
 private:
 	int	m_EraserSize;
 	parcast::Point<int, 3>	m_EraserPosition;
-	parcast::Point<int, 3>  m_ModifiedEraserPosition;
+	parcast::Point<double, 3>  m_ModifiedEraserPosition;
 	parcast::Point<double, 3>	m_EraserSpacing;
 	parcast::Point<int, 3>	m_ErasingBoxSize;
 	misPixelType* m_SubBox = nullptr;

@@ -37,7 +37,7 @@ public:
 	misOutputImageType*  GetThresholder();
 
 private:
-
+	const unsigned short FillValue = 150;
 	misInternalImageType::Pointer IS_InternalImage;
 
 	//itk::ThresholdSegmentationLevelSetFunction<misOutputImageType>::Pointer SegmentationSpeedFunction =
