@@ -3,6 +3,7 @@
 #include "BrushImageGeneration.h"
 #include "misImageToTextureMap.h"
 #include "misTransFunctionBuilder.h"
+#include <vtkImageWriter.h>
 
 
 									
@@ -122,14 +123,21 @@ void BrushImageGeneration::CreateTransferFunction( )
 	imagePlane->SetColorMapTransFuncID(SecondImage, transfunc);
 	imagePlane->SetVisiblityOfColorMap(SecondImage, true);
 	
-  
 }
 void BrushImageGeneration::Finalize()
 {
-	const bool testVisualization = false;
+	const bool testVisualization =false;
 	if (!testVisualization)
 	{
-		auto vtkInputImage = m_SegmentedImage->GetRawImageData(); // <vtkImageData>->Imagetype
+			auto vtkInputImage = m_OriginalImage->GetRawImageData(); // <vtkImageData>->Imagetype
+
+			std::string outputFilename1 = "E:\\Interactive_Segmentation\\output3D\\input.vtk";
+			vtkSmartPointer<vtkImageWriter> writer1 =
+				vtkSmartPointer<vtkImageWriter>::New();
+
+			writer1->SetFileName(outputFilename1.c_str());
+			writer1->SetInputData(vtkInputImage);
+			writer1->Update();
 
 		typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 		VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
@@ -142,19 +150,26 @@ void BrushImageGeneration::Finalize()
 
 		MyAlgorithm3d algoritm(m_intensity, m_Seeds);
 		algoritm.SetInternalImage(internalImage->GetOutput());
-		algoritm.SetSpeedFunction(SegmentationSpeedFunction);
 		algoritm.FastMarching(5);
-		algoritm.LevelSet(350, 800, 0, 0.05);
-		auto outputImage = algoritm.GetThresholder();
+		algoritm.LevelSet(350, 800, 1, 0.05);
+		outputImage = algoritm.GetThresholder();
 		outputImage->Update();
+		//outputImage->FillBuffer(750);
 
-		auto invertConvertor = itk::ImageToVTKImageFilter<itk::Image<misPixelType, 3>>::New();
+		auto invertConvertor = itk::ImageToVTKImageFilter<misOutputImageType>::New();
 		invertConvertor->SetInput(outputImage);
 		invertConvertor->Update();
+
+			std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
+			vtkSmartPointer<vtkImageWriter> writer2 =
+				vtkSmartPointer<vtkImageWriter>::New();
+				  
+			writer2->SetFileName(outputFilename2.c_str());
+			writer2->SetInputData(invertConvertor->GetOutput());
+			writer2->Update();
+
 		auto image = invertConvertor->GetOutput();
 		m_SegmentedImage->GetRawImageData()->DeepCopy(image);
-
-
 	}
 
 	else
@@ -166,14 +181,10 @@ void BrushImageGeneration::Finalize()
 		for (int i = dim[0] / 4; i < dim[0] / 2; i++)
 			for (int j = dim[1] / 4; j < dim[1] / 2; j++)
 				for (int k = dim[2] / 4; k < dim[2] / 2; k++)
-					dataScalars[i + j * dim[0] + k * dim[0] * dim[1]] = 300;
+					dataScalars[i + j * dim[0] + k * dim[0] * dim[1]] =750;
 	}
 
 	m_SegmentedImage->Modified();
-
-
-
-	
 
 }
 

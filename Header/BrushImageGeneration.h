@@ -44,5 +44,6 @@ private:
 	bool m_IsActive = false;
 	std::vector<misPixelType> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
-	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();									 																		   
+	//MyAlgorithm3d algoritm(std::vector<coordinate3D> _m_intensity, std::vector<coordinate3D>_m_Seeds);
+	misOutputImageType::Pointer outputImage = misOutputImageType::New();
 };

@@ -36,6 +36,9 @@
     <ClInclude Include="..\Header\ImageType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\Segmentation3D\MySpeedFunction3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

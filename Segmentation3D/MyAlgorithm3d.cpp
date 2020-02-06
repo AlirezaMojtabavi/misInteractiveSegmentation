@@ -23,12 +23,6 @@ misOutputImageType * MyAlgorithm3d::GetThresholder()
 	return thresholder->GetOutput();
 }
 
-
-void MyAlgorithm3d::SetSpeedFunction(itk::SmartPointer<misSpeedFunction3DType> _Function)
-{
-	SegmentationSpeedFunction = _Function;
-}
-
 void MyAlgorithm3d::FastMarching(const double distance)
 {
 	int size = m_Seeds.size();

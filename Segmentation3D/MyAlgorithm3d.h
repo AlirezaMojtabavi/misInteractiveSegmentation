@@ -25,9 +25,6 @@ public:
 	MyAlgorithm3d(std::vector<misPixelType> intensity, std::vector<coordinate3D> seeds);
 	void SetInternalImage(misInternalImageType::Pointer _InternalImage);
 
- 
-	void SetSpeedFunction(itk::SmartPointer<misSpeedFunction3DType>);
-
 	void FastMarching(const double);
 	void LevelSet(short int	 lower, short int upper, double edge, double weight);
 	void LevelSet(double edge, double weight);
@@ -37,16 +34,16 @@ public:
 	misOutputImageType*  GetThresholder();
 
 private:
-	const unsigned short FillValue = 150;
+	const unsigned short FillValue = 1000;
 	misInternalImageType::Pointer IS_InternalImage;
 
 	//itk::ThresholdSegmentationLevelSetFunction<misOutputImageType>::Pointer SegmentationSpeedFunction =
 		//MySpeedFunction3DType::New();
 
-	misSpeedFunction3DType::Pointer SegmentationSpeedFunction;
+	//misSpeedFunction3DType::Pointer SegmentationSpeedFunction;
+	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();
 
 	ThresholdingFilterType::Pointer thresholder = ThresholdingFilterType::New();
-
 
 	ThresholdSegmentationLevelSetImageFilterType::Pointer thresholdSegmentation = 
 		ThresholdSegmentationLevelSetImageFilterType::New();
