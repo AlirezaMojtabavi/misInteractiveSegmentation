@@ -137,6 +137,7 @@ void BrushImageGeneration::Finalize()
 
 			writer1->SetFileName(outputFilename1.c_str());
 			writer1->SetInputData(vtkInputImage);
+			writer1->Write();
 			writer1->Update();
 
 		typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
@@ -166,6 +167,7 @@ void BrushImageGeneration::Finalize()
 				  
 			writer2->SetFileName(outputFilename2.c_str());
 			writer2->SetInputData(invertConvertor->GetOutput());
+			writer2->Write();
 			writer2->Update();
 
 		auto image = invertConvertor->GetOutput();
