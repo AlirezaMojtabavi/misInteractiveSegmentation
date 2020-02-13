@@ -131,14 +131,15 @@ void BrushImageGeneration::Finalize()
 	{
 			auto vtkInputImage = m_OriginalImage->GetRawImageData(); // <vtkImageData>->Imagetype
 
-			std::string outputFilename1 = "E:\\Interactive_Segmentation\\output3D\\input.vtk";
+			/*std::string outputFilename1 = "E:\\Interactive_Segmentation\\output3D\\input.vtk";
+
 			vtkSmartPointer<vtkImageWriter> writer1 =
 				vtkSmartPointer<vtkImageWriter>::New();
 
 			writer1->SetFileName(outputFilename1.c_str());
 			writer1->SetInputData(vtkInputImage);
 			writer1->Write();
-			writer1->Update();
+			writer1->Update();*/
 
 		typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 		VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
@@ -152,23 +153,37 @@ void BrushImageGeneration::Finalize()
 		MyAlgorithm3d algoritm(m_intensity, m_Seeds);
 		algoritm.SetInternalImage(internalImage->GetOutput());
 		algoritm.FastMarching(5);
-		algoritm.LevelSet(350, 800, 1, 0.05);
+		algoritm.LevelSet(428, 741, 1, 0.05);
 		outputImage = algoritm.GetThresholder();
 		outputImage->Update();
 		//outputImage->FillBuffer(750);
 
+		auto InternalOuyput = OutputType_2_InternalType::New();
+		InternalOuyput->SetInput(outputImage);
+		InternalOuyput->Update();
+		typedef itk::BinaryFillholeImageFilter< misInternalImageType > FilterType;
+		FilterType::Pointer morph_filter = FilterType::New();
+		morph_filter->SetInput(InternalOuyput->GetOutput());
+		morph_filter->SetForegroundValue(itk::NumericTraits<misInternalPixelType>::max());
+		//morph_filter->Update();
+		typedef itk::CastImageFilter<misInternalImageType, misOutputImageType> InternalType_2_OutputType;
+		auto morph_cast = InternalType_2_OutputType::New();
+		morph_cast->SetInput(morph_filter->GetOutput());
+		//morph_cast->Update();
+
 		auto invertConvertor = itk::ImageToVTKImageFilter<misOutputImageType>::New();
-		invertConvertor->SetInput(outputImage);
+		invertConvertor->SetInput(morph_cast->GetOutput());
 		invertConvertor->Update();
 
-			std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
+
+			/*std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
 			vtkSmartPointer<vtkImageWriter> writer2 =
 				vtkSmartPointer<vtkImageWriter>::New();
 				  
 			writer2->SetFileName(outputFilename2.c_str());
 			writer2->SetInputData(invertConvertor->GetOutput());
 			writer2->Write();
-			writer2->Update();
+			writer2->Update();*/
 
 		auto image = invertConvertor->GetOutput();
 		m_SegmentedImage->GetRawImageData()->DeepCopy(image);
