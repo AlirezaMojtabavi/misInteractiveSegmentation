@@ -150,7 +150,7 @@ void SegmentationWithBrush4View::PulseHandler()
 			package->SetImageToRelatedImageDataDependancy(m_SegemntedImage);
 			package->SetImageToRelatedImageDataDependancy(m_Image);
 			m_GroupViewer->ShowPackage(package, false);
-			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1,0,0, .75));
+			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1,0,0,.9));
 		}
 		
 		case  'a':

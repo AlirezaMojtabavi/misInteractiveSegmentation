@@ -226,5 +226,11 @@
 #include "voreen/processor.h"
 #include "voreen/property.h"
 #include "voreen/volumehandle.h"
+#include "itkImageSeriesWriter.h"
+
+#include <vtkDICOMWriter.h>
+#include <vtkDICOMMRGenerator.h>
+#include <vtkDICOMMetaData.h>
+#include "itkImageFileReader.h"
 
 #pragma warning (pop)

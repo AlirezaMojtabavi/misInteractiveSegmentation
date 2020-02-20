@@ -34,13 +34,9 @@ public:
 	misOutputImageType*  GetThresholder();
 
 private:
-	const unsigned short FillValue = 1000;
+	//const unsigned short FillValue = 1000;
 	misInternalImageType::Pointer IS_InternalImage;
 
-	//itk::ThresholdSegmentationLevelSetFunction<misOutputImageType>::Pointer SegmentationSpeedFunction =
-		//MySpeedFunction3DType::New();
-
-	//misSpeedFunction3DType::Pointer SegmentationSpeedFunction;
 	misSpeedFunction3DType::Pointer SegmentationSpeedFunction = misSpeedFunction3DType::New();
 
 	ThresholdingFilterType::Pointer thresholder = ThresholdingFilterType::New();
@@ -52,4 +48,6 @@ private:
 	std::vector<coordinate3D> m_Seeds;
 	FastMarchingFilterType::Pointer  fastMarching = FastMarchingFilterType::New();
 	NodeContainer::Pointer seeds = NodeContainer::New();
+
+	misOutputImageType::Pointer result = misOutputImageType::New();
 };
