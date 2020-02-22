@@ -175,8 +175,7 @@ void BrushImageGeneration::Finalize()
 		invertConvertor->SetInput(morph_cast->GetOutput());
 		invertConvertor->Update();
 
-
-			/*std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
+ 			/*std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
 			vtkSmartPointer<vtkImageWriter> writer2 =
 				vtkSmartPointer<vtkImageWriter>::New();
 				  

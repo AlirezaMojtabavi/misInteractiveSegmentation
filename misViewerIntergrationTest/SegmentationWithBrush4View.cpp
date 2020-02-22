@@ -36,6 +36,8 @@ SegmentationWithBrush4View::SegmentationWithBrush4View(int &argc, char ** argv)
 	seriesNumberStream >> seriesNumber;
 	misIntegrationTestTools testTools;
 	m_Image = testTools.LoadImageData(argv[1], seriesNumber);
+
+	
 	m_SegemntedImage = testTools.LoadImageData(argv[1], seriesNumber);
 	m_SegemntedImage->Update();
 	auto segementationIMage = m_SegemntedImage->GetRawImageData();
@@ -262,4 +264,326 @@ void SegmentationWithBrush4View::SetMouseCursor()
 	HCURSOR hCursor = LoadCursor(GetModuleHandle(NULL), MAKEINTRESOURCE(IDC_CURSOR2));
 	SetCursor(hCursor);
 
+}
+
+//int
+//wirtie()
+//{
+//	// if( argc < 3 )
+//	//  {
+//	//  std::cerr << "Usage: " << argv[0] <<
+//	//    " DicomDirectory  OutputDicomDirectory" << std::endl;
+//	//  return EXIT_FAILURE;
+//	//  }
+//
+//	auto directory = R"(F:\Parsiss Data\Prosthesis Container)";
+//	using PixelType = signed short;
+//	constexpr unsigned int Dimension = 3;
+//
+//	using ImageType = itk::Image< PixelType, Dimension >;
+//	using ReaderType = itk::ImageSeriesReader< ImageType >;
+//
+//	using ImageIOType = itk::GDCMImageIO;
+//	using NamesGeneratorType = itk::GDCMSeriesFileNames;
+//
+//	ImageIOType::Pointer        gdcmIO = ImageIOType::New();
+//	NamesGeneratorType::Pointer namesGenerator = NamesGeneratorType::New();
+//
+//	namesGenerator->SetInputDirectory(directory);
+//
+//	const ReaderType::FileNamesContainer& filenames = namesGenerator->GetInputFileNames();
+//	// Software Guide : EndCodeSnippet
+//
+//	std::size_t numberOfFileNames = filenames.size();
+//	std::cout << numberOfFileNames << std::endl;
+//	for (unsigned int fni = 0; fni < numberOfFileNames; ++fni)
+//	{
+//		std::cout << "filename # " << fni << " = ";
+//		std::cout << filenames[fni] << std::endl;
+//	}
+//
+//
+//	ReaderType::Pointer reader = ReaderType::New();
+//
+//	reader->SetImageIO(gdcmIO);
+//	reader->SetFileNames(filenames);
+//	auto image = reader->GetOutput();
+//
+//	using FilterType = itk::BinaryThresholdImageFilter< ImageType, ImageType >;
+//	FilterType::Pointer filter = FilterType::New();
+//
+//	try
+//	{
+//		// Software Guide : BeginCodeSnippet
+//		// auto image = reader->GetOutput();
+//		reader->Update();
+//		//typedef ImageType::RegionType RegionType;
+//		//RegionType::SizeType          size;
+//		//size.Fill( 50 );
+//		//RegionType::IndexType index;
+//		//index.Fill( 1 );
+//		//auto       Olderegion = image->GetBufferedRegion();
+//		//RegionType region( index, size );
+//		//// image->SetBufferedRegion( region );
+//		//// image->FillBuffer( -3000 );
+//		//// image->Update();
+//		//// image->SetRegions( Olderegion );t
+//		auto dimens = image->GetImageDimension();
+//		auto allRegion = image->GetLargestPossibleRegion();
+//		auto size = allRegion.GetSize();
+//		for (unsigned int i = 0; i < size[0]; i++)
+//			for (unsigned int j = 0; j < size[1]; j++)
+//				for (unsigned int k = 0; k < static_cast<int>(size[2] * 0.9); k++)
+//				{
+//					ImageType::IndexType pixelIndex;
+//					pixelIndex[0] = i;
+//					pixelIndex[1] = j;
+//					pixelIndex[2] = k;
+//
+//					image->SetPixel(pixelIndex, 0);
+//				}
+//		image->Update();
+//		// using OutputPixelType = short;
+//		  // const OutputPixelType outsideValue = -3000;
+//		  // const OutputPixelType insideValue = 1000;
+//		  // using InputPixelType = short;
+//		  // filter->SetInput( reader->GetOutput() );
+//		  // const InputPixelType lowerThreshold =100;
+//		  // const InputPixelType upperThreshold = 2000;
+//
+//		  //// Software Guide : BeginCodeSnippet
+//		  // filter->SetLowerThreshold( lowerThreshold );
+//		  // filter->SetUpperThreshold( upperThreshold );
+//		  //// Software Guide : BeginCodeSnippet
+//		  // filter->SetOutsideValue( outsideValue );
+//		  // filter->SetInsideValue( insideValue );
+//		  // filter->Update();
+//	}
+//	catch (itk::ExceptionObject & excp)
+//	{
+//		std::cerr << "Exception thrown while writing the image" << std::endl;
+//		std::cerr << excp << std::endl;
+//		return EXIT_FAILURE;
+//	}
+//
+//
+//	const char* outputDirectory = R"(C:\parsiss\MIS-4.4.1-rc9-1910\outPut9)";
+//
+//	itksys::SystemTools::MakeDirectory(outputDirectory);
+//
+//	using OutputPixelType = signed short;
+//	constexpr unsigned int OutputDimension = 2;
+//
+//	using Image2DType = itk::Image< OutputPixelType, OutputDimension >;
+//
+//	using SeriesWriterType = itk::ImageSeriesWriter< ImageType, Image2DType >;
+//
+//	SeriesWriterType::Pointer seriesWriter = SeriesWriterType::New();
+//
+//	seriesWriter->SetInput(image);
+//	seriesWriter->SetImageIO(gdcmIO);
+//
+//	namesGenerator->SetOutputDirectory(outputDirectory);
+//
+//	seriesWriter->SetFileNames(namesGenerator->GetOutputFileNames());
+//
+//	seriesWriter->SetMetaDataDictionaryArray(reader->GetMetaDataDictionaryArray());
+//
+//	try
+//	{
+//		seriesWriter->Update();
+//	}
+//	catch (itk::ExceptionObject & excp)
+//	{
+//		std::cerr << "Exception thrown while writing the series " << std::endl;
+//		std::cerr << excp << std::endl;
+//		return EXIT_FAILURE;
+//	}
+//
+//
+//	return EXIT_SUCCESS;
+//}
+
+
+
+int Test(int argc, char* argv[])
+{
+	if (argc < 4)
+	{
+		std::cerr << "Usage: ImageReadImageSeriesWrite inputFile outputPrefix outputExtension" << std::endl;
+		return EXIT_FAILURE;
+	}
+
+	//  Software Guide : BeginLatex
+	//
+	//  The type of the input image is declared here and it is used for declaring
+	//  the type of the reader. This will be a conventional 3D image reader.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	using ImageType = itk::Image< unsigned char, 3 >;
+	using ReaderType = itk::ImageFileReader< ImageType >;
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The reader object is constructed using the \code{New()} operator and
+	//  assigning the result to a \code{SmartPointer}. The filename of the 3D
+	//  volume to be read is taken from the command line arguments and passed to
+	//  the reader using the \code{SetFileName()} method.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	ReaderType::Pointer reader = ReaderType::New();
+	reader->SetFileName(argv[1]);
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The type of the series writer must be instantiated taking into account that
+	//  the input file is a 3D volume and the output files are 2D images.
+	//  Additionally, the output of the reader is connected as input to the writer.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	using Image2DType = itk::Image< unsigned char, 2 >;
+
+	using WriterType = itk::ImageSeriesWriter< ImageType, Image2DType >;
+
+	WriterType::Pointer writer = WriterType::New();
+
+	writer->SetInput(reader->GetOutput());
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The writer requires a list of filenames to be generated. This list can be
+	//  produced with the help of the \doxygen{NumericSeriesFileNames} class.
+	//
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	using NameGeneratorType = itk::NumericSeriesFileNames;
+
+	NameGeneratorType::Pointer nameGenerator = NameGeneratorType::New();
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The \code{NumericSeriesFileNames} class requires an input string in order
+	//  to have a template for generating the filenames of all the output slices.
+	//  Here we compose this string using a prefix taken from the command line
+	//  arguments and adding the extension for PNG files.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	std::string format = argv[2];
+	format += "%03d.";
+	format += argv[3];   // filename extension
+
+	nameGenerator->SetSeriesFormat(format.c_str());
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The input string is going to be used for generating filenames by setting
+	//  the values of the first and last slice. This can be done by collecting
+	//  information from the input image. Note that before attempting to take any
+	//  image information from the reader, its execution must be triggered with
+	//  the invocation of the \code{Update()} method, and since this invocation
+	//  can potentially throw exceptions, it must be put inside a
+	//  \code{try/catch} block.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	try
+	{
+		reader->Update();
+	}
+	catch (itk::ExceptionObject & excp)
+	{
+		std::cerr << "Exception thrown while reading the image" << std::endl;
+		std::cerr << excp << std::endl;
+	}
+	// Software Guide : EndCodeSnippet
+
+	// Software Guide : BeginLatex
+	//
+	// Now that the image has been read we can query its largest possible region
+	// and recover information about the number of pixels along every dimension.
+	//
+	// Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	ImageType::ConstPointer inputImage = reader->GetOutput();
+	ImageType::RegionType   region = inputImage->GetLargestPossibleRegion();
+	ImageType::IndexType    start = region.GetIndex();
+	ImageType::SizeType     size = region.GetSize();
+	// Software Guide : EndCodeSnippet
+
+	// Software Guide : BeginLatex
+	//
+	// With this information we can find the number that will identify the first
+	// and last slices of the 3D data set. These numerical values are then passed to
+	// the filename generator object that will compose the names of the files
+	// where the slices are going to be stored.
+	//
+	// Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	const unsigned int firstSlice = start[2];
+	const unsigned int lastSlice = start[2] + size[2] - 1;
+
+	nameGenerator->SetStartIndex(firstSlice);
+	nameGenerator->SetEndIndex(lastSlice);
+	nameGenerator->SetIncrementIndex(1);
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  The list of filenames is taken from the names generator and it is passed to
+	//  the series writer.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	writer->SetFileNames(nameGenerator->GetFileNames());
+	// Software Guide : EndCodeSnippet
+
+	//  Software Guide : BeginLatex
+	//
+	//  Finally we trigger the execution of the pipeline with the \code{Update()}
+	//  method on the writer. At this point the slices of the image will be saved
+	//  in individual files containing a single slice per file. The filenames used
+	//  for these slices are those produced by the filename generator.
+	//
+	//  Software Guide : EndLatex
+
+	// Software Guide : BeginCodeSnippet
+	try
+	{
+		writer->Update();
+	}
+	catch (itk::ExceptionObject & excp)
+	{
+		std::cerr << "Exception thrown while reading the image" << std::endl;
+		std::cerr << excp << std::endl;
+	}
+	// Software Guide : EndCodeSnippet
+
+	// Software Guide : BeginLatex
+	//
+	// Note that by saving data into isolated slices we are losing information
+	// that may be significant for medical applications, such as the interslice
+	// spacing in millimeters.
+	//
+	// Software Guide : EndLatex
+
+	return EXIT_SUCCESS;
 }

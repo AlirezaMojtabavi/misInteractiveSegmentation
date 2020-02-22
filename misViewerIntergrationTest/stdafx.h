@@ -40,6 +40,7 @@
 #include "itkMutexLock.h"
 #include "itkPoint.h"
 #include "itkVector.h"
+#include "itkImageSeriesReader.h"
 
 #define vtkRenderingCore_AUTOINIT 3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)
 //#define vtkRenderingVolume_AUTOINIT 1(vtkRenderingVolumeOpenGL) 
@@ -119,6 +120,10 @@
 #include <vtkImageSliceMapper.h>
 #include "itkCastImageFilter.h"
 #include "vtkObjectFactory.h"
+#include <vtkDICOMWriter.h>
+#include <vtkDICOMMRGenerator.h>
+#include <vtkDICOMMetaData.h>
+
 #include "itkFastMarchingImageFilter.h"
 #include "itkZeroCrossingImageFilter.h"
 #include "itkThresholdSegmentationLevelSetImageFilter.h"
@@ -138,6 +143,13 @@
 #include "itkGradientMagnitudeRecursiveGaussianImageFilter.h"
 #include "itkBinaryThresholdImageFilter.h" 
 #include "itkThresholdSegmentationLevelSetImageFilter.h"
+#include "itkImage.h"
+#include "itkImageFileReader.h"
+#include "itkImageSeriesWriter.h"
+#include "itkNumericSeriesFileNames.h"
+//#include "itkGDCMImageIO.h"
+//#include "itkGDCMSeriesFileNames.h"
+//#include "itkImageSeriesWriter.h"
 #include "MySpeedFunction3D.h"
  
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmBinEntry.h"
@@ -147,6 +159,8 @@
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDirPatient.h"
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDirSerie.h"
 #include "C:/Program Files/GDCM/include/gdcm-1.2/gdcmDicomDirStudy.h"
+
+
 
 
 #include "igstkEvents.h"
