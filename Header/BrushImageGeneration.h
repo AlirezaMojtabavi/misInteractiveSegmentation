@@ -6,9 +6,12 @@
 #include "IBackToPanMode.h"
 #include <IImage.h>
 #include "misTextureEraser.h"
- #include "ImageType.h"
+#include "ImageType.h"
 #include "../Segmentation3D/MySpeedFunction3D.h"
 #include "../Segmentation3D/MyAlgorithm3d.h"
+#include <itkImageToVTKImageFilter.h>
+#include "itkImageSeriesWriter.h"
+#include "itkGDCMImageIO.h"
 
 class BrushImageGeneration : public vtkCommand
 {
@@ -45,5 +48,6 @@ private:
 	std::vector<misPixelType> m_intensity;
 	std::vector<coordinate3D> m_Seeds;
 	//MyAlgorithm3d algoritm(std::vector<coordinate3D> _m_intensity, std::vector<coordinate3D>_m_Seeds);
-	misOutputImageType::Pointer outputImage = misOutputImageType::New();
+	//vtkSmartPointer<vtkImageData> result = vtkSmartPointer<vtkImageData>::New();
+	VTKImageToImageType::Pointer itkFinalResult = VTKImageToImageType::New();
 };

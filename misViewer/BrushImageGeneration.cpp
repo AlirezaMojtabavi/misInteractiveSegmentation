@@ -8,6 +8,9 @@
 
 									
 
+
+									
+
 vtkStandardNewMacro(BrushImageGeneration);
 
 void BrushImageGeneration::Create(std::shared_ptr<I3DViewer> viewer, std::shared_ptr<IVolumeSlicer> Slicer,
@@ -129,17 +132,7 @@ void BrushImageGeneration::Finalize()
 	const bool testVisualization =false;
 	if (!testVisualization)
 	{
-			auto vtkInputImage = m_OriginalImage->GetRawImageData(); // <vtkImageData>->Imagetype
-
-			/*std::string outputFilename1 = "E:\\Interactive_Segmentation\\output3D\\input.vtk";
-
-			vtkSmartPointer<vtkImageWriter> writer1 =
-				vtkSmartPointer<vtkImageWriter>::New();
-
-			writer1->SetFileName(outputFilename1.c_str());
-			writer1->SetInputData(vtkInputImage);
-			writer1->Write();
-			writer1->Update();*/
+		auto vtkInputImage = m_OriginalImage->GetRawImageData(); // <vtkImageData>->Imagetype
 
 		typedef itk::VTKImageToImageFilter<ITKImageType> VTKImageToImageType;
 		VTKImageToImageType::Pointer vtkImageToITKImage = VTKImageToImageType::New();
@@ -153,29 +146,56 @@ void BrushImageGeneration::Finalize()
 		MyAlgorithm3d algoritm(m_intensity, m_Seeds);
 		algoritm.SetInternalImage(internalImage->GetOutput());
 		algoritm.FastMarching(5);
-		algoritm.LevelSet(428, 741, 1, 0.05);
-		outputImage = algoritm.GetThresholder();
+		algoritm.LevelSet(428, 741, 0.5, 0.05);
+		auto outputImage = algoritm.GetThresholder();
 		outputImage->Update();
-		//outputImage->FillBuffer(750);
 
-		auto InternalOuyput = OutputType_2_InternalType::New();
-		InternalOuyput->SetInput(outputImage);
-		InternalOuyput->Update();
-		typedef itk::BinaryFillholeImageFilter< misInternalImageType > FilterType;
-		FilterType::Pointer morph_filter = FilterType::New();
-		morph_filter->SetInput(InternalOuyput->GetOutput());
-		morph_filter->SetForegroundValue(itk::NumericTraits<misInternalPixelType>::max());
+		//-----------------------------------------Write output of algorithm--------------------------------------------------------------
+
+		typedef itk::ImageToVTKImageFilter<misOutputImageType>  itkImage_2_vtkImage;
+		itkImage_2_vtkImage::Pointer vtkAlgorithmResult = itkImage_2_vtkImage::New();
+		vtkAlgorithmResult->SetInput(outputImage);
+		vtkAlgorithmResult->Update();
+		vtkImageData* myvtkImageData = vtkAlgorithmResult->GetOutput();
+	
+		vtkNew<vtkDICOMMRGenerator> generator;
+		// Create a meta data object with some desired attributes.
+		vtkNew<vtkDICOMMetaData> meta;
+		meta->Set(DC::PatientName, "sample^samplei");
+		meta->Set(DC::ScanningSequence, "GR"); // Gradient Recalled
+
+		meta->Set(DC::ScanOptions, "");
+		meta->Set(DC::MRAcquisitionType, "2D");
+		// Plug the generator and meta data into the writer.
+		vtkNew<vtkDICOMWriter> writer;
+		writer->SetInputData(myvtkImageData);
+		writer->SetMetaData(meta.GetPointer());
+		writer->SetGenerator(generator.GetPointer());
+		// Set the output filename format as a printf-style string.
+		writer->SetFilePattern("%s/IM-0001-%04.4d.dcm");
+		// Set the directory to write the files into.
+		writer->SetFilePrefix("E:\\Interactive_Segmentation\\output3D");
+		// Write the file.
+		writer->Write();
+
+		//-----------------filling hole -----------------------------------
+
+		//auto InternalOuyput = OutputType_2_InternalType::New();
+		//InternalOuyput->SetInput(outputImage);
+		//InternalOuyput->Update();
+		//typedef itk::BinaryFillholeImageFilter< misInternalImageType > FilterType;
+		//FilterType::Pointer morph_filter = FilterType::New();
+		//morph_filter->SetInput(InternalOuyput->GetOutput());
+		//morph_filter->SetForegroundValue(itk::NumericTraits<misInternalPixelType>::max());
 		//morph_filter->Update();
-		typedef itk::CastImageFilter<misInternalImageType, misOutputImageType> InternalType_2_OutputType;
-		auto morph_cast = InternalType_2_OutputType::New();
-		morph_cast->SetInput(morph_filter->GetOutput());
-		//morph_cast->Update();
+		//typedef itk::CastImageFilter<misInternalImageType, misOutputImageType> InternalType_2_OutputType;
+		//auto morph_cast = InternalType_2_OutputType::New();
+		//morph_cast->SetInput(morph_filter->GetOutput());
+		
+		//---------------------------------------------------------------------------------------------
 
-		auto invertConvertor = itk::ImageToVTKImageFilter<misOutputImageType>::New();
-		invertConvertor->SetInput(morph_cast->GetOutput());
-		invertConvertor->Update();
 
- 			/*std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
+			/*std::string outputFilename2 = "E:\\Interactive_Segmentation\\output3D\\final.vtk";
 			vtkSmartPointer<vtkImageWriter> writer2 =
 				vtkSmartPointer<vtkImageWriter>::New();
 				  
@@ -184,8 +204,6 @@ void BrushImageGeneration::Finalize()
 			writer2->Write();
 			writer2->Update();*/
 
-		auto image = invertConvertor->GetOutput();
-		m_SegmentedImage->GetRawImageData()->DeepCopy(image);
 	}
 
 	else
