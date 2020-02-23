@@ -4,12 +4,9 @@
 #include "misImageToTextureMap.h"
 #include "misTransFunctionBuilder.h"
 #include <vtkImageWriter.h>
+#include <misImageDataProperties.h>
+#include "SegmentationTransferFunction.h"
 
-
-									
-
-
-									
 
 vtkStandardNewMacro(BrushImageGeneration);
 
@@ -55,7 +52,13 @@ void BrushImageGeneration::Execute(vtkObject* caller, unsigned long eventId, voi
 	{
 		m_SegmentedImage = m_Slicer->GetImageRprensentaion()->GetImage(SecondImage);
 		m_OriginalImage = m_Slicer->GetImageRprensentaion()->GetImage(FirstImage);
-		CreateTransferFunction();
+		SegmentationTransferFunction transferFunction(m_SegmentedImage);
+
+		auto imagePlane = m_Slicer->GetImageRprensentaion();
+		if (!imagePlane)
+			return;
+		imagePlane->SetColorMapTransFuncID(SecondImage, transferFunction.GetTransferFunction());
+		imagePlane->SetVisiblityOfColorMap(SecondImage, true);
 	}
 	
 	m_ConvertMouseXYToWorldCoordinate->SetViewer(m_3DViewer);
@@ -99,37 +102,9 @@ void BrushImageGeneration::EraseTexture(parcast::PointD3 point, SegmentMode segm
 	m_Eraser.EraseSphereTexture(dataScalars, parcast::Point<int, 3>(dim.elem), TableRange, id, segmentMode);
 }
 
-void BrushImageGeneration::CreateTransferFunction( )
-{
-	auto TextureHandler = misImageToTextureMap::GetInstance();
-	auto imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
-	auto TableRange = imageTexure->GetTableRange();
-
-	misTransFunctionBuilder	trasferfunction;
-	misDoubleColorListTypedef opacityColorMappingLst;
-	opacityColorMappingLst[TableRange[0]] = misDoubleColorStruct(0, 0, 0, 0);
-	//opacityColorMappingLst[-800] = misDoubleColorStruct(0, 0, 0, 0);
-	//opacityColorMappingLst[-500] = misDoubleColorStruct(1, 0, 0, .2);
-	//opacityColorMappingLst[-400] = misDoubleColorStruct(1, 0, 0, .2);
-	//opacityColorMappingLst[-390] = misDoubleColorStruct(1, 0, 0, 0);
-
-	opacityColorMappingLst[0] = misDoubleColorStruct(0, 0, 0, 0);
-	opacityColorMappingLst[100] = misDoubleColorStruct(1, 0, 0, .4);
-	opacityColorMappingLst[200] = misDoubleColorStruct(1, 0, 0, .4);
-	opacityColorMappingLst[300] = misDoubleColorStruct(1, 0, 0, 0);
-	opacityColorMappingLst[TableRange[1]] = misDoubleColorStruct(0, 0, 0, 0);
-	auto transfunc = trasferfunction.GenerateTransferFunction(opacityColorMappingLst, TableRange);
-	transfunc->updateTexture();
-	auto imagePlane = m_Slicer->GetImageRprensentaion();
-	if (!imagePlane)
-		return;
-	imagePlane->SetColorMapTransFuncID(SecondImage, transfunc);
-	imagePlane->SetVisiblityOfColorMap(SecondImage, true);
-	
-}
 void BrushImageGeneration::Finalize()
 {
-	const bool testVisualization =false;
+	const bool testVisualization = false;
 	if (!testVisualization)
 	{
 		auto vtkInputImage = m_OriginalImage->GetRawImageData(); // <vtkImageData>->Imagetype
@@ -157,7 +132,16 @@ void BrushImageGeneration::Finalize()
 		vtkAlgorithmResult->SetInput(outputImage);
 		vtkAlgorithmResult->Update();
 		vtkImageData* myvtkImageData = vtkAlgorithmResult->GetOutput();
-	
+		m_SegmentedImage->GetRawImageData()->DeepCopy(myvtkImageData);
+		const misWindowLevelStr windowLevel(1550-20, 45);
+		auto imageViewingProperties = m_SegmentedImage->GetImageDataProperties()->GetViewingProperties();
+		imageViewingProperties.SetInitialLevelWindow(windowLevel);
+		imageViewingProperties.SetLevelWindow(windowLevel);
+		m_SegmentedImage->GetImageDataProperties()->SetViewingProperties(imageViewingProperties);
+		m_SegmentedImage->Modified();
+		misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
+		misOpenglTexture* imageTexure = TextureHandler->LookUpTexture(m_SegmentedImage);
+		auto prop = imageTexure->GetTexturePropertyStrct();
 		vtkNew<vtkDICOMMRGenerator> generator;
 		// Create a meta data object with some desired attributes.
 		vtkNew<vtkDICOMMetaData> meta;

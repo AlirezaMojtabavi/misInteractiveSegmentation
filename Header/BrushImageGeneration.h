@@ -29,7 +29,6 @@ public:
 private:
 	void EraseTexture(parcast::PointD3 point, SegmentMode);
 	void Colortexture(parcast::PointD3 point);
-	void CreateTransferFunction();
 	std::shared_ptr<I3DViewer> m_3DViewer;
 	std::shared_ptr<IVolumeSlicer> m_Slicer;
 	std::shared_ptr<ICornerProperties> m_Cornerproperties;

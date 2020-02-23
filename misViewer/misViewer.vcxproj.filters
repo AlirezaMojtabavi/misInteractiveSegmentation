@@ -402,6 +402,9 @@
     <ClInclude Include="PanImage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\header\SegmentationTransferFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -606,6 +609,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TypeDirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentationTransferFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

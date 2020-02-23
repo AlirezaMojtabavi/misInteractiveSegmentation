@@ -148,6 +148,18 @@ else\
 //---------------Color Mixing Functions Definition
 vec4	BlendMainTextures(vec4 c1, vec4 c2)
 {
+ bool image1IsGray = (c1.r == c1.g) && (c1.g == c1.b);
+  bool image2IsGray = (c2.r == c2.g) && (c2.g == c2.b);
+  if(!image1IsGray &&  image2IsGray)
+  { 
+  return c1;
+  }
+    if(!image2IsGray && image1IsGray)
+	{ 
+	return c2;
+
+	}
+
 	float Y_NEW_INTENSITY_R = c2.a * c2.r;
 	float X_NEW_INTENSITY_R = c1.a * c1.r;
 
@@ -162,7 +174,6 @@ vec4	BlendMainTextures(vec4 c1, vec4 c2)
 	float X_NEW_INTENSITY_B = c1.a * c1.b;
 
 	float Total_INTENSITY_B = max(X_NEW_INTENSITY_B, Y_NEW_INTENSITY_B);
-
 	vec4 result = vec4(Total_INTENSITY_R, Total_INTENSITY_G, Total_INTENSITY_B, 1.0);
 	return result;
 }

@@ -217,6 +217,7 @@
     <ClInclude Include="..\Header\Screw3DViewer.h" />
     <ClInclude Include="..\header\ScrewViewer.h" />
     <ClInclude Include="..\Header\ScrewViewerFactory.h" />
+    <ClInclude Include="..\header\SegmentationTransferFunction.h" />
     <ClInclude Include="..\Header\TypeDirection.h" />
     <ClInclude Include="ConvertMousexyToWorldCoordinate.h" />
     <ClInclude Include="PanImage.h" />
@@ -227,6 +228,7 @@
     <ClCompile Include="LandmarkViewer.cpp" />
     <ClCompile Include="misImageContrastObserver.cpp" />
     <ClCompile Include="PanImage.cpp" />
+    <ClCompile Include="SegmentationTransferFunction.cpp" />
     <ClCompile Include="SlicerLandmarkViewer.cpp" />
     <ClCompile Include="SlicerPointSelectActionLandamrk.cpp" />
     <ClCompile Include="TypeDirection.cpp" />

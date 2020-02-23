@@ -23,6 +23,7 @@
 #include "resource.h"
 #include <misMathUtils.h>
 #include "misImageToTextureMap.h"
+#include "SegmentationTransferFunction.h"
 
  using namespace std;
 
@@ -152,7 +153,10 @@ void SegmentationWithBrush4View::PulseHandler()
 			package->SetImageToRelatedImageDataDependancy(m_SegemntedImage);
 			package->SetImageToRelatedImageDataDependancy(m_Image);
 			m_GroupViewer->ShowPackage(package, false);
-			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1,0,0,.9));
+			SegmentationTransferFunction segmentationTransferFunction(m_SegemntedImage);
+			m_GroupViewer->SetColorValueToTexture(FirstImage, misDoubleColorStruct(1, 0, 0, 1.0));
+			//m_GroupViewer->SetColorMapTransFuncID(FirstImage,segmentationTransferFunction.GetTransferFunction());
+			//m_GroupViewer->SetVisiblityOfColorMap(FirstImage, true);
 		}
 		
 		case  'a':
@@ -200,6 +204,7 @@ void SegmentationWithBrush4View::PulseHandler()
 
 
 }
+ 
 void SegmentationWithBrush4View::UpdateTexture()
 {
 	misImageToTextureMap* TextureHandler = misImageToTextureMap::GetInstance();
@@ -453,7 +458,7 @@ int Test(int argc, char* argv[])
 
 	using WriterType = itk::ImageSeriesWriter< ImageType, Image2DType >;
 
-	WriterType::Pointer writer = WriterType::New();
+	WriterType::Pointer writer = WriterType::New(); 
 
 	writer->SetInput(reader->GetOutput());
 	// Software Guide : EndCodeSnippet
