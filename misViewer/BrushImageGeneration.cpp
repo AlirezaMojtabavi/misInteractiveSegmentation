@@ -121,6 +121,7 @@ void BrushImageGeneration::Finalize()
 		MyAlgorithm3d algoritm(m_intensity, m_Seeds);
 		algoritm.SetInternalImage(internalImage->GetOutput());
 		algoritm.FastMarching(5);
+		algoritm.GetROI();
 		algoritm.LevelSet(428, 741, 0.5, 0.05);
 		auto outputImage = algoritm.GetThresholder();
 		outputImage->Update();
@@ -205,6 +206,8 @@ void BrushImageGeneration::Finalize()
 	m_SegmentedImage->Modified();
 
 }
+
+
 
 void BrushImageGeneration::Activate()
 {

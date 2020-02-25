@@ -125,3 +125,60 @@ void MyAlgorithm3d::LevelSet(double edge, double weight)
 	thresholder->SetInput(thresholdSegmentation->GetOutput());*/
 	//thresholder->Update();
 }
+
+double* MyAlgorithm3d::GetROI()
+{
+	int size = m_Seeds.size();
+
+	double tempMinX = m_Seeds[0]._x;
+	double tempmaxX = m_Seeds[0]._x;
+	double tempMinY = m_Seeds[0]._y;
+	double tempmaxY = m_Seeds[0]._y;
+	double tempMinZ = m_Seeds[0]._z;
+	double tempmaxZ = m_Seeds[0]._z;
+
+	for (int i = 0; i < size; i++)
+	{
+//-----------------X------------------------
+		if (m_Seeds[i]._x <= tempMinX) // min
+			tempMinX = m_Seeds[i]._x;
+		else
+			tempMinX = tempMinX;
+
+		if (m_Seeds[i]._x >= tempmaxX) // max
+			tempmaxX = m_Seeds[i]._x;
+		else
+			tempmaxX = tempmaxX;
+//-----------------Y------------------------
+		if (m_Seeds[i]._y <= tempMinY) // min
+			tempMinY = m_Seeds[i]._y;
+		else
+			tempMinY = tempMinY;
+		
+		if (m_Seeds[i]._y >= tempmaxY) // max
+			tempmaxY = m_Seeds[i]._y;
+		else
+			tempmaxY = tempmaxY;
+//-------------------Z-----------------------
+		if (m_Seeds[i]._z <= tempMinZ) // min	
+			tempMinZ = m_Seeds[i]._z; 
+		else
+			tempMinZ = tempMinZ;	
+
+		if (m_Seeds[i]._z >= tempmaxZ) // max
+			tempmaxZ = m_Seeds[i]._z;
+		else
+			tempmaxZ = tempmaxZ;
+	}
+
+	ROI[0] = tempMinX;
+	ROI[1] = tempmaxX;
+	ROI[2] = tempMinY;
+	ROI[3] = tempmaxY;
+	ROI[4] = tempMinZ;
+	ROI[5] = tempmaxZ;
+
+	cout << ROI[0]<<","<< ROI[1]<<","<< ROI[2]<<","<< ROI[3]<<","<< ROI[4]<<","<< ROI[5] <<"\n\n" ;
+
+	return ROI;
+}

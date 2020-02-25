@@ -26,6 +26,8 @@ public:
 	void Finalize();
 	void Activate();
 	void DeActive();
+	ITKImageType_2_InternalType::Pointer ROI(std::vector<coordinate3D> seeds);
+
 private:
 	void EraseTexture(parcast::PointD3 point, SegmentMode);
 	void Colortexture(parcast::PointD3 point);

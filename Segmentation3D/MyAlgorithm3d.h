@@ -12,7 +12,7 @@ struct coordinate3D
 {
 	double _x;
 	double _y;
-	int _z;
+	double _z;
 };
 
 
@@ -28,7 +28,7 @@ public:
 	void FastMarching(const double);
 	void LevelSet(short int	 lower, short int upper, double edge, double weight);
 	void LevelSet(double edge, double weight);
-
+	double* GetROI();
  
 	misInternalImageType* GetFastMarching();
 	misOutputImageType*  GetThresholder();
@@ -50,4 +50,6 @@ private:
 	NodeContainer::Pointer seeds = NodeContainer::New();
 
 	misOutputImageType::Pointer result = misOutputImageType::New();
+
+	double ROI[6];
 };
