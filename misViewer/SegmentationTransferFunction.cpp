@@ -15,7 +15,7 @@ SegmentationTransferFunction::SegmentationTransferFunction(std::shared_ptr<IImag
 
 
 	opacityColorMappingLst[0] = misDoubleColorStruct(0, 0, 0, 0);
-	opacityColorMappingLst[100] = misDoubleColorStruct(1, 0, 0, 0.4);
+	opacityColorMappingLst[100] = misDoubleColorStruct(1, 0, 0,1.0);
 	opacityColorMappingLst[200] = misDoubleColorStruct(1, 0, 0, 1.0);
 	opacityColorMappingLst[300] = misDoubleColorStruct(1, 0, 0, 0);
 	opacityColorMappingLst[TableRange[1]] = misDoubleColorStruct(0, 0, 0, 0);

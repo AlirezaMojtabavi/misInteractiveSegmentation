@@ -130,8 +130,8 @@ void misTextureEraser::CreateBrushBox(misPixelType* Scalars, parcast::Point<int,
 								}
 								else
 								{
-									m_SubBox[SubBoxIndex] = 1500;
-									Scalars[ImageIndex] = 1500;
+									m_SubBox[SubBoxIndex] = 150;
+									Scalars[ImageIndex] = 150;
 								}
 							}
 							else
